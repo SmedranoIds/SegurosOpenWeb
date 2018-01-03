@@ -128,7 +128,7 @@ while (have_posts()) {
 		</div>
 	</div>
     <?php if(get_field('cuadrosegurosgris')): ?>
-    	<div class="container">
+    	<!-- <div class="container">-->
     		<div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="home">
 					<div class="row">
@@ -256,7 +256,7 @@ while (have_posts()) {
 			<?php endif; ?>
 
 
-		</div>
+		<!-- </div> -->
     </div>
 </section>
 
