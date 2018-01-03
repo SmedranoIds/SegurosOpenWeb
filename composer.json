@@ -1,0 +1,19 @@
+{
+  "name": "openweb/theme",
+  "description": "Tema Wordpress basado en Coronita",
+  "authors": [
+    {
+      "name": "Javier de Andrés",
+      "email": "javier.deandres@beeva.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "OpenWeb\\": "src/"
+    }
+  },
+  "license": "propietary"
+}

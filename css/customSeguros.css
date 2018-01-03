@@ -1,0 +1,554 @@
+
+@font-face {
+  font-family: 'BentonSansLight';
+  src: url('fontsBBVA/BentonSans-Light.eot');
+  src: url('fontsBBVA/BentonSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Light.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Light.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Light.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Light.svg#BentonSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBook';
+  src: url('fontsBBVA/BentonSans-Book.eot');
+  src: url('fontsBBVA/BentonSans-Book.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Book.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Book.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Book.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Book.svg#BentonSans-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansMedium';
+  src: url('fontsBBVA/BentonSans-Medium.eot');
+  src: url('fontsBBVA/BentonSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Medium.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Medium.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Medium.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Medium.svg#BentonSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBold';
+  src: url('fontsBBVA/BentonSans-Bold.eot');
+  src: url('fontsBBVA/BentonSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSans-Bold.woff2') format('woff2'),
+    url('fontsBBVA/BentonSans-Bold.woff') format('woff'),
+    url('fontsBBVA/BentonSans-Bold.ttf') format('truetype'),
+    url('fontsBBVA/BentonSans-Bold.svg#BentonSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVA';
+  src: url('fontsBBVA/BentonSansBBVA-Bold.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Bold.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Bold.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Bold.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Bold.svg#BentonSansBBVA-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVABookItalic';
+  src: url('fontsBBVA/BentonSansBBVA-BookItalic.eot');
+  src: url('fontsBBVA/BentonSansBBVA-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-BookItalic.svg#BentonSansBBVA-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVAMediumItalic';
+  src: url('fontsBBVA/BentonSansBBVA-MediumItalic.eot');
+  src: url('fontsBBVA/BentonSansBBVA-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-MediumItalic.svg#BentonSansBBVA-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVABook';
+  src: url('fontsBBVA/BentonSansBBVA-Book.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Book.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Book.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Book.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Book.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Book.svg#BentonSansBBVA-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVALight';
+  src: url('fontsBBVA/BentonSansBBVA-Light.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Light.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Light.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Light.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Light.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Light.svg#BentonSansBBVA-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BentonSansBBVAMedium';
+  src: url('fontsBBVA/BentonSansBBVA-Medium.eot');
+  src: url('fontsBBVA/BentonSansBBVA-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fontsBBVA/BentonSansBBVA-Medium.woff2') format('woff2'),
+    url('fontsBBVA/BentonSansBBVA-Medium.woff') format('woff'),
+    url('fontsBBVA/BentonSansBBVA-Medium.ttf') format('truetype'),
+    url('fontsBBVA/BentonSansBBVA-Medium.svg#BentonSansBBVA-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fontsBBVA/glyphicons-halflings-regular.eot');
+  src: url('fontsBBVA/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+       url('fontsBBVA/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('fontsBBVA/glyphicons-halflings-regular.woff') format('woff'),
+       url('fontsBBVA/glyphicons-halflings-regular.ttf') format('truetype'),
+       url('fontsBBVA/glyphicons-halflings-regular.svg#@{icon-font-svg-id}') format('svg');
+}
+/* Estilos Index */
+.blockGris{
+  background: #f2f2f2;
+  padding: 30px 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+h2.seguros {
+  font-size: 30px;
+    line-height: 40px;
+    font-family: BentonSansBBVALight;
+    color: #003f8c;
+}
+h1.titulo {
+  font-size: 36px;
+    line-height: 40px;
+    font-family: BentonSansLight;
+    color: #003f8c;
+    text-rendering: optimizelegibility;
+}
+p.descripcion {
+  font-family: BentonSansBBVALight;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+}
+.icon {
+    background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: text-top;
+}
+.chat {
+    background-position: 0 -1218px;
+}
+a.chat {
+    font-family: BentonSansBBVALight;
+    color: #0078d2;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+.compu {
+    background-position: -168px -425px;
+}
+.login {
+    background-position: -84px -1344px;
+}
+.bordeCuadros {
+    border: 1px solid #dde3ea;
+    border-color: #c5c5c5;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    font-family: BentonSansLight;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.posIcon {
+    position: relative;
+}
+.imgResp {
+    max-width: 100%;
+}
+.imgCuadros {
+    max-width: 65%;
+}
+.panel-body h2 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #003f8c;
+    font-family: BentonSansLight;
+}
+a.cuadro {
+    font-family: BentonSansBBVAMedium;
+}
+.outBlockG {
+    position: absolute;
+    width: 92%;
+}
+.inBlockG {
+    top: 30px;
+}
+.onBlockG .nav-tabs{
+    z-index: 1;
+    border-bottom: none;
+}
+.separador {
+    padding-top: 20px;
+}
+.separadordos{
+  margin-top: 40px;  
+}
+@media only screen and (max-width: 962px) {
+    .outBlockG {
+        position: inherit;
+        width: inherit;
+    }
+}
+.cuadrosIndex {
+    background-color: #f9f9f9;
+    background-image: -moz-linear-gradient(top, #fefefe, #f1f1f1);
+     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#f1f1f1)); 
+    background-image: -webkit-linear-gradient(top, #fefefe, #f1f1f1);
+    background-image: -o-linear-gradient(top, #fefefe, #f1f1f1);
+     background-image: linear-gradient(to bottom, #fefefe, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfbfb', endColorstr='#efefef', GradientType=0);
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
+.descripcionCuadroI {
+    display: block;
+    color: #333333;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+}
+.cuadrosIndex h3 {
+    font-family: BentonSansBBVAMedium;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0px;
+}
+.lista h2 {
+    font-size: 28px;
+    line-height: 20px;
+    font-family: BentonSansBBVALight;
+    color: #0078d2;
+}
+.lista h3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: BentonSansBBVAMedium;
+}
+.lista p {
+    color: #434957;
+}
+hr {
+    border-top: 1px solid #c5c5c5;
+    border-top: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
+}
+/* Estilos Index */
+.derecha{
+    float: right;
+}
+h4.panel-title {
+    font-size: 18px;
+    font-family: BentonSansBBVALight;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.panel-title a:hover {
+   text-decoration: none; 
+}
+.panel-title a:focus {
+    text-decoration: none;
+}
+
+.panel-default>.panel-heading {
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#f4f7f8), to(white));
+    background-image: -webkit-linear-gradient(bottom, #f4f7f8, white);
+}
+li.icon-pdf{
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 5px;
+}
+li.icon-pdf:before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    background-image: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icn_pdf.png);
+    background-size: cover;
+    left: -5px;
+    top: 3px;
+}
+/*.whitSpace {
+      margin: 10px 0 10px;
+}*/
+.panel-body p {
+  margin: 10px 0 10px;
+}
+.panel-body h3 {
+  color: #0078d2;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: BentonSansMedium;
+  font-weight: normal;
+}
+/*Estilos Footer*/
+.space {
+  height: 20px;
+}
+.footer h4 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+.footer ul {
+    padding: 0px;
+    list-style: none;
+}
+.footer ul a{
+    font-size: 12px;
+    padding: 2px 0;
+    color: #999999;
+}
+.footer img {
+  margin-right: 5px;
+}
+.menuFooter{
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e6e6e6;
+}
+.menuFooter ul li{
+  list-style-type: none;
+  float: left;
+  padding: 10px; 
+}
+.menuFooter a{
+    font-size: 11px;
+    margin: 2px;
+    color: #999999;
+}
+
+/*botones*/
+.boton-verde{
+  background: #59c000;
+    background: -moz-linear-gradient(top,#59c000 0,#499900 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#59c000),color-stop(100%,#499900));
+    background: -webkit-linear-gradient(top,#59c000 0,#499900 100%);
+    background: -o-linear-gradient(top,#59c000 0,#499900 100%);
+    background: -ms-linear-gradient(top,#59c000 0,#499900 100%);
+    background: linear-gradient(to bottom,#59c000 0,#499900 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#59c000', endColorstr='#499900', GradientType=0);
+    border: 1px solid #499900;
+    color: #fff;
+  padding: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-shadow: none;
+  font-size: 12px;  
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  font-family: BentonSansMedium;
+  margin-bottom: 15px;
+}
+.boton-verde:hover{
+  background: #489d01;
+    background: -moz-linear-gradient(top,#489d01 0,#347201 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#489d01),color-stop(100%,#347201));
+    background: -webkit-linear-gradient(top,#489d01 0,#347201 100%);
+    background: -o-linear-gradient(top,#489d01 0,#347201 100%);
+    background: -ms-linear-gradient(top,#489d01 0,#347201 100%);
+    background: linear-gradient(to bottom,#489d01 0,#347201 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#489d01', endColorstr='#347201', GradientType=0);
+    border: 1px solid #245c28;
+    color: #fff;
+  padding: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-shadow: none;
+  font-size: 12px;  
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  font-family: BentonSansMedium;
+}
+.boton-verde:focus{
+    outline:none;
+}
+.boton-azul{
+  background: #0079c1; */
+    background: -moz-linear-gradient(top,#0079c1 0,#00559d 100%);
+    background: -webkit-linear-gradient(top,#0079c1 0,#00559d 100%);
+    background: -o-linear-gradient(top,#0079c1 0,#00559d 100%);
+    background: -ms-linear-gradient(top,#0079c1 0,#00559d 100%);
+    background: linear-gradient(to bottom,#0079c1 0,#00559d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0079c1', endColorstr='#00559D', GradientType=0);
+    border: 1px solid #00559d;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 12px;
+  color: #ffffff; 
+  font-family: BentonSansMedium;
+  margin-bottom: 15px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+}
+.boton-azul:hover{
+  background: #0069b1;
+    background: -moz-linear-gradient(top,#0069b1 0,#004b8c 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#0069b1),color-stop(100%,#004b8c));
+    background: -webkit-linear-gradient(top,#0069b1 0,#004b8c 100%);
+    background: -o-linear-gradient(top,#0069b1 0,#004b8c 100%);
+    background: -ms-linear-gradient(top,#0069b1 0,#004b8c 100%);
+    background: linear-gradient(to bottom,#0069b1 0,#004b8c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0069b1', endColorstr='#004b8c', GradientType=0);
+    border: 1px solid #003c6f;
+  border: 1px solid #00559d;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 12px;
+  color: #ffffff; 
+  font-family: BentonSansMedium;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+}
+.boton-azul2{
+  font-size: 13px;
+  padding: 5px 13px;
+  color: white;
+  font-family: BentonSansMedium;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0068c5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0075cd', endColorstr='#004dab', GradientType=0);
+  border-color: #004fb0 #004fb0 #002d63;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.boton-azul2:hover{
+  color: white;
+  background-color: #004fb0;
+}
+/*botones*/
+/*Modales*/
+.imgModal{
+      text-align: -webkit-center;
+}
+.AzulF {
+  background-color: #0068c5;
+}
+.AzulF:hover {
+  background-color: #004fb0;
+}
+.bordeA {
+    border: 2px solid #004fb0;  
+}
+.modal-header .close {
+    margin-top: -2px;
+    padding: 0 5px 0 5px;
+    background-color: #0069b8;
+    border-radius: 11px;
+    color: #fff;
+    opacity: 1;
+}
+/*Modales*/
+/*content*/
+.glyphicon {
+    font-size: 14px;
+}
+.nav-tabs>li>a {
+  font-weight: bold;
+}
+.panel-heading a:after {
+    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/closed.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    margin: -11px -5px;
+    width: 25px;
+    float: right;
+}
+.panel-heading a.collapsed:after {
+    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/open.png);
+}
+/*estilo listas*/
+.sinEst{
+  list-style: none;
+}
+.estDec {
+    list-style: decimal;
+}
+.spaceAnio{
+  padding-right: 25px;
+}
+/*estilo listas*/
+.titletablaV{
+  background-color: #edf0ec;
+    color: #333333;
+    text-transform: none; 
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.nav-tabs > li > a {
+    border: 1px solid #ddd;
+}
+.panelHgt {
+  height: 160px;
+}
+.vista{
+  float: right;
+}
+.sintop{
+  margin-top: 0;
+}
+/*content*/
+/*responsive*/
+@media (max-width: 992px){
+  .outBlockG {
+      position: inherit;
+      width: inherit;
+  }
+}
+@media screen and (max-width: 767px){
+.table-responsive {
+    display: block;
+  }
+}
+/*responsive*/

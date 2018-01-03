@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1600px" height="610px" viewBox="0 0 1600 610" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Spotlight Dark Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0860639613 0.0122235769 1600.08606 0.0122235769 1600.08606 610.012224 0.0860639613 610.012224"></polygon>
+    </defs>
+    <g id="Spotlight-Background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Spotlight-Dark-Blue">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#004481" xlink:href="#path-1"></use>
+            <polygon id="Rectangle-5" fill="#2A86CA" opacity="0.1" mask="url(#mask-2)" points="1600.01862 152.641412 1600.01862 609.843011 0 610.199054"></polygon>
+            <polygon id="Rectangle-5" fill="#2A86CA" opacity="0.1" mask="url(#mask-2)" points="1600.14789 457.422061 1600.14789 610.122881 0.390976281 610.122881"></polygon>
+            <polygon id="Path-16" fill="#2A86CA" opacity="0.1" mask="url(#mask-2)" points="400 0 1600.08185 457.509532 1600.08179 610.358521 0.0860639613 610.35852"></polygon>
+        </g>
+    </g>
+</svg>

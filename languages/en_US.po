@@ -1,0 +1,348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Openweb Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-06 15:37+0000\n"
+"PO-Revision-Date: 2017-06-06 16:28+0000\n"
+"Last-Translator: Openweb Team <openweb@bbva.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:23
+msgid "Esta no es la página que buscabas"
+msgstr "This is not the page you were looking for"
+
+#: 404.php:24
+msgid "Puedes usar nuestro buscador para encontrar lo que necesitas"
+msgstr "You can to use our search engine to find anything you need"
+
+#: author.php:73
+msgid "Artículos escritos"
+msgstr "Articles Written"
+
+#: author.php:81
+msgid "Categorías incluídas"
+msgstr "Categories included"
+
+#: author.php:94
+msgid "Artículos recientes"
+msgstr "Recent articles"
+
+#: functions.php:29
+msgid ""
+"El tema Openweb basado en Coronita sólo funciona a partir de las versiones 4."
+"4 de Wordpress"
+msgstr ""
+"Openweb Theme based on Coronita only works from 4.4 Wordpress's version"
+
+#: header.php:47 header.php:79 header.php:164
+msgid "Acceder"
+msgstr "Sign in"
+
+#: header.php:84
+msgid "Registro"
+msgstr "Register"
+
+#: header.php:96
+msgid "Escribe aquí tu búsqueda"
+msgstr "Write your search term"
+
+#: header.php:96 header.php:123 src/Admin/tpl/metaRelated.php:32
+#: src/Admin/tpl/metaRelated.php:67
+msgid "Buscar"
+msgstr "Search"
+
+#: header.php:138
+msgid "Acceso a "
+msgstr "Login "
+
+#: header.php:151
+msgid "Usuario"
+msgstr "User"
+
+#: header.php:155
+msgid "Contraseña"
+msgstr "Password"
+
+#: header.php:160
+msgid "Recuérdame"
+msgstr "Remember me"
+
+#. Name of the template
+msgid "Openweb - Empty Page"
+msgstr "Openweb - Empty Page"
+
+#. Name of the template
+msgid "Openweb - Search Results"
+msgstr "Openweb - Search Results"
+
+#: results.php:30
+msgid "Resultados de la búsqueda"
+msgstr "Search results"
+
+#: results.php:31
+msgid "Mostrando resultados"
+msgstr "Showing results"
+
+#: results.php:31
+msgid "de"
+msgstr "of"
+
+#: results.php:31
+msgid "para"
+msgstr "for"
+
+#: results.php:32
+msgid "No se han encontrado resultados para "
+msgstr "No results found for"
+
+#: src/Theme.php:85
+msgid "Top Links Menu"
+msgstr "Top Links Menu"
+
+#: src/Theme.php:86
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#: src/Theme.php:87
+msgid "Secondary Menu"
+msgstr "Secondary Menu"
+
+#: src/Theme.php:88
+msgid "PreFooter Left Menu"
+msgstr "PreFooter Left Menu"
+
+#: src/Theme.php:89
+msgid "PreFooter Left Center Menu"
+msgstr "PreFooter Left Center Menu"
+
+#: src/Theme.php:90
+msgid "PreFooter Right Center Menu"
+msgstr "PreFooter Right Center Menu"
+
+#: src/Theme.php:91
+msgid "PreFooter Right Menu"
+msgstr "PreFooter Right Menu"
+
+#: src/Theme.php:92
+msgid "Footer Links Menu"
+msgstr "Footer Links Menu"
+
+#: src/Admin/Author.php:36
+msgid "Twitter"
+msgstr "Twitter"
+
+#: src/Admin/Media.php:18
+msgid "BBVA DAM"
+msgstr "BBVA DAM"
+
+#: src/Admin/Post.php:49
+msgid "Añade un disclaimer al artículo"
+msgstr "Add a disclaimer to post"
+
+#: src/Admin/Post.php:56
+msgid "Añade artículos relacionados"
+msgstr "Add related posts"
+
+#: src/Admin/Post.php:79
+msgid "Publicaciones relacionadas"
+msgstr "Related posts"
+
+#: src/Admin/Post.php:80
+msgid "Disclaimer artículo"
+msgstr "Post Disclaimer"
+
+#: template-parts/loop/item.php:5 template-parts/post/related.php:16
+msgid "Imagen para"
+msgstr "Image for"
+
+#: template-parts/loop/item.php:15 template-parts/post/related.php:26
+msgid "Leer más"
+msgstr "Read more"
+
+#: template-parts/loop/structure.php:99
+msgid "Ver más artículos"
+msgstr "View more posts"
+
+#: template-parts/post/related.php:6
+msgid "También te pueden interesar"
+msgstr "You may also be interested in"
+
+#: src/Admin/Customize/CoronitaOptions.php:19
+msgid "Opciones Coronita"
+msgstr "Coronita Options"
+
+#: src/Admin/Customize/CoronitaOptions.php:31
+msgid "Coronita Footer"
+msgstr "Coronita Footer"
+
+#: src/Admin/Customize/CoronitaOptions.php:65
+msgid "Mostrar Prefooter"
+msgstr "Show Prefooter"
+
+#: src/Admin/Customize/CoronitaOptions.php:73
+msgid "Logo"
+msgstr "Logo"
+
+#: src/Admin/Customize/CoronitaOptions.php:84
+msgid "Descripción corta"
+msgstr "Short description"
+
+#: src/Admin/Customize/CoronitaOptions.php:88
+msgid "Texto que aparece al lado del logo del pie."
+msgstr "Text that appears next to the logo of footer."
+
+#: src/Admin/Customize/CoronitaOptions.php:92
+msgid "Texto Copyright"
+msgstr "Copyright Text"
+
+#: src/Admin/Customize/CoronitaOptions.php:96
+msgid "Texto de copyright que aparece al final del pie."
+msgstr "Copyright text that appears to end of footer."
+
+#: src/Admin/Customize/CoronitaOptions.php:103
+msgid "Redes Sociales"
+msgstr "Social Networks"
+
+#: src/Admin/Customize/OpenwebOptions.php:18
+msgid "Opciones OpenWeb"
+msgstr "Openweb Options"
+
+#: src/Admin/Customize/OpenwebOptions.php:30
+msgid "Buscador OpenWeb"
+msgstr "Openweb Search Engine"
+
+#: src/Admin/Customize/OpenwebOptions.php:57
+msgid "Buscador Cloudsearch"
+msgstr "Cloudsearch Search Engine"
+
+#: src/Admin/Customize/OpenwebOptions.php:61
+msgid ""
+"La plataforma usa el servicio de AWS CloudSearch para las búsquedas, "
+"marcando la casilla se añadirán automáticamente los componentes visuales "
+"necesarios, pero recuerda que debes añadir la indexación de los artículos y "
+"páginas."
+msgstr ""
+"Openweb's Platform uses AWS Cloudsearch Service for searching terms, mark "
+"this checkbox and needed visual components automatically will be added, you "
+"don't forget to add pages/posts indexation."
+
+#: src/Admin/Customize/OpenwebOptions.php:64
+msgid "Página de resultados"
+msgstr "Page of results"
+
+#: src/Admin/Customize/OpenwebOptions.php:67
+msgid "Asocia la página de resultados que hayas creado en el apartado páginas."
+msgstr "Link to page of results that you have created in Page section."
+
+#: src/Admin/Customize/OpenwebOptions.php:75
+msgid "Zona Privada"
+msgstr "Private Zone"
+
+#: src/Admin/Customize/OpenwebOptions.php:102
+msgid "Zona privada"
+msgstr "Private zone"
+
+#: src/Admin/Customize/OpenwebOptions.php:110
+msgid "Página de registro"
+msgstr "Register's page"
+
+#: src/Admin/Customize/OpenwebOptions.php:113
+msgid ""
+"Asocia la página de registro de usuarios que hayas creado en el apartado "
+"páginas."
+msgstr ""
+"Link to page user's registration that you have created in Page section."
+
+#: src/Admin/tpl/authorExtra.php:1
+msgid "Openweb campos Autor"
+msgstr "Openweb - Author's fields"
+
+#: src/Admin/tpl/authorExtra.php:8
+msgid "Imagen página Autor"
+msgstr "Image for Author's page"
+
+#: src/Admin/tpl/authorExtra.php:15
+msgid "Selecionar imagen"
+msgstr "Select image"
+
+#: src/Admin/tpl/authorExtra.php:16
+msgid "Por favor selecciona una imagen para la página del autor."
+msgstr "Please, you must to select an image for author's page"
+
+#: src/Admin/tpl/authorExtra.php:21
+msgid "Cita"
+msgstr "Quote"
+
+#: src/Admin/tpl/authorExtra.php:25
+msgid "Escribe una frase descriptiva del autor."
+msgstr "Write a quote for author."
+
+#: src/Admin/tpl/dam.php:1
+msgid "Próximamente Repositorio BBVA DAM"
+msgstr "Repositoy BBVA DAM comming soon"
+
+#: src/Admin/tpl/metaRelated.php:6
+msgid ""
+"Generar <strong>automáticamente</strong> las publicaciones relacionadas."
+msgstr "Generates <strong>automatically</strong> related posts."
+
+#: src/Admin/tpl/metaRelated.php:7
+msgid ""
+"Se generarán con un algoritmo de aleatoridad a partir de las categorías y "
+"etiquetas asociadas a la publicación."
+msgstr ""
+"Will be generated with a random algorithm from categories/tags associated to "
+"post"
+
+#: src/Admin/tpl/metaRelated.php:13
+msgid "Seleccionar <strong>manualmente</strong> 3 publicaciones relacionadas."
+msgstr "Select <strong>manually</strong> 3 related posts."
+
+#: src/Admin/tpl/metaRelated.php:22
+msgid "Entradas"
+msgstr "Posts"
+
+#: src/Admin/tpl/metaRelated.php:23 src/Admin/tpl/metaRelated.php:57
+msgid "Pulsa retorno o intro para abrir esta sección"
+msgstr "Press return or enter to open this section"
+
+#: src/Admin/tpl/metaRelated.php:29 src/Admin/tpl/metaRelated.php:64
+msgid "Más reciente"
+msgstr "More recent"
+
+#: src/Admin/tpl/metaRelated.php:49
+msgid "Buscar artículo"
+msgstr "Search post"
+
+#: src/Admin/tpl/metaRelated.php:56
+msgid "Páginas"
+msgstr "Pages"
+
+#: src/Admin/tpl/metaRelated.php:84
+msgid "Buscar página"
+msgstr "Search page"
+
+#: src/Admin/tpl/metaRelated.php:95
+msgid "Publicaciones seleccionadas"
+msgstr "Selected posts"
+
+#. Name of the theme
+msgid "Openweb Theme"
+msgstr "Openweb Theme"
+
+#. Description of the theme
+msgid "Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."
+msgstr "Theme for Wordpress based on Coronita initiative from UX BBVA Team."
+
+#. URI of the theme
+msgid "http://webpublicas.bbva.com"
+msgstr "http://webpublicas.bbva.com"
+
+#. Author of the theme
+msgid "OpenWeb Team. (@OpenWebTeam)"
+msgstr "OpenWeb Team. (@OpenWebTeam)"

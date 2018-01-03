@@ -1,0 +1,34 @@
+.openweb-accordion-container {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.accordion-section .openweb-tabs ul {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.openweb-tabs div.ui-tabs-panel {
+    min-height: 42px;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0 .9em;
+    border: 1px solid #ddd;
+    background-color: #fdfdfd;
+}
+#image-page-author-preview {
+    display: block;
+    height: auto;
+    width: 300px;
+    margin-bottom: 5px;
+}
+.openweb-mandatory:before {
+    content: ' * ';
+}
+.openweb-mandatory {
+    color: #ff0000;
+}
+.openweb-error {
+    border: 1px solid #ff0000 !important;
+}

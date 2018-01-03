@@ -1,0 +1,242 @@
+.item-category:before {
+    font-family: 'coronita';
+    content: '\E948';
+}
+ul.category-content li:before, ul.openweb-cloud-tag li:before {
+    content: '' !important;
+}
+ul.category-content, ul.openweb-cloud-tag {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    display: block;
+}
+ul.openweb-cloud-tag {
+    background: #F4F4F4;
+    padding: 0.2em 0.7em 0.0em 0.7em;
+    box-shadow: 0 1px 1px 0 #d3d3d3;
+    margin-bottom: 2.0em;
+    font-family: "BentonSansBBVA Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+ul.category-content li:first-child, ul.openweb-cloud-tag li:first-child {
+    padding-left: 0;
+}
+ul.category-content li, ul.openweb-cloud-tag li {
+    list-style-type: none;
+    display: inline-flex;
+}
+ul.openweb-cloud-tag li a {
+    color: #666666;
+    font-style: italic;
+}
+ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
+    color: #0f0f0f;
+}
+.item-category:before {
+    font-size: 1.4rem;
+    color: #5bbeff;
+    margin-right: 1em;
+    margin-left: .5em;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#sidr-main input[type="text"] {
+    margin-left: 0.1rem;
+}
+/* Login */
+#login-in-mobile {
+    color: #121212;
+}
+#login-in-mobile .btn,
+#header-sign-in .btn {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 2em;
+    white-space: nowrap;
+    height: 45px;
+}
+
+#login-in-mobile .sign-in-wrapper,
+#header-sign-in .sign-in-wrapper {
+    background: #fff;
+}
+#login-in-mobile h2.h3
+#header-sign-in h2.h3 {
+    font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+#login-in-mobile h2.h3 {
+    padding-top: 1.0em;
+}
+#header-sign-in .input-control,
+#login-in-mobile .input-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1.4em;
+    position: relative;
+    width: 92%;
+}
+
+#header-sign-in .input-control input[type="text"],
+#header-sign-in .input-control input[type="password"],
+#login-in-mobile .input-control input[type="text"],
+#login-in-mobile .input-control input[type="password"] {
+    background-color: #F4F4F4;
+    border: none;
+    box-shadow: inset 0 1px 0 0 #ececec;
+    color: #121212;
+    font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    outline: none;
+    padding: 0.75em 1em 0.75em 3em;
+    width: auto;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 1 auto;
+    -ms-flex: 2 1 auto;
+    flex: 2 1 auto;
+}
+
+#header-sign-in .remember-me label,
+#login-in-mobile .remember-me label {
+    color: #666666;
+    cursor: pointer;
+    font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#login-in-mobile .sign-in-close {
+    color: #bdbdbd;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 2em;
+    z-index: 3;
+}
+#header-sign-in .sign-in-close {
+    right: 0;
+}
+#header-sign-in .input-control[class*=" icon-"]::before,
+#login-in-mobile .input-control[class*=" icon-"]::before {
+    color: #bdbdbd;
+    font-family: 'coronita';
+    margin-left: 1.1em;
+    margin-top: 0.7em;
+    position: absolute;
+}
+#header-sign-in .input-control.icon-username::before,
+#login-in-mobile .input-control.icon-username::before {
+    content: "\E93A";
+}
+#header-sign-in .input-control.icon-lock::before,
+#login-in-mobile .input-control.icon-lock::before {
+    content: "\E92F";
+}
+.cq-searchpromote-results p em {
+    font-style: normal;
+}
+footer .logo img {
+    width: auto !important;
+}
+body > header.container-fluid #logo img, body > header.container-fluid #logo-mobile img {
+    width: auto !important;
+}
+
+body > header.container-fluid .main-nav ul {
+    margin-left: 120px !important;
+}
+#sidr-main a#sidr-id-logo img {
+    width: 80px !important;
+}
+
+body > header.container-fluid .main-nav ul li a, body > header.container-fluid .secondary-nav ul li a {
+    cursor: pointer;
+}
+body > header.container-fluid .main-nav ul li a.active {
+    color: #ffffff;
+}
+
+body > header.container-fluid .main-nav ul.sub-menu, body > header.container-fluid .secondary-nav ul.sub-menu {
+    display: none;
+}
+.link-submenu {
+    display: inline-block;
+    padding-left: 0.5em;
+    font-size: 0.7em;
+}
+.link-submenu:before {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#signon-error-msg {
+    margin-top: 2.0em;
+    display: none;
+}
+
+form#openweb-form-register label.required:after {
+    color: #CB353A;
+    content: '*';
+    display:inline;
+    padding-left: .3em;
+}
+form#openweb-form-register input.error {
+    border: 1px solid #CB353A;
+    background: #FCDFDF;
+}
+
+div.error-info:before {
+    content: url(../img/error.png);
+    margin-right: 8px;
+    vertical-align: sub;
+}
+div.error-info {
+    font-size: 1.2rem;
+    color: #121212;
+    line-height: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.message {
+    padding: 1.5em;
+    margin: 1em 0;
+    display: none;
+}
+.message-error {
+    border: 1px solid #CB353A;
+    background: #FCDFDF;
+}
+.message-success {
+    border: 1px solid #277A3E;
+    background: #D9EFE0;
+}
+div.message span.icon {
+    vertical-align: middle;
+}
+#login-openweb-lg, #login-openweb-mobile {
+    color: #f8cd51;
+    margin-right: 0.6em;
+    padding: 0.1em 1em 0 1em;
+    display: none;
+}
+#login-openweb-mobile {
+    float: right;
+}
