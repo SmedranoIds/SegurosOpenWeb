@@ -132,6 +132,7 @@ while (have_posts()) {
         <div class="row">
 
             <div class="col-md-8 datosSeguro">
+                
                 <!-- Titulo sin banner -->
                 <?php if( get_field('titulosinbanner') ): ?>
                     <h1 class="titulo"><?php the_field('titulosinbanner'); ?></h1>
