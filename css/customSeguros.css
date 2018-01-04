@@ -297,7 +297,7 @@ h4.panel-title {
 li.icon-pdf{
     list-style-image: none;
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 li.icon-pdf:before{
     content: '';
