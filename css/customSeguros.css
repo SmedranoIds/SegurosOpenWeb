@@ -153,7 +153,6 @@ p.descripcion {
     color: #999999;
 }
 .icon {
-    /*background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);*/
     background-repeat: no-repeat;
     display: inline-block;
     width: 32px;
@@ -162,7 +161,8 @@ p.descripcion {
     vertical-align: text-top;
 }
 .chat {
-    background-position: 0 -1218px;
+  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
+  background-position: 0 -1218px;
 }
 a.chat {
     font-family: BentonSansBBVALight;
