@@ -191,7 +191,7 @@ while (have_posts()) {
                                     endwhile;
                                     endif;
                                     ?>
-                                    <br>
+                                    <!-- <br> -->
                                 <?php
                                 endwhile;
                                 endif;
