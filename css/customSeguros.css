@@ -152,7 +152,8 @@ p.descripcion {
     line-height: 20px;
     color: #999999;
 }
-.icon {
+.iconSprite {
+	background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 32px;
@@ -161,7 +162,6 @@ p.descripcion {
     vertical-align: text-top;
 }
 .chat {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
   background-position: 0 -1218px;
 }
 a.chat {
@@ -544,6 +544,16 @@ li.icon-pdf:before{
 .sintop{
   margin-top: 0;
 }
+.button-styles{
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+.posImg {
+	float: left;
+	padding-right: 20px;
+	margin-top: 12px;
+}
 /*content*/
 /*responsive*/
 @media (max-width: 992px){
@@ -556,6 +566,25 @@ li.icon-pdf:before{
 .table-responsive {
     display: block;
   }
+}
+@media (max-width: 995px){
+	.float-square{
+	}
+	.float-square2{
+		border: 2px solid rgba(0,0,0,.125);
+	}
+	.float-square3{
+		border: 2px solid rgba(0,0,0,.125);
+	}
+}
+@media (min-width: 995px){
+	.float-square{
+		border: 2px solid rgba(0,0,0,.125);
+	}
+	.float-square2{
+		border-right: 2px solid rgba(0,0,0,.125);
+		padding-bottom: 21px;
+	}
 }
 /*responsive*/
 

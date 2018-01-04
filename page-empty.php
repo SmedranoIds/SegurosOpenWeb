@@ -36,7 +36,7 @@ while (have_posts()) {
 				<div class="panel panel-default text-center">
 			  		<div class="panel-body bordeCuadros">
 			  			<a class="chat posIcon", href="", onclick="openChat(href);">
-			  				<i class="icon chat"></i>
+			  				<i class="iconSprite chat"></i>
 			  				Chat</br>
 			  				
 			  				

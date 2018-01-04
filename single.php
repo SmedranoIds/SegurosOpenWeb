@@ -249,7 +249,7 @@ while (have_posts()) {
 							<div class="panel panel-default text-center">
 							  <div class="panel-body bordeCuadros">
 							  	<a class="chat posIcon", href="", onclick="openChat();">
-							  		<i class="icon chat"></i>
+							  		<i class="iconSprite chat"></i>
 							  		Chat
 							  	</a>
 							  </div>
@@ -262,7 +262,7 @@ while (have_posts()) {
 									<div class="panel panel-default text-center">
 									  <div class="panel-body bordeCuadros">
 									  	<a class="chat posIcon", href="<?php the_sub_field('url') ?>" target="_blank">
-									  		<i class="icon <?php the_sub_field('imgclase') ?>"></i>
+									  		<i class="iconSprite <?php the_sub_field('imgclase') ?>"></i>
 									  		<?php the_sub_field('titulo') ?>
 									  	</a>
 									  	

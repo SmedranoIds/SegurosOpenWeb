@@ -11,37 +11,6 @@
 
 get_header();
 ?>
-						<style>
-						@media (max-width: 995px){
-							.float-square{
-							}
-							.float-square2{
-								border: 2px solid rgba(0,0,0,.125);
-							}
-							.float-square3{
-								border: 2px solid rgba(0,0,0,.125);
-							}
-						}
-						@media (min-width: 995px){
-							.float-square{
-								border: 2px solid rgba(0,0,0,.125);
-							}
-							.float-square2{
-								border-right: 2px solid rgba(0,0,0,.125);
-								padding-bottom: 21px;
-							}
-						}
-							.button-styles{
-								border-radius: 5px 5px 5px 5px;
-								-moz-border-radius: 5px 5px 5px 5px;
-								-webkit-border-radius: 5px 5px 5px 5px;
-							}
-							.posImg {
-								float: left;
-								padding-right: 20px;
-								margin-top: 12px;
-							}
-						</style>
 
 <?php
 while (have_posts()) {
@@ -97,7 +66,7 @@ while (have_posts()) {
 						<div class="panel panel-default text-center">
 					  		<div class="panel-body bordeCuadros">
 					  			<a class="chat posIcon", href="", onclick="openChat(href);">
-					  				<i class="icon chat"></i>
+					  				<i class="iconSprite chat"></i>
 					  				Chat</br>
 					  				
 					  				
