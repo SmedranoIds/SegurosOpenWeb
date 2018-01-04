@@ -106,7 +106,7 @@ $theme = \OpenWeb\Theme::getInstance();
                             'container'       => '',
                             'menu_id'         => 'secondary-menu',
                             'theme_location'  => 'secondary',
-                            'menu_class'      => '',
+                            'menu_class'      => 'searchIcon',
                             'depth'           => 1,
                         ]);
                         ?>
