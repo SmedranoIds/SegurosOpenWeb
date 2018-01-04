@@ -516,24 +516,24 @@ li.icon-pdf:before{
   list-style: none;
 }
 .estDec {
-    list-style: decimal;
+  list-style: decimal;
 }
 .spaceAnio{
   padding-right: 25px;
 }
 /*estilo listas*/
 .titletablaV{
-  background-color: #edf0ec;
-    color: #333333;
-    text-transform: none; 
+  background-color: #072146;
+  color: #ffffff;
+  text-transform: none; 
 }
 .nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 .nav-tabs > li > a {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 .panelHgt {
   height: 160px;
