@@ -53,7 +53,8 @@ endif; ?>
                     'container'       => 'nav',
                     'theme_location'  => 'footer-links',
                     'menu_class'      => '',
-                    'container_class' => 'row',
+                    //'container_class' => 'row',
+                    'container_class' => '',
                     'depth'           => 1,
                 ]);
             }
