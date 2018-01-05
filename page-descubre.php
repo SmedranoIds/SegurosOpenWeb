@@ -197,11 +197,6 @@ while (have_posts()) {
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-<div class="content" style="background: #eee;">
-  <div class="row">
-    <div class="space"></div>
-  </div>
-</div>
 </div>
 
 
