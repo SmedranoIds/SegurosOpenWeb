@@ -39,3 +39,5 @@ require_once OPENWEB_THEME_PATH.'/vendor/autoload.php';
 
 $theme = \OpenWeb\Theme::getInstance();
 $theme->init();
+
+remove_action('wp_head', 'wp_generator');
