@@ -17,6 +17,15 @@ while (have_posts()) {
     the_post();
 }
 ?>
+<section class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+      <h1 class="titulo">Conoce las coberturas que HogarSeguro te ofrece:</h1>
+    </div>
+  </div>
+  
+</section>
 <div id="carousel-example" class="carousel slide" data-ride="carousel" style="background: #eee; height: 620px;">
   
 
@@ -198,6 +207,15 @@ while (have_posts()) {
     <span class="sr-only">Next</span>
   </a>
 </div>
+<section class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+      <h1 class="titulo"> <br></h1>
+    </div>
+  </div>
+  
+</section>
 
 
 <?php get_footer();
