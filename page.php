@@ -10,6 +10,7 @@
  */
 get_header(); ?>
 
+<!-- page -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->

@@ -14,6 +14,8 @@ get_header();
 while (have_posts()) {
     the_post();
 ?>
+
+<!-- single  -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
@@ -244,69 +246,113 @@ while (have_posts()) {
 					    </div>
 					</div>
 				<?php  endif; ?>
+
+
+
+				<!-- cuadro auto alerta -->
+				<?php 
+					if( have_rows('autoalerta')): 
+						while ( have_rows('autoalerta') ) : the_row();
+					?>
+					<div class="panel panel-default">
+					<div class="panel-body">
+					<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
+						<p>
+							<?php if(get_sub_field('imgautoalerta')):?>
+								<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
+							<?php endif;?>
+							<?php the_sub_field('desc_autoalerta') ?>
+							<br>
+							<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
+							<br>
+							
+						</p>
+					</div>
+					</div>
+				<?php 
+					endwhile;
+					endif;
+				?>
+				<!-- end auto alerta -->
+
+
+
+
 			</div>
+			<!-- end left column -->
+
+			<!-- right column -->
 			<div class="col-md-4 col-xs-12">
-							<div class="panel panel-default text-center">
-							  <div class="panel-body bordeCuadros">
-							  	<a class="chat posIcon", href="", onclick="openChat();">
-							  		<i class="iconSprite chat"></i>
-							  		Chat
-							  	</a>
-							  </div>
+				<div class="panel panel-default text-center">
+					<div class="panel-body bordeCuadros">
+						<a class="chat posIcon", href="", onclick="openChat();">
+							<i class="iconSprite chat"></i>
+							Chat
+						</a>
+					</div>
+				</div>
+					<?php
+				if( have_rows('cuadrochat2') ):
+					if( have_rows('cuadrochat2') ):
+						while ( have_rows('cuadrochat2') ) : the_row(); 
+					?>
+						<div class="panel panel-default text-center">
+							<div class="panel-body bordeCuadros">
+								<a class="chat posIcon", href="<?php the_sub_field('url') ?>" target="_blank">
+									<i class="iconSprite <?php the_sub_field('imgclase') ?>"></i>
+									<?php the_sub_field('titulo') ?>
+								</a>
+								
 							</div>
-								<?php
-							if( have_rows('cuadrochat2') ):
-								if( have_rows('cuadrochat2') ):
-								  while ( have_rows('cuadrochat2') ) : the_row(); 
-								?>
-									<div class="panel panel-default text-center">
-									  <div class="panel-body bordeCuadros">
-									  	<a class="chat posIcon", href="<?php the_sub_field('url') ?>" target="_blank">
-									  		<i class="iconSprite <?php the_sub_field('imgclase') ?>"></i>
-									  		<?php the_sub_field('titulo') ?>
-									  	</a>
-									  	
-									  </div>
-									</div>
-								<?php
-								  endwhile;
-								endif;
-							endif;
-								?>
-							<?php
-							if( have_rows('cuadroblanco') ):
-							  while ( have_rows('cuadroblanco') ) : the_row(); 
-							?>
-							<div class="panel panel-default <?php the_sub_field('clase') ?>">
-							  <div class="panel-body bordeCuadros">
-							  	<h2><?php the_sub_field('titulocuadro') ?></h2>
-							  	<div class="row">
-							  		<div class="col-md-7 col-sm-7">
-									  	<p class="descripcion"><?php the_sub_field('descripcioncuadro') ?></p>
-									  	
-							  		</div>
-							  		<div class="col-md-5 col-sm-5 text-center">
-							  			<img class="imgCuadros", src="<?php the_sub_field('img') ?>" alt="">
-							  		</div>
-							  	</div>
-							  	<?php if( get_sub_field('ligaproducto') ): ?>
-								  	<a class="cuadro", href="<?php the_sub_field('ligaproducto') ?>">
-								  		<?php the_sub_field('leyendaurl') ?>
-								  		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								  		
-									</a>
-								<?php endif; ?>
-							  </div>
-							</div>
-							<?php
-							  endwhile;
-							endif;
-							?>
 						</div>
+					<?php
+						endwhile;
+					endif;
+				endif;
+					?>
+				<?php
+				if( have_rows('cuadroblanco') ):
+					while ( have_rows('cuadroblanco') ) : the_row(); 
+				?>
+				<div class="panel panel-default <?php the_sub_field('clase') ?>">
+					<div class="panel-body bordeCuadros">
+						<h2><?php the_sub_field('titulocuadro') ?></h2>
+						<div class="row">
+							<div class="col-md-7 col-sm-7">
+								<p class="descripcion"><?php the_sub_field('descripcioncuadro') ?></p>
+								
+							</div>
+							<div class="col-md-5 col-sm-5 text-center">
+								<img class="imgCuadros", src="<?php the_sub_field('img') ?>" alt="">
+							</div>
+						</div>
+						<?php if( get_sub_field('ligaproducto') ): ?>
+							<a class="cuadro", href="<?php the_sub_field('ligaproducto') ?>">
+								<?php the_sub_field('leyendaurl') ?>
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								
+						</a>
+					<?php endif; ?>
+					</div>
+				</div>
+				<?php
+					endwhile;
+					endif;
+				?>
+				
+			</div>
+			<!-- end right column -->
+
+
+
 		</div>
 	</div>
+
+
 <?php
 }
+
+
 
 get_footer();
 ?>

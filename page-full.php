@@ -17,6 +17,7 @@ while (have_posts()) {
     the_post();
 }
 ?>
+<!-- page full -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
@@ -198,63 +199,62 @@ while (have_posts()) {
 		<?php if( get_field('subtitulo2') ):	?>
 			<div role="tabpanel" class="tab-pane" id="profile">
 				<div class="row">
-						<div class="col-md-12">
-							<?php 
-							if( have_rows('cuadrosegurosgris2') ):
-							  while ( have_rows('cuadrosegurosgris2') ) : the_row(); 
-							?>
-							<div class="col-md-4">
-								<div class="panel panel-default">
-									  <div class="panel-body cuadrosIndex">
-									  	<h3>
-									  		<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
-									  	</h3>
-									  	<div class="row">
-									  		<div class="col-md-12 col-sm-7">
-									  			<span>
-											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
-											  	</span>
-									  		</div>
-									  	</div>
-									  </div>
-								</div>
+					<div class="col-md-12">
+						<?php 
+						if( have_rows('cuadrosegurosgris2') ):
+							while ( have_rows('cuadrosegurosgris2') ) : the_row(); 
+						?>
+						<div class="col-md-4">
+							<div class="panel panel-default">
+									<div class="panel-body cuadrosIndex">
+									<h3>
+										<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
+									</h3>
+									<div class="row">
+										<div class="col-md-12 col-sm-7">
+											<span>
+												<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
+											</span>
+										</div>
+									</div>
+									</div>
 							</div>
+						</div>
+						<?php
+							endwhile;
+						endif;
+						?>
+					</div>
+				</div>
+			<?php endif; ?>
+			<?php if(get_field('listaproducto2')): ?>
+		        <div class="container">
+					<div class="row">
+						<div class="col-md-8 lista">
+							<div class="col-md-12">
+								<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
+							</div>
+							<?php 
+							if( have_rows('listaproducto2') ):
+								while ( have_rows('listaproducto2') ) : the_row(); 
+							?>
+								<div class="col-md-12">
+									<a href="<?php the_sub_field('ligaproducto') ?>">
+										<h3><?php the_sub_field('tituloproducto') ?></h3>
+									</a>
+									<a href="<?php the_sub_field('ligaproducto') ?>">
+										<p><?php the_sub_field('resumenproducto') ?></p>
+									</a>
+									<hr>
+								</div>
 							<?php
-							  endwhile;
+								endwhile;
 							endif;
 							?>
 						</div>
 					</div>
+				</div>
 			<?php endif; ?>
-			<?php if(get_field('listaproducto2')): ?>
-		        <div class="container">
-							<div class="row">
-								<div class="col-md-8 lista">
-									<div class="col-md-12">
-										<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
-									</div>
-									<?php 
-									if( have_rows('listaproducto2') ):
-									  while ( have_rows('listaproducto2') ) : the_row(); 
-									?>
-										<div class="col-md-12">
-											<a href="<?php the_sub_field('ligaproducto') ?>">
-												<h3><?php the_sub_field('tituloproducto') ?></h3>
-											</a>
-											<a href="<?php the_sub_field('ligaproducto') ?>">
-												<p><?php the_sub_field('resumenproducto') ?></p>
-											</a>
-											<hr>
-										</div>
-									<?php
-									  endwhile;
-									endif;
-									?>
-								</div>
-							</div>
-						</div>
-			<?php endif; ?>
-
 
 		<!-- </div>-->
     </div>

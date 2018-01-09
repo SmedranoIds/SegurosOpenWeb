@@ -14,6 +14,7 @@ get_header();
 while (have_posts()) {
     the_post();
 ?>
+<!-- page single -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
