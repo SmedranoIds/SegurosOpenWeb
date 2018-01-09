@@ -96,6 +96,7 @@ ol {
   ol li {
     margin: 0 0 0 1em;
     position: relative;
+    padding: 0 !important;
     /*&:before {
       content:counter(li); // Use the counter as content 
       counter-increment:li; // Increment the counter by 1 
