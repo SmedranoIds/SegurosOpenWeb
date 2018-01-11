@@ -283,6 +283,8 @@ while (have_posts()) {
 
 			<!-- right column -->
 			<div class="col-md-4 col-xs-12">
+			
+					<?php if(!get_post_type_object('empresas')): ?>
 				<div class="panel panel-default text-center">
 					<div class="panel-body bordeCuadros">
 						<a class="chat posIcon", href="", onclick="openChat();">
@@ -291,7 +293,10 @@ while (have_posts()) {
 						</a>
 					</div>
 				</div>
-					<?php
+				<?php endif; ?>
+
+				<!-- 
+				<?php
 				if( have_rows('cuadrochat2') ):
 					if( have_rows('cuadrochat2') ):
 						while ( have_rows('cuadrochat2') ) : the_row(); 
@@ -310,6 +315,8 @@ while (have_posts()) {
 					endif;
 				endif;
 					?>
+				-->
+				
 				<?php
 				if( have_rows('cuadroblanco') ):
 					while ( have_rows('cuadroblanco') ) : the_row(); 
