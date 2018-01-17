@@ -284,7 +284,7 @@ while (have_posts()) {
 			<!-- right column -->
 			<div class="col-md-4 col-xs-12">
 			
-					<?php if(!get_post_type_object('empresas')): ?>
+				<?php //if(!get_post_type_object('empresas')): ?>
 				<div class="panel panel-default text-center">
 					<div class="panel-body bordeCuadros">
 						<a class="chat posIcon", href="", onclick="openChat();">
@@ -294,7 +294,7 @@ while (have_posts()) {
 						</a>
 					</div>
 				</div>
-				<?php endif; ?>
+				<?php //endif; ?>
 
 				<!-- 
 				<?php
