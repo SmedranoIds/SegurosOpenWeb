@@ -153,7 +153,7 @@ p.descripcion {
     color: #999999;
 }
 .iconSprite {
-	background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
+	background: url(../../../uploads/2017/12/icons32bbva.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 32px;
@@ -302,13 +302,17 @@ li.icon-pdf{
 li.icon-pdf:before{
     content: '';
     display: inline-block;
-    height: 15px;
+    /* height: 15px;
     width: 15px;
+    top: 3px; */
+    height: 25px;
+    width: 20px;
+    top: 6px;
     position: relative;
-    background-image: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icn_pdf.png);
-    background-size: cover;
+    background-image: url(../../../uploads/2018/01/icon-pdf.svg);
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
     left: -5px;
-    top: 3px;
 }
 /*.whitSpace {
       margin: 10px 0 10px;
@@ -501,7 +505,7 @@ li.icon-pdf:before{
   font-weight: bold;
 }
 .panel-heading a:after {
-    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/closed.png);
+    content: url(../../../uploads/2017/12/closed.png);
     background-repeat: no-repeat;
     height: 32px;
     margin: -11px -5px;
@@ -509,7 +513,7 @@ li.icon-pdf:before{
     float: right;
 }
 .panel-heading a.collapsed:after {
-    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/open.png);
+    content: url(../../../uploads/2017/12/open.png);
 }
 /*estilo listas*/
 .sinEst{
@@ -647,111 +651,111 @@ li.icon-pdf:before{
   height: 52px;
 }
 .incendio {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/incendio.png);
+  background: url(../../../uploads/2018/01/incendio.png);
   background-repeat: no-repeat; 
 }
 .terremoto {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/terremoto.png);
+  background: url(../../../uploads/2018/01/terremoto.png);
   background-repeat: no-repeat;
 }
 .gota {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/gota.png);
+  background: url(../../../uploads/2018/01/gota.png);
   background-repeat: no-repeat;
 }
 .extension {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/extension.png);
+  background: url(../../../uploads/2018/01/extension.png);
   background-repeat: no-repeat;
 }
 .gastos {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/gastos.png);
+  background: url(../../../uploads/2018/01/gastos.png);
   background-repeat: no-repeat;
 }
 .escombros {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/escombros.png);
+  background: url(../../../uploads/2018/01/escombros.png);
   background-repeat: no-repeat;
 }
 .robo {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/robo.png);
+  background: url(../../../uploads/2018/01/robo.png);
   background-repeat: no-repeat;
 }
 .equipo {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/equipo.png);
+  background: url(../../../uploads/2018/01/equipo.png);
   background-repeat: no-repeat;
 }
 .cristales {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/cristales.png);
+  background: url(../../../uploads/2018/01/cristales.png);
   background-repeat: no-repeat;
 }
 .familia {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/familia.png);
+  background: url(../../../uploads/2018/01/familia.png);
   background-repeat: no-repeat;
 }
 .asistencia {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/asistencia.png);
+  background: url(../../../uploads/2018/01/asistencia.png);
   background-repeat: no-repeat;
 }
 
 .casaIncendio {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casaLlamas.png);
+  background: url(../../../uploads/2018/01/casaLlamas.png);
   width: 158px;
   height: 154px;
 }
 .casita {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casita.png);
+  background: url(../../../uploads/2018/01/casita.png);
   background-repeat: no-repeat;
   width: 128px;
   height: 110px;
 }
 .nube {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/nube.png);
+  background: url(../../../uploads/2018/01/nube.png);
   background-repeat: no-repeat;
   width: 128px;
   height: 70px;
 }
 .arbolCaido {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/arbolCaido.png);
+  background: url(../../../uploads/2018/01/arbolCaido.png);
   background-repeat: no-repeat;
   width: 118px;
   height: 150px;
 }
 .carroCasita {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/carroCasita.png);
+  background: url(../../../uploads/2018/01/carroCasita.png);
   background-repeat: no-repeat;
   width: 138px;
   height: 160px;
 }
 .casitaEscombros {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casitaEscombros.png);
+  background: url(../../../uploads/2018/01/casitaEscombros.png);
   background-repeat: no-repeat;
   width: 108px;
   height: 110px;
 }
 .ladron {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/ladron.png);
+  background: url(../../../uploads/2018/01/ladron.png);
   background-repeat: no-repeat;
   width: 88px;
   height: 60px;
 }
 .casitaEquipo {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casitaEquipo.png);
+  background: url(../../../uploads/2018/01/casitaEquipo.png);
   background-repeat: no-repeat;
   width: 128px;
   height: 110px;
 }
 .casaCristales {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casaCristales.png);
+  background: url(../../../uploads/2018/01/casaCristales.png);
   background-repeat: no-repeat;
   width: 108px;
   height: 110px;
 }
 .casaFamilia {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casaFamilia.png);
+  background: url(../../../uploads/2018/01/casaFamilia.png);
   background-repeat: no-repeat;
   width: 128px;
   height: 110px;
 }
 .casaGrifo {
-  background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/01/casaGrifo.png);
+  background: url(../../../uploads/2018/01/casaGrifo.png);
   background-repeat: no-repeat;
   width: 118px;
   height: 110px;
