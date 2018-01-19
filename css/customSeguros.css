@@ -204,7 +204,7 @@ a.chat {
     max-width: 100%;
 }
 .imgCuadros {
-    max-width: 100%;
+    max-width: 100px;
     border-radius: 4px;
     margin-top: 15px;
 }
