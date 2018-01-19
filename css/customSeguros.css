@@ -150,7 +150,8 @@ p.descripcion {
   font-family: BentonSansBBVALight;
     font-size: 14px;
     line-height: 20px;
-    color: #999999;
+    /* color: #999999; */
+    color: #666;
 }
 .iconSprite {
 	background: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/icons32bbva.png);
@@ -205,6 +206,7 @@ a.chat {
 .imgCuadros {
     max-width: 100%;
     border-radius: 4px;
+    margin-top: 15px;
 }
 .panel-body h2 {
     font-size: 18px;
@@ -301,9 +303,23 @@ h4.panel-title {
 }
 
 .panel-default>.panel-heading {
-    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#f4f7f8), to(white));
-    background-image: -webkit-linear-gradient(bottom, #f4f7f8, white);
+    /* background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#f4f7f8), to(white));
+     background-image: -webkit-linear-gradient(bottom, #f4f7f8, white); */
+     background-image: linear-gradient(to bottom, white, #f4f7f8) !important;
+     box-shadow: unset !important ;
+     border-bottom: 0 !important;
 }
+.panel-default>.panel-collapse{
+  border-top: 1px solid #ddd;
+}
+.info-col-der .panel {
+  box-shadow: unset !important;
+}
+.info-col-der .bordeCuadros {
+    border: 0 !important;
+}
+
+
 li.icon-pdf {
     list-style-image: none;
     list-style-type: none;
@@ -771,3 +787,7 @@ li.icon-pdf:before{
   height: 110px;
 }
 /*banner*/
+
+.secondary-nav{
+  display: none;
+}

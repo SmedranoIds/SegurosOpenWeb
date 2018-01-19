@@ -275,14 +275,12 @@ while (have_posts()) {
 				?>
 				<!-- end auto alerta -->
 
-
-
-
 			</div>
 			<!-- end left column -->
 
+
 			<!-- right column -->
-			<div class="col-md-4 col-xs-12">
+			<div class="col-md-4 col-xs-12 info-col-der">
 			
 				<?php //if(!get_post_type_object('empresas')): ?>
 				<div class="panel panel-default text-center">
