@@ -14,10 +14,10 @@ get_header();
 
 <?php
 while (have_posts()) {
-    the_post();
+the_post();
 }
 ?>
-
+<!-- mapa -->
 <section class="container-fluid">
     <div class="container">
       <h1 class="titulo"><?php echo the_title_attribute(); ?></h1>

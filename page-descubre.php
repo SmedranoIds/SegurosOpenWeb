@@ -11,7 +11,7 @@
 
 get_header();
 ?>
-
+<!-- page descubre -->
 <?php
 while (have_posts()) {
     the_post();

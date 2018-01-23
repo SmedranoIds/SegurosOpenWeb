@@ -150,7 +150,7 @@ while (have_posts()) {
 											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
 											  	</span>
 											  <?php if(get_sub_field('urlboton')): ?>
-											  	<a class="vista" href="<?php the_sub_field('urlboton') ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton') ?></button></a>
+											  	<a class="vista" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton') ?></button></a>
 											 <?php else: ?>
 											 	<br>
 											 <?php endif; ?>
