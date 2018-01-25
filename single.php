@@ -314,7 +314,8 @@ while (have_posts()) {
 					endif;
 				endif;
 					?>
-				
+
+
 				
 				<?php
 				if( have_rows('cuadroblanco') ):
