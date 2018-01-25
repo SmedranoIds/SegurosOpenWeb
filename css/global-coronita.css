@@ -2747,13 +2747,15 @@ body > header.container-fluid {
         padding-left: 1em; }
         body > header.container-fluid .top-nav ul li a {
           color: #bdbdbd;
-          font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+          /* font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif; */
+          font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
           -webkit-transition: color 100ms linear 0s;
           transition: color 100ms linear 0s; }
           body > header.container-fluid .top-nav ul li a:hover {
             color: #fff; }
   body > header.container-fluid .main-nav ul {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.2rem;
     display: table;
     margin: -26px 0 0 295px;
     padding-bottom: 1.875em; }

@@ -234,12 +234,10 @@ a.cuadro {
 .separadordos{
   margin-top: 40px;  
 }
-@media only screen and (max-width: 962px) {
-    .outBlockG {
-        position: inherit;
-        width: inherit;
-    }
+ul li:before {
+  color: #2a86ca !important;
 }
+
 .cuadrosIndex {
     background-color: #f9f9f9;
     background-image: -moz-linear-gradient(top, #fefefe, #f1f1f1);
@@ -790,4 +788,22 @@ li.icon-pdf:before{
 
 .secondary-nav{
   display: none;
+}
+
+@media (min-width: 768px){
+  /*
+  .separador .row{
+    width: 100%;
+    max-width: 900px !important;
+    margin: 0 auto ;
+  }
+  */
+
+}
+
+@media only screen and (max-width: 962px) {
+  .outBlockG {
+      position: inherit;
+      width: inherit;
+  }
 }

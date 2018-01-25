@@ -77,6 +77,8 @@ $theme = \OpenWeb\Theme::getInstance();
                     ?>
                 <?php endif; ?>
 
+                <!-- btns acceso -->
+                <!-- 
                 <ul class="sidr-hidden">
                     <?php if (get_theme_mod('openweb_platform_security')): ?>
                         <li class="sign-in">
@@ -93,6 +95,26 @@ $theme = \OpenWeb\Theme::getInstance();
                         <?php endif; ?>
                     <?php endif; ?>
                 </ul>
+                -->
+
+                <ul class="sidr-hidden">
+                    <?php if (get_theme_mod('openweb_platform_security')): ?>
+                        <li class="sign-in">
+                            <!-- <a href="#header-sign-in" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false" -->
+                            <a href="#" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false"
+                               aria-controls="header-sign-in-mobile" data-logout="<?php _e('Cerrar sesión', 'openweb'); ?>">
+                                <?php echo __('Acceder', 'openweb'); ?>
+                            </a>
+                            <span id="login-openweb-lg"><?php _e('Hola', 'openweb'); ?></span>
+                        </li>
+                        <?php //if (($register = get_theme_mod('openweb_platform_security_register'))): ?>
+                            <li class="apply" id="register">
+                                <a href="<?php echo get_permalink($register); ?>"><?php echo __('Registro', 'openweb'); ?></a>
+                            </li>
+                        <?php // endif; ?>
+                    <?php endif; ?>
+                </ul>
+                <!-- end btns acceso -->
             </div>
 
             <?php if (get_theme_mod('openweb_platform_security')): ?>
