@@ -294,7 +294,7 @@ while (have_posts()) {
 				</div>
 				<?php //endif; ?>
 
-				<!-- 
+				
 				<?php
 				if( have_rows('cuadrochat2') ):
 					if( have_rows('cuadrochat2') ):
@@ -314,7 +314,7 @@ while (have_posts()) {
 					endif;
 				endif;
 					?>
-				-->
+				
 				
 				<?php
 				if( have_rows('cuadroblanco') ):
