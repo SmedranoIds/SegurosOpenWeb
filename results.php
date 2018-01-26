@@ -4,7 +4,7 @@
  * Template Post Type: page
  * Template Description: Plantilla para los resultados de la búsqueda en AWS CloudSearch
  *
- * @package OpenwebMod
+ * @package Openweb
  * @subpackage Coronita
  * @since OpenWeb Coronita 1.0
  */

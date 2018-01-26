@@ -4,7 +4,7 @@
  * Template Post Type: page
  * Template Description: Plantilla para páginas sólo con cabecera y pie.
  *
- * @package OpenwebMod
+ * @package Openweb
  * @subpackage Coronita
  * @since OpenWeb Coronita 1.0
  */

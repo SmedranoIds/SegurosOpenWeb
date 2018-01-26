@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package OpenwebMod
+ * @package Openweb
  * @subpackage Theme
  * @since 1.0
  * @version 1.0
