@@ -52,7 +52,7 @@ while (have_posts()) {
 						<div class="row tt3">
 							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>"  target="<?php the_field('target'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
+								<a href="<?php the_sub_field('boton'); ?>"  target="<?php the_field('target'); ?>" class="btn-sm btn-blue"><?php the_sub_field('texto-boton') ?></a>
 							</div>
 							<?php } ?>
 						</div>
@@ -128,6 +128,8 @@ while (have_posts()) {
 				</ul>
 		</div>
 	</div>
+
+	<!-- featured products -->
     <?php if(get_field('cuadrosegurosgris')): ?>
     	<!-- <div class="container">-->
     		<div class="tab-content">
@@ -138,6 +140,8 @@ while (have_posts()) {
 							if( have_rows('cuadrosegurosgris') ):
 							  while ( have_rows('cuadrosegurosgris') ) : the_row(); 
 							?>
+
+							<!-- BACKUP cuadros grises 
 							<div class="col-md-4">
 								<div class="panel panel-default">
 									  <div class="panel-body cuadrosIndex panelHgt">
@@ -150,7 +154,7 @@ while (have_posts()) {
 											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
 											  	</span>
 											  <?php if(get_sub_field('urlboton')): ?>
-											  	<a class="vista" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton') ?></button></a>
+											  	<a class="vista btn btn-xs btn-blue" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><?php the_sub_field('txt-boton') ?></a>
 											 <?php else: ?>
 											 	<br>
 											 <?php endif; ?>
@@ -159,6 +163,33 @@ while (have_posts()) {
 									  </div>
 								</div>
 							</div>
+							BK end cuadros grises -->
+							
+							<!-- cuadros grises -->
+							<div class="col-md-4">
+								<div class="panel panel-default">
+									  <div class="panel-body cuadrosIndex panelHgt">
+									  	<h3>
+									  		<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
+									  	</h3>
+									  	<div class="row">
+									  		<div class="col-md-12 col-sm-7">
+									  			<span>
+											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
+											  	</span>
+											  <?php if(get_sub_field('urlboton')): ?>
+											  	<a class="vista btn btn-xs btn-blue" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><?php the_sub_field('txt-boton') ?></a>
+											 <?php else: ?>
+											 	<br>
+											 <?php endif; ?>
+									  		</div>
+									  	</div>
+									  </div>
+								</div>
+							</div>
+							<!-- end cuadros grises -->
+							
+
 							<?php
 							  endwhile;
 							endif;

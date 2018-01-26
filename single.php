@@ -50,7 +50,7 @@ while (have_posts()) {
 						<div class="row tt3">
 							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>" target="_blank"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
+								<a href="<?php the_sub_field('boton'); ?>" target="_blank" class="btn-sm btn-blue"><?php the_sub_field('texto-boton') ?></a>
 							</div>
 							<?php } ?>
 						</div>
@@ -58,7 +58,7 @@ while (have_posts()) {
 						<div class="spacebanner"></div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('urlboton2'); ?>" target="_blank"><button type="button" class="btn"><?php the_sub_field('txt-boton2') ?></button></a>
+								<a href="<?php the_sub_field('urlboton2'); ?>" target="_blank" class="btn-sm btn-blue"><?php the_sub_field('txt-boton2') ?></a>
 							</div>
 						</div>
 						<?php  }?>
