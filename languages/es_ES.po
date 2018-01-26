@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Openweb Theme\n"
+"Project-Id-Version: Seguros OpenWeb Modified\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-06 15:37+0000\n"
 "PO-Revision-Date: 2017-06-06 16:30+0000\n"
@@ -337,13 +337,13 @@ msgid "Publicaciones seleccionadas"
 msgstr "Publicaciones seleccionadas"
 
 #. Name of the theme
-msgid "Openweb Theme"
-msgstr "TEMA Openweb Theme"
+msgid "Seguros OpenWeb Modified"
+msgstr "TEMA Seguros OpenWeb Modified"
 
 #. Description of the theme
-msgid "Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."
+msgid "Tema para Wordpress basado en la iniciativa Coronita del equipo UX BBVA. Ajustado para Seguros BBVA Bancomer México"
 msgstr ""
-"Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."
+"Tema para Wordpress basado en la iniciativa Coronita del equipo UX BBVA. Ajustado para Seguros BBVA Bancomer México"
 
 #. URI of the theme
 msgid "http://webpublicas.bbva.com"

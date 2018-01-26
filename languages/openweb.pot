@@ -326,11 +326,11 @@ msgid "Publicaciones seleccionadas"
 msgstr ""
 
 #. Name of the theme
-msgid "Openweb Theme"
+msgid "Seguros OpenWeb Modified"
 msgstr ""
 
 #. Description of the theme
-msgid "Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."
+msgid "Tema para Wordpress basado en la iniciativa Coronita del equipo UX BBVA. Ajustado para Seguros BBVA Bancomer México"
 msgstr ""
 
 #. URI of the theme

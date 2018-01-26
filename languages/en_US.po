@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Openweb Theme\n"
+"Project-Id-Version: Seguros OpenWeb Modified\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-06 15:37+0000\n"
 "PO-Revision-Date: 2017-06-06 16:28+0000\n"
@@ -37,7 +37,7 @@ msgid ""
 "El tema Openweb basado en Coronita sólo funciona a partir de las versiones 4."
 "4 de Wordpress"
 msgstr ""
-"Openweb Theme based on Coronita only works from 4.4 Wordpress's version"
+"Seguros OpenWeb Modified based on Coronita only works from 4.4 Wordpress's version"
 
 #: header.php:47 header.php:79 header.php:164
 msgid "Acceder"
@@ -332,12 +332,12 @@ msgid "Publicaciones seleccionadas"
 msgstr "Selected posts"
 
 #. Name of the theme
-msgid "Openweb Theme"
-msgstr "Openweb Theme"
+msgid "Seguros OpenWeb Modified"
+msgstr "Seguros OpenWeb Modified"
 
 #. Description of the theme
-msgid "Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."
-msgstr "Theme for Wordpress based on Coronita initiative from UX BBVA Team."
+msgid "Tema para Wordpress basado en la iniciativa Coronita del equipo UX BBVA. Ajustado para Seguros BBVA Bancomer México"
+msgstr "Theme for Wordpress based on Coronita initiative from UX BBVA Team. Ajustado para Seguros BBVA Bancomer México"
 
 #. URI of the theme
 msgid "http://webpublicas.bbva.com"
