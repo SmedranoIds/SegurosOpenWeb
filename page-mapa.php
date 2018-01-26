@@ -4,7 +4,7 @@
  * Template Post Type: page
  * Template Description: Plantilla para páginas.
  *
- * @package OpenWeb
+ * @package OpenwebMod
  * @subpackage Coronita
  * @since OpenWeb Coronita 1.0
  */

@@ -326,7 +326,7 @@ msgid "Publicaciones seleccionadas"
 msgstr ""
 
 #. Name of the theme
-msgid "Openweb Theme"
+msgid "Openweb Modified"
 msgstr ""
 
 #. Description of the theme

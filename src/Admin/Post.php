@@ -8,7 +8,7 @@ use OpenWeb\Utils;
 
 /**
  * Class Post
- * @package OpenWeb\Admin
+ * @package OpenwebMod\Admin
  */
 class Post extends Admin
 {

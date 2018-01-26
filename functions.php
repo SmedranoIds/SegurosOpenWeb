@@ -21,7 +21,7 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
- * @package OpenWeb
+ * @package OpenwebMod
  * @subpackage Theme
  * @since Theme 1.0
  */

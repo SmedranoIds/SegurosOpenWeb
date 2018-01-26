@@ -6,7 +6,7 @@ use OpenWeb\Admin;
 
 /**
  * Class Author
- * @package OpenWeb\Admin
+ * @package OpenwebMod\Admin
  * @todo add post_status only publish
  *
  */

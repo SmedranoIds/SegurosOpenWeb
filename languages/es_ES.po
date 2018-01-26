@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Openweb Theme\n"
+"Project-Id-Version: Openweb Modified\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-06 15:37+0000\n"
 "PO-Revision-Date: 2017-06-06 16:30+0000\n"
@@ -337,8 +337,8 @@ msgid "Publicaciones seleccionadas"
 msgstr "Publicaciones seleccionadas"
 
 #. Name of the theme
-msgid "Openweb Theme"
-msgstr "TEMA Openweb"
+msgid "Openweb Modified"
+msgstr "TEMA Openweb Modified"
 
 #. Description of the theme
 msgid "Tema para Wordpress basado en la inicitiva Coronita del equipo UX BBVA."

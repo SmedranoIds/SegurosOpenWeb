@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#author
  *
- * @package OpenWeb
+ * @package OpenwebMod
  * @subpackage Theme
  * @since 1.0
  * @version 1.0
