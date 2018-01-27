@@ -3,7 +3,7 @@
  * The template for displaying all single posts
  *
  *
- * @package Openweb
+ * @package OpenWeb
  * @subpackage Theme
  * @since 1.0
  * @version 1.0
@@ -50,7 +50,7 @@ while (have_posts()) {
 						<div class="row tt3">
 							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>" target="_blank" class="btn-sm btn-blue"><?php the_sub_field('texto-boton') ?></a>
+								<a href="<?php the_sub_field('boton'); ?>" target="_blank"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
 							</div>
 							<?php } ?>
 						</div>
@@ -58,7 +58,7 @@ while (have_posts()) {
 						<div class="spacebanner"></div>
 						<div class="row tt3">
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('urlboton2'); ?>" target="_blank" class="btn-sm btn-blue"><?php the_sub_field('txt-boton2') ?></a>
+								<a href="<?php the_sub_field('urlboton2'); ?>" target="_blank"><button type="button" class="btn"><?php the_sub_field('txt-boton2') ?></button></a>
 							</div>
 						</div>
 						<?php  }?>
@@ -131,12 +131,14 @@ while (have_posts()) {
 <div class="container separador">
 		<div class="row">
 			<div class="col-md-8 datosSeguro">
+
+				<!-- cuadros información -->
 				<?php 
 				$a = 0;
 				if( have_rows('informacion') ):
 				  while ( have_rows('informacion') ) : the_row(); 
 				?>
-				  <div class="panel panel-default ">
+				  <div class="panel panel-default">
 				    <div class="panel-heading" role="tab" id="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
 				      <h4 class="panel-title">
 				        <a class="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?> ">
@@ -144,7 +146,10 @@ while (have_posts()) {
 				        </a> 
 				      </h4>
 				    </div>
-				    <div id="collapse<?php echo $a ?>" class="panel-collapse collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+<!--
+				    <div id="collapse<?php echo $a ?>" class="panel-collapse collapse in <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+-->
+<div id="collapse<?php echo $a ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
 				      <div class="panel-body">
 				        <?php the_sub_field('contenido') ?>
 				      </div>
@@ -164,7 +169,7 @@ while (have_posts()) {
 					        </a>
 					      </h4>
 					    </div>
-					    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+					    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
 					      <div class="panel-body">
 					        <ul>
 					        	<?php 
@@ -229,7 +234,7 @@ while (have_posts()) {
 					        </a>
 					      </h4>
 					    </div>
-					    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+					    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
 					      <div class="panel-body">
 					      	<?php 
 								if( have_rows('preguntas') ):
@@ -286,7 +291,6 @@ while (have_posts()) {
 				<div class="panel panel-default text-center">
 					<div class="panel-body bordeCuadros">
 						<a class="chat posIcon", href="", onclick="openChat();">
-							<!-- <i class="iconSprite chat"></i> -->
 							<i class="iconChat"></i>
 							Chat
 						</a>
@@ -294,7 +298,7 @@ while (have_posts()) {
 				</div>
 				<?php //endif; ?>
 
-				
+				 
 				<?php
 				if( have_rows('cuadrochat2') ):
 					if( have_rows('cuadrochat2') ):
@@ -314,8 +318,7 @@ while (have_posts()) {
 					endif;
 				endif;
 					?>
-
-
+				
 				
 				<?php
 				if( have_rows('cuadroblanco') ):
