@@ -794,6 +794,31 @@ li.icon-pdf:before{
   float: right;
   margin-top: -38px !important;
 }
+.sign-in-wrapper{
+  padding-bottom: 20px;
+}
+
+.ids-btn-area-priv a{
+  padding: 1rem 2rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+body > header.container-fluid .main-nav ul:last-child li.sign-in {
+  padding-right: 0rem !important;
+}
+.sign-in a{
+  background: url('../img/user-icon.png') left center no-repeat;
+  background-size: auto 100%;
+  padding: 5px 5px 5px 28px !important;
+  color: #2DCCCD !important;
+  
+}
+
+.apply a{
+  background: #028484 !important;
+  color: #FFF !important;
+  padding: 10px 15px;
+}
 
 @media (min-width: 768px){
   /*
@@ -803,6 +828,15 @@ li.icon-pdf:before{
     margin: 0 auto ;
   }
   */
+  .ids-header{
+    padding-top: 30px !important;
+  }
+  .ids-btn-area-priv{
+    height: 150px;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+  }
 
 }
 

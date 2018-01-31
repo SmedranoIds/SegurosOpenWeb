@@ -21,8 +21,8 @@ $theme = \OpenWeb\Theme::getInstance();
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-      <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
-      <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/customSeguros.css">
+    <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
+    <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/customSeguros.css">
 
     <?php wp_head(); ?>
     <!-- HTML5 Shim and Respond.js  IE8 support of HTML5 elements and media queries -->
@@ -35,7 +35,7 @@ $theme = \OpenWeb\Theme::getInstance();
 
 <body <?php body_class(); ?>>
 
-<header id="top" class="container-fluid" style="padding-top: 30px;">
+<header id="top" class="container-fluid ids-header">
     <nav class="navbar navbar-static-top">
         <div class="navbar-header container hidden-lg">
             <a href="#sidr-main" id="responsive-menu-button" class="navbar-toggle bbva-coronita_menu collapsed">
@@ -43,9 +43,13 @@ $theme = \OpenWeb\Theme::getInstance();
             </a>
              <?php $theme->getLogo(true); ?>
             <?php if (get_theme_mod('openweb_platform_security')): ?>
-                <a class="sign-in hidden-lg" href="#login-in-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
+                <a class="sign-in" href="#login-in-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
                    aria-expanded="false" aria-controls="login-in-mobile">
-                    <?php echo __('Acceder', 'openweb'); ?>
+                    <?php echo __('Acceso a usuarios', 'openweb'); ?>
+                </a>
+                <a class="sign-in" href="#login-in-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
+                   aria-expanded="false" aria-controls="login-in-mobile">
+                    <?php echo __('Registro', 'openweb'); ?>
                 </a>
                 <!-- <span id="login-openweb-mobile" class="hidden-lg"><?php _e('Hola', 'openweb'); ?></span> -->
             <?php endif; ?>
@@ -100,17 +104,17 @@ $theme = \OpenWeb\Theme::getInstance();
                         <li class="sign-in">
                             <a href="#header-sign-in" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false"
                                aria-controls="header-sign-in-mobile" data-logout="<?php _e('Cerrar sesión', 'openweb'); ?>">
-                                <?php echo __('Acceder', 'openweb'); ?>
+                                <?php echo __('Acceso a usuarios', 'openweb'); ?>
                             </a>
                             <span id="login-openweb-lg"><?php _e('Hola', 'openweb'); ?></span>
                         </li>
-                        <?php //if (($register = get_theme_mod('openweb_platform_security_register'))): ?>
-                            <li class="apply" id="register">
-                                <!-- <a href="<?php echo get_permalink($register); ?>"><?php echo __('Registro', 'openweb'); ?></a> -->
-                                <a href="#header-sign-in" role="button" data-toggle="collapse" aria-expanded="false"
-                               aria-controls="header-sign-in-mobile"><?php echo __('Registro', 'openweb'); ?></a>
-                            </li>
-                        <?php // endif; ?>
+                        
+                        <li class="apply" id="register">
+                            <!-- <a href="<?php echo get_permalink($register); ?>"><?php echo __('Registro', 'openweb'); ?></a> -->
+                            <a href="#" role="button" data-toggle="collapse" aria-expanded="false"
+                            aria-controls="header-sign-in-mobile"><?php echo __('Registro', 'openweb'); ?></a>
+                        </li>
+                        
                     <?php endif; ?>
                 </ul>
                 <!-- end btns acceso -->
@@ -159,15 +163,17 @@ $theme = \OpenWeb\Theme::getInstance();
 
     <?php if (get_theme_mod('openweb_platform_security')): ?>
     <section id="login-in-mobile" class="collapse">
+        <!-- acceso -->
         <div class="sign-in-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-5">
+                    <div class="col-md-12 col-lg-5 text-center">
                         <h2 class="h3">
-                            <?php echo __('Acceso a ', 'openweb'); ?> <?php echo bloginfo('name'); ?>
+                            <!-- <?php echo __('Acceso a ', 'openweb'); ?> <?php echo bloginfo('name'); ?> -->
+                            Acceso a usuarios
                         </h2>
                     </div>
-                    <div class="col-md-12 col-lg-7">
+                    <div class="col-md-12 col-lg-7 text-center">
                         <!-- <form id="openweb-form-login" autocomplete="off" class="mod" method="" action="">
                             <div class="form-group">
                                 <div id="signon-error-msg">
@@ -192,7 +198,12 @@ $theme = \OpenWeb\Theme::getInstance();
                                 </div>
                             </div>
                         </form> -->
-                        botones de acceso a area privada
+                        <div class="form-group ids-btn-area-priv">
+                        <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Personas</a>
+
+                        <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
+                        
+                        </div>
                     </div>
                     <a class="sign-in-close visible-xs visible-sm visible-md hidden-lg" href="#" data-toggle="collapse" data-target="#login-in-mobile">
                         <span class="icon icon-sm bbva-coronita_close"></span>
@@ -203,6 +214,7 @@ $theme = \OpenWeb\Theme::getInstance();
                 </div>
             </div>
         </div>
+        <!-- end acceso -->
     </section>
     <?php endif; ?>
 </header>
