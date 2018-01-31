@@ -794,7 +794,17 @@ li.icon-pdf:before{
   float: right;
   margin-top: -38px !important;
 }
-
+/*row cards seguros*/
+.card-body{
+  border: solid 1px lightgray;
+  padding: 20px;
+}
+.card-link{
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #2a86ca;
+  text-decoration: none;
+}
 @media (min-width: 768px){
   /*
   .separador .row{

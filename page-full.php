@@ -52,7 +52,7 @@ while (have_posts()) {
 						<div class="row tt3">
 							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>"  target="<?php the_field('target'); ?>" class="btn-sm btn-blue"><?php the_sub_field('texto-boton') ?></a>
+								<a href="<?php the_sub_field('boton'); ?>"  target="<?php the_field('target'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
 							</div>
 							<?php } ?>
 						</div>
@@ -129,9 +129,9 @@ while (have_posts()) {
 		</div>
 	</div>
 
-	<!-- featured products -->
+	<!-- 
     <?php if(get_field('cuadrosegurosgris')): ?>
-    	<!-- <div class="container">-->
+    	
     		<div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="home">
 					<div class="row">
@@ -140,8 +140,6 @@ while (have_posts()) {
 							if( have_rows('cuadrosegurosgris') ):
 							  while ( have_rows('cuadrosegurosgris') ) : the_row(); 
 							?>
-
-							<!-- BACKUP cuadros grises 
 							<div class="col-md-4">
 								<div class="panel panel-default">
 									  <div class="panel-body cuadrosIndex panelHgt">
@@ -154,7 +152,7 @@ while (have_posts()) {
 											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
 											  	</span>
 											  <?php if(get_sub_field('urlboton')): ?>
-											  	<a class="vista btn btn-xs btn-blue" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><?php the_sub_field('txt-boton') ?></a>
+											  	<a class="vista" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton') ?></button></a>
 											 <?php else: ?>
 											 	<br>
 											 <?php endif; ?>
@@ -163,33 +161,6 @@ while (have_posts()) {
 									  </div>
 								</div>
 							</div>
-							BK end cuadros grises -->
-							
-							<!-- cuadros grises -->
-							<div class="col-md-4">
-								<div class="panel panel-default">
-									  <div class="panel-body cuadrosIndex panelHgt">
-									  	<h3>
-									  		<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
-									  	</h3>
-									  	<div class="row">
-									  		<div class="col-md-12 col-sm-7">
-									  			<span>
-											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
-											  	</span>
-											  <?php if(get_sub_field('urlboton')): ?>
-											  	<a class="vista btn btn-xs btn-blue" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><?php the_sub_field('txt-boton') ?></a>
-											 <?php else: ?>
-											 	<br>
-											 <?php endif; ?>
-									  		</div>
-									  	</div>
-									  </div>
-								</div>
-							</div>
-							<!-- end cuadros grises -->
-							
-
 							<?php
 							  endwhile;
 							endif;
@@ -197,6 +168,29 @@ while (have_posts()) {
 						</div>
 					</div>
 			<?php endif; ?>
+		--><div class="row bbva-cards">
+				<?php if(get_field('cardseguro')): ?>
+
+					<?php 
+						if( have_rows('cardseguro') ):
+						while ( have_rows('cardseguro') ) : the_row(); 
+					?>
+					<div class="col-md-4">
+						<div class="card" style="width: 28rem;">
+							<img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
+								<p class="card-text"><?php the_sub_field('resumencard') ?></p>
+								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton	')?>"><?php the_sub_field('textcardbutton') ?></a>
+							</div>
+						</div>
+					</div>		
+				<?php
+					endwhile;
+					endif;
+				?>
+				<?php endif;?>
+			</div>
 			<?php if(get_field('listaproducto')): ?>
 		        <div class="container space">
 							<div class="row">
@@ -224,6 +218,7 @@ while (have_posts()) {
 								</div>
 							</div>
 						</div>
+
 			<?php endif; ?>
 				</div>
 
