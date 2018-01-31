@@ -790,6 +790,11 @@ li.icon-pdf:before{
   display: none;
 }
 
+.ids-access-btns{
+  float: right;
+  margin-top: -38px !important;
+}
+
 @media (min-width: 768px){
   /*
   .separador .row{
@@ -811,7 +816,7 @@ li.icon-pdf:before{
 
 @media only screen and (min-width: 1200px){
   .container{
-    max-width: 970px;
+    max-width: 1000px;
     
   }
 }

@@ -157,7 +157,7 @@ body > header.container-fluid #logo img, body > header.container-fluid #logo-mob
 }
 
 body > header.container-fluid .main-nav ul {
-    margin-left: 120px !important;
+    /* margin-left: 120px !important; */
 }
 #sidr-main a#sidr-id-logo img {
     width: 80px !important;

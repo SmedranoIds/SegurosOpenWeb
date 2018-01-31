@@ -128,9 +128,42 @@ while (have_posts()) {
 	
 </div>
 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<!-- cuadro auto alerta -->
+			<?php 
+				if( have_rows('autoalerta')): 
+				while ( have_rows('autoalerta') ) : the_row();
+			?>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
+					<p>
+						<?php if(get_sub_field('imgautoalerta')):?>
+						<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
+						<?php endif;?>
+						<?php the_sub_field('desc_autoalerta') ?>
+						<br>
+						<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
+						<br>
+
+					</p>
+				</div>
+			</div>
+			<?php 
+					endwhile;
+				endif;
+			?>
+			<!-- end auto alerta -->
+		</div>
+	</div>
+</div>
+
+<!-- area de info -->
 <div class="container separador">
 		<div class="row">
-			<div class="col-md-8 datosSeguro">
+			<div class="col-md-12 datosSeguro">
 
 				<!-- cuadros información -->
 				<?php 
@@ -251,40 +284,13 @@ while (have_posts()) {
 					    </div>
 					</div>
 				<?php  endif; ?>
-
-
-
-				<!-- cuadro auto alerta -->
-				<?php 
-					if( have_rows('autoalerta')): 
-						while ( have_rows('autoalerta') ) : the_row();
-					?>
-					<div class="panel panel-default">
-					<div class="panel-body">
-					<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
-						<p>
-							<?php if(get_sub_field('imgautoalerta')):?>
-								<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
-							<?php endif;?>
-							<?php the_sub_field('desc_autoalerta') ?>
-							<br>
-							<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
-							<br>
-							
-						</p>
-					</div>
-					</div>
-				<?php 
-					endwhile;
-					endif;
-				?>
-				<!-- end auto alerta -->
+				
 
 			</div>
 			<!-- end left column -->
 
 
-			<!-- right column -->
+			<!-- right column 
 			<div class="col-md-4 col-xs-12 info-col-der">
 			
 				<?php //if(!get_post_type_object('empresas')): ?>
@@ -351,7 +357,8 @@ while (have_posts()) {
 				?>
 				
 			</div>
-			<!-- end right column -->
+
+			end right column -->
 
 
 

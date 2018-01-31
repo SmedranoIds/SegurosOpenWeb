@@ -108,7 +108,7 @@ get_header(); ?>
 <!--  -->
 
 <!-- Segunda sección -->
-<div class="container separadordos">
+<div class="container separadordos" style="margin-top: 100px;">
 	<div class="row">
 		<?php
           if( have_rows('segundaseccion') ):
@@ -118,10 +118,20 @@ get_header(); ?>
 		<div class="col-sm-4 col-xs-12 text-center">
            <div class="card" >
            		<!-- style="width:100px; height: 50px" -->
-               <img class="card-img-top" width="100" src="<?php the_sub_field('imgicon'); ?>">
+               <div style="
+    display: inline;
+    border-radius: 50%;
+    position: relative;
+    padding: 62px 25px ;
+    background-color: #e9e9e9;
+						   ">
+				   <img class="card-img-top" width="100" src="<?php the_sub_field('imgicon'); ?>">
+			   </div>
                <div class="card-body">
-  	               <h4><?php the_sub_field('titulo'); ?></h4>
-                   <p class="card-text"><?php the_sub_field('subtitulo'); ?></p>
+  	               <!-- <h4><?php the_sub_field('titulo'); ?></h4> -->
+					<p><?php the_sub_field('titulo'); ?><br>
+						<span class="card-text"><?php the_sub_field('subtitulo'); ?></span>
+				   </p>
                </div>
            </div>
         </div>

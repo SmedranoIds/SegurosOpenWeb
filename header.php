@@ -35,21 +35,19 @@ $theme = \OpenWeb\Theme::getInstance();
 
 <body <?php body_class(); ?>>
 
-<header id="top" class="container-fluid">
+<header id="top" class="container-fluid" style="padding-top: 30px;">
     <nav class="navbar navbar-static-top">
-        <div class="navbar-header container">
+        <div class="navbar-header container hidden-lg">
             <a href="#sidr-main" id="responsive-menu-button" class="navbar-toggle bbva-coronita_menu collapsed">
                 <span class="sr-only">View Menu</span>
             </a>
-
              <?php $theme->getLogo(true); ?>
-
             <?php if (get_theme_mod('openweb_platform_security')): ?>
                 <a class="sign-in hidden-lg" href="#login-in-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
                    aria-expanded="false" aria-controls="login-in-mobile">
                     <?php echo __('Acceder', 'openweb'); ?>
                 </a>
-                <span id="login-openweb-mobile" class="hidden-lg"><?php _e('Hola', 'openweb'); ?></span>
+                <!-- <span id="login-openweb-mobile" class="hidden-lg"><?php _e('Hola', 'openweb'); ?></span> -->
             <?php endif; ?>
         </div>
 
@@ -97,11 +95,10 @@ $theme = \OpenWeb\Theme::getInstance();
                 </ul>
                 -->
 
-                <ul class="sidr-hidden">
+                <ul class="sidr-hidden ids-access-btns">
                     <?php if (get_theme_mod('openweb_platform_security')): ?>
                         <li class="sign-in">
-                            <!-- <a href="#header-sign-in" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false" -->
-                            <a href="#" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false"
+                            <a href="#header-sign-in" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false"
                                aria-controls="header-sign-in-mobile" data-logout="<?php _e('Cerrar sesión', 'openweb'); ?>">
                                 <?php echo __('Acceder', 'openweb'); ?>
                             </a>
@@ -109,7 +106,9 @@ $theme = \OpenWeb\Theme::getInstance();
                         </li>
                         <?php //if (($register = get_theme_mod('openweb_platform_security_register'))): ?>
                             <li class="apply" id="register">
-                                <a href="<?php echo get_permalink($register); ?>"><?php echo __('Registro', 'openweb'); ?></a>
+                                <!-- <a href="<?php echo get_permalink($register); ?>"><?php echo __('Registro', 'openweb'); ?></a> -->
+                                <a href="#header-sign-in" role="button" data-toggle="collapse" aria-expanded="false"
+                               aria-controls="header-sign-in-mobile"><?php echo __('Registro', 'openweb'); ?></a>
                             </li>
                         <?php // endif; ?>
                     <?php endif; ?>
@@ -169,7 +168,7 @@ $theme = \OpenWeb\Theme::getInstance();
                         </h2>
                     </div>
                     <div class="col-md-12 col-lg-7">
-                        <form id="openweb-form-login" autocomplete="off" class="mod" method="" action="">
+                        <!-- <form id="openweb-form-login" autocomplete="off" class="mod" method="" action="">
                             <div class="form-group">
                                 <div id="signon-error-msg">
                                     <p><span class="icon icon-lg bbva-coronita_alert"></span> <?php echo __('Usuario o contraseña incorrectos.', 'openweb'); ?></p>
@@ -192,7 +191,8 @@ $theme = \OpenWeb\Theme::getInstance();
                                     <input id="login" class="btn btn-aqua" type="submit" name="signon" value="<?php echo __('Acceder', 'openweb'); ?>">
                                 </div>
                             </div>
-                        </form>
+                        </form> -->
+                        botones de acceso a area privada
                     </div>
                     <a class="sign-in-close visible-xs visible-sm visible-md hidden-lg" href="#" data-toggle="collapse" data-target="#login-in-mobile">
                         <span class="icon icon-sm bbva-coronita_close"></span>
