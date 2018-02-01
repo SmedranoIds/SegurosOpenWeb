@@ -795,8 +795,11 @@ li.icon-pdf:before{
   margin-top: -38px !important;
 }
 /*row cards seguros*/
+.card{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  background-color: #ffffff;
+}
 .card-body{
-  border: solid 1px lightgray;
   padding: 20px;
 }
 .card-link{
