@@ -14,8 +14,9 @@ body, blockquote, ul, ol, .kicker, .header, .normal {
   font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-a {
+  
+  a {
+  font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
   border-bottom: 1px solid transparent;
   color: #1973b8;
   padding-bottom: 1.5px;
@@ -2151,10 +2152,16 @@ footer {
   footer a {
     color: #5bbeff;
     border-bottom: none;
-    font-size: 0.9em; }
+    /* font-size: 0.9em; */
+    font-size: 0.75em;
+    hyphens: unset;
+   }
     footer a:hover, footer a:active, footer a:focus {
       color: #fff;
       border-bottom: none; }
+  footer #logo img {
+    height: 40px;
+  }
   footer .logo img {
     display: block;
     position: relative;
@@ -2165,7 +2172,9 @@ footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 0 2.3125em; }
+    /* margin: 0 0 2.3125em;  */
+    margin: 0 0 1rem 0;  
+  }
   footer .tagline {
     color: #bdbdbd;
     border-left: 1px solid #004481;
@@ -2184,7 +2193,7 @@ footer {
     -ms-flex-pack: end;
     justify-content: flex-end;
     list-style: none;
-    margin: 0 0 2.3125em;
+    /* margin: 0 0 2.3125em; */
     padding-left: 0; }
     footer .social-media ul li {
       margin-left: 0;
@@ -2230,19 +2239,24 @@ footer {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    margin: 0 0 1.875em;
+    /* margin: 0 0 1.875em; */
+    margin: 0;
     padding: 0; }
     footer nav > ul li {
       line-height: 1;
       margin-left: 0;
-      padding: 0 1em; }
+      /* padding: 0 1em;  */
+      padding: 0 1.5em; }
       footer nav > ul li:first-child {
         border-left: none;
-        padding-left: 0; }
+        padding-left: 0; 
+        min-width: 60px; }
   footer .disclosure {
     color: #bdbdbd;
     font-family: "Benton Sans Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem; }
+    font-size: 1.2rem; 
+    
+  }
 
 /* Pre-Footer */
 .bg-white .container-fluid.pre-footer {
@@ -2714,7 +2728,8 @@ body > header.container-fluid {
   body > header.container-fluid #logo, body > header.container-fluid #logo-mobile {
     display: inline-block; }
     body > header.container-fluid #logo img, body > header.container-fluid #logo-mobile img {
-      height: 30px;
+      /* height: 30px; */
+      height: 40px;
       width: 223px; }
   body > header.container-fluid ul {
     display: -webkit-box;

@@ -194,23 +194,23 @@ while (have_posts()) {
 			<?php if(get_field('listaproducto')): ?>
 		        <div class="container space">
 							<div class="row">
-								<div class="col-md-8 col-xs-12 lista">
-									<div class="col-md-12 space">
-										<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
-									</div>
+								<div class="col-xs-12 lista">
+									
+									<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
+									<br>	
 									<?php 
 									if( have_rows('listaproducto') ):
 									  while ( have_rows('listaproducto') ) : the_row(); 
 									?>
-										<div class="col-md-12">
-											<a href="<?php the_sub_field('ligaproducto') ?>">
-												<h3><?php the_sub_field('tituloproducto') ?></h3>
-											</a>
-											<a href="<?php the_sub_field('ligaproducto') ?>">
-												<p><?php the_sub_field('resumenproducto') ?></p>
-											</a>
-											<hr>
-										</div>
+										
+									<a href="<?php the_sub_field('ligaproducto') ?>">
+										<h3><?php the_sub_field('tituloproducto') ?></h3>
+									</a>
+									<a href="<?php the_sub_field('ligaproducto') ?>">
+										<p><?php the_sub_field('resumenproducto') ?></p>
+									</a>
+									<hr>
+										
 									<?php
 									  endwhile;
 									endif;
@@ -256,23 +256,23 @@ while (have_posts()) {
 			<?php if(get_field('listaproducto2')): ?>
 		        <div class="container">
 					<div class="row">
-						<div class="col-md-8 lista">
-							<div class="col-md-12">
-								<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
-							</div>
+						<div class="col-xs-12 lista">
+							
+							<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
+							<br>
 							<?php 
 							if( have_rows('listaproducto2') ):
 								while ( have_rows('listaproducto2') ) : the_row(); 
 							?>
-								<div class="col-md-12">
-									<a href="<?php the_sub_field('ligaproducto') ?>">
-										<h3><?php the_sub_field('tituloproducto') ?></h3>
-									</a>
-									<a href="<?php the_sub_field('ligaproducto') ?>">
-										<p><?php the_sub_field('resumenproducto') ?></p>
-									</a>
-									<hr>
-								</div>
+								
+							<a href="<?php the_sub_field('ligaproducto') ?>">
+								<h3><?php the_sub_field('tituloproducto') ?></h3>
+							</a>
+							<a href="<?php the_sub_field('ligaproducto') ?>">
+								<p><?php the_sub_field('resumenproducto') ?></p>
+							</a>
+							<hr>
+								
 							<?php
 								endwhile;
 							endif;

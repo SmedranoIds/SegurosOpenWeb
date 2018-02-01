@@ -26,7 +26,7 @@ endif; ?>
 	<section class="container">
 		<div class="row">
 			<div class="col-sm-8 tagline-container">
-                <?php $theme->getLogoFooter(); ?>
+                <?php $theme->getLogo(); ?>
                 <?php if (($tagline = get_theme_mod('coronita_tagline_footer'))): ?>
 				<p class="tagline"><?php echo $tagline; ?></p>
                 <?php endif; ?>
@@ -46,7 +46,7 @@ endif; ?>
 		</div>
 		<!-- /.row -->
 		<div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
             <?php
             if (has_nav_menu('prefooter-left')) {
                 wp_nav_menu([
@@ -62,7 +62,7 @@ endif; ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-xs-12">
                 <?php if (($copyright = get_theme_mod('coronita_copyright_footer'))): ?>
 				<p class="disclosure"><?php echo $copyright; ?></p>
                 <?php endif; ?>

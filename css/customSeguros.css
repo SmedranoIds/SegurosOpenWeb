@@ -589,6 +589,10 @@ li.icon-pdf:before{
       position: inherit;
       width: inherit;
   }
+
+  footer .disclosure{
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px){
 .table-responsive {
@@ -612,7 +616,7 @@ li.icon-pdf:before{
 	.float-square2{
 		border-right: 2px solid rgba(0,0,0,.125);
 		padding-bottom: 21px;
-	}
+  }
 }
 /*responsive*/
 /*banner*/

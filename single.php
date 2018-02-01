@@ -128,37 +128,44 @@ while (have_posts()) {
 	
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-			<!-- cuadro auto alerta -->
-			<?php 
-				if( have_rows('autoalerta')): 
-				while ( have_rows('autoalerta') ) : the_row();
-			?>
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
-					<p>
-						<?php if(get_sub_field('imgautoalerta')):?>
-						<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
-						<?php endif;?>
-						<?php the_sub_field('desc_autoalerta') ?>
-						<br>
-						<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
-						<br>
 
-					</p>
+<!-- cuadro auto alerta 
+<div class="bg-grey200">
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+
+
+				<?php 
+					if( have_rows('autoalerta')): 
+					while ( have_rows('autoalerta') ) : the_row();
+				?>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
+						<p>
+							<?php if(get_sub_field('imgautoalerta')):?>
+							<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
+							<?php endif;?>
+							<?php the_sub_field('desc_autoalerta') ?>
+							<br>
+							<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
+							<br>
+
+						</p>
+					</div>
 				</div>
+				<?php 
+						endwhile;
+					endif;
+				?>
+
 			</div>
-			<?php 
-					endwhile;
-				endif;
-			?>
-			<!-- end auto alerta -->
 		</div>
 	</div>
 </div>
+ end auto alerta -->
 
 <!-- area de info -->
 <div class="container separador">
@@ -216,6 +223,7 @@ while (have_posts()) {
 									  while ( have_rows('pdf') ) : the_row();
 									?>
 					        			<li class="icon-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><?php the_sub_field('titulo') ?></a></li>
+					        			<!-- <li class="bbva-coronita_doc-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><?php the_sub_field('titulo') ?></a></li> -->
 					        		<?php
 									endwhile;
 									endif;

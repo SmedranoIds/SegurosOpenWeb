@@ -181,6 +181,7 @@ final class Theme
     public function getLogoFooter($output = true)
     {
         $path  = get_template_directory_uri().'/img/'.self::LOGO_FOOTER;
+        // $path  = get_template_directory_uri().'/img/'.self::LOGO;
         $link  = '<a href="%1$s" class="logo">%2$s</a>';
         $image = '<img src="%1$s" alt="%2$s" title="%2$s">';
 
