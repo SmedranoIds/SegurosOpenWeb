@@ -838,6 +838,28 @@ body > header.container-fluid .main-nav ul:last-child li.sign-in {
   color: #2a86ca;
   text-decoration: none;
 }
+/*chat fixed*/
+.chat-fixed{
+  min-width: 180px;
+  max-width: 300px;
+  height: 26px;
+  color: rgb(255, 255, 255);
+  background: #e9e9e9;
+  position:  fixed;
+  right:  2px;
+  bottom:  0px;
+  border-radius: 5px 5px 0px 0px;
+  text-align:  center;
+  font-size:  14px;
+/* color:  white; */
+  padding: 5px;
+  z-index: 1;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+}
+.chat-fontFamily{
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin: 5px;
+}
 @media (min-width: 768px){
   /*
   .separador .row{

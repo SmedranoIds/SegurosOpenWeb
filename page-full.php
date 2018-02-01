@@ -18,6 +18,11 @@ while (have_posts()) {
 }
 ?>
 <!-- page full -->
+<!-- chat bbva fixed -->
+<div class="chat-fixed" style="">
+	<a class="bbva-coronita_chat " ,="" href="" onclick="openChat();"><span class="chat-fontFamily">Chat</span></a>
+</div>
+<!-- end chat bbva fixed-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
