@@ -2765,7 +2765,8 @@ body > header.container-fluid {
       right: 15px;
       /* top: -5.75em; */
       z-index: 1000;
-      width: 100%; }
+      /* width: 100%;  */
+    }
       body > header.container-fluid .top-nav ul li {
         padding-left: 1em; }
         body > header.container-fluid .top-nav ul li a {

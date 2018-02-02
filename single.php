@@ -167,10 +167,12 @@ while (have_posts()) {
 </div>
  end auto alerta -->
 
+	
 <!-- area de info -->
 <div class="container separador">
 		<div class="row">
-			<div class="col-md-12 datosSeguro">
+			<div id="info-seguroBBVA" lass="col-md-12 datosSeguro">
+			<!-- <div class="col-md-12 accordion"> -->
 
 				<!-- cuadros información -->
 				<?php 
@@ -185,7 +187,7 @@ while (have_posts()) {
 				          <?php the_sub_field('titulo') ?>
 				        </a> 
 				      </h4>
-				    </div>
+						</div> 
 <!--
 				    <div id="collapse<?php echo $a ?>" class="panel-collapse collapse in <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
 -->

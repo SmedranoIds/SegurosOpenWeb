@@ -10,7 +10,7 @@
  */
 get_header(); ?>
 
-<!-- page -->
+<!-- page & index -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
@@ -51,7 +51,8 @@ get_header(); ?>
 						</div>
 		    		</div>
 		      </div>
-  		</div>
+  		</div
+		  >
   	<div class="visible-xs"><!-- 
   		<img class="img-responsive" src="<?php the_sub_field('imagen'); ?>"> -->
 	  	<div class="container banner-msn">
@@ -108,7 +109,7 @@ get_header(); ?>
 <!--  -->
 
 <!-- Segunda sección -->
-<div class="container separadordos" style="margin-top: 100px;">
+<div class="container separadordos icons-home">
 	<div class="row">
 		<?php
           if( have_rows('segundaseccion') ):
@@ -116,24 +117,18 @@ get_header(); ?>
 			while ( have_rows('segundaseccion') ) : the_row();
 			?>
 		<div class="col-sm-4 col-xs-12 text-center">
-           <div class="card" >
-           		<!-- style="width:100px; height: 50px" -->
-               <div style="
-    display: inline;
-    border-radius: 50%;
-    position: relative;
-    padding: 62px 25px ;
-    background-color: #e9e9e9;
-						   ">
-				   <img class="card-img-top" width="100" src="<?php the_sub_field('imgicon'); ?>">
-			   </div>
-               <div class="card-body">
-  	               <!-- <h4><?php the_sub_field('titulo'); ?></h4> -->
-					<p><?php the_sub_field('titulo'); ?><br>
-						<span class="card-text"><?php the_sub_field('subtitulo'); ?></span>
-				   </p>
-               </div>
-           </div>
+			<div class="container-imgHome">
+			<div class="img-home">
+				<img src="<?php the_sub_field('imgicon'); ?>">
+			</div>
+			</div>
+			<div class="icon-item">
+				<!-- <h4><?php the_sub_field('titulo'); ?></h4> -->
+				<p>
+					<b><?php the_sub_field('titulo'); ?></b><br>
+					<span><?php the_sub_field('subtitulo'); ?></span>
+				</p>
+			</div>
         </div>
         <?php 
 			endwhile;
