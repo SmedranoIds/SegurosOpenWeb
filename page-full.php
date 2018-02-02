@@ -122,7 +122,7 @@ while (have_posts()) {
 
 <section class="container-fluid">
     <div class="container">
-        <?php echo the_content(); ?>
+        <?php //echo the_content(); ?>
     <div class="row">
 	    <div class="col-md-12">
 				<ul class="nav nav-tabs">
@@ -182,11 +182,11 @@ while (have_posts()) {
 					?>
 					<div class="col-md-4">
 						<div class="card" style="width: 28rem;">
-							<a href="<?php the_sub_field('urlcardbutton')?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
+							<img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
 								<p class="card-text"><?php the_sub_field('resumencard') ?></p>
-								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
+								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton	')?>"><?php the_sub_field('textcardbutton') ?></a>
 							</div>
 						</div>
 					</div>		
