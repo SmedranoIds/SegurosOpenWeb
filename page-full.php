@@ -182,11 +182,11 @@ while (have_posts()) {
 					?>
 					<div class="col-md-4">
 						<div class="card" style="width: 28rem;">
-							<img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap">
+							<a href="<?php the_sub_field('urlcardbutton')?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
 							<div class="card-body">
 								<h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
 								<p class="card-text"><?php the_sub_field('resumencard') ?></p>
-								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton	')?>"><?php the_sub_field('textcardbutton') ?></a>
+								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
 							</div>
 						</div>
 					</div>		

@@ -828,15 +828,19 @@ body > header.container-fluid .main-nav ul:last-child li.sign-in {
 .card{
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
   background-color: #ffffff;
+  margin-bottom: 4rem;
 }
 .card-body{
   padding: 20px;
+  height: 25rem;
 }
 .card-link{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #2a86ca;
   text-decoration: none;
+  position: absolute;
+  bottom: 60px;
 }
 /*chat fixed*/
 .chat-fixed{
