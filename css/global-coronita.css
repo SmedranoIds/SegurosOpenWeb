@@ -4619,7 +4619,7 @@ table.legal.disclosure-table {
 
 /* Tabs */
 .nav-tabs {
-  border-bottom: 1px solid rgba(41, 134, 202, 0.1);
+  /*border-bottom: 1px solid rgba(41, 134, 202, 0.1);*/
   /* Tab Dropdown Styles */ }
   .nav-tabs li {
     margin-left: 0;
