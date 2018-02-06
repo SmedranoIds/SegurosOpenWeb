@@ -264,7 +264,7 @@ ul li:before {
 }
 .lista h2 {
     font-size: 28px;
-    line-height: 20px;
+    /* line-height: 20px; */
     font-family: BentonSansBBVALight;
     color: #0078d2;
 }
@@ -834,7 +834,7 @@ li.icon-pdf:before{
   margin-top: -38px !important;
 }
 .sign-in-wrapper{
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .ids-btn-area-priv a{
@@ -845,14 +845,20 @@ li.icon-pdf:before{
 body > header.container-fluid .main-nav ul:last-child li.sign-in {
   padding-right: 0rem !important;
 }
-.sign-in a{
-  background: url('../img/user-icon.png') left center no-repeat;
+body > header.container-fluid a.sign-in, 
+body > header.container-fluid a.register, 
+.sign-in a {
   background-size: auto 100%;
-  padding: 5px 5px 5px 28px !important;
   color: #2DCCCD !important;
-
 }
-
+body > header.container-fluid a.register{
+  font-size: 1.3rem;
+  padding: 5px !important;
+}
+body > header.container-fluid a.sign-in, .sign-in a {
+  padding: 5px 5px 5px 28px !important;
+  background: url('../img/user-icon.png') left center no-repeat;
+}
 .apply a{
   background: #028484 !important;
   color: #FFF !important;
@@ -911,7 +917,7 @@ body > header.container-fluid .main-nav ul:last-child li.sign-in {
     padding-top: 30px !important;
   }
   .ids-btn-area-priv{
-    height: 150px;
+    /* height: 150px; */
     display: table-cell;
     width: 100%;
     vertical-align: middle;

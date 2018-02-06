@@ -2998,26 +2998,35 @@ body > header.container-fluid .yui-ac-bd ul {
   transform: rotate(-45deg) scale(1); }
 
 /* Sign-In */
-#header-sign-in, #header-sign-in-mobile {
+#header-sign-in, #header-sign-in-mobile, #register-mobile {
   background-color: #f4f4f4;
   color: #121212;
   overflow: hidden;
   position: relative; }
-  #header-sign-in .bbva-coronita_close, #header-sign-in-mobile .bbva-coronita_close {
+  #header-sign-in .bbva-coronita_close, 
+  #header-sign-in-mobile .bbva-coronita_close 
+  #register-mobile .bbva-coronita_close 
+  {
     font-size: 1.7rem; }
-  #header-sign-in .btn, #header-sign-in-mobile .btn {
+  #header-sign-in .btn, 
+  #header-sign-in-mobile .btn,
+  #register-mobile .btn {
     color: #fff;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0 2em;
     white-space: nowrap; }
-  #header-sign-in .sign-in-bg, #header-sign-in-mobile .sign-in-bg {
+  #header-sign-in .sign-in-bg, 
+  #header-sign-in-mobile .sign-in-bg,
+  #register-mobile .sign-in-bg {
     background-color: #fff;
     height: 100%;
     left: 0;
     position: absolute;
     width: 70%; }
-  #header-sign-in .container .row, #header-sign-in-mobile .container .row {
+  #header-sign-in .container .row,
+  #header-sign-in-mobile .container .row,
+  #register-mobile .container .row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3026,7 +3035,9 @@ body > header.container-fluid .yui-ac-bd ul {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-  #header-sign-in .sign-in-form, #header-sign-in-mobile .sign-in-form {
+  #header-sign-in .sign-in-form,
+  #header-sign-in-mobile .sign-in-form,
+  #register-mobile .sign-in-form {
     background-color: #fff;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -3038,18 +3049,29 @@ body > header.container-fluid .yui-ac-bd ul {
     display: flex;
     padding-right: 2em;
     width: 100%; }
-    #header-sign-in .sign-in-form h2, #header-sign-in-mobile .sign-in-form h2 {
+  #header-sign-in .sign-in-form h2,
+  #header-sign-in-mobile .sign-in-form h2, 
+  #register-mobile .sign-in-form h2 {
       font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
       padding-right: 2.3em;
       white-space: nowrap; }
-    #header-sign-in .sign-in-form form, #header-sign-in-mobile .sign-in-form form {
+  #header-sign-in .sign-in-form form,
+  #header-sign-in-mobile .sign-in-form form,
+  #register-mobile .sign-in-form form{
       -webkit-box-flex: 2;
       -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
       flex: 2 1 auto; }
-    #header-sign-in .sign-in-form input[type="text"], #header-sign-in .sign-in-form .btn, #header-sign-in-mobile .sign-in-form input[type="text"], #header-sign-in-mobile .sign-in-form .btn {
+  #header-sign-in .sign-in-form input[type="text"],
+  #header-sign-in .sign-in-form .btn, 
+  #header-sign-in-mobile .sign-in-form input[type="text"], 
+  #header-sign-in-mobile .sign-in-form .btn,
+  #register-mobile .sign-in-form input[type="text"], 
+  #register-mobile .sign-in-form .btn {
       height: 45px; }
-    #header-sign-in .sign-in-form .username-input, #header-sign-in-mobile .sign-in-form .username-input {
+  #header-sign-in .sign-in-form .username-input,
+  #header-sign-in-mobile .sign-in-form .username-input,
+  #register-mobile .sign-in-form .username-input {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -3057,14 +3079,18 @@ body > header.container-fluid .yui-ac-bd ul {
       margin-top: 1.4em;
       position: relative;
       width: 100%; }
-      #header-sign-in .sign-in-form .username-input:before, #header-sign-in-mobile .sign-in-form .username-input:before {
+  #header-sign-in .sign-in-form .username-input:before,
+  #header-sign-in-mobile .sign-in-form .username-input:before 
+  #register-mobile .sign-in-form .username-input:before {
         color: #bdbdbd;
         content: "";
         font-family: 'coronita';
         margin-left: 1.1em;
         margin-top: 0.6em;
         position: absolute; }
-    #header-sign-in .sign-in-form input[type="text"], #header-sign-in-mobile .sign-in-form input[type="text"] {
+  #header-sign-in .sign-in-form input[type="text"],
+  #header-sign-in-mobile .sign-in-form input[type="text"]
+  #register-mobile .sign-in-form input[type="text"]{
       background-color: #f4f4f4;
       border: none;
       box-shadow: inset 0 1px 0 0 #ececec;
@@ -3077,48 +3103,77 @@ body > header.container-fluid .yui-ac-bd ul {
       -webkit-flex: 2 1 auto;
       -ms-flex: 2 1 auto;
       flex: 2 1 auto; }
-      #header-sign-in .sign-in-form input[type="text"]::-webkit-input-placeholder, #header-sign-in-mobile .sign-in-form input[type="text"]::-webkit-input-placeholder {
+  #header-sign-in .sign-in-form input[type="text"]::-webkit-input-placeholder,
+  #header-sign-in-mobile .sign-in-form input[type="text"]::-webkit-input-placeholder, 
+  #register-mobile .sign-in-form input[type="text"]::-webkit-input-placeholder {
         color: #121212;
         opacity: 1; }
-      #header-sign-in .sign-in-form input[type="text"]:-moz-placeholder, #header-sign-in-mobile .sign-in-form input[type="text"]:-moz-placeholder {
+  #header-sign-in .sign-in-form input[type="text"]:-moz-placeholder,
+  #header-sign-in-mobile .sign-in-form input[type="text"]:-moz-placeholder,
+  #register-mobile .sign-in-form input[type="text"]:-moz-placeholder
+  {
         color: #121212;
         opacity: 1; }
-      #header-sign-in .sign-in-form input[type="text"]::-moz-placeholder, #header-sign-in-mobile .sign-in-form input[type="text"]::-moz-placeholder {
+  #header-sign-in .sign-in-form input[type="text"]::-moz-placeholder,
+  #header-sign-in-mobile .sign-in-form input[type="text"]::-moz-placeholder, 
+  #register-mobile .sign-in-form input[type="text"]::-moz-placeholder {
         color: #121212;
         opacity: 1; }
-      #header-sign-in .sign-in-form input[type="text"]:-ms-input-placeholder, #header-sign-in-mobile .sign-in-form input[type="text"]:-ms-input-placeholder {
+  #header-sign-in .sign-in-form input[type="text"]:-ms-input-placeholder,
+  #register-mobile .sign-in-form input[type="text"]:-ms-input-placeholder{
         color: #121212;
         opacity: 1; }
-  #header-sign-in ul, #header-sign-in-mobile ul {
+  #header-sign-in ul,
+  #header-sign-in-mobile ul,
+  #register-mobile ul {
     display: block;
     position: relative; }
-    #header-sign-in ul li, #header-sign-in-mobile ul li {
+  #header-sign-in ul li,
+  #header-sign-in-mobile ul li,
+  #register-mobile ul li {
       display: block;
       margin-left: 0;
       position: relative;
       padding-left: 0; }
   #header-sign-in .sign-in-links .sign-in-close,
-  #header-sign-in .sign-in-close, #header-sign-in-mobile .sign-in-links .sign-in-close,
-  #header-sign-in-mobile .sign-in-close {
+  #header-sign-in .sign-in-close, 
+  #header-sign-in-mobile .sign-in-links .sign-in-close,
+  #header-sign-in-mobile .sign-in-close,
+  #register-mobile .sign-in-links .sign-in-close,
+  #register-mobile .sign-in-close {
     color: #bdbdbd;
     display: block;
     position: absolute;
-    right: 15px;
-    top: 2em;
+    /* right: 15px;
+    top: 2em; */
+    right: 20px;
+    top: -20px;
     z-index: 3; }
-    #header-sign-in .sign-in-links .sign-in-close:hover,
-    #header-sign-in .sign-in-close:hover, #header-sign-in-mobile .sign-in-links .sign-in-close:hover,
-    #header-sign-in-mobile .sign-in-close:hover {
+  #header-sign-in .sign-in-links .sign-in-close:hover,
+  #header-sign-in .sign-in-close:hover,
+  #header-sign-in-mobile .sign-in-links .sign-in-close:hover,
+  #header-sign-in-mobile .sign-in-close:hover,
+  #register-mobile .sign-in-links .sign-in-close:hover,
+  #register-mobile .sign-in-close:hover,
+   {
       color: #666666; }
-  #header-sign-in .sign-in-links, #header-sign-in-mobile .sign-in-links {
+  #header-sign-in .sign-in-links, 
+  #header-sign-in-mobile .sign-in-links,
+  #register-mobile .sign-in-links, 
+  #register-mobile .sign-in-links {
     background-color: #f4f4f4;
     font-size: 1.4rem;
     padding: 4.5em 3em; }
-    #header-sign-in .sign-in-links a, #header-sign-in-mobile .sign-in-links a {
+  #header-sign-in .sign-in-links a,
+  #header-sign-in-mobile .sign-in-links a,
+    #register-mobile .sign-in-links a {
       color: #2a86ca;
       -webkit-transition: color 100ms linear 0s;
       transition: color 100ms linear 0s; }
-      #header-sign-in .sign-in-links a:hover, #header-sign-in-mobile .sign-in-links a:hover {
+  #header-sign-in .sign-in-links a:hover,
+  #header-sign-in-mobile .sign-in-links a:hover,
+  #register-mobile .sign-in-links a:hover
+  {
         color: #004481; }
 
 .checkbox input[type="checkbox"] {
@@ -3156,11 +3211,16 @@ body > header.container-fluid .yui-ac-bd ul {
     width: 26px; }
 
 body > header.container-fluid a.sign-in {
-  color: #f8cd51;
-  display: block;
-  float: right;
-  margin-right: 0.6em;
-  padding: 0.1em 1em 0 1em; }
+  /* color: #f8cd51; */
+  color: #2DCCCD;
+  display: inline-block;
+  /* float: right; */
+  font-size: 1.3rem;
+  /* padding: 0.1em 1em 0 1em;  */
+}
+body > header.container-fluid a.sign-in:first-child{
+  margin-right: 2rem;
+}
   body > header.container-fluid a.sign-in:hover {
     color: #fff; }
 

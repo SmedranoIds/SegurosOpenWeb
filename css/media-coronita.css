@@ -23,7 +23,9 @@
   blockquote {
     margin: 3em 10%; }
   body > header.container-fluid nav.navbar {
-    margin-bottom: 1.5625em; }
+    /* margin-bottom: 1.5625em; */
+    margin-bottom: 1.5rem;
+  }
     body > header.container-fluid nav.navbar .navbar-header {
       padding-top: 1.5625em; }
   #header-sign-in-mobile .sign-in-form {

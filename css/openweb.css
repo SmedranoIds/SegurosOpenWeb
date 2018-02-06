@@ -49,11 +49,12 @@ ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
     margin-left: 0.1rem;
 }
 /* Login */
-#login-in-mobile {
+#login-in-mobile, #register-mobile {
     color: #121212;
 }
 #login-in-mobile .btn,
-#header-sign-in .btn {
+#header-sign-in .btn,
+#register-mobile .btn {
     color: #fff;
     margin-top: 0;
     margin-bottom: 0;
@@ -63,8 +64,10 @@ ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
 }
 
 #login-in-mobile .sign-in-wrapper,
-#header-sign-in .sign-in-wrapper {
+#header-sign-in .sign-in-wrapper, 
+#register-mobile .sign-in-wrapper {
     background: #fff;
+    padding: 5rem 0;
 }
 #login-in-mobile h2.h3
 #header-sign-in h2.h3 {
@@ -73,7 +76,9 @@ ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
     margin-bottom: 0;
 }
 #login-in-mobile h2.h3 {
-    padding-top: 1.0em;
+    /* padding-top: 1.0em; */
+    padding-top: 1rem;
+    margin: 0 !important;
 }
 #header-sign-in .input-control,
 #login-in-mobile .input-control {
@@ -123,8 +128,10 @@ ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
     color: #bdbdbd;
     display: block;
     position: absolute;
-    right: 10px;
-    top: 2em;
+    /* right: 10px;
+    top: 2em; */
+    right: 20px;
+    top: -20px;
     z-index: 3;
 }
 #header-sign-in .sign-in-close {
