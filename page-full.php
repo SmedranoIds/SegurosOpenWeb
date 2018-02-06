@@ -19,8 +19,14 @@ while (have_posts()) {
 ?>
 <!-- page full -->
 <!-- chat bbva fixed -->
-<div class="chat-fixed" style="">
-	<a class="bbva-coronita_chat " ,="" href="" onclick="openChat();"><span class="chat-fontFamily">Chat</span></a>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-sm-12 pull-right">
+			<div class="chat-fixed" style="">
+				<a class="bbva-coronita_chat " ,="" href="" onclick="openChat();"><span class="chat-fontFamily">Chat</span></a>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- end chat bbva fixed-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -180,8 +186,8 @@ while (have_posts()) {
 						if( have_rows('cardseguro') ):
 						while ( have_rows('cardseguro') ) : the_row(); 
 					?>
-					<div class="col-md-4">
-						<div class="card" style="width: 28rem;">
+					<div class="col-sm-6 col-md-4">
+						<div class="card">
 						<a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton	')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
 							<div class="card-body">
 								<h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
