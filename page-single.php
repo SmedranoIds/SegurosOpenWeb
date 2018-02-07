@@ -14,6 +14,11 @@ get_header();
 while (have_posts()) {
     the_post();
 ?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
+
 <!-- page single -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 

@@ -12,6 +12,11 @@
 get_header();
 ?>
 
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->>
+
+
 
 <?php
 while (have_posts()) {

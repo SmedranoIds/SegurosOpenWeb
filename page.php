@@ -8,7 +8,13 @@
  * @subpackage Coronita
  * @since OpenWeb Coronita 1.0
  */
-get_header(); ?>
+get_header();
+?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
+
 
 <!-- page & index -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

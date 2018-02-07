@@ -23,6 +23,10 @@ while (have_posts()) {
 get_header();
 ?>
 
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
 <section class="container-fluid bg-grey100">
     <section class="title text parbase container">
         <h1>

@@ -17,6 +17,10 @@ while (have_posts()) {
 the_post();
 }
 ?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
 <!-- mapa -->
 <section class="container-fluid">
     <div class="container">

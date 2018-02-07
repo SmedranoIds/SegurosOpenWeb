@@ -17,7 +17,11 @@ while (have_posts()) {
     the_post();
 }
 ?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
 
+<!-- tips -->
 <section class="container-fluid">
     <div class="container">
     	<div class="col-md-8 col-xs-12">

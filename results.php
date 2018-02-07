@@ -11,6 +11,9 @@
 
 get_header();
 ?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
 
 <div class="bg-white">
     <div class="hidden" id="openweb-item">

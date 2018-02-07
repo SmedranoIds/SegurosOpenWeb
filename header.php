@@ -19,7 +19,7 @@ $theme = \OpenWeb\Theme::getInstance();
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/customSeguros.css">
@@ -81,7 +81,7 @@ $theme = \OpenWeb\Theme::getInstance();
                     ?>
                 <?php endif; ?>
 
-
+                
                 <ul class="sidr-hidden ids-access-btns">
                     <?php if (get_theme_mod('openweb_platform_security')): ?>
                         <li class="sign-in">
@@ -99,6 +99,8 @@ $theme = \OpenWeb\Theme::getInstance();
                         
                     <?php endif; ?>
                 </ul>
+                
+
                 <!-- end btns acceso -->
             </div>
 
@@ -153,13 +155,13 @@ $theme = \OpenWeb\Theme::getInstance();
         <div class="sign-in-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-5 text-center">
+                    <div class="col-xs-12 col-md-5 text-center">
                         <h2 class="h3">
                             <!-- <?php echo __('Acceso a ', 'openweb'); ?> <?php echo bloginfo('name'); ?> -->
                             Acceso a usuarios
                         </h2>
                     </div>
-                    <div class="col-sm-12 col-md-7 text-center">
+                    <div class="col-xs-12 col-md-7 text-center">
                         <!-- <form id="openweb-form-login" autocomplete="off" class="mod" method="" action="">
                             <div class="form-group">
                                 <div id="signon-error-msg">
@@ -210,12 +212,12 @@ $theme = \OpenWeb\Theme::getInstance();
             <div class="container">
                 
                 <div class="row">
-                    <div class="col-sm-12 col-md-5 text-center">
+                    <div class="col col-md-5 text-center">
                         <h2 class="h3">
                             Registro
                         </h2>
                     </div>
-                    <div class="col-sm-12 col-md-7 text-center">
+                    <div class="col-xs-12 col-md-7 text-center">
                         <div class="form-group ids-btn-area-priv">
                             <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Personas</a>
 

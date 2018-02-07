@@ -19,6 +19,11 @@ while (have_posts()) {
     the_post();
 }
 ?>
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
+
 <!-- page empty -->
 <section class="container-fluid">
     <div class="container">

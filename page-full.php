@@ -18,7 +18,14 @@ while (have_posts()) {
 }
 ?>
 <!-- page full -->
-<!-- chat bbva fixed -->
+
+
+<!-- chat -->
+<?php include('template-parts/chat.php'); ?>
+<!-- end chat -->
+
+
+<!-- chat bbva fixed 
 <div class="container">
 	<div class="row">
 		<div class="col-md-2 col-sm-12 pull-right">
@@ -28,8 +35,11 @@ while (have_posts()) {
 		</div>
 	</div>
 </div>
-<!-- end chat bbva fixed-->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ end chat bbva fixed-->
+
+
+
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
