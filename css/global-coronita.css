@@ -3900,7 +3900,7 @@ body > header.container-fluid a.navbar-toggle {
       border-bottom: none;
       padding: 0.5em 1em; }
       #sidr-main a#sidr-id-logo img {
-        height: 21px;
+        /* height: 21px; */
         margin: 1.4em 0 1em;
         width: 155px; }
   #sidr-main form {

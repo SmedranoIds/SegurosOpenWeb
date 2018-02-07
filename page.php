@@ -104,12 +104,9 @@ get_header(); ?>
 
 </div>
 
-<!--  -->
-
-<!--  -->
 
 <!-- Segunda sección -->
-<div class="container separadordos icons-home">
+<div class="container icons-home">
 	<div class="row">
 		<?php
           if( have_rows('segundaseccion') ):

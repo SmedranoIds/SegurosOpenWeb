@@ -127,7 +127,7 @@ while (have_posts()) {
 <?php } } ?>
 	
 </div>
-
+<!-- end slides  -->
 
 <!-- cuadro auto alerta 
 <div class="bg-grey200">
