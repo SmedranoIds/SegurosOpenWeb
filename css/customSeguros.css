@@ -868,7 +868,7 @@ body > header.container-fluid a.sign-in, .sign-in a {
   z-index: 1;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 768px){
   .chat-fixed{
     right: 11%;
   }
