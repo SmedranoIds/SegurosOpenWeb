@@ -127,6 +127,14 @@
        url('fontsBBVA/glyphicons-halflings-regular.ttf') format('truetype'),
        url('fontsBBVA/glyphicons-halflings-regular.svg#@{icon-font-svg-id}') format('svg');
 }
+
+@font-face {
+  font-family: 'coronita';
+  src: url('https://i.icomoon.io/public/81769453dd/Coronita/coronita.eot');
+}
+
+
+
 /* Estilos Index */
 .blockGris{
   background: #f2f2f2;
@@ -300,16 +308,35 @@ h4.panel-title {
     text-decoration: none;
 }
 
+.panel-body p {
+  margin: 10px 0 10px;
+}
 .panel-default>.panel-heading {
     /* background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#f4f7f8), to(white));
      background-image: -webkit-linear-gradient(bottom, #f4f7f8, white); */
-     background-image: linear-gradient(to bottom, white, #f4f7f8) !important;
+     background-image: linear-gradient(to bottom, white, white) !important;
      box-shadow: unset !important ;
      border-bottom: 0 !important;
 }
 .panel-default>.panel-collapse{
   border-top: 1px solid #ddd;
 }
+.panel-heading.collapsed{
+  border-bottom: 1px solid #ddd !important;
+}
+.panel-heading.collapsed .panel-title{
+  border: 0 !important;
+}
+
+.panel-body h3:first-child{
+  padding-top: 0;
+}
+#info-seguroBBVA .panel,
+#info-seguroBBVA .panel-default{
+  border:0 !important;
+  box-shadow: unset !important;
+}
+
 .info-col-der .panel {
   box-shadow: unset !important;
 }
@@ -528,17 +555,38 @@ li.icon-pdf:before{
 .nav-tabs>li>a {
   font-weight: bold;
 }
+.panel-heading a{
+  border-bottom: 0 !important;
+  color: #2a86ca !important;
+}
+
+.panel-heading a:before, .panel-heading a:after{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'coronita' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #2a86ca;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .panel-heading a:after {
-    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/closed.png);
+    /* content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/closed.png); */
+    content: "\e910";
     background-repeat: no-repeat;
-    height: 32px;
-    margin: -11px -5px;
-    width: 25px;
     float: right;
 }
 .panel-heading a.collapsed:after {
-    content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/open.png);
-}
+    /* content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/open.png); */
+    content: "\e910";
+ }
 /*estilo listas*/
 .sinEst{
   list-style: none;
