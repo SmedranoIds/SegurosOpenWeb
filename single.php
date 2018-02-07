@@ -185,13 +185,14 @@ while (have_posts()) {
 				      <h4 class="panel-title">
 				        <a class="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?> ">
 				          <?php the_sub_field('titulo') ?>
-				        </a> 
+								</a> 
+								
 				      </h4>
 						</div> 
-<!--
-				    <div id="collapse<?php echo $a ?>" class="panel-collapse collapse in <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
--->
-<div id="collapse<?php echo $a ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+						<!--
+												<div id="collapse<?php echo $a ?>" class="panel-collapse collapse in <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+						-->
+						<div id="collapse<?php echo $a ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
 				      <div class="panel-body">
 				        <?php the_sub_field('contenido') ?>
 				      </div>
@@ -204,7 +205,7 @@ while (have_posts()) {
 					?>
 				<?php if( have_rows('archivos') ): ?>
 					<div class="panel panel-default">
-					    <div class="panel-heading collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" role="tab" id="headingFive">
+					    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" role="tab" id="headingFive">
 					      <h4 class="panel-title">
 					        <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
 					          Condiciones Generales
@@ -266,10 +267,11 @@ while (have_posts()) {
 					endif;
 					?>
 
+				<!-- -->
 				<?php  endif;	
 				 if( have_rows('preguntas') ): ?>
 					<div class="panel panel-default ">
-					    <div class="panel-heading collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed" role="tab" id="headingSix">
+					    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed" role="tab" id="headingSix">
 					      <h4 class="panel-title">
 					        <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed">
 					          Preguntas Frecuentes
