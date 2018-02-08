@@ -977,6 +977,10 @@ body > header.container-fluid a.sign-in, .sign-in a {
   .chat-fixed{
     right: 11%;
   }
+  .container{
+    max-width: 750px !important;
+    width: 100%;
+  }
 }
 @media (min-width: 768px){
   /*
