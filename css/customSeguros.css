@@ -943,6 +943,18 @@ body > header.container-fluid a.sign-in, .sign-in a {
 .table-responsive {
     display: block;
   }
+ .footer-full nav ul{
+   width: 100%;
+   display: block;
+ }
+ 
+footer nav > ul li {
+    border-left: none;
+    padding: 0.4em 1.5em !important;
+    text-align: center;
+    width: 100%;
+    display: block !important;
+  }
 }
 @media (max-width: 995px){
 	.float-square{
@@ -995,6 +1007,10 @@ body > header.container-fluid a.sign-in, .sign-in a {
     /* display: table-cell; */
     width: 100%;
     vertical-align: middle;
+  }
+  .container {
+      width: 100% !important; 
+      max-width: 750px;
   }
 }
 
