@@ -15,9 +15,9 @@ get_header();
 <?php $textAll = get_field('comprobantes_fiscales_campos'); ?>
 
 <?php
-while (have_posts()) {
-    the_post();
-}
+// while (have_posts()) {
+//     the_post();
+// }
 ?>
 <!-- chat -->
 <?php include('template-parts/chat.php'); ?>
@@ -27,21 +27,36 @@ while (have_posts()) {
 <!-- page empty -->
 <section class="container-fluid">
     <div class="container">
-    	<div class="col-md-8">
+    	<div class="col-sm-12">
 	    	<div class="row">
 	    		<div class="col-md-12 col-xs-12">
-					<h1 class="titulo"><?php the_field('parent') ?></h1>
-						<p>
-							<?php echo $textAll; ?>
-						</p>
+					
+					<!-- <h1 class="titulo"><?php the_field('parent') ?></h1> -->
+					<!-- <p>
+						<?php //echo $textAll; ?>
+					</p> -->
+					
+					<?php 				
+						if (have_posts()):
+							while (have_posts()) : the_post();
+					?>
+						<h1 class="titulo"><?php the_title(); ?></h1> 
+					<?php 
+							the_content();
+							endwhile;
+						else:
+							echo '<p>No post to show</p>';
+						endif;
+					?>
 				</div>
     		</div>
 	    </div>
+		<!-- 
     	<div class="col-md-4 col-xs-12">
 				<div class="panel panel-default text-center">
 			  		<div class="panel-body bordeCuadros">
 			  			<a class="chat posIcon", href="", onclick="openChat(href);">
-			  				<!-- <i class="iconSprite chat"></i> -->
+			  				
 			  				<i class="iconChat"></i>
 			  				Chat</br>
 			  			</a>
@@ -76,6 +91,7 @@ while (have_posts()) {
 					endif;
 					?>
 		</div>
+		-->
     </div>
 </section>
 

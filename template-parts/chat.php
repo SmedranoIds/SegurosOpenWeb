@@ -1,4 +1,3 @@
-<!-- chat bbva fixed -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-2 col-sm-12 pull-right" style="min-height: 0;">
@@ -8,4 +7,3 @@
 		</div>
 	</div>
 </div>
-<!-- end chat bbva fixed-->

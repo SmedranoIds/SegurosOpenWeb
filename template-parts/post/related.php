@@ -1,3 +1,4 @@
+
 <section class="container-fluid bg-grey100">
     <div class="bbva-cards card-stack">
         <div class="container">
@@ -16,11 +17,13 @@
                                     <?php echo __('Imagen para', 'openweb');?> <?php echo $related->post_tile; ?>
                                 </span>
                                 <div class="card-text">
-                                    <h4 class="article-category h6 bullet <?php echo \OpenWeb\Utils::sanitize($category); ?>">
+                                    <h3 class="h5"><?php echo $related->post_title; ?></h3>
+                                    <!-- <h4 class="article-category h6 bullet <?php echo \OpenWeb\Utils::sanitize($category); ?>"> -->
+                                    <h4 class="article-category h6 <?php echo \OpenWeb\Utils::sanitize($category); ?>">
                                          <?php echo __('Leer más', 'openweb'); ?>
                                     </h4>
-                                    <h3 class="h5"><?php echo $related->post_title; ?></h3>
-                                    <p><?php echo \OpenWeb\Theme::getExcerpt($related); ?></p>
+                                    <!-- <p><?php echo \OpenWeb\Theme::getExcerpt($related); ?></p> -->
+                                    <br>
                                 </div>
 
                                 <p class="faux-link"></p>

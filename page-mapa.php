@@ -30,11 +30,12 @@ the_post();
 </section>
 
 <?php
+/*
 $custom = get_post_custom();
 if (isset($custom['openweb-related'][0])) {
     $relateds = unserialize($custom['openweb-related'][0]);
 
     $theme->renderView('post/related', $relateds);
 }
-
+*/
 get_footer();

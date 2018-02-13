@@ -171,14 +171,14 @@ h2.seguros {
   font-size: 30px;
     line-height: 40px;
     font-family: BentonSansBBVALight;
-    color: #003f8c;
+    color: #0078d2;
 }
 h1.titulo {
   font-size: 36px;
-    line-height: 40px;
-    font-family: BentonSansLight;
-    color: #003f8c;
-    text-rendering: optimizelegibility;
+  line-height: 40px;
+  font-family: BentonSansLight;
+  color: #0078d2;
+  text-rendering: optimizelegibility;
 }
 p.descripcion {
   font-family: BentonSansBBVALight;
@@ -245,7 +245,7 @@ a.chat {
 .panel-body h2 {
     font-size: 18px;
     line-height: 20px;
-    color: #003f8c;
+    color: #0078d2;
     font-family: BentonSansLight;
 }
 a.cuadro {
