@@ -73,7 +73,7 @@ while (have_posts()) {
 						<div class="row tt3">
 							<?php if (get_sub_field('boton')) {?>
 							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>"  target="<?php the_field('target'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
+								<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
 							</div>
 							<?php } ?>
 						</div>
@@ -98,7 +98,7 @@ while (have_posts()) {
 				<div class="col-xs-12 text-center">
 					<?php if (get_sub_field('boton')) {?>
 					<div class="col-xs-12 text-center">
-						<a href="<?php the_sub_field('boton'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
+						<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn'); ?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
 					</div>
 					<?php } ?>
 				</div>
@@ -138,173 +138,142 @@ while (have_posts()) {
 
 <section class="container-fluid">
     <div class="container">
-        <?php //echo the_content(); ?>
-    <div class="row">
-	    <div class="col-md-12">
-				<ul class="nav nav-tabs">
-				  	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><?php the_field("subtitulo") ?></a></li>
-				  	<?php if( get_field('subtitulo2') ):	?>
-					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><?php the_field("subtitulo2") ?></a></li>
-					<?php endif; ?>
-				</ul>
-		</div>
+	<div class="row">
+		<div class="col-md-12">
+            <!-- Nav tabs -->
+            <div class=" ">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                            <?php the_field("subtitulo"); ?>        
+                        </a>
+                    </li>
+                    <?php if( get_field('subtitulo2') ): ?>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                            <?php the_field("subtitulo2"); ?>
+                        </a>
+                    </li>  
+                    <?php endif; ?>                      
+                </ul>
+
+            <!-- Tab panes -->
+                <?php if(get_field('cardseguro')): ?>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="row bbva-cards">
+                            <?php if(get_field('cardseguro')): ?>
+                            <?php 
+                                if( have_rows('cardseguro') ):
+                                while ( have_rows('cardseguro') ) : the_row(); 
+                            ?>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card">
+                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton ')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
+                                        <div class="card-body">
+                                            <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
+                                            <p class="card-text"><?php the_sub_field('resumencard') ?></p>
+                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton   ')?>"><?php the_sub_field('textcardbutton') ?></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            <?php
+                                endwhile;
+                                endif;
+                            ?>
+                            <?php endif;?>
+                        <!--</div>-->
+                    <?php if(get_field('listaproducto')): ?>
+                    <div class="container space">
+                        <div class="row">
+                            <div class="col-xs-12 lista">
+                                <h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
+                                <br>    
+                                <?php 
+                                    if( have_rows('listaproducto') ):
+                                        while ( have_rows('listaproducto') ) : the_row(); 
+                                ?>      
+                                <a href="<?php the_sub_field('ligaproducto') ?>">
+                                    <h3><?php the_sub_field('tituloproducto') ?></h3>
+                                </a>
+                                <a href="<?php the_sub_field('ligaproducto') ?>">
+                                    <p><?php the_sub_field('resumenproducto') ?></p>
+                                </a>
+                                <hr>    
+                                <?php
+                                    endwhile;
+                                    endif;
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <?php endif; ?>
+                    </div>
+
+
+                    <?php if( get_field('subtitulo2') ):    ?>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="row bbva-cards">
+                            <?php if(get_field('cardseguro2')): ?>
+
+                                <?php 
+                                    if( have_rows('cardseguro2') ):
+                                    while ( have_rows('cardseguro2') ) : the_row(); 
+                                ?>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="card">
+                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton ')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
+                                        <div class="card-body">
+                                            <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
+                                            <p class="card-text"><?php the_sub_field('resumencard') ?></p>
+                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton   ')?>"><?php the_sub_field('textcardbutton') ?></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            <?php
+                                endwhile;
+                                endif;
+                            ?>
+                            <?php endif;?>
+                        </div>
+	                </div>
+	                <?php if(get_field('listaproducto2')): ?>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 lista">
+                                    
+                                    <h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
+                                    <br>
+                                    <?php 
+                                    if( have_rows('listaproducto2') ):
+                                        while ( have_rows('listaproducto2') ) : the_row(); 
+                                    ?>
+                                        
+                                    <a href="<?php the_sub_field('ligaproducto') ?>">
+                                        <h3><?php the_sub_field('tituloproducto') ?></h3>
+                                    </a>
+                                    <a href="<?php the_sub_field('ligaproducto') ?>">
+                                        <p><?php the_sub_field('resumenproducto') ?></p>
+                                    </a>
+                                    <hr>
+                                        
+                                    <?php
+                                        endwhile;
+                                    endif;
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>   
+
+                <?php endif; ?>                        
+                </div>
+            	<?php endif; ?>
+            </div>
+        </div>
 	</div>
-
-	<!-- 
-    <?php if(get_field('cuadrosegurosgris')): ?>
-    	
-    		<div class="tab-content">
-			    <div role="tabpanel" class="tab-pane active" id="home">
-					<div class="row">
-						<div class="col-md-12">
-							<?php 
-							if( have_rows('cuadrosegurosgris') ):
-							  while ( have_rows('cuadrosegurosgris') ) : the_row(); 
-							?>
-							<div class="col-md-4">
-								<div class="panel panel-default">
-									  <div class="panel-body cuadrosIndex panelHgt">
-									  	<h3>
-									  		<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
-									  	</h3>
-									  	<div class="row">
-									  		<div class="col-md-12 col-sm-7">
-									  			<span>
-											  		<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
-											  	</span>
-											  <?php if(get_sub_field('urlboton')): ?>
-											  	<a class="vista" href="<?php the_sub_field('urlboton') ?>" target="<?php the_sub_field('targetbtn'); ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton') ?></button></a>
-											 <?php else: ?>
-											 	<br>
-											 <?php endif; ?>
-									  		</div>
-									  	</div>
-									  </div>
-								</div>
-							</div>
-							<?php
-							  endwhile;
-							endif;
-							?>
-						</div>
-					</div>
-			<?php endif; ?>
-		--><div class="row bbva-cards">
-				<?php if(get_field('cardseguro')): ?>
-
-					<?php 
-						if( have_rows('cardseguro') ):
-						while ( have_rows('cardseguro') ) : the_row(); 
-					?>
-					<div class="col-sm-6 col-md-4">
-						<div class="card">
-						<a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton	')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
-							<div class="card-body">
-								<h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
-								<p class="card-text"><?php the_sub_field('resumencard') ?></p>
-								<a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton	')?>"><?php the_sub_field('textcardbutton') ?></a>
-							</div>
-						</div>
-					</div>		
-				<?php
-					endwhile;
-					endif;
-				?>
-				<?php endif;?>
-			</div>
-			<?php if(get_field('listaproducto')): ?>
-		        <div class="container space">
-							<div class="row">
-								<div class="col-xs-12 lista">
-									
-									<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
-									<br>	
-									<?php 
-									if( have_rows('listaproducto') ):
-									  while ( have_rows('listaproducto') ) : the_row(); 
-									?>
-										
-									<a href="<?php the_sub_field('ligaproducto') ?>">
-										<h3><?php the_sub_field('tituloproducto') ?></h3>
-									</a>
-									<a href="<?php the_sub_field('ligaproducto') ?>">
-										<p><?php the_sub_field('resumenproducto') ?></p>
-									</a>
-									<hr>
-										
-									<?php
-									  endwhile;
-									endif;
-									?>
-								</div>
-							</div>
-						</div>
-
-			<?php endif; ?>
-				</div>
-
-		<?php if( get_field('subtitulo2') ):	?>
-			<div role="tabpanel" class="tab-pane" id="profile">
-				<div class="row">
-					<div class="col-md-12">
-						<?php 
-						if( have_rows('cuadrosegurosgris2') ):
-							while ( have_rows('cuadrosegurosgris2') ) : the_row(); 
-						?>
-						<div class="col-md-4">
-							<div class="panel panel-default">
-									<div class="panel-body cuadrosIndex">
-									<h3>
-										<a href="<?php the_sub_field('ligaproducto') ?>"><?php the_sub_field('tituloproducto') ?></a>
-									</h3>
-									<div class="row">
-										<div class="col-md-12 col-sm-7">
-											<span>
-												<a href="<?php the_sub_field('ligaproducto') ?>", class="descripcionCuadroI"><?php the_sub_field('resumenproducto') ?></a>
-											</span>
-										</div>
-									</div>
-									</div>
-							</div>
-						</div>
-						<?php
-							endwhile;
-						endif;
-						?>
-					</div>
-				</div>
-			<?php endif; ?>
-			<?php if(get_field('listaproducto2')): ?>
-		        <div class="container">
-					<div class="row">
-						<div class="col-xs-12 lista">
-							
-							<h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo2") ?></h2>
-							<br>
-							<?php 
-							if( have_rows('listaproducto2') ):
-								while ( have_rows('listaproducto2') ) : the_row(); 
-							?>
-								
-							<a href="<?php the_sub_field('ligaproducto') ?>">
-								<h3><?php the_sub_field('tituloproducto') ?></h3>
-							</a>
-							<a href="<?php the_sub_field('ligaproducto') ?>">
-								<p><?php the_sub_field('resumenproducto') ?></p>
-							</a>
-							<hr>
-								
-							<?php
-								endwhile;
-							endif;
-							?>
-						</div>
-					</div>
-				</div>
-			<?php endif; ?>
-
-		<!-- </div>-->
-    </div>
+</div>
 </section>
 
 <?php
