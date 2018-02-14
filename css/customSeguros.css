@@ -342,10 +342,11 @@ h4.panel-title {
      background-image: -webkit-linear-gradient(bottom, #f4f7f8, white); */
      background-image: linear-gradient(to bottom, white, white) !important;
      box-shadow: unset !important ;
-     border-bottom: 0 !important;
+     /* border-bottom: 0 !important; */
+     border-bottom: 1px solid #ccc !important;
 }
 .panel-default>.panel-collapse{
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 .panel-heading.collapsed{
   border-bottom: 1px solid #ddd !important;
@@ -584,6 +585,8 @@ li.icon-pdf:before{
 .panel-heading a{
   border-bottom: 0 !important;
   color: #2a86ca !important;
+  width: 100%;
+  display: block;
 }
 
 .panel-heading a:before, .panel-heading a:after{

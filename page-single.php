@@ -137,7 +137,7 @@ while (have_posts()) {
     <div class="container separador">
         <div class="row">
 
-            <div class="col-md-8 datosSeguro">
+            <div id="info-seguroBBVA" class="col-xs-12 datosSeguro">
                 
                 <!-- Titulo sin banner -->
                 <?php if( get_field('titulosinbanner') ): ?>
@@ -161,7 +161,7 @@ while (have_posts()) {
                     </div>
                     <div id="collapse<?php echo $a ?>" class="panel-collapse collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
                         <div class="panel-body">
-                        <?php the_sub_field('contenido') ?>
+                            <?php the_sub_field('contenido') ?>
                         </div>
                     </div>
                     </div>
@@ -264,7 +264,8 @@ while (have_posts()) {
             </div>
 
 
-
+            <!-- 
+                Columna derecha
             <div class="col-md-4 col-xs-12">
                 <div class="panel panel-default text-center">
                     <div class="panel-body bordeCuadros">
@@ -323,6 +324,8 @@ while (have_posts()) {
                 endif;
                 ?>
             </div>
+
+            -->
         </div>
     </div>
 </div>
