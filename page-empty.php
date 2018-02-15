@@ -11,41 +11,40 @@
 
 get_header();
 ?>
+<!-- page empty -->
 
 <?php $textAll = get_field('comprobantes_fiscales_campos'); ?>
 
-<?php
-// while (have_posts()) {
-//     the_post();
-// }
-?>
 <!-- chat -->
-<?php include('template-parts/chat.php'); ?>
+<?php include('template-parts/components/chat.php'); ?>
 <!-- end chat -->
 
 
-<!-- page empty -->
+<!-- main slider -->
+<?php include('template-parts/components/hero-slider.php')?>
+<!-- end main slider -->
+
+<!-- contenido -->
 <section class="container-fluid">
     <div class="container">
     	<div class="col-sm-12">
 	    	<div class="row">
-	    		<div class="col-md-12 col-xs-12">
-					
-					<!-- <h1 class="titulo"><?php the_field('parent') ?></h1> -->
-					<!-- <p>
-						<?php //echo $textAll; ?>
-					</p> -->
-					
+	    		<div class="col-md-12 col-xs-12">					
+					<h1 class="titulo"><?php 
+					/* imprimir el título - dependiendo si es el tal cual o algún título en especial */
+					if(get_field('parent')):
+						the_field('parent');
+					else: 
+						the_title(); 
+					endif;
+					?></h1>
 					<?php 				
 						if (have_posts()):
 							while (have_posts()) : the_post();
-					?>
-						<h1 class="titulo"><?php the_title(); ?></h1> 
-					<?php 
 							the_content();
 							endwhile;
 						else:
-							echo '<p>No post to show</p>';
+							echo '<p>&nbps;</p>';
 						endif;
 					?>
 				</div>

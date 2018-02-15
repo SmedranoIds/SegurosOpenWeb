@@ -75,6 +75,7 @@
         });
     };
 
+    
     $(document).ready(function() {
         $('#sidr-id-searchform #sidr-id-q').attr("placeholder", $('#search-container').attr('data-placeholder-mobile'));
         $('#searchform #q').attr("placeholder", $('#search-container').attr('data-placeholder'));
@@ -180,5 +181,6 @@
             return rs;
         }
     };
+
 })(jQuery);
 

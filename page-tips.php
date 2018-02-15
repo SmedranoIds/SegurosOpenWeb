@@ -18,13 +18,13 @@ while (have_posts()) {
 }
 ?>
 <!-- chat -->
-<?php include('template-parts/chat.php'); ?>
+<?php include('template-parts/components/chat.php'); ?>
 <!-- end chat -->
 
 <!-- tips -->
 <section class="container-fluid">
     <div class="container">
-    	<div class="col-md-8 col-xs-12">
+    	<div class="col-xs-12">
 	    	<div class="row">
 					<h1 class="titulo"><?php the_title(); ?></h1>
 					<p><?php the_field('encabezadotips'); ?></p>
@@ -66,55 +66,62 @@ while (have_posts()) {
 					?>	
 	    	</div>
 	    </div>
+
+		<!--
     	<div class="col-md-4 col-xs-12">
-						<div class="panel panel-default text-center">
-					  		<div class="panel-body bordeCuadros">
-					  			<a class="chat posIcon", href="", onclick="openChat(href);">
-					  				<i class="iconSprite chat"></i>
-					  				Chat</br>
-					  				
-					  				
-					  			</a>
-					  		</div>
-					  	</div>
+			<div class="panel panel-default text-center">
+				<div class="panel-body bordeCuadros">
+					<a class="chat posIcon", href="", onclick="openChat(href);">
+						<i class="iconSprite chat"></i>
+						Chat</br>
+						
+						
+					</a>
+				</div>
+			</div>
 
 		  <?php if( have_rows('cuadroblanco') ): ?>
 		  <?php while( have_rows('cuadroblanco') ): the_row(); ?>
-					<div class="panel panel-default <?php the_sub_field('clase') ?>">
-					  <div class="panel-body bordeCuadros">
-					  	<h2><?php the_sub_field('titulocuadro') ?></h2>
-					  	<div class="row">
-					  		<div class="col-md-7 col-sm-7">
-							  	<p class="descripcion"><?php the_sub_field('descripcion') ?></p>
-							  	
-					  		</div>
-					  		<div class="col-md-5 col-sm-5 text-center">
-					  			<img class="imgCuadros", src="<?php the_sub_field('img') ?>" alt="">
-					  		</div>
-					  	</div>
-					  	
-						<?php if( get_field('ligaboton') ):	?>
-						<a class="cuadro", href="<?php the_sub_field('ligaproducto') ?>">
-					  		Cotiza Aquí
-					  		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						</a>
-						<?php endif;	?>
-					  </div>
+			<div class="panel panel-default <?php the_sub_field('clase') ?>">
+				<div class="panel-body bordeCuadros">
+				<h2><?php the_sub_field('titulocuadro') ?></h2>
+				<div class="row">
+					<div class="col-md-7 col-sm-7">
+						<p class="descripcion"><?php the_sub_field('descripcion') ?></p>
+						
 					</div>
+					<div class="col-md-5 col-sm-5 text-center">
+						<img class="imgCuadros", src="<?php the_sub_field('img') ?>" alt="">
+					</div>
+				</div>
+				
+				<?php if( get_field('ligaboton') ):	?>
+				<a class="cuadro", href="<?php the_sub_field('ligaproducto') ?>">
+					Cotiza Aquí
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</a>
+				<?php endif;	?>
+				</div>
+			</div>
 			<?php
 			  endwhile;
 			endif;
 			?>
 		</div>
+		-->
     </div>
 </section>
 <?php
+
+/*
 $custom = get_post_custom();
 if (isset($custom['openweb-related'][0])) {
     $relateds = unserialize($custom['openweb-related'][0]);
 
     $theme->renderView('post/related', $relateds);
 }
+*/
+
 ?>
 
 <?php get_footer();

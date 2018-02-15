@@ -2,11 +2,13 @@
 <section class="container-fluid bg-grey100">
     <div class="bbva-cards card-stack">
         <div class="container">
+            <!--
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="thin"><?php echo __('También te pueden interesar', 'openweb'); ?></h2>
                 </div>
             </div>
+            -->
             <div class="row">
                 <section class="card-block">
                     <?php foreach ($vars as $related): ?>

@@ -18,7 +18,7 @@ while (have_posts()) {
 }
 ?>
 <!-- chat -->
-<?php include('template-parts/chat.php'); ?>
+<?php include('template-parts/components/chat.php'); ?>
 <!-- end chat -->
 
 
