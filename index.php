@@ -27,8 +27,9 @@ get_header();
 <?php include('template-parts/components/chat.php'); ?>
 <!-- end chat -->
 
+<!-- index -->
 <section class="container-fluid bg-grey100">
-    <section class="title text parbase container">
+<section class="title text parbase container">
         <h1>
             <?php if (is_home()) {
                 echo bloginfo('name');

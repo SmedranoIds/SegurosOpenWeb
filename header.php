@@ -24,7 +24,9 @@ $theme = \OpenWeb\Theme::getInstance();
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/customSeguros.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <?php wp_head(); ?>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
     <!-- HTML5 Shim and Respond.js  IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -85,16 +87,21 @@ $theme = \OpenWeb\Theme::getInstance();
                 <ul class="sidr-hidden ids-access-btns">
                     <?php if (get_theme_mod('openweb_platform_security')): ?>
                         <li class="sign-in">
+                            <!-- 
                             <a href="#login-in-mobile" id="openweb-access-lg" role="button" data-toggle="collapse" aria-expanded="false"
                                aria-controls="login-in-mobile" data-logout="<?php _e('Cerrar sesión', 'openweb'); ?>">
                                 <?php echo __('Acceso a usuarios', 'openweb'); ?>
                             </a>
-                            
+                            -->
+                            <a href="#" id="openweb-access-lg" role="button" aria-expanded="false"
+                               aria-controls="login-in-mobile">Acceso a usuarios</a>
                         </li>
                         
                         <li class="apply" id="register">
+                            <!--
                             <a href="#register-mobile" id="openweb-register-lg" role="button" data-toggle="collapse" aria-expanded="false"
-                            aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>
+                            aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>-->
+                            <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a>
                         </li>
                         
                     <?php endif; ?>
@@ -112,6 +119,7 @@ $theme = \OpenWeb\Theme::getInstance();
                 <section id="header-register" class="collapse"></section>
             <?php endif; ?> -->
 
+            <!--
             <div class="secondary-nav">
                 <div class="container" id="search-container" data-placeholder="<?php echo __('Escribe aquí tu búsqueda', 'openweb'); ?>" data-placeholder-mobile="<?php echo __('Buscar', 'openweb'); ?>">
                     <?php if (has_nav_menu('secondary')): ?>
@@ -146,6 +154,7 @@ $theme = \OpenWeb\Theme::getInstance();
                     </div>
                 </div>
             </div>
+            -->
         </section>
     </nav>
 
@@ -238,4 +247,12 @@ $theme = \OpenWeb\Theme::getInstance();
     <!-- Registro -->
 
 </header>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php if(function_exists('bcn_display'))
+        {
+            bcn_display();
+        }?>
+    </div>
+</div>
 

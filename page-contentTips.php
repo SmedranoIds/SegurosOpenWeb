@@ -22,7 +22,7 @@ while (have_posts()) {
     the_post();
 }
 ?>
-
+<!-- contentTips -->
 <section class="container-fluid">
     <div class="container">
     	<div class="col-md-12 col-sm-12">

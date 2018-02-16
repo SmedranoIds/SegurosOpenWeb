@@ -2822,7 +2822,9 @@ body > header.container-fluid {
             color: #5bbeff; }
   body > header.container-fluid .secondary-nav {
     background-color: #004481;
-    height: 72px; }
+    /* height: 72px; */
+    height: 45px;
+   }
     body > header.container-fluid .secondary-nav ul {
       font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-size: 1.4rem;
