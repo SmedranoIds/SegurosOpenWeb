@@ -249,9 +249,9 @@ $theme = \OpenWeb\Theme::getInstance();
 </header>
 <div class="breadcrumbs">
     <div class="container">
-        <?php if(function_exists('bcn_display'))
+        <?php if(function_exists('get_breadcrumb'))
         {
-            bcn_display();
+            get_breadcrumb();
         }?>
     </div>
 </div>

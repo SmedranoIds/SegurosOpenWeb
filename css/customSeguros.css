@@ -844,12 +844,16 @@ color: #333;
   color: #5bbeff;
   border-bottom: 0;
 }
+
+/*
 .breadcrumbs span:first-child{
   padding-left: 0;
 }
 .breadcrumbs span{
   padding: 0 5px;
 }
+
+*/
 
 .ids-access-btns{
   float: right;
