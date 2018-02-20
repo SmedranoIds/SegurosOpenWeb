@@ -40,7 +40,7 @@
                             <div class="spacebanner"></div>
                             <div class="row tt3">
                                 <div class="col-md-7 col-sm-7 col-xs-7 text-left">
-                                    <a href="<?php the_sub_field('urlboton2'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('txt-boton2') ?></button></a>
+                                    <a href="<?php the_sub_field('urlboton2'); ?>" target="<?php the_sub_field('target-btn-2')?>"><button type="button" class="btn btn-info"><?php the_sub_field('txt-boton2') ?></button></a>
                                 </div>
                             </div>
                             <?php  }?>
