@@ -649,6 +649,9 @@ li.icon-pdf:before{
 .sintop{
   margin-top: 0;
 }
+.list-paddingLeft{
+  padding-left: 10px !important;
+}
 .button-styles{
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;

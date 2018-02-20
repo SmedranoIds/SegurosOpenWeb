@@ -43,27 +43,8 @@ $theme->init();
 remove_action('wp_head', 'wp_generator');
 
 /* Breadcrumbs */
+/* Function by >> https://www.qualitytuts.com/wordpress-custom-breadcrumbs-without-plugin/ */
 function get_breadcrumb() {
-    /*
-    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
-    if (is_category() || is_single()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-        the_category(' &bull; ');
-            if (is_single()) {
-                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
-                the_title();
-            }
-    } elseif (is_page()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
-        echo the_title();
-    } elseif (is_search()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
-        echo '"<em>';
-        echo the_search_query();
-        echo '</em>"';
-    }
-    */
-
 
   $showOnHome = 1; // 1 - show breadcrumbs on the homepage, 0 - don't show
   $delimiter = '&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;'; // delimiter between crumbs
