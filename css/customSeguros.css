@@ -1077,11 +1077,18 @@ footer nav > ul li {
   vertical-align: middle !important;
 }
 .ul-segurosDanos{
-  font-size: 13px;
-  padding:10px;
+  font-size: 14px;
+  padding:5px;
 }
 .tr-segurosDanos{
-    vertical-align: middle !important;
-    font-size: 14px;
-    font-weight: bold;
+  vertical-align: middle !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (max-width: 768px){
+.testimonial-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: pointer;
+}
 }
