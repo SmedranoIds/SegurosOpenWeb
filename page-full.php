@@ -71,9 +71,9 @@ while (have_posts()) {
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                         <p class="card-text"><?php the_sub_field('resumencard') ?></p>
 
-                                        <?php if ( get_sub_field('urlcotizador')): ?>
+                                        <?php if ( get_sub_field('urlexterno')): ?>
                                         <!-- Si la url es para un cotizador, que muestre un boton -->
-                                            <a href="<?php the_sub_field('urlcotizador') ?>" class="card-btn" target="_blank"><?php
+                                            <a href="<?php the_sub_field('urlexterno') ?>" class="card-btn" target="_blank"><?php
                                                 the_sub_field('labelurlexterno')
                                             ?></a>
                                         <?php else :?>
@@ -135,7 +135,16 @@ while (have_posts()) {
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                         <p class="card-text"><?php the_sub_field('resumencard') ?></p>
-                                        <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
+
+                                        <?php if ( get_sub_field('urlexterno2')): ?>
+                                            <!-- Si la url es para un cotizador, que muestre un boton -->
+                                            <a href="<?php the_sub_field('urlexterno2') ?>" class="card-btn" target="_blank"><?php
+                                                the_sub_field('labelurlexterno02')
+                                            ?></a>
+                                        <?php else :?>
+                                            <!-- Si no lo es, que muestre un enlace normal -->
+                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
+                                        <?php endif ;?>
                                     </div>
                                 </div>
                             </div>      
