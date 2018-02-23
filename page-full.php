@@ -52,7 +52,7 @@ while (have_posts()) {
                     <?php endif; ?>                      
                 </ul>
 
-            <!-- Tab panes -->
+                <!-- Tab panes -->
                 <?php if(get_field('cardseguro')): ?>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="home">
@@ -64,12 +64,25 @@ while (have_posts()) {
                             ?>
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
-                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
-                                        <div class="card-body">
-                                            <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
-                                            <p class="card-text"><?php the_sub_field('resumencard') ?></p>
-                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
-                                        </div>
+                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>">
+                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
+                                        <p class="card-text"><?php the_sub_field('resumencard') ?></p>
+
+                                        <?php if ( get_sub_field('urlcotizador')): ?>
+                                        <!-- Si la url es para un cotizador, que muestre un boton -->
+                                            <a href="<?php the_sub_field('urlcotizador') ?>" class="card-btn" target="_blank"><?php
+                                                the_sub_field('labelurlexterno')
+                                            ?></a>
+                                        <?php else :?>
+                                        <!-- Si no lo es, que muestre un enlace normal -->
+                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>">
+                                                <?php the_sub_field('textcardbutton') ?>
+                                            </a>
+                                        <?php endif ;?>
+                                    </div>
                                     </div>
                                 </div>      
                             <?php

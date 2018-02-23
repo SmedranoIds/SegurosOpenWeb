@@ -929,6 +929,46 @@ body > header.container-fluid a.sign-in, .sign-in a {
   position: absolute;
   bottom: 60px;
 }
+.card-btn{
+  position: absolute;
+  bottom: 60px;
+  border: none;
+  border-radius: 1px;
+  color: #fff !important;
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  -webkit-transition: background-color 100ms linear 0s;
+  transition: background-color 100ms linear 0s;
+  white-space: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1973b8;
+  
+
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.card-btn:hover, .card-btn:focus, .card-btn:active, .card-btn.active {
+  background-color: #1973b8 !important;
+  border-bottom: none !important;
+  color: #fff !important;
+}
+.card-btn:last-of-type {
+  margin-right: 0;
+}
 /*chat fixed*/
 .chat-fixed{
   min-width: 12%;
