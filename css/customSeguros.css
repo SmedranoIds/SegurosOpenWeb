@@ -831,6 +831,13 @@ color: #333;
   display: none;
 }
 */
+.hero-slider{
+  height: 480px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
 
 .breadcrumbs{
   padding: 15px 0 ;

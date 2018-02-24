@@ -46,6 +46,7 @@ $theme = \OpenWeb\Theme::getInstance();
             <?php $theme->getLogo(true); ?>
             <?php if (get_theme_mod('openweb_platform_security')): ?>
             <div class="area-register-mobile" style="">
+                <!--
                 <a class="sign-in" href="#login-in-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
                    aria-expanded="false" aria-controls="login-in-mobile">
                     <?php echo __('Acceso a usuarios', 'openweb'); ?>
@@ -53,8 +54,16 @@ $theme = \OpenWeb\Theme::getInstance();
                 <a class="register" href="#register-mobile" id="openweb-access-mobile" role="button" data-toggle="collapse"
                    aria-expanded="false" aria-controls="login-in-mobile">
                     <?php echo __('Registro', 'openweb'); ?>
-                </a>
+                </a>-->
                 <!-- <span id="login-openweb-mobile" class="hidden-lg"><?php _e('Hola', 'openweb'); ?></span> -->
+                <a class="sign-in" href="#" id="openweb-access-mobile" role="button"
+                   aria-expanded="false" aria-controls="login-in-mobile">
+                   Acceso a usuarios
+                </a>
+                <a class="register" href="#" id="openweb-register-mobile" role="button"
+                   aria-expanded="false" aria-controls="login-in-mobile">
+                    Registro
+                </a>
             </div>
             <?php endif; ?>
         </div>
@@ -247,6 +256,9 @@ $theme = \OpenWeb\Theme::getInstance();
     <!-- Registro -->
 
 </header>
+
+
+
 <div class="breadcrumbs">
     <div class="container">
         <?php if(function_exists('get_breadcrumb'))

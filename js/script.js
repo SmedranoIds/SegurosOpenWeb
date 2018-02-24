@@ -29,4 +29,19 @@ $(document).ready(function(){
 		jQuery('#register-mobile').collapse('show');
 	});
 	
+
+	/* desplegable de acceso a usuarios */
+	$('#openweb-access-mobile').click(function(){
+		console.log('access button clicked');
+		jQuery('#login-in-mobile').collapse('show');
+		jQuery('#register-mobile').collapse('hide');
+	});
+	
+	/* desplegable de registro */
+	$('#openweb-register-mobile').click(function(){
+		console.log('register button clicked');
+		jQuery('#login-in-mobile').collapse('hide');
+		jQuery('#register-mobile').collapse('show');
+	});
+	
 });
