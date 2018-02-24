@@ -13,7 +13,7 @@
                 // loop through the rows of data
                 while ( have_rows('banner')  && $i==0 ) : the_row();
                 ?>
-        <div class="hidden-xs item hero-slider<?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');">
+        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');">
             <div class="container">
                 <div class="col-md-6 col-sm-6" style="padding-top: 70px;">
                         <div class="banner-msn">
