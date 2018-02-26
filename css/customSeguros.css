@@ -835,8 +835,9 @@ color: #333;
   height: 480px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  /* background-position: center center; */
+  /* background-size: 100%; */
+  background-size: cover;
 }
 
 .breadcrumbs{

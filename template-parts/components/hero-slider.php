@@ -32,7 +32,7 @@
                             <div class="row tt3">
                                 <?php if (get_sub_field('boton')) {?>
                                 <div class="col-md-7 col-sm-7 col-xs-7 text-left">
-                                    <a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn')?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+                                    <a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
                                 </div>
                                 <?php } ?>
                             </div>
@@ -40,7 +40,7 @@
                             <div class="spacebanner"></div>
                             <div class="row tt3">
                                 <div class="col-md-7 col-sm-7 col-xs-7 text-left">
-                                    <a href="<?php the_sub_field('urlboton2'); ?>" target="<?php the_sub_field('target-btn-2')?>"><button type="button" class="btn btn-info"><?php the_sub_field('txt-boton2') ?></button></a>
+                                    <a href="<?php the_sub_field('urlboton2'); ?>" target="<?php the_sub_field('target-btn-2')?>"><button type="button" class="btn"><?php the_sub_field('txt-boton2') ?></button></a>
                                 </div>
                             </div>
                             <?php  }?>
@@ -65,14 +65,14 @@
                     <div class="col-xs-12 text-center">
                         <?php if (get_sub_field('boton')) {?>
                         <div class="col-xs-12 text-center">
-                            <a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn')?>"><button type="button" class="btn btn-info"><?php the_sub_field('texto-boton') ?></button></a>
+                            <a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target-btn')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
                         </div>
                         <?php } ?>
                     </div>
                 <?php if (get_sub_field('urlboton2')) {?>
                     <div class="col-xs-12 text-center">
                         <div class="col-xs-12 text-center">
-                            <a href="<?php the_sub_field('urlboton2'); ?>"><button type="button" class="btn btn-info"><?php the_sub_field('txt-boton2') ?></button></a>
+                            <a href="<?php the_sub_field('urlboton2'); ?>"><button type="button" class="btn"><?php the_sub_field('txt-boton2') ?></button></a>
                         </div>
                     </div>
                 <?php } ?>

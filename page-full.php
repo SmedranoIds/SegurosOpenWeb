@@ -65,7 +65,7 @@ while (have_posts()) {
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
                                     <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>">
-                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap">
+                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" height="217" width="303">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
@@ -131,7 +131,7 @@ while (have_posts()) {
                             ?>
                             <div class="col-sm-6 col-md-4">
                                 <div class="card">
-                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
+                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" height="217" width="303"></a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                         <p class="card-text"><?php the_sub_field('resumencard') ?></p>
