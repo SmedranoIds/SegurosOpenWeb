@@ -29,28 +29,31 @@ while (have_posts()) {
 <?php include('template-parts/components/hero-slider.php')?>
 <!-- end main slider -->
 
+<div class="nav-container" class="container-fluid">
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist" >
+            <li role="presentation" class="active">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                    <?php the_field("subtitulo"); ?>        
+                </a>
+            </li>
+            <?php if( get_field('subtitulo2') ): ?>
+            <li role="presentation">
+                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                    <?php the_field("subtitulo2"); ?>
+                </a>
+            </li>  
+            <?php endif; ?>                      
+        </ul>
+    </div>
+</div> 
 
-
-<section class="container-fluid">
+<section class="container-fluid" style="padding-top:0;">
     <div class="container">
 	<div class="row">
 		<div class="col-md-12">
             <!-- Nav tabs -->
-            <div class=" ">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-                            <?php the_field("subtitulo"); ?>        
-                        </a>
-                    </li>
-                    <?php if( get_field('subtitulo2') ): ?>
-                    <li role="presentation">
-                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-                            <?php the_field("subtitulo2"); ?>
-                        </a>
-                    </li>  
-                    <?php endif; ?>                      
-                </ul>
+            <div>
 
                 <!-- Tab panes -->
                 <?php if(get_field('cardseguro')): ?>
@@ -65,7 +68,7 @@ while (have_posts()) {
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
                                     <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>">
-                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" height="217" width="303">
+                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" >
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
@@ -131,7 +134,7 @@ while (have_posts()) {
                             ?>
                             <div class="col-sm-6 col-md-4">
                                 <div class="card">
-                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" height="217" width="303"></a>
+                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" ></a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                         <p class="card-text"><?php the_sub_field('resumencard') ?></p>

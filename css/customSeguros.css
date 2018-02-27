@@ -272,6 +272,11 @@ ul li:before {
   color: #2a86ca !important;
 }
 
+/* tabs */
+.nav-container{
+  border-bottom: 1px solid #CCC; 
+  padding: 3rem 0 0 0;
+}
 .cuadrosIndex {
     background-color: #f9f9f9;
     background-image: -moz-linear-gradient(top, #fefefe, #f1f1f1);
@@ -1055,6 +1060,9 @@ footer nav > ul li {
 	.float-square2{
 		border-right: 2px solid rgba(0,0,0,.125);
 		padding-bottom: 21px;
+  }
+  .card img{
+    max-height: 217px;
   }
 }
 @media screen and (max-width: 1415px){

@@ -4681,7 +4681,8 @@ table.legal.disclosure-table {
 
 /* Tabs */
 .nav-tabs {
-  /*border-bottom: 1px solid rgba(41, 134, 202, 0.1);*/
+  /* border-bottom: 1px solid rgba(41, 134, 202, 0.1); */
+  border-bottom: none;
   /* Tab Dropdown Styles */ }
   .nav-tabs li {
     margin-left: 0;
@@ -4696,6 +4697,9 @@ table.legal.disclosure-table {
       border-bottom: none;
       color: #121212;
       background-color: transparent; }
+    .nav-tabs li.active{
+      background-color: #FFF;
+    }
     .nav-tabs li a {
       border: none;
       border-radius: 0;
