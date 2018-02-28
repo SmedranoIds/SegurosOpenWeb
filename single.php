@@ -71,7 +71,7 @@ while (have_posts()) {
 <!-- area de info -->
 <div class="container separador">
 		<div class="row">
-			<div id="info-seguroBBVA" lass="col-md-12 datosSeguro">
+			<div id="info-seguroBBVA" lass="col-xs-12 datosSeguro">
 			<!-- <div class="col-md-12 accordion"> -->
 
 				<!-- cuadros información -->
@@ -167,36 +167,7 @@ while (have_posts()) {
 					endif;
 					?>
 
-				<!-- -->
-				<?php  endif;	
-				 if( have_rows('preguntas') ): ?>
-					<div class="panel panel-default ">
-					    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed" role="tab" id="headingSix">
-					      <h4 class="panel-title">
-					        <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="trigger collapsed">
-					          Preguntas Frecuentes
-					        	
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
-					      <div class="panel-body">
-					      	<?php 
-								if( have_rows('preguntas') ):
-								  while ( have_rows('preguntas') ) : the_row();
-								?>
-					      	<h3><?php the_sub_field('pregunta') ?></h3>
-					      	<p><?php the_sub_field('respuesta') ?></p>
-
-					      	<?php
-							endwhile;
-							endif;
-							?>
-					      </div>
-					    </div>
-					</div>
-				<?php  endif; ?>
-				
+				<?php endif;	?>
 
 			</div>
 			<!-- end left column -->
@@ -272,16 +243,92 @@ while (have_posts()) {
 
 			end right column -->
 
-
-
 		</div>
 	</div>
+ 
+<!-- faqs vers mobile --> 
+<div class="bg-grey100 faqs_content hidden-md hidden-lg">
 
+	<h3 style="padding-left: 2rem;">Preguntas frequentes</h3>
+	<?php 
+		if( have_rows('preguntas') ):
+			$q = 30;
+			if( have_rows('preguntas') ):
+			while ( have_rows('preguntas') ) : the_row(); 
+	?>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="heading<?php echo $q ?> <?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
+				<h4 class="panel-title">
+					<a class="<?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
+						<?php the_sub_field('pregunta') ?>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse<?php echo $q ?>" class="panel-collapse collapse <?php if($q === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $q ?>">
+				<div class="panel-body">
+					<?php the_sub_field('respuesta') ?>
+				</div>
+			</div>
+		</div>
+	<?php
+			$q++;
+			endwhile;
+			endif;
+		endif;
+	?>
+</div>
+
+
+
+<!-- faqs vers tablet & desktop -->
+<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
+<div class="container">
+		<?php 				
+			if( have_rows('preguntas') ): ?>
+			<div class="col-xs-12">
+				<h3>Preguntas frequentes</h3>
+			</div>
+			<div class="bhoechie-tab-container">
+
+				<!-- listado de preguntas -->
+				<div class="col-xs-5 bhoechie-tab-menu">
+					<div class="faqs-sidetab">
+						<?php 
+							if( have_rows('preguntas') ):
+							while ( have_rows('preguntas') ) : the_row();
+						?>
+							<a href="#"><?php the_sub_field('pregunta') ?></a>
+						<?php
+							endwhile;
+							endif;
+						?>
+					</div>
+				</div>
+
+				<!-- area de respuestas -->
+				<div class="col-xs-7 bhoechie-tab faqs-tab">
+						<?php 
+						if( have_rows('preguntas') ):
+							while ( have_rows('preguntas') ) : the_row();
+						?>
+						<div class="bhoechie-tab-content faqs-tab-content">
+							<p class="title-faq"><?php the_sub_field('pregunta') ?><p>
+							<p><?php the_sub_field('respuesta') ?></p>
+						</div>
+						<?php
+							endwhile;
+							endif;
+						?>
+				</div>
+				
+		</div>
+		<?php 
+			endif;
+		?>
+	</div>
+</div>
 
 <?php
-}
-
-
-
-get_footer();
+	}
+	get_footer();
 ?>

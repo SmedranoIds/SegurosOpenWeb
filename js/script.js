@@ -44,4 +44,15 @@ $(document).ready(function(){
 		jQuery('#register-mobile').collapse('show');
 	});
 	
+	/* componente de FAQs - evento click, que muestra el elemento */
+	$("div.bhoechie-tab-menu>div.faqs-sidetab>a").click(function(e) {
+		e.preventDefault();
+		$(this).siblings('a.active').removeClass("active");
+		$(this).addClass("active");
+		var index = $(this).index();
+		$("div.bhoechie-tab>div.faqs-tab-content").removeClass("active");
+		$("div.bhoechie-tab>div.faqs-tab-content").eq(index).addClass("active");
+	});
+	
+
 });

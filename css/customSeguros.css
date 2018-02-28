@@ -1005,6 +1005,62 @@ body > header.container-fluid a.sign-in, .sign-in a {
   margin: 5px;
 }
 
+/*******************************/
+/* Estilos para componente FAQs*/
+.faqs_content{
+  padding: 5rem 0;
+}
+/*
+.faqs_content div {
+  padding-left: 0;
+  padding-right: 0;
+}*/
+.faqs_content a{
+  color: #0078d2;
+  font-weight: bold;
+  display: block;
+  padding: 1rem 0;
+  hyphens: unset;
+  font-size: 16px;
+  /* border-bottom: 0; */
+}
+.faqs_content a:hover, .faqs_content a.active{
+  color: #072146 !important;
+}
+.faqs-sidetab {
+  border-right: 1px solid #ccc;
+  padding-right: 4rem;
+}
+.faqs-tab{
+  padding-left: 0 !important;
+}
+.faqs-tab-content{
+  padding: 0.5rem 0 1rem 2rem;
+}
+.faqs-tab-content .title-faq{
+  font-size: 22px;
+  margin: 0;
+  line-height: normal;
+}
+
+.faqs_content .panel, .faqs_content .panel-default>.panel-heading{
+  background-color: transparent;
+  background-image: none !important;
+}
+.faqs_content .panel,
+.faqs_content .panel-default{
+  border:0 !important;
+  box-shadow: unset !important;
+}
+
+.faqs_content .panel-heading a {
+  padding: 0 2rem 0 0
+}
+
+div.bhoechie-tab div.faqs-tab-content:not(.active){
+  display: none;
+}
+
 
 /*content*/
 /*responsive*/
@@ -1024,6 +1080,10 @@ body > header.container-fluid a.sign-in, .sign-in a {
 
   footer .disclosure{
     text-align: center;
+  }
+  
+  .faqs_content .panel-heading a:after{
+    margin-right: -20px;
   }
 }
 @media screen and (max-width: 767px){
@@ -1053,7 +1113,7 @@ footer nav > ul li {
 		border: 2px solid rgba(0,0,0,.125);
 	}
 }
-@media (min-width: 995px){
+@media (min-width: 992px){
 	.float-square{
 		border: 2px solid rgba(0,0,0,.125);
 	}
@@ -1064,6 +1124,7 @@ footer nav > ul li {
   .card img{
     max-height: 217px;
   }
+  
 }
 @media screen and (max-width: 1415px){
   #carousel-example .carousel-indicators {
@@ -1085,13 +1146,6 @@ footer nav > ul li {
   }
 }
 @media (min-width: 768px){
-  /*
-  .separador .row{
-    width: 100%;
-    max-width: 900px !important;
-    margin: 0 auto ;
-  }
-  */
   .ids-header{
     padding-top: 30px !important;
   }
@@ -1104,7 +1158,8 @@ footer nav > ul li {
   }
   .container {
       width: 100% !important; 
-      max-width: 750px;
+      /* max-width: 750px; */
+      max-width: 1000px;
   }
 }
 
@@ -1144,10 +1199,15 @@ footer nav > ul li {
   font-size: 14px;
   font-weight: bold;
 }
+
+
+
 @media (max-width: 768px){
-.testimonial-group > .row {
-  overflow-x: auto;
-  white-space: nowrap;
-  cursor: pointer;
+  .testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: pointer;
+  }
 }
-}
+
+
