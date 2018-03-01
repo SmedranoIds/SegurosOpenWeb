@@ -19,12 +19,12 @@ while (have_posts()) {
 
 
 <!-- chat -->
-<?php include('template-parts/components/chat.php'); ?>
+<?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
 
 
 <!-- main slider -->
-<?php include('template-parts/components/hero-slider.php')?>
+<?php get_template_part('template-parts/components/hero-slider');?>
 <!-- end main slider -->
 
 
@@ -246,14 +246,16 @@ while (have_posts()) {
 		</div>
 	</div>
  
-<!-- faqs vers mobile --> 
-<div class="bg-grey100 faqs_content hidden-md hidden-lg">
-
-	<h3 style="padding-left: 2rem;">Preguntas frequentes</h3>
 	<?php 
+		if( have_rows('preguntas') ): 
+	?>
+		<!-- faqs vers mobile --> 
+		<div class="bg-grey100 faqs_content hidden-md hidden-lg">
+		<h3 style="padding-left: 2rem;">Preguntas frequentes</h3>
+
+	<?php
+		$q = 30;
 		if( have_rows('preguntas') ):
-			$q = 30;
-			if( have_rows('preguntas') ):
 			while ( have_rows('preguntas') ) : the_row(); 
 	?>
 		<div class="panel panel-default">
@@ -273,23 +275,26 @@ while (have_posts()) {
 	<?php
 			$q++;
 			endwhile;
-			endif;
 		endif;
 	?>
-</div>
+	</div>
+
+	<?php 
+		endif;
+	?>
 
 
-
-<!-- faqs vers tablet & desktop -->
-<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
-<div class="container">
-		<?php 				
-			if( have_rows('preguntas') ): ?>
+	<?php 				
+		if( have_rows('preguntas') ):
+	?>
+		<!-- faqs vers tablet & desktop -->
+		<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
+		<div class="container">
 			<div class="col-xs-12">
 				<h3>Preguntas frequentes</h3>
 			</div>
+			
 			<div class="bhoechie-tab-container">
-
 				<!-- listado de preguntas -->
 				<div class="col-xs-5 bhoechie-tab-menu">
 					<div class="faqs-sidetab">
@@ -321,12 +326,12 @@ while (have_posts()) {
 						?>
 				</div>
 				
+			</div>
+		</div>
 		</div>
 		<?php 
 			endif;
 		?>
-	</div>
-</div>
 
 <?php
 	}

@@ -21,12 +21,12 @@ while (have_posts()) {
 
 
 <!-- chat -->
-<?php include('template-parts/components/chat.php'); ?>
+<?php get_template_part('template-parts/components/chat');; ?>
 <!-- end chat -->
 
 
 <!-- main slider -->
-<?php include('template-parts/components/hero-slider.php')?>
+<?php get_template_part('template-parts/components/hero-slider');?>
 <!-- end main slider -->
 
 <div class="nav-container" class="container-fluid">

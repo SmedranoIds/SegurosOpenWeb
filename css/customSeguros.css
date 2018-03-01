@@ -171,13 +171,13 @@ h2.seguros {
   font-size: 30px;
     line-height: 40px;
     font-family: BentonSansBBVALight;
-    color: #0078d2;
+    color: #1973b8;
 }
 h1.titulo {
   font-size: 36px;
   line-height: 40px;
   font-family: BentonSansLight;
-  color: #0078d2;
+  color: #1973b8;
   text-rendering: optimizelegibility;
 }
 p.descripcion {
@@ -211,7 +211,7 @@ p.descripcion {
 }
 a.chat {
     font-family: BentonSansBBVALight;
-    color: #0078d2;
+    color: #1973b8;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
@@ -245,7 +245,7 @@ a.chat {
 .panel-body h2 {
     font-size: 18px;
     line-height: 20px;
-    color: #0078d2;
+    color: #1973b8;
     font-family: BentonSansLight;
 }
 a.cuadro {
@@ -305,7 +305,7 @@ ul li:before {
     font-size: 28px;
     /* line-height: 20px; */
     font-family: BentonSansBBVALight;
-    color: #0078d2;
+    color: #1973b8;
 }
 .lista h3 {
     font-size: 14px;
@@ -404,7 +404,7 @@ li.icon-pdf:before{
   margin: 10px 0 10px;
 }
 .panel-body h3 {
-  color: #0078d2;
+  color: #1973b8;
   font-size: 17px;
   line-height: 20px;
   font-family: BentonSansMedium;
@@ -417,6 +417,42 @@ li.icon-pdf:before{
 /*Estilos Footer*/
 .space {
   height: 20px;
+}
+
+.pre-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pre-footer ul li:before{
+  content: '';
+  margin: 0;
+  padding: 0;
+}
+
+.pre-footer ul li{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  padding: 0 0 0.5em 0;
+}
+.pre-footer ul li a{
+  color: #1973b8;
+  display: inline-block;
+  padding-right: 0.3em;
+}
+
+.pre-footer a{
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
 }
 .footer h4 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1008,7 +1044,7 @@ body > header.container-fluid a.sign-in, .sign-in a {
 /*******************************/
 /* Estilos para componente FAQs*/
 .faqs_content{
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 /*
 .faqs_content div {
@@ -1016,10 +1052,10 @@ body > header.container-fluid a.sign-in, .sign-in a {
   padding-right: 0;
 }*/
 .faqs_content a{
-  color: #0078d2;
+  color: #1973b8;
   font-weight: bold;
   display: block;
-  padding: 1rem 0;
+  padding: 1.5rem 0 1rem 0;
   hyphens: unset;
   font-size: 16px;
   /* border-bottom: 0; */
@@ -1061,6 +1097,59 @@ div.bhoechie-tab div.faqs-tab-content:not(.active){
   display: none;
 }
 
+
+/* blue cards */
+.blue-card {
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: bottom center;
+  background-image: url('../img/hatched.png');
+  /* width: 33%; */
+  height: 270px;
+  position: relative;
+  border-radius: 1px;
+  /* display: table-cell; */
+  display: block; 
+  float: left;
+  padding: 3.2rem 1.6rem 2.4rem 2.4rem;
+  margin: 0 1rem 5rem 1rem;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #2a86ca;
+  overflow: hidden;
+  text-align: left;
+}
+.blue-card .picture {
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.blue-card p{
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 1rem;
+}
+.blue-card .title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* display: block; */
+  margin-bottom: 10px;
+}
+.blue-card p, 
+.blue-card .title{
+  color: #FFF !important;
+}
+.blue-card .picture{
+  filter: grayscale(1) brightness(10);
+}
+.blue-card .content{
+  margin-top: 1rem;
+}
+.title_hogar-seguro{
+  font-family: 'BentonSansBBVA Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 
 /*content*/
 /*responsive*/

@@ -18,7 +18,7 @@ the_post();
 }
 ?>
 <!-- chat -->
-<?php include('template-parts/components/chat.php'); ?>
+<?php get_template_part('template-parts/components/chat');; ?>
 <!-- end chat -->
 
 <!-- mapa -->

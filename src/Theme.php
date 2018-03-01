@@ -84,14 +84,16 @@ final class Theme
         add_image_size('share-thumb',700, 520, true);
 
         register_nav_menus([
-            'top-links'              => __('Top Links Menu', 'openweb'),
-            'main'                   => __('Main Menu', 'openweb'),
-            'secondary'              => __('Secondary Menu', 'openweb'),
-            'prefooter-left'         => __('PreFooter Left Menu', 'openweb'),
-            'prefooter-left-center'  => __('PreFooter Left Center Menu', 'openweb'),
-            'prefooter-right-center' => __('PreFooter Right Center Menu', 'openweb'),
-            'prefooter-right'        => __('PreFooter Right Menu', 'openweb'),
-            'footer-links'           => __('Footer Links Menu', 'openweb'),
+            'top-links'               => __('Top Links Menu', 'openweb'),
+            'main'                    => __('Main Menu', 'openweb'),
+            'secondary'               => __('Secondary Menu', 'openweb'),
+            'prefooter-left'          => __('PreFooter Left Menu', 'openweb'),
+            'prefooter-left-center'   => __('PreFooter Left Center Menu', 'openweb'),
+            'prefooter-middle'        => __('PreFooter Middle Menu', 'openweb'),
+            'prefooter-middle-center' => __('PreFooter Middle Center Menu', 'openweb'),
+            'prefooter-right-center'  => __('PreFooter Right Center Menu', 'openweb'),
+            'prefooter-right'         => __('PreFooter Right Menu', 'openweb'),
+            'footer-links'            => __('Footer Links Menu', 'openweb'),
         ]);
 
         add_theme_support('post-formats', [

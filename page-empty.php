@@ -16,12 +16,12 @@ get_header();
 <?php $textAll = get_field('comprobantes_fiscales_campos'); ?>
 
 <!-- chat -->
-<?php include('template-parts/components/chat.php'); ?>
+<?php get_template_part('template-parts/components/chat');; ?>
 <!-- end chat -->
 
 
 <!-- main slider -->
-<?php include('template-parts/components/hero-slider.php')?>
+<?php get_template_part('template-parts/components/hero-slider');?>
 <!-- end main slider -->
 
 <!-- contenido -->
