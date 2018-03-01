@@ -982,7 +982,6 @@ body > header.container-fluid a.sign-in, .sign-in a {
   position: absolute;
   bottom: 60px;
 }
-<<<<<<< HEAD
 
 /* Link Tips */
 .tips-link{
@@ -995,7 +994,6 @@ body > header.container-fluid a.sign-in, .sign-in a {
     right: 10%;
 }
 /* end link tips*/
-=======
 .card-btn{
   position: absolute;
   bottom: 60px;
@@ -1036,7 +1034,6 @@ body > header.container-fluid a.sign-in, .sign-in a {
 .card-btn:last-of-type {
   margin-right: 0;
 }
->>>>>>> 2443ef7bf7dbdbcb8f7c40a22dc459aeabdf547f
 /*chat fixed*/
 .chat-fixed{
   min-width: 12%;
@@ -1316,7 +1313,6 @@ footer nav > ul li {
     white-space: nowrap;
     cursor: pointer;
   }
-<<<<<<< HEAD
 }
 /* Inicia overlay:hover de Tips*/
 /*Estilos Base*/
@@ -1442,8 +1438,6 @@ footer nav > ul li {
   transform: translateY(0px);
 }
 /* Termina overlay:hover de Tips*/
-=======
-}
 
 
->>>>>>> 2443ef7bf7dbdbcb8f7c40a22dc459aeabdf547f
+
