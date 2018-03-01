@@ -18,7 +18,7 @@ while (have_posts()) {
 }
 ?>
 <!-- chat -->
-<?php get_template_part('template-parts/components/chat');; ?>
+<?php include('template-parts/components/chat.php'); ?>
 <!-- end chat -->
 
 <!-- tips -->
@@ -54,19 +54,19 @@ while (have_posts()) {
 					  endwhile;
 					endif;
 				?>
-			<?php if(get_field('cardseguro')): ?>
-                <div class="tab-content">
+			<?php if(get_field('card_seguros_tips')): ?>
+                <div class="tab-content-tips">
                     <div role="tabpanel" class="tab-pane active" id="home">
                         <div class="row bbva-cards">
-                            <?php if(get_field('cardseguro')): ?>
+                            <?php if(get_field('card_seguros_tips')): ?>
                             <?php 
-                                if( have_rows('cardseguro') ):
-                                while ( have_rows('cardseguro') ) : the_row(); 
+                                if( have_rows('card_seguros_tips') ):
+                                while ( have_rows('card_seguros_tips') ) : the_row(); 
                             ?>
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
                                     <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
-                                        <div class="card-body">
+                                        <div class="card-body-tips">
                                             <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                             <p class="card-text"><?php the_sub_field('resumencard') ?></p>
                                             <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
@@ -81,7 +81,34 @@ while (have_posts()) {
                         </div>
                     </div>
                 </div>
-        	<?php endif;?>					
+        	<?php endif;?>
+        	
+        	<?php if(get_field('listaproducto')): ?>
+                    <div class="container space">
+                        <div class="row">
+                            <div class="col-xs-12 lista">
+                                <h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
+                                <br>    
+                                <?php 
+                                    if( have_rows('listaproducto') ):
+                                        while ( have_rows('listaproducto') ) : the_row(); 
+                                ?>      
+                                <a href="<?php the_sub_field('ligaproducto') ?>">
+                                    <h3><?php the_sub_field('tituloproducto') ?></h3>
+                                </a>
+                                <a href="<?php the_sub_field('ligaproducto') ?>">
+                                    <p><?php the_sub_field('resumenproducto') ?></p>
+                                </a>
+                                <hr>    
+                                <?php
+                                    endwhile;
+                                    endif;
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                
+                <?php endif; ?>					
 		</div>	
 	</div>
 </section>
