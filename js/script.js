@@ -29,4 +29,30 @@ $(document).ready(function(){
 		jQuery('#register-mobile').collapse('show');
 	});
 	
+
+	/* desplegable de acceso a usuarios */
+	$('#openweb-access-mobile').click(function(){
+		console.log('access button clicked');
+		jQuery('#login-in-mobile').collapse('show');
+		jQuery('#register-mobile').collapse('hide');
+	});
+	
+	/* desplegable de registro */
+	$('#openweb-register-mobile').click(function(){
+		console.log('register button clicked');
+		jQuery('#login-in-mobile').collapse('hide');
+		jQuery('#register-mobile').collapse('show');
+	});
+	
+	/* componente de FAQs - evento click, que muestra el elemento */
+	$("div.bhoechie-tab-menu>div.faqs-sidetab>a").click(function(e) {
+		e.preventDefault();
+		$(this).siblings('a.active').removeClass("active");
+		$(this).addClass("active");
+		var index = $(this).index();
+		$("div.bhoechie-tab>div.faqs-tab-content").removeClass("active");
+		$("div.bhoechie-tab>div.faqs-tab-content").eq(index).addClass("active");
+	});
+	
+
 });
