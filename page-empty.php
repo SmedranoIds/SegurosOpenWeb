@@ -16,7 +16,7 @@ get_header();
 <?php $textAll = get_field('comprobantes_fiscales_campos'); ?>
 
 <!-- chat -->
-<?php get_template_part('template-parts/components/chat');; ?>
+<?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
 
 

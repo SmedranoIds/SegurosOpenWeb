@@ -12,7 +12,7 @@
 get_header();
 ?>
 <!-- chat -->
-<?php get_template_part('template-parts/components/chat');; ?>
+<?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
 
 <div class="bg-white">
