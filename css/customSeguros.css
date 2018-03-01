@@ -921,6 +921,10 @@ body > header.container-fluid a.sign-in, .sign-in a {
   padding: 20px;
   height: 25rem;
 }
+.card-body-tips{
+  padding: 20px;
+  height: 37rem;
+}
 .card-link{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -929,6 +933,18 @@ body > header.container-fluid a.sign-in, .sign-in a {
   position: absolute;
   bottom: 60px;
 }
+
+/* Link Tips */
+.tips-link{
+    font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+/* end link tips*/
 /*chat fixed*/
 .chat-fixed{
   min-width: 12%;
@@ -1006,7 +1022,7 @@ footer nav > ul li {
 	}
 	.float-square2{
 		border-right: 2px solid rgba(0,0,0,.125);
-		padding-bottom: 21px;
+		padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 1415px){
@@ -1089,9 +1105,133 @@ footer nav > ul li {
   font-weight: bold;
 }
 @media (max-width: 768px){
-.testimonial-group > .row {
-  overflow-x: auto;
-  white-space: nowrap;
-  cursor: pointer;
+  .testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: pointer;
+  }
 }
+/* Inicia overlay:hover de Tips*/
+/*Estilos Base*/
+.contenedor3-img {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  cursor: default;
+  background: #fff;
 }
+.contenedor3-img .mascara,.contenedor3-img .contenido {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.contenedor3-img img {
+  display: block;
+  position: relative;
+
+}
+.contenedor3-img h2 {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  font-size: 17px;
+  padding: 4%;
+  background: #072146;
+  margin: 20px 0 0 0;
+}
+.contenedor3-img p {
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 10px;
+  text-align: left;
+}
+.contenedor3-img a.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #222;
+  color: #fff;
+  box-shadow: 0 0 1px #000;
+}
+.contenedor3-img a.link:hover {
+  box-shadow: 0 0 5px #000;
+}
+/* Titulo de Tips Hover*/
+.tips-title{
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  color: #ffffff;
+  font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  margin: 0 0 .8em;
+}
+.tips-title-container{
+  background: #072146;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 3%;
+}
+.tab-content-tips{
+  border: none;
+  border-top: none;
+}
+/*Ejemplo 1*/
+.ejemplo-1 img {
+  transition: all 0.2s linear;
+}
+.ejemplo-1 .mascara {
+  opacity: 0;
+  background-color: rgba(25, 115, 184, 1);
+  transition: all 0.3s ease-in-out;
+}
+.ejemplo-1 h2 {
+  transform: translateX(-200px);/*Desplazamos a la izquierda*/
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+.ejemplo-1 p {
+  transform: translateX(200px);/*Desplazamos a la derecha*/
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.ejemplo-1 a.link{
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(100px);/*Desplazamos para abajo*/
+}
+.ejemplo-1:hover img {
+  transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
+}
+.ejemplo-1:hover .mascara {
+  opacity: 1;
+}
+.ejemplo-1:hover h2,
+.ejemplo-1:hover p,
+.ejemplo-1:hover a.link {
+  opacity: 1;
+  transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.ejemplo-1:hover p {
+  transition-delay: 0.1s;
+}
+.ejemplo-1:hover a.link {
+  transition-delay: 0.2s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+  transform: translateY(0px);
+}
+/* Termina overlay:hover de Tips*/
