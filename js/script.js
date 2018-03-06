@@ -45,14 +45,19 @@ $(document).ready(function(){
 	});
 	
 	/* componente de FAQs - evento click, que muestra el elemento */
-	$("div.bhoechie-tab-menu>div.faqs-sidetab>a").click(function(e) {
+	$("div.faqs-tab-menu>div.faqs-sidetab>a").click(function(e) {
 		e.preventDefault();
 		$(this).siblings('a.active').removeClass("active");
 		$(this).addClass("active");
 		var index = $(this).index();
-		$("div.bhoechie-tab>div.faqs-tab-content").removeClass("active");
-		$("div.bhoechie-tab>div.faqs-tab-content").eq(index).addClass("active");
+		$("div.faqs-tab>div.faqs-tab-content").removeClass("active");
+		$("div.faqs-tab>div.faqs-tab-content").eq(index).addClass("active");
+		
 	});
+
+
+	// Primer elemento que muestre la información (agregar la clase 'active');
+	$("div.faqs-tab>div.faqs-tab-content").eq(0).addClass("active");
 	
 
 });

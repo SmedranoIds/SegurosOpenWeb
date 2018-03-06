@@ -141,20 +141,22 @@ while (have_posts()) {
 					    </div>
 					</div>
 					<?php 
-		            if( have_rows('masinfo') ):
+						if( have_rows('masinfo') ):
 						$a = 30;
 						if( have_rows('masinfo') ):
 						while ( have_rows('masinfo') ) : the_row(); 
 					?>
 					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="heading<?php echo $a ?> <?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+					    <!-- <div class="panel-heading" role="tab" id="heading<?php echo $a ?> <?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>"> -->
+					    <div class="panel-heading" role="tab" id="heading<?php echo $a ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
 					      <h4 class="panel-title">
-					        <a class="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+					        <!-- <a class="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>"> -->
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
 					          <?php the_sub_field('titulo') ?>
 					        </a>
 					      </h4>
 					    </div>
-					    <div id="collapse<?php echo $a ?>" class="panel-collapse collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+					    <div id="collapse<?php echo $a ?>" class="panel-collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
 					      <div class="panel-body">
 					        <?php the_sub_field('contenido') ?>
 					      </div>
@@ -294,9 +296,9 @@ while (have_posts()) {
 				<h3>Preguntas frequentes</h3>
 			</div>
 			
-			<div class="bhoechie-tab-container">
+			<div class="">
 				<!-- listado de preguntas -->
-				<div class="col-xs-5 bhoechie-tab-menu">
+				<div class="col-xs-5 faqs-tab-menu">
 					<div class="faqs-sidetab">
 						<?php 
 							if( have_rows('preguntas') ):
@@ -311,12 +313,14 @@ while (have_posts()) {
 				</div>
 
 				<!-- area de respuestas -->
-				<div class="col-xs-7 bhoechie-tab faqs-tab">
+				<!-- <div class="col-xs-7 bhoechie-tab faqs-tab"> -->
+				<div class="col-xs-7 faqs-tab">
 						<?php 
 						if( have_rows('preguntas') ):
 							while ( have_rows('preguntas') ) : the_row();
 						?>
-						<div class="bhoechie-tab-content faqs-tab-content">
+						<!-- <div class="bhoechie-tab-content faqs-tab-content"> -->
+						<div class="faqs-tab-content">
 							<p class="title-faq"><?php the_sub_field('pregunta') ?><p>
 							<p><?php the_sub_field('respuesta') ?></p>
 						</div>

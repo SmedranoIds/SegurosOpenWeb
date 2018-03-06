@@ -112,25 +112,26 @@ get_header();
 
 
 <!-- Segunda sección -->
+<!-- <div class="bg-blue-core"> -->
+
 <div class="container icons-home">
 	<div class="row">
 		<?php
-          if( have_rows('segundaseccion') ):
+          if( have_rows('featured') ):
 			// loop through the rows of data
-			while ( have_rows('segundaseccion') ) : the_row();
+			while ( have_rows('featured') ) : the_row();
 			?>
 		<div class="col-sm-4 col-xs-12 text-center">
 			<div class="container-imgHome">
 			<div class="img-home">
-				<img src="<?php the_sub_field('imgicon'); ?>">
+				<img src="<?php the_sub_field('image'); ?>">
 			</div>
 			</div>
 			<div class="icon-item">
-				<!-- <h4><?php the_sub_field('titulo'); ?></h4> -->
-				<p>
-					<b><?php the_sub_field('titulo'); ?></b><br>
-					<span><?php the_sub_field('subtitulo'); ?></span>
+				<p class="title-item">
+					<?php the_sub_field('titulo'); ?>
 				</p>
+				<p class="txt-info"><?php the_sub_field('descripcion'); ?></p>
 			</div>
         </div>
         <?php 
@@ -140,5 +141,37 @@ get_header();
     </div>
 </div>
 
+
+<!-- empeiza tips 
+<section class="container-fluid" style="background: #e9e9e9;">
+	<div class="container">	
+		<div class="row">
+			<?php 
+				if(have_rows('featured') ): ?>
+				<?php while( have_rows('featured') ): the_row(); ?>
+			<div class="col-xs-6 col-md-4" style="padding-bottom: 30px;">
+					<div class="col ">
+  						<div class="contenedor3-img ejemplo-1">
+  							<div class="tips-title-container">
+  								<span class="tips-title"><?php the_sub_field('titulo'); ?></span>
+  							</div>
+					    	<img style="width: 100%;" src="<?php the_sub_field('image'); ?>" />  
+					     	<div class="mascara">  
+						    	<h2><?php the_sub_field('titulo'); ?></h2>  
+						        <p><?php the_sub_field('descripcion'); ?></p>
+						        <a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('button_tipshover'); ?></a>  
+						    </div>  
+						</div>
+					</div>
+				</div>
+				<?php
+						$b++;
+					  endwhile;
+					endif;
+				?>
+		</div>	
+	</div>
+</section>
+-->
 
 <?php get_footer();

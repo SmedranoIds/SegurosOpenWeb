@@ -144,24 +144,37 @@
 
 /* Estilos Index */
 .icons-home{
-  margin: 50px 0 40px 0;
+  margin: 110px 0 100px 0;
 }
 .icons-home p{
   margin: 0 !important;
 }
 .container-imgHome{
-  width: 150px;
-  margin: 0 auto 10px auto;
+  width: 175px;
+  margin: 0 auto 3rem auto;
 }
 .img-home{
   display: table-cell;
   vertical-align: middle;
   border-radius: 50%;
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: inherit;
   background-color: #e9e9e9;
 }
+.icon-item .txt-info{
+  display: inline-block;
+  /* margin: 0 auto; */
+  max-width: 250px;
+  color: #1973b8;
+  text-align: center;
+  font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
+}
+.icon-item .title-item{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .blockGris{
   background: #f2f2f2;
   padding: 30px 0px;
@@ -170,7 +183,7 @@
 h2.seguros {
   font-size: 30px;
     line-height: 40px;
-    font-family: BentonSansBBVALight;
+    font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
     color: #1973b8;
 }
 h1.titulo {
@@ -181,7 +194,7 @@ h1.titulo {
   text-rendering: optimizelegibility;
 }
 p.descripcion {
-  font-family: BentonSansBBVALight;
+  font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     /* color: #999999; */
@@ -210,7 +223,7 @@ p.descripcion {
   background-position: 0 -1218px;
 }
 a.chat {
-    font-family: BentonSansBBVALight;
+    font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
     color: #1973b8;
     font-size: 18px;
     line-height: 25px;
@@ -246,10 +259,10 @@ a.chat {
     font-size: 18px;
     line-height: 20px;
     color: #1973b8;
-    font-family: BentonSansLight;
+    font-family: BentonSansLight, Arial, Helvetica, sans-serif;
 }
 a.cuadro {
-    font-family: BentonSansBBVAMedium;
+    font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
 }
 .outBlockG {
     position: absolute;
@@ -296,7 +309,7 @@ ul li:before {
     line-height: 18px;
 }
 .cuadrosIndex h3 {
-    font-family: BentonSansBBVAMedium;
+    font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 16px;
     margin-top: 0px;
@@ -304,13 +317,13 @@ ul li:before {
 .lista h2 {
     font-size: 28px;
     /* line-height: 20px; */
-    font-family: BentonSansBBVALight;
+    font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
     color: #1973b8;
 }
 .lista h3 {
     font-size: 14px;
     line-height: 20px;
-    font-family: BentonSansBBVAMedium;
+    font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
 }
 .lista p {
     color: #434957;
@@ -326,7 +339,7 @@ hr {
 }
 h4.panel-title {
     font-size: 18px;
-    font-family: BentonSansBBVALight;
+    font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -407,7 +420,7 @@ li.icon-pdf:before{
   color: #1973b8;
   font-size: 17px;
   line-height: 20px;
-  font-family: BentonSansMedium;
+  font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
   font-weight: normal;
   padding-top: 30px;
 }
@@ -510,7 +523,7 @@ li.icon-pdf:before{
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  font-family: BentonSansMedium;
+  font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
 }
 .boton-verde:hover{
@@ -532,7 +545,7 @@ li.icon-pdf:before{
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
-  font-family: BentonSansMedium;
+  font-family: BentonSansBBVAMedium;
 }
 .boton-verde:focus{
     outline:none;
@@ -551,7 +564,7 @@ li.icon-pdf:before{
   padding-right: 25px;
   font-size: 12px;
   color: #ffffff; 
-  font-family: BentonSansMedium;
+  font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
@@ -733,12 +746,12 @@ li.icon-pdf:before{
 #carousel-example .carousel-caption h3 {
   font-size: 32px;
   color: #019fe6;
-  font-family: BentonSansBBVALight;
+  font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
 }
 #carousel-example .carousel-caption p {
   color: #006ec1;
   font-size: 16px;
-  font-family: BentonSansBBVAMedium;
+  font-family: BentonSansBBVAMedium, Arial, Helvetica, sans-serif;
 }
 .carousel-indicators li span {
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1109,7 +1122,7 @@ body > header.container-fluid a.sign-in, .sign-in a {
   padding: 0 2rem 0 0
 }
 
-div.bhoechie-tab div.faqs-tab-content:not(.active){
+div.faqs-tab div.faqs-tab-content:not(.active) {
   display: none;
 }
 
@@ -1209,14 +1222,18 @@ footer nav > ul li {
   }
 }
 @media (max-width: 995px){
-	.float-square{
-	}
 	.float-square2{
 		border: 2px solid rgba(0,0,0,.125);
 	}
 	.float-square3{
 		border: 2px solid rgba(0,0,0,.125);
-	}
+  }
+  .icon-item{
+    margin-bottom: 5rem;
+  }
+  .icons-home{
+    margin-bottom: 70px;
+  }
 }
 @media (min-width: 992px){
 	.float-square{
@@ -1366,6 +1383,66 @@ footer nav > ul li {
 }
 .contenedor3-img a.link:hover {
   box-shadow: 0 0 5px #000;
+}
+
+
+/* cuadros Hogar Seguro */
+.hogar-contenedor{
+  width: 100%;
+  /* height: 100%; */
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  cursor: default;
+  background: #fff;
+}
+.hogar-contenedor.mascara,.hogar-contenedor.contenido {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hogar-contenedor img {
+  display: block;
+  position: relative;
+
+}
+.hogar-contenedorh2 {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  font-size: 17px;
+  padding: 15px 0 15px 15px;
+  background: #072146;
+  margin: 20px 0 15px 0;
+}
+.hogar-contenedorp {
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding-left: 15px;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+.hogar-contenedora.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #222;
+  color: #fff;
+  box-shadow: 0 0 1px #000;
+}
+.hogar-contenedora.link:hover {
+  box-shadow: 0 0 5px #000;
+}
+.hogar-contenedor.tips-title {
+  font-size: 1.7rem;
 }
 /* Titulo de Tips Hover*/
 .tips-title{
