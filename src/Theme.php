@@ -94,6 +94,8 @@ final class Theme
             'prefooter-right-center'  => __('PreFooter Right Center Menu', 'openweb'),
             'prefooter-right'         => __('PreFooter Right Menu', 'openweb'),
             'footer-links'            => __('Footer Links Menu', 'openweb'),
+            'footer-links-dos'        => __('Footer Links Dos', 'openweb'),
+            'footer-links-tres'       => __('Footer Links Tres', 'openweb'),
         ]);
 
         add_theme_support('post-formats', [

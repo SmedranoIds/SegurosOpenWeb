@@ -7,7 +7,7 @@
                     wp_nav_menu([
                         'theme_location'  => 'prefooter-left',
                         'menu_class'      => '',
-                        'container_class' => 'col-xs-12 col-sm-6 col-md-3',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
                         'depth'           => 1,
                     ]);
                 }
@@ -16,7 +16,7 @@
                     wp_nav_menu([
                         'theme_location'  => 'prefooter-left-center',
                         'menu_class'      => '',
-                        'container_class' => 'col-xs-12 col-sm-6 col-md-3',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
                         'depth'           => 1,
                     ]);
                 }
@@ -25,7 +25,7 @@
                     wp_nav_menu([
                         'theme_location'  => 'prefooter-right-center',
                         'menu_class'      => '',
-                        'container_class' => 'col-xs-12 col-sm-6 col-md-3',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
                         'depth'           => 1,
                     ]);
                 }
@@ -34,7 +34,25 @@
                     wp_nav_menu([
                         'theme_location'  => 'prefooter-right',
                         'menu_class'      => '',
-                        'container_class' => 'col-xs-12 col-sm-6 col-md-3',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
+                        'depth'           => 1,
+                    ]);
+                }
+
+                if (has_nav_menu('footer-links-dos')) {
+                    wp_nav_menu([
+                        'theme_location'  => 'footer-links-dos',
+                        'menu_class'      => '',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
+                        'depth'           => 1,
+                    ]);
+                }
+
+                if (has_nav_menu('footer-links-tres')) {
+                    wp_nav_menu([
+                        'theme_location'  => 'footer-links-tres',
+                        'menu_class'      => '',
+                        'container_class' => 'col-xs-12 col-sm-6 col-md-2',
                         'depth'           => 1,
                     ]);
                 }
