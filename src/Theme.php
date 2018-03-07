@@ -94,6 +94,7 @@ final class Theme
             'prefooter-right-center'  => __('PreFooter Right Center Menu', 'openweb'),
             'prefooter-right'         => __('PreFooter Right Menu', 'openweb'),
             'footer-links'            => __('Footer Links Menu', 'openweb'),
+           
         ]);
 
         add_theme_support('post-formats', [
@@ -154,6 +155,7 @@ final class Theme
     {
         if (false !== strpos($args->theme_location, 'prefooter')) {
             $title = sprintf('<h2 id="'.$args->menu->name.'">%1$s</h2>', $args->menu->name);
+
             $menu = preg_replace('/><ul/', '>'.$title.PHP_EOL.'<ul', $menu);
         }
 
