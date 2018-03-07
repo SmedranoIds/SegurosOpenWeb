@@ -112,13 +112,13 @@ get_header();
 
 
 <!-- Segunda sección -->
-<!-- <div class="bg-blue-core"> -->
-
-<div class="container icons-home">
-	<div class="row">
+<!-- <div class="bg-blue-core"> 
+<section class="container-fluid bg-grey300 hidden-lg">
+	<div class="container">
+		<div class="row">
 		<?php
           if( have_rows('featured') ):
-			// loop through the rows of data
+			
 			while ( have_rows('featured') ) : the_row();
 			?>
 		<div class="col-sm-4 col-xs-12 text-center">
@@ -139,39 +139,78 @@ get_header();
 			endif;
 		?>
     </div>
-</div>
+    </div>
+</section>
+		-->
 
-
-<!-- empeiza tips 
-<section class="container-fluid" style="background: #e9e9e9;">
-	<div class="container">	
-		<div class="row">
-			<?php 
-				if(have_rows('featured') ): ?>
-				<?php while( have_rows('featured') ): the_row(); ?>
-			<div class="col-xs-6 col-md-4" style="padding-bottom: 30px;">
-					<div class="col ">
-  						<div class="contenedor3-img ejemplo-1">
-  							<div class="tips-title-container">
-  								<span class="tips-title"><?php the_sub_field('titulo'); ?></span>
-  							</div>
-					    	<img style="width: 100%;" src="<?php the_sub_field('image'); ?>" />  
-					     	<div class="mascara">  
-						    	<h2><?php the_sub_field('titulo'); ?></h2>  
-						        <p><?php the_sub_field('descripcion'); ?></p>
-						        <a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('button_tipshover'); ?></a>  
-						    </div>  
+<section class="container-fluid bg-grey200 hidden-lg">
+    
+        <div class="container">
+            <div class="row bbva-card">
+                
+					<?php
+						if( have_rows('featured') ):				
+							while ( have_rows('featured') ) : the_row();
+					?>	
+						<div class="col-xs-12 col-sm-4">
+						<div class="card">
+							<div class="text-center">
+							<a href="<?php the_sub_field('url') ?>" target="<?php the_sub_field('target')?>">
+								<img class="card-block" src="<?php the_sub_field('image') ?>" >
+							</a>
+							</div>
+							<div class="card-body bg-blue-core">
+								<h5 class="card-title"><?php the_sub_field('titulo') ?></h5>
+								<p class="card-text"><?php the_sub_field('descripcion') ?></p>
+								<a href="<?php the_sub_field('url') ?>" class="card-btn" target="<?php the_sub_field('target') ?>"><?php
+									the_sub_field('label')
+								?></a>
+							</div>
 						</div>
-					</div>
-				</div>
-				<?php
-						$b++;
-					  endwhile;
-					endif;
-				?>
+						</div>
+
+					<?php 
+						endwhile;
+						endif;
+					?>
+                
+            </div>
+        </div>
+    
+</section>
+
+
+
+<!-- tips -->
+<section class="container-fluid bg-grey300 visible-lg">
+	<div class="container">
+		<div class="row">
+		<p>&nbsp;</p>
+		<?php 
+			if(have_rows('featured') ): ?>
+			<?php while( have_rows('featured') ): the_row(); ?>
+		<div class="col-sm-4" style="padding-bottom: 30px;">
+			<div class="homepage-container ejemplo-1">
+			<div class="tips-title-container">
+				<span class="tips-title"><?php the_sub_field('titulo'); ?></span>
+			</div>
+			<div class="img-container" style="background-image: url('<?php the_sub_field('image'); ?>');"></div>
+			<div class="mascara">  
+				<h2><?php the_sub_field('titulo'); ?></h2>  
+				<p><?php the_sub_field('descripcion'); ?></p>
+				<a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('label'); ?></a>  
+			</div>  
+			
+			</div>
+		</div>
+	  	<?php
+		endwhile;
+		endif;
+		?>		
+		<p>&nbsp;</p>
 		</div>	
 	</div>
 </section>
--->
+
 
 <?php get_footer();
