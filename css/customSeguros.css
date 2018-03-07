@@ -431,7 +431,9 @@ li.icon-pdf:before{
 .space {
   height: 20px;
 }
-
+.pre-footer{
+  hyphens: unset;
+}
 .pre-footer ul {
   list-style: none;
   margin: 0;
@@ -458,14 +460,24 @@ li.icon-pdf:before{
 }
 .pre-footer ul li a{
   color: #1973b8;
-  display: inline-block;
-  padding-right: 0.3em;
+  display: block;
+  width: 100%;
+  /* padding-right: 0.3em; */
+  hyphens: unset;
 }
 
 .pre-footer a{
   font-size: 1.4rem;
   padding: 0;
   margin: 0;
+}
+.pre-footer h2#terminos{
+  display: none !important;
+}
+#menu-terminos li a{
+  /* font-weight: bold; */
+  font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #121212 !important;
 }
 .footer h4 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1062,7 +1074,7 @@ body > header.container-fluid a.sign-in, .sign-in a {
   font-size:  14px;
 /* color:  white; */
   padding: 5px;
-  z-index: 1;
+  z-index: 1000;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
 }
 .chat-fontFamily{
@@ -1178,6 +1190,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 }
 .title_hogar-seguro{
   font-family: 'BentonSansBBVA Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 5rem;
 }
 
 /*content*/
@@ -1397,8 +1410,9 @@ footer nav > ul li {
   text-align: left;
   cursor: default;
   background: #fff;
+  cursor:pointer;
 }
-.hogar-contenedor.mascara,.hogar-contenedor.contenido {
+.hogar-contenedor .mascara, .hogar-contenedor .contenido {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1407,13 +1421,25 @@ footer nav > ul li {
   left: 0;
   z-index: 2;
 }
-
-.hogar-contenedor img {
-  display: block;
-  position: relative;
-
+.hogar-contenedor:hover .img-container{
+  transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
 }
-.hogar-contenedorh2 {
+
+.hogar-contenedor .img-container{
+  width: 100%;
+  height: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  transition: all 0.2s linear;
+}
+.hogar-contenedor img {
+  vertical-align: middle;
+}
+.hogar-contenedor h2 {
   color: #fff;
   text-align: left;
   position: relative;
@@ -1422,7 +1448,7 @@ footer nav > ul li {
   background: #072146;
   margin: 20px 0 15px 0;
 }
-.hogar-contenedorp {
+.hogar-contenedor p {
   font-size: 14px;
   position: relative;
   color: #fff;
@@ -1430,7 +1456,7 @@ footer nav > ul li {
   margin: 0 0 10px 0;
   text-align: left;
 }
-.hogar-contenedora.link {
+.hogar-contenedor a.link {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
@@ -1438,10 +1464,10 @@ footer nav > ul li {
   color: #fff;
   box-shadow: 0 0 1px #000;
 }
-.hogar-contenedora.link:hover {
+.hogar-contenedor a.link:hover {
   box-shadow: 0 0 5px #000;
 }
-.hogar-contenedor.tips-title {
+.hogar-contenedor .tips-title {
   font-size: 1.7rem;
 }
 /* Titulo de Tips Hover*/

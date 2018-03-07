@@ -33,29 +33,32 @@ while (have_posts()) {
 <?php
 if (have_posts()):
   while (have_posts()) : the_post();
-    the_content();
+    // the_content();
   endwhile;
 endif;
 ?>
 
 <!-- tips -->
-<section class="container-fluid">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-        <h2 class="title_hogar-seguro"><?php the_field('encabezadotips'); ?></h2>
+<section class="container-fluid bg-grey300">
+  <h2 class="title_hogar-seguro text-center"><?php the_field('encabezadotips'); ?></h2>
+	<div class="container ">
+		<!-- 
+    <div class="row">
+			<div class="col-xs-12 text-center">
 			</div>
-		</div>	
+    </div>
+  -->
 		<div class="row">
 			<?php 
 				if(have_rows('tipshover') ): ?>
 				<?php while( have_rows('tipshover') ): the_row(); ?>
-			<div class="col-md-4" style="padding-bottom: 30px;">
-        <div class="hogar-contenedorejemplo-1">
+			<div class="col-sm-4" style="padding-bottom: 30px;">
+        <div class="hogar-contenedor ejemplo-1">
           <div class="tips-title-container">
             <span class="tips-title"><?php the_sub_field('title_tipshover'); ?></span>
           </div>
-          <img style="width: 100%;" src="<?php the_sub_field('imagen_tipshover'); ?>" />  
+          <div class="img-container" style="background-image: url('<?php the_sub_field('imagen_tipshover'); ?>');">
+          </div>
           <div class="mascara">  
             <h2><?php the_sub_field('title_tipshover'); ?></h2>  
               <p><?php the_sub_field('resumen_tipshover'); ?></p>
@@ -68,63 +71,7 @@ endif;
 						$b++;
 					  endwhile;
 					endif;
-        ?>
-        
-			<?php if(get_field('card_seguros_tips')): ?>
-                <div class="tab-content-tips">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                        <div class="row bbva-cards">
-                            <?php if(get_field('card_seguros_tips')): ?>
-                            <?php 
-                                if( have_rows('card_seguros_tips') ):
-                                while ( have_rows('card_seguros_tips') ) : the_row(); 
-                            ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card">
-                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap"></a>
-                                        <div class="card-body-tips">
-                                            <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
-                                            <p class="card-text"><?php the_sub_field('resumencard') ?></p>
-                                            <a href="<?php the_sub_field('urlcardbutton') ?>" class="card-link" target="<?php the_sub_field('targetcardbutton')?>"><?php the_sub_field('textcardbutton') ?></a>
-                                        </div>
-                                    </div>
-                                </div>      
-                            <?php
-                                endwhile;
-                                endif;
-                            ?>
-                            <?php endif;?>
-                        </div>
-                    </div>
-                </div>
-        	<?php endif;?>
-        	
-        	<?php if(get_field('listaproducto')): ?>
-                    <div class="container space">
-                        <div class="row">
-                            <div class="col-xs-12 lista">
-                                <h2 class="tituloLista">Otros Seguros de <?php the_field("subtitulo") ?></h2>
-                                <br>    
-                                <?php 
-                                    if( have_rows('listaproducto') ):
-                                        while ( have_rows('listaproducto') ) : the_row(); 
-                                ?>      
-                                <a href="<?php the_sub_field('ligaproducto') ?>">
-                                    <h3><?php the_sub_field('tituloproducto') ?></h3>
-                                </a>
-                                <a href="<?php the_sub_field('ligaproducto') ?>">
-                                    <p><?php the_sub_field('resumenproducto') ?></p>
-                                </a>
-                                <hr>    
-                                <?php
-                                    endwhile;
-                                    endif;
-                                ?>
-                            </div>
-                        </div>
-                    </div>
-                
-                <?php endif; ?>					
+        ?>		
 		</div>	
 	</div>
 </section>

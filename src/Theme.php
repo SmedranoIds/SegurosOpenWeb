@@ -89,12 +89,10 @@ final class Theme
             'secondary'               => __('Secondary Menu', 'openweb'),
             'prefooter-left'          => __('PreFooter Left Menu', 'openweb'),
             'prefooter-left-center'   => __('PreFooter Left Center Menu', 'openweb'),
-            'prefooter-middle'        => __('PreFooter Middle Menu', 'openweb'),
-            'prefooter-middle-center' => __('PreFooter Middle Center Menu', 'openweb'),
+            'prefooter-middle'        => __('PreFooter Middle', 'openweb'),
+            'prefooter-middle-center' => __('PreFooter Middle Center', 'openweb'),
             'prefooter-right-center'  => __('PreFooter Right Center Menu', 'openweb'),
             'prefooter-right'         => __('PreFooter Right Menu', 'openweb'),
-            'prefooter-links-uno'     => __('PreFooter Links Uno', 'openweb'),
-            'prefooter-link-dos'      => __('PreFooter Links Dos', 'openweb'),
             'footer-links'            => __('Footer Links Menu', 'openweb'),
            
         ]);
@@ -156,8 +154,7 @@ final class Theme
     public function renderPrefooterMenu($menu, $args)
     {
         if (false !== strpos($args->theme_location, 'prefooter')) {
-            $title = sprintf('<h2>%1$s</h2>', $args->menu->name);
-
+            $title = sprintf('<h2 id="'.$args->menu->name.'">%1$s</h2>', $args->menu->name);
             $menu = preg_replace('/><ul/', '>'.$title.PHP_EOL.'<ul', $menu);
         }
 
