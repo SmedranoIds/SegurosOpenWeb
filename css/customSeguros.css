@@ -906,6 +906,9 @@ color: #333;
   background-size: cover;
 }
 
+.breadcrumbs .container{
+  display: none;
+}
 .breadcrumbs{
   padding: 15px 0 ;
   font-size: 11px;
@@ -1005,10 +1008,15 @@ body > header.container-fluid a.sign-in, .sign-in a {
   color: #2a86ca;
   text-decoration: none;
   position: absolute;
-  bottom: 60px;
+  
+  bottom: 15px;
+  
 }
 
 /* Link Tips */
+.tips-link:hover{
+  color: #FFF !important;
+}
 .tips-link{
     font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -1020,8 +1028,8 @@ body > header.container-fluid a.sign-in, .sign-in a {
 }
 /* end link tips*/
 .card-btn{
+  bottom: 15px;
   position: absolute;
-  bottom: 60px;
   border: none;
   border-radius: 1px;
   color: #fff !important;
@@ -1188,6 +1196,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 .blue-card .content{
   margin-top: 1rem;
 }
+
 .title_hogar-seguro{
   font-family: 'BentonSansBBVA Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin-bottom: 5rem;
@@ -1202,6 +1211,15 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     margin-right: 20px;
     float: right;
   }
+
+  .card-link{
+    bottom: 60px;
+  }
+  .card-btn{
+    bottom: 60px;
+  }
+  
+
 }
 @media (max-width: 992px){
   .outBlockG {
@@ -1256,9 +1274,6 @@ footer nav > ul li {
 		border-right: 2px solid rgba(0,0,0,.125);
 		padding-bottom: 10px;
   }
-  .card img{
-    max-height: 217px;
-  }
   
 }
 @media screen and (max-width: 1415px){
@@ -1291,11 +1306,18 @@ footer nav > ul li {
     width: 100%;
     vertical-align: middle;
   }
+  .card img{
+    max-height: 217px;
+  }
   .container {
       width: 100% !important; 
       /* max-width: 750px; */
       max-width: 1000px;
   }
+  .breadcrumbs .container {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 962px) {
@@ -1502,9 +1524,19 @@ footer nav > ul li {
   width: 100%;
   height: inherit;
   display: inline-block;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover /*100% auto */;
+  transition: all 0.2s linear;
+}
+
+.homepage-mobile-container .img-container{
+  width: 100%;
+  height: 190px;
+  display: inline-block;
   vertical-align: middle;
   text-align: center;
-  background-position: center 35%;
+  background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover /*100% auto */;
   transition: all 0.2s linear;
@@ -1542,6 +1574,10 @@ footer nav > ul li {
 }
 .homepage-container .tips-title {
   font-size: 1.7rem;
+}
+.card.homepage-mobile-container .card-btn,
+.card.homepage-mobile-container .card-link{
+  bottom: unset;
 }
 
 

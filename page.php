@@ -143,46 +143,45 @@ get_header();
 </section>
 		-->
 
+<!-- featured mobile -->
 <section class="container-fluid bg-grey200 hidden-lg">
-    
-        <div class="container">
-            <div class="row bbva-card">
-                
-					<?php
-						if( have_rows('featured') ):				
-							while ( have_rows('featured') ) : the_row();
-					?>	
-						<div class="col-xs-12 col-sm-4">
-						<div class="card">
-							<div class="text-center">
-							<a href="<?php the_sub_field('url') ?>" target="<?php the_sub_field('target')?>">
-								<img class="card-block" src="<?php the_sub_field('image') ?>" >
-							</a>
-							</div>
-							<div class="card-body bg-blue-core">
-								<h5 class="card-title"><?php the_sub_field('titulo') ?></h5>
-								<p class="card-text"><?php the_sub_field('descripcion') ?></p>
-								<a href="<?php the_sub_field('url') ?>" class="card-btn" target="<?php the_sub_field('target') ?>"><?php
-									the_sub_field('label')
-								?></a>
-							</div>
-						</div>
-						</div>
+	<div class="container">
+		<div class="row">
+		<p>&nbsp;</p>
+			<?php
+				if( have_rows('featured') ):				
+					while ( have_rows('featured') ) : the_row();
+			?>	
+				<div class="col-xs-12 col-sm-4">
+				<div class="card homepage-mobile-container">
+					<div class="text-center">
+					<a href="<?php the_sub_field('url') ?>" target="<?php the_sub_field('target')?>" class="img-container" style="background-image: url('<?php the_sub_field('image'); ?>');"
+					></a>
+					</div>
+					<div class="card-body bg-blue-core">
+						<h5 class="card-title"><?php the_sub_field('titulo') ?></h5>
+						<p class="card-text"><?php the_sub_field('descripcion') ?></p>
+						<a href="<?php the_sub_field('url') ?>" class="card-btn" target="<?php the_sub_field('target') ?>"><?php
+							the_sub_field('label')
+						?></a>
+					</div>
+				</div>
+				</div>
 
-					<?php 
-						endwhile;
-						endif;
-					?>
-                
-            </div>
-        </div>
-    
+			<?php 
+				endwhile;
+				endif;
+			?>
+			<p>&nbsp;</p>
+		</div>
+	</div>
 </section>
+<!-- end featured mobile -->
 
 
 
-<!-- tips -->
-<section class="container-fluid bg-grey300 visible-lg">
+<!-- featured desktop -->
+<section class="container-fluid bg-grey200 visible-lg">
 	<div class="container">
 		<div class="row">
 		<p>&nbsp;</p>
@@ -211,6 +210,7 @@ get_header();
 		</div>	
 	</div>
 </section>
+<!-- end featured desktop -->
 
 
 <?php get_footer();
