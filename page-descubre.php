@@ -39,7 +39,7 @@ endif;
 ?>
 
 <!-- tips -->
-<section class="container-fluid bg-grey300">
+<section class="container-fluid bg-grey200">
   <h2 class="title_hogar-seguro text-center"><?php the_field('encabezadotips'); ?></h2>
 	<div class="container ">
 		<!-- 
