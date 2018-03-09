@@ -244,10 +244,16 @@ while (have_posts()) {
 			</div>
 
 			end right column -->
-
 		</div>
 	</div>
- 
+
+<?php if (the_field('iframe')): ?>
+	<div class="col-xs-12">
+			<?php (the_field('iframe'))?>
+	</div>
+<?php endif; ?>
+
+
 	<?php 
 		if( have_rows('preguntas') ): 
 	?>
@@ -255,40 +261,33 @@ while (have_posts()) {
 		<div class="bg-grey100 faqs_content hidden-md hidden-lg">
 		<h3 style="padding-left: 2rem;">Preguntas frequentes</h3>
 
-	<?php
-		$q = 30;
-		if( have_rows('preguntas') ):
-			while ( have_rows('preguntas') ) : the_row(); 
-	?>
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="heading<?php echo $q ?> <?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
-				<h4 class="panel-title">
-					<a class="<?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
-						<?php the_sub_field('pregunta') ?>
-					</a>
-				</h4>
-			</div>
-			<div id="collapse<?php echo $q ?>" class="panel-collapse collapse <?php if($q === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $q ?>">
-				<div class="panel-body">
-					<?php the_sub_field('respuesta') ?>
+		<?php
+			$q = 30;
+			if( have_rows('preguntas') ):
+				while ( have_rows('preguntas') ) : the_row(); 
+		?>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading<?php echo $q ?> <?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
+					<h4 class="panel-title">
+						<a class="<?php if($q != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $q ?>" aria-expanded="true" aria-controls="collapse<?php echo $q ?>">
+							<?php the_sub_field('pregunta') ?>
+						</a>
+					</h4>
+				</div>
+				<div id="collapse<?php echo $q ?>" class="panel-collapse collapse <?php if($q === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $q ?>">
+					<div class="panel-body">
+						<?php the_sub_field('respuesta') ?>
+					</div>
 				</div>
 			</div>
+		<?php
+				$q++;
+				endwhile;
+			endif;
+		?>
 		</div>
-	<?php
-			$q++;
-			endwhile;
-		endif;
-	?>
-	</div>
-
-	<?php 
-		endif;
-	?>
 
 
-	<?php 				
-		if( have_rows('preguntas') ):
-	?>
 		<!-- faqs vers tablet & desktop -->
 		<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
 		<div class="container">
