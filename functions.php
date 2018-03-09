@@ -25,6 +25,12 @@
  * @subpackage Theme
  * @since Theme 1.0
  */
+
+
+//Eliminar párrafos automáticos por defecto
+remove_filter('the_content', 'wpautop');
+remove_filter( 'the_excerpt', 'wpautop' );
+
 if (version_compare(PHP_VERSION, '5.6', '<')) {
     die(__('El tema Openweb basado en Coronita sólo funciona a partir de las versiones 5.6.x de PHP', 'openweb'));
 }
