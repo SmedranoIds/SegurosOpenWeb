@@ -432,6 +432,8 @@ li.icon-pdf:before{
   height: 20px;
 }
 .pre-footer{
+  -webkit-hyphens: unset;
+  -moz-hyphens: unset;
   hyphens: unset;
 }
 .pre-footer ul {

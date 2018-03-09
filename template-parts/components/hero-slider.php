@@ -15,7 +15,7 @@
                 ?>
         <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');">
             <div class="container">
-                <div class="col-md-6 col-sm-6" style="padding-top: 70px;">
+                <div class="col-md-6 col-sm-7" style="padding-top: 70px;">
                         <div class="banner-msn">
                             <div class="row tt">
                                 <div class="col-md-10 col-sm-10">
