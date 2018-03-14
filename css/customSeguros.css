@@ -1724,7 +1724,7 @@ footer nav > ul li {
   text-align: center;
   display: block;
 }
-@media only screen and (max-width: 750px;){
+@media only screen and (max-width: 750px){
   .glossary__nav__item a{
     width: 20px;
     font-size: 10px;
