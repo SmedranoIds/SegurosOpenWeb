@@ -64,11 +64,20 @@ while (have_posts()) {
                             <?php 
                                 if( have_rows('cardseguro') ):
                                 while ( have_rows('cardseguro') ) : the_row(); 
+
+                                //Objeto imagen:
+                                //si es diferente de vacío, que busque el objeto
+                                if(!empty(get_sub_field('imagecard'))):
+                                    //busca el objeto imagen
+                                    $image = get_sub_field('imagecard');
+                                    $imgURL = $image['url'];
+                                    $imgAlt = $image['alt'];
+                                endif;
                             ?>
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
                                     <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>">
-                                        <img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" >
+                                        <img class="card-block" src="<?php echo $imgURL; ?>" alt="<?php echo $imgAlt; ?>" >
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
@@ -123,6 +132,7 @@ while (have_posts()) {
                 </div>
 
 
+                <!-- Segundo tab -->
                 <?php if( get_field('subtitulo2') ):    ?>
                 <div role="tabpanel" class="tab-pane" id="profile">
                     <div class="row bbva-cards">
@@ -131,10 +141,19 @@ while (have_posts()) {
                             <?php 
                                 if( have_rows('cardseguro2') ):
                                 while ( have_rows('cardseguro2') ) : the_row(); 
+                                
+                                //Objeto imagen:
+                                //si es diferente de vacío, que busque el objeto
+                                if(!empty(get_sub_field('imagecard'))):
+                                    //busca el objeto imagen
+                                    $image = get_sub_field('imagecard');
+                                    $imgURL2 = $image['url'];
+                                    $imgAlt2 = $image['alt'];
+                                endif;
                             ?>
                             <div class="col-sm-6 col-md-4">
                                 <div class="card">
-                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php the_sub_field('imagecard') ?>" alt="Card image cap" ></a>
+                                <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php echo $imgURL2; ?>" alt="<?php echo $imgAlt2; ?>" ></a>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                         <p class="card-text"><?php the_sub_field('resumencard') ?></p>

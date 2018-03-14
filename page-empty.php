@@ -27,29 +27,34 @@ get_header();
 <!-- contenido -->
 <section class="container-fluid">
     <div class="container">
-    	<div class="col-sm-12">
-	    	<div class="row">
-	    		<div class="col-md-12 col-xs-12">					
-					<h1 class="titulo"><?php 
-					/* imprimir el título - dependiendo si es el tal cual o algún título en especial */
-					if(get_field('parent')):
-						the_field('parent');
-					else: 
-						the_title(); 
+    	
+		<div class="row">
+			<div class="col-xs-12 text-justify">					
+				<h1 class="titulo"><?php 
+				/* imprimir el título - dependiendo si es el tal cual o algún título en especial */
+				if(get_field('parent')):
+					the_field('parent');
+				else: 
+					the_title(); 
+				endif;
+				?></h1>
+				<?php 	
+				if(get_field('page_content')):
+					the_field('page_content');
+				endif;
+				/*			
+					if (have_posts()):
+						while (have_posts()) : the_post();
+						the_content();
+						endwhile;
+					else:
+						echo '<p>&nbps;</p>';
 					endif;
-					?></h1>
-					<?php 				
-						if (have_posts()):
-							while (have_posts()) : the_post();
-							the_content();
-							endwhile;
-						else:
-							echo '<p>&nbps;</p>';
-						endif;
-					?>
-				</div>
-    		</div>
-	    </div>
+				*/
+				?>
+			</div>
+		</div>
+	    
 		<!-- 
     	<div class="col-md-4 col-xs-12">
 				<div class="panel panel-default text-center">

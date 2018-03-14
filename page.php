@@ -10,6 +10,8 @@
  */
 get_header();
 ?>
+
+
 <!-- chat -->
 <?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
@@ -32,59 +34,36 @@ get_header();
 			// loop through the rows of data
 			while ( have_rows('banner')   ) : the_row();
 			?>
-    <div class="item <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
-  		<div class="container hidden-xs">
-  			<div class="col-md-6 col-sm-6" style="padding-top: 70px;">
-		            <div class="banner-msn">
-						<div class="row tt">
-							<div class="col-md-10 col-sm-10">
-								<h2><?php the_sub_field('titulo'); ?></h2>
-							</div>
+	<div class="item <?php if($i == 0) {echo 'active';} ?>" 
+	style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
+		<div class="container">
+			<div class="col-md-8 col-lg-6" style="padding-top: 70px;">
+				<?php if(!empty(get_sub_field('titulo'))): ?>		
+				<div class="banner-msn">
+					<div class="row">
+						<div class="col-md-10 col-sm-10 titulo">
+							<?php the_sub_field('titulo'); ?>
 						</div>
-						<div class="spacebanner"></div>
-						<div class="row">
-							<div class="col-md-12 col-sm-12 tt2">
-								<p><?php the_sub_field('introduccion'); ?></p>
-							</div>
-						</div>
-						<div class="spacebanner"></div>
-						<div class="row tt3">
-							<?php if (get_sub_field('boton')) {?>
-							<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-								<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
-							</div>
-							<?php } ?>
-						</div>
-		    		</div>
-		      </div>
-  		</div
-		  >
-  	<div class="visible-xs"><!-- 
-  		<img class="img-responsive" src="<?php the_sub_field('imagen'); ?>"> -->
-	  	<div class="container banner-msn">
-	  		<div class="row sec-index-mov">
-				<div class="col-xs-12 text-center">
-					<h2><?php the_sub_field('titulo'); ?></h2>
-				</div>
-			</div>
-			<div class="row sec-index-mov">
-				<div class="col-xs-12 text-center">
-					<p><?php the_sub_field('introduccion'); ?></p>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-xs-12 text-center">
-					<?php if (get_sub_field('boton')) {?>
-					<div class="col-xs-12 text-center">
-						<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
 					</div>
-					<?php } ?>
+					<!-- <div class="spacebanner"></div> -->
+					<div class="row">
+						<div class="col-md-12 col-sm-12 tt2">
+							<p><?php the_sub_field('introduccion'); ?></p>
+						</div>
+					</div>
+					<!-- <div class="spacebanner"></div> -->
+					<div class="row tt3">
+						<?php if (get_sub_field('boton')) {?>
+						<div class="col-md-7 col-sm-7 col-xs-7 text-left">
+							<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
+						</div>
+						<?php } ?>
+					</div>
 				</div>
+				<?php endif; ?>
 			</div>
-	  	</div>
-  	</div>
-
-  	</div>
+		</div>
+	</div>
 
 	<?php 
 		$i ++;
@@ -92,17 +71,14 @@ get_header();
 		endif;
 	?>
 
- </div>
+</div>
 <?php if ($i!=1) { ?>
   <!-- Controls -->
- 
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
    	<?php for ($j=0; $j < $i ; $j++) { ?>
-
-   			<li data-target="#carousel-example-generic" data-slide-to="<?php echo $j; ?>" <?php if ($j == 0) {echo " class='active' ";} ?> ></li> 
-
+		<li data-target="#carousel-example-generic" data-slide-to="<?php echo $j; ?>" <?php if ($j == 0) {echo " class='active' ";} ?> ></li> 
 	<?php } ?>
   </ol>
 <?php } } ?>
@@ -118,7 +94,6 @@ get_header();
 		<div class="row">
 		<?php
           if( have_rows('featured') ):
-			
 			while ( have_rows('featured') ) : the_row();
 			?>
 		<div class="col-sm-4 col-xs-12 text-center">
@@ -141,18 +116,18 @@ get_header();
     </div>
     </div>
 </section>
-		-->
+-->
 
 <!-- featured mobile -->
 <section class="container-fluid bg-grey200 hidden-lg">
 	<div class="container">
-		<div class="row">
+		<div class="row justify-content-start">
 		<p>&nbsp;</p>
 			<?php
 				if( have_rows('featured') ):				
 					while ( have_rows('featured') ) : the_row();
 			?>	
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-10 col-md-4 col-xs-offset-1 col-md-offset-0">
 				<div class="card homepage-mobile-container">
 					<div class="text-center">
 					<a href="<?php the_sub_field('url') ?>" target="<?php the_sub_field('target')?>" class="img-container" style="background-image: url('<?php the_sub_field('image'); ?>');"

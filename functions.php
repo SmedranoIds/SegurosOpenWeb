@@ -27,9 +27,6 @@
  */
 
 
-//Eliminar párrafos automáticos por defecto
-remove_filter('the_content', 'wpautop');
-remove_filter( 'the_excerpt', 'wpautop' );
 
 if (version_compare(PHP_VERSION, '5.6', '<')) {
     die(__('El tema Openweb basado en Coronita sólo funciona a partir de las versiones 5.6.x de PHP', 'openweb'));
@@ -47,6 +44,10 @@ $theme = \OpenWeb\Theme::getInstance();
 $theme->init();
 
 remove_action('wp_head', 'wp_generator');
+
+//Eliminar párrafos automáticos por defecto
+remove_filter('the_content', 'wpautop');
+remove_filter( 'the_excerpt', 'wpautop' );
 
 /* Breadcrumbs */
 /* Function by >> https://www.qualitytuts.com/wordpress-custom-breadcrumbs-without-plugin/ */

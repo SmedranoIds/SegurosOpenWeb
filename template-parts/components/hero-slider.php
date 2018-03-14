@@ -8,12 +8,18 @@
         if (get_field('banner')) {
             
         
-            // check if the repeater field has rows of data
-            if( have_rows('banner') ):
-                // loop through the rows of data
-                while ( have_rows('banner')  && $i==0 ) : the_row();
-                ?>
-        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php the_sub_field('imagen'); ?>');">
+        // check if the repeater field has rows of data
+        if( have_rows('banner') ):
+            // loop through the rows of data
+            while ( have_rows('banner')  && $i==0 ) : the_row();
+            
+                if(!empty(get_sub_field('imagen'))):
+                    $banner = get_sub_field('imagen');
+                    $urlBanner = $banner['url'];
+                    $altBanner = $banner['alt'];
+                endif;
+        ?>
+        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>');">
             <div class="container">
                 <div class="col-md-6 col-sm-7" style="padding-top: 70px;">
                         <div class="banner-msn">
@@ -49,7 +55,7 @@
             </div>
         </div>
         <div class="visible-xs">
-            <img class="img-responsive" src="<?php the_sub_field('imagen'); ?>">
+            <img class="img-responsive" src="<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>" alt="<?php echo $altBanner; ?>">
             <div class="container">
                 <div class="row sec-index-mov">
                     <div class="col-xs-12 text-center">
