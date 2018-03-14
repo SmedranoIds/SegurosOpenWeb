@@ -33,14 +33,21 @@ while (have_posts()) {
 		<div class="row">
 			<?php 
 				if(have_rows('tipshover') ): ?>
-				<?php while( have_rows('tipshover') ): the_row(); ?>
+				<?php while( have_rows('tipshover') ): the_row(); 
+			
+				if(!empty(get_sub_field('imagen_tipshover'))):
+					$image = get_sub_field('imagen_tipshover'); 
+					$imgURL = $image['url'];
+					$imgAlt = $image['alt'];
+				endif;
+			?>
 			<div class="col-md-6" style="padding-bottom: 30px;">
 					<div class="col ">
   						<div class="contenedor3-img ejemplo-1">
   							<div class="tips-title-container">
   								<span class="tips-title"><?php the_sub_field('title_tipshover'); ?></span>
   							</div>
-					    	<img style="width: 100%;" src="<?php the_sub_field('imagen_tipshover'); ?>" />  
+							<img style="width: 100%;" src="<?php echo $imgURL; ?>" alt="<?php echo $imgAlt; ?>" />  
 					     	<div class="mascara">  
 						    	<h2><?php the_sub_field('title_tipshover'); ?></h2>  
 						        <p><?php the_sub_field('resumen_tipshover'); ?></p>

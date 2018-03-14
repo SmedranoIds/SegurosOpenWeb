@@ -155,11 +155,16 @@
       flex-wrap: wrap; }
     .pre-footer .flex div:nth-child(1), .pre-footer .flex div:nth-child(2) {
       padding-bottom: 2em; }
-    .pre-footer .flex div:nth-child(1), .pre-footer .flex div:nth-child(3) {
+    .pre-footer .flex div:nth-child(1), .pre-footer .flex div:nth-child(3), .pre-footer .flex div:nth-child(5) {
       border-right: 1px solid #e9e9e9; }
-    .pre-footer .flex div:nth-child(2), .pre-footer .flex div:nth-child(4) {
+    .pre-footer .flex div:nth-child(1),
+    .pre-footer .flex div:nth-child(2), 
+    .pre-footer .flex div:nth-child(3), 
+    .pre-footer .flex div:nth-child(4), 
+    .pre-footer .flex div:nth-child(5), 
+    .pre-footer .flex div:nth-child(6){
       padding-left: 4em; }
-    .pre-footer .flex div:nth-child(3), .pre-footer .flex div:nth-child(4), .pre-footer .flex div:nth-child(5),  .pre-footer .flex div:nth-child(6){
+    .pre-footer .flex div:nth-child(3), .pre-footer .flex div:nth-child(4), .pre-footer .flex div:nth-child(5), .pre-footer .flex div:nth-child(6){
       border-top: 1px solid #e9e9e9;
       padding-top: 2em; }
   .container-fluid.pre-footer-alt .flex div:nth-child(1), .container-fluid.pre-footer-alt .flex div:nth-child(3) {
@@ -535,9 +540,17 @@
       padding-bottom: 3em; }
     .pre-footer .flex div:nth-child(1), .pre-footer .flex div:nth-child(3) {
       border-right: none; }
-    .pre-footer .flex div:nth-child(2), .pre-footer .flex div:nth-child(4), .pre-footer .flex div:nth-child(6){
+    .pre-footer .flex div:nth-child(1),
+    .pre-footer .flex div:nth-child(2),
+    .pre-footer .flex div:nth-child(3),
+    .pre-footer .flex div:nth-child(4),
+    .pre-footer .flex div:nth-child(5),
+    .pre-footer .flex div:nth-child(6){
       padding-left: 15px; }
-    .pre-footer .flex div:nth-child(3), .pre-footer .flex div:nth-child(4) {
+    .pre-footer .flex div:nth-child(3),
+    .pre-footer .flex div:nth-child(4),
+    .pre-footer .flex div:nth-child(5),
+    .pre-footer .flex div:nth-child(6) {
       border-top: none;
       padding-top: 0; }
   .footer-full nav {
@@ -545,7 +558,10 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: center; }
-    .footer-full nav div:nth-child(3), .footer-full nav div:nth-child(4) {
+    .footer-full nav div:nth-child(3),
+    .footer-full nav div:nth-child(4),
+    .footer-full nav div:nth-child(5),
+    .footer-full nav div:nth-child(6){
       border-top: none;
       padding-top: 0; }
   /*table {

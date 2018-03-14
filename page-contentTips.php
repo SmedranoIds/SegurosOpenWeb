@@ -26,8 +26,8 @@ while (have_posts()) {
 <section class="container-fluid">
     <div class="container">	
 		<div class="row tt">	
-			<div class="col-xs-11">
-				<article class="block item-list">
+			<div class="col-xs-10 col-xs-offset-1">
+				<article class="block item-list text-justify">
 					<div class="inner">
 						<h1 class="titulo"><?php the_field('titulo1'); ?></h1>
 						<p><img src="<?php the_field('imagen'); ?>" alt="" title="" style="float: left; padding-right: 20px;"/>
