@@ -85,7 +85,7 @@
 
         <div class="glossary__search mb-4">
             <form action="#" class="glossary__search__form">
-                <input class="form-control" id="glossarySearchInput" placeholder="Buscar palabras" type="search">
+                <input class="form-control" id="glossarySearchInput" placeholder="Buscar palabras clave" type="search">
             </form>
         </div>
         <div class="glossary__results mb-6">
