@@ -1764,8 +1764,8 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   background-color: #2b98eb;
 }
 .glossary__nav__item a {
-  width: 30px;
-  font-size: 16px;
+  width: 24px;
+  font-size: 12px;
   color: #3a404d;
   text-decoration: none;
   text-align: center;
@@ -1777,7 +1777,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     font-size: 10px;
   }
   .glossary__nav__item a.card-glossary__content {
-    padding: 2px 6px;
+    padding: 5px 8px;
     margin-bottom: 5px;
     border-radius: 3px;
   }
@@ -1790,7 +1790,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   background-color: #2b98eb;
 }
 .glossary__nav__item a.card-glossary__content {
-  padding: 11px 10px;
+  padding: 5px 8px;
   margin-bottom: 5px;
   border-radius: 3px;
 }
