@@ -20,6 +20,9 @@ $theme = \OpenWeb\Theme::getInstance();
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta name="keywords" content="seguros, seguro de auto, seguro de vida, seguro familia" />
+    <meta name="robots" content="index,follow" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/customSeguros.css">
@@ -33,9 +36,26 @@ $theme = \OpenWeb\Theme::getInstance();
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Google Analytics
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16721854-1']);
+    _gaq.push(['_setDomainName', 'segurosbancomer.com.mx']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+     End Google Analytics -->
+
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 
 <header id="top" class="container-fluid ids-header">
     <nav class="navbar navbar-static-top">
@@ -173,11 +193,12 @@ $theme = \OpenWeb\Theme::getInstance();
         <div class="sign-in-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-5 text-center">
-                        <h2 class="h3">
-                            <!-- <?php echo __('Acceso a ', 'openweb'); ?> <?php echo bloginfo('name'); ?> -->
-                            Acceso a usuarios
-                        </h2>
+                    <div class="col-xs-12 col-md-5 text-center titulo">
+                        <!-- <h2 class="h3">
+                            <?php echo __('Acceso a ', 'openweb'); ?> <?php echo bloginfo('name'); ?>
+                        </h2> 
+                        -->
+                        Acceso a usuarios
                     </div>
                     <div class="col-xs-12 col-md-7 text-center">
                         <!-- <form id="openweb-form-login" autocomplete="off" class="mod" method="" action="">
@@ -230,10 +251,11 @@ $theme = \OpenWeb\Theme::getInstance();
             <div class="container">
                 
                 <div class="row">
-                    <div class="col col-md-5 text-center">
+                    <div class="col col-md-5 text-center titulo">
+                        <!--
                         <h2 class="h3">
-                            Registro
-                        </h2>
+                        </h2> -->
+                        Registro
                     </div>
                     <div class="col-xs-12 col-md-7 text-center">
                         <div class="form-group ids-btn-area-priv">

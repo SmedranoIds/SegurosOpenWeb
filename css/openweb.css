@@ -80,6 +80,17 @@ ul.category-content li a:hover, ul.openweb-cloud-tag li a:hover {
     padding-top: 1rem;
     margin: 0 !important;
 }
+#login-in-mobile .titulo,
+#header-in-mobile .titulo {
+    padding-top: 1rem;
+    margin: 0 !important;
+    color: #121212;
+    font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    
+}
 #header-sign-in .input-control,
 #login-in-mobile .input-control {
     display: -webkit-box;

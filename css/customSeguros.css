@@ -432,6 +432,15 @@ li.icon-pdf:before{
   height: 20px;
 }
 
+.pre-footer .titulo{
+  font-size: 1.6rem;
+  padding-bottom: 0.5em;
+  font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  margin: 0 0 0.45em;
+}
+
 .pre-footer ul {
   list-style: none;
   margin: 0;
@@ -469,7 +478,7 @@ li.icon-pdf:before{
   padding: 0;
   margin: 0;
 }
-.pre-footer h2#terminos{
+.pre-footer #terminos{
   display: none !important;
 }
 #menu-terminos li a{
@@ -1593,7 +1602,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 .homepage-container img {
   vertical-align: middle;
 }
-.homepage-container h2 {
+.homepage-container .titulo {
   color: #fff;
   text-align: left;
   position: relative;

@@ -170,7 +170,7 @@ get_header();
 			</div>
 			<div class="img-container" style="background-image: url('<?php the_sub_field('image'); ?>');"></div>
 			<div class="mascara">  
-				<h2><?php the_sub_field('titulo'); ?></h2>  
+				<div class="titulo"><?php the_sub_field('titulo'); ?></div>  
 				<p><?php the_sub_field('descripcion'); ?></p>
 				<a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('label'); ?></a>  
 			</div>  

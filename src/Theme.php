@@ -154,7 +154,7 @@ final class Theme
     public function renderPrefooterMenu($menu, $args)
     {
         if (false !== strpos($args->theme_location, 'prefooter')) {
-            $title = sprintf('<h2 id="'.$args->menu->name.'">%1$s</h2>', $args->menu->name);
+            $title = sprintf('<p class="titulo" id="'.$args->menu->name.'">%1$s</p>', $args->menu->name);
 
             $menu = preg_replace('/><ul/', '>'.$title.PHP_EOL.'<ul', $menu);
         }

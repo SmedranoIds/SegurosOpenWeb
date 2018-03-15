@@ -276,6 +276,8 @@
 .banner-msn .titulo{
   font-family: 'BentonSansBBVALight';
   font-size: 32px;
+  line-height: 34px;
+  margin-bottom: 15px;
   text-align: left;
   color: #1a1a1a;
 }
