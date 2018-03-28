@@ -15,34 +15,43 @@ $(document).ready(function(){
         openChat(); //funcion de la línea 4
 	});
 	
-	/* desplegable de acceso a usuarios */
+	// desplegable de acceso a usuarios
+
+	/*
 	$('#openweb-access-lg').click(function(){
 		console.log('access button clicked');
 		jQuery('#login-in-mobile').collapse('show');
 		jQuery('#register-mobile').collapse('hide');
 	});
+	*/
 	
-	/* desplegable de registro */
+	// desplegable de registro
+	/*
 	$('#openweb-register-lg').click(function(){
 		console.log('register button clicked');
 		jQuery('#login-in-mobile').collapse('hide');
 		jQuery('#register-mobile').collapse('show');
 	});
+	*/
 	
 
-	/* desplegable de acceso a usuarios */
+	// desplegable de acceso a usuarios 
+	/*
 	$('#openweb-access-mobile').click(function(){
 		console.log('access button clicked');
 		jQuery('#login-in-mobile').collapse('show');
 		jQuery('#register-mobile').collapse('hide');
 	});
+	*/
 	
-	/* desplegable de registro */
+	// desplegable de registro
+	/*
 	$('#openweb-register-mobile').click(function(){
 		console.log('register button clicked');
 		jQuery('#login-in-mobile').collapse('hide');
 		jQuery('#register-mobile').collapse('show');
 	});
+	*/
 	
 	/* componente de FAQs - evento click, que muestra el elemento */
 	$("div.faqs-tab-menu>div.faqs-sidetab>a").click(function(e) {

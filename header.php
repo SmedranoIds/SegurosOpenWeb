@@ -18,10 +18,16 @@ $theme = \OpenWeb\Theme::getInstance();
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WP7KFLX');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <meta name="description" content="<?php bloginfo('description'); ?>" />
-    <meta name="keywords" content="seguros, seguro de auto, seguro de vida, seguro familia" />
     <meta name="robots" content="index,follow" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
@@ -37,25 +43,14 @@ $theme = \OpenWeb\Theme::getInstance();
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Analytics
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-16721854-1']);
-    _gaq.push(['_setDomainName', 'segurosbancomer.com.mx']);
-    _gaq.push(['_setAllowLinker', true]);
-    _gaq.push(['_trackPageview']);
-    
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-     End Google Analytics -->
-
 </head>
 
 <body <?php body_class(); ?> >
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP7KFLX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
 <header id="top" class="container-fluid ids-header">
     <nav class="navbar navbar-static-top">
@@ -76,12 +71,18 @@ $theme = \OpenWeb\Theme::getInstance();
                     <?php echo __('Registro', 'openweb'); ?>
                 </a>-->
                 <!-- <span id="login-openweb-mobile" class="hidden-lg"><?php _e('Hola', 'openweb'); ?></span> -->
-                <a class="sign-in" href="#" id="openweb-access-mobile" role="button"
+                <!-- <a class="sign-in" href="#" id="openweb-access-mobile" role="button"
                    aria-expanded="false" aria-controls="login-in-mobile">
                    Acceso a usuarios
+                </a> -->
+                <a class="sign-in" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-mobile" target="_blank">
+                   Acceso a usuarios
                 </a>
-                <a class="register" href="#" id="openweb-register-mobile" role="button"
+                <!-- <a class="register" href="#" id="openweb-register-mobile" role="button"
                    aria-expanded="false" aria-controls="login-in-mobile">
+                    Registro
+                </a> -->
+                <a class="register" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-register-mobile" target="_blank">
                     Registro
                 </a>
             </div>
@@ -121,16 +122,18 @@ $theme = \OpenWeb\Theme::getInstance();
                                aria-controls="login-in-mobile" data-logout="<?php _e('Cerrar sesión', 'openweb'); ?>">
                                 <?php echo __('Acceso a usuarios', 'openweb'); ?>
                             </a>
-                            -->
+                            
                             <a href="#" id="openweb-access-lg" role="button" aria-expanded="false"
-                               aria-controls="login-in-mobile">Acceso a usuarios</a>
+                               aria-controls="login-in-mobile">Acceso a usuarios</a>-->
+                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-lg" role="button" target="_blank">Acceso a usuarios</a>
                         </li>
                         
                         <li class="apply" id="register">
                             <!--
                             <a href="#register-mobile" id="openweb-register-lg" role="button" data-toggle="collapse" aria-expanded="false"
                             aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>-->
-                            <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a>
+                            <!-- <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a> -->
+                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-register-lg" target="_blank">Registro</a>
                         </li>
                         
                     <?php endif; ?>
@@ -260,6 +263,7 @@ $theme = \OpenWeb\Theme::getInstance();
                     <div class="col-xs-12 col-md-7 text-center">
                         <div class="form-group ids-btn-area-priv">
                             <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Personas</a>
+                            
 
                             <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
                         </div>

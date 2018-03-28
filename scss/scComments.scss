@@ -1,0 +1,148 @@
+.commentsContainer {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: repeat(auto-fill, auto) ;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.commentsContainer label,
+.commentsContainer input[type="text"]:valid ~ label,
+.commentsContainer input[type="email"]:valid ~ label,
+.commentsContainer textarea:valid ~ label{
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 200;
+    justify-self: end;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    justify-self: end;
+}
+
+.commentsContainer input[type="text"],
+.commentsContainer input[type="email"],
+.commentsContainer textarea {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #2d4b81;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1;
+    padding: 1rem .5rem;
+    resize: none;
+    transition: .24s ease-out;
+    transition-property: border;
+}
+
+.commentsContainer input[type="text"].error,
+.commentsContainer input[type="email"].error,
+.commentsContainer textarea.error {
+    border-color: #c4136c;
+}
+.commentsContainer input[type="text"]::placeholder,
+.commentsContainer input[type="email"]::placeholder,
+.commentsContainer textarea::placeholder {
+    color: #c0c0c0;
+}
+.commentsContainer input[type="text"]:focus,
+.commentsContainer input[type="email"]:focus,
+.commentsContainer textarea:focus {
+    outline-offset: 0;
+    outline: none;
+    border-color: #2d4b81;
+}
+
+.toastForm {
+    background-color: hsla(330, 82%, 42%, .3);
+    border: 1px solid #c4136c;
+    color: #c4136c;
+    display: none;
+    grid-column: 1 / 3;
+    font-size: 13px;
+    padding: 10px;
+}
+.toastForm.msgOk {
+    background-color: hsla(86, 63%, 48%, .2);
+    border: 1px solid #85c82d;
+    color: #85c82d;
+}
+.toastLOPD.show {
+    display: block;
+}
+
+.sendWrapper {
+    grid-column: 1 / 3;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.fullWidth {
+    grid-column: 1 / 3;
+}
+.fullWidth input,
+.fullWidth textarea {
+    width: 100%;
+}
+
+.commentSendButton {
+    background-color: #2d4b81;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 1;
+    padding: 1rem 2rem;
+    transition: border, background .24s ease-out;
+}
+
+.commentSendButton:hover {
+    background-color: #aaa;
+}
+
+.commentWrapper {
+    margin-bottom: 30px;
+}
+
+.commentWrapper p,
+.commentWrapper h4,
+.commentWrapper h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.commentWrapper .commentAlias {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.commentWrapper .commentDate {
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.commentWrapper .commentContent {
+    margin-bottom: 6px;
+}
+
+.commentWrapper .commentContentWrapper {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.commentWrapper .commentContentWrapper:not(:last-child) {
+    margin-bottom: 20px;
+}
+.commentWrapper .commentReplyWrapper {
+    margin: 20px 0 0 20px;
+}

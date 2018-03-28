@@ -1,0 +1,29 @@
+.likesContainer {
+    margin: 20px 0;
+}
+
+.likeButton {
+    background-color: #2d4b81;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 1;
+    padding: 1rem 2rem;
+    transition: border, background .24s ease-out;
+}
+
+.likeButton:hover {
+    background-color: #aaa;
+}
+.likeButton.disabled {
+    background-color: #ccc;
+}
+
+.likeCounter {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: 1px solid #666;
+    color: #666;
+}

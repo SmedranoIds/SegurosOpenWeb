@@ -11,7 +11,6 @@
 get_header();
 ?>
 
-
 <!-- chat -->
 <?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
@@ -87,36 +86,8 @@ get_header();
 </div>
 
 
-<!-- Segunda sección -->
-<!-- <div class="bg-blue-core"> 
-<section class="container-fluid bg-grey300 hidden-lg">
-	<div class="container">
-		<div class="row">
-		<?php
-          if( have_rows('featured') ):
-			while ( have_rows('featured') ) : the_row();
-			?>
-		<div class="col-sm-4 col-xs-12 text-center">
-			<div class="container-imgHome">
-			<div class="img-home">
-				<img src="<?php the_sub_field('image'); ?>">
-			</div>
-			</div>
-			<div class="icon-item">
-				<p class="title-item">
-					<?php the_sub_field('titulo'); ?>
-				</p>
-				<p class="txt-info"><?php the_sub_field('descripcion'); ?></p>
-			</div>
-        </div>
-        <?php 
-			endwhile;
-			endif;
-		?>
-    </div>
-    </div>
-</section>
--->
+<h1 class="hide"><?php echo get_bloginfo('name'); ?></h1>
+
 
 <!-- featured mobile -->
 <section class="container-fluid bg-grey200 hidden-lg">

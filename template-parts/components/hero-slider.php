@@ -12,12 +12,14 @@
         if( have_rows('banner') ):
             // loop through the rows of data
             while ( have_rows('banner')  && $i==0 ) : the_row();
+
             
-                if(!empty(get_sub_field('imagen'))):
-                    $banner = get_sub_field('imagen');
-                    $urlBanner = $banner['url'];
-                    $altBanner = $banner['alt'];
-                endif;
+            if(!empty(get_sub_field('imagen'))):
+                $banner = get_sub_field('imagen');
+                $urlBanner = $banner['url'];
+                $altBanner = $banner['alt'];
+            endif;
+        
         ?>
         <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>');">
             <div class="container">
@@ -25,7 +27,7 @@
                         <div class="banner-msn">
                             <div class="row tt">
                                 <div class="col-md-10 col-sm-10">
-                                    <h2><?php the_sub_field('titulo'); ?></h2>
+                                    <h1 class="banner-title"><?php the_sub_field('titulo'); ?></h1>
                                 </div>
                             </div>
                             <div class="spacebanner"></div>
