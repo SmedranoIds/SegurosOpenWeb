@@ -1035,7 +1035,7 @@ body > header.container-fluid a.sign-in, .sign-in a {
 .tips-link:hover{
   color: #FFF !important;
 }
-.tips-link{
+/*.tips-link{
     font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: #ffffff;
@@ -1043,6 +1043,18 @@ body > header.container-fluid a.sign-in, .sign-in a {
     position: absolute;
     bottom: 10%;
     right: 10%;
+}*/
+.tips-link{
+  cursor: pointer;
+}
+.text-link{
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
 }
 /* end link tips*/
 .card-btn{
@@ -1426,7 +1438,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   overflow: hidden;
   position: relative;
   text-align: left;
-  cursor: default;
+  /*cursor: default;*/
   background: #fff;
 }
 .contenedor3-img .mascara,.contenedor3-img .contenido {

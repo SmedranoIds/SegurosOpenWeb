@@ -43,7 +43,7 @@ while (have_posts()) {
 			?>
 			<div class="col-md-6" style="padding-bottom: 30px;">
 					<div class="col ">
-  						<div class="contenedor3-img ejemplo-1">
+  						<!--<div class="contenedor3-img ejemplo-1">
   							<div class="tips-title-container">
   								<span class="tips-title"><?php the_sub_field('title_tipshover'); ?></span>
   							</div>
@@ -53,7 +53,20 @@ while (have_posts()) {
 						        <p><?php the_sub_field('resumen_tipshover'); ?></p>
 						        <a href="<?php the_sub_field('url_button_tipshover'); ?>" class="tips-link" target="<?php the_sub_field('target_button_tipshover')?>"><?php the_sub_field('button_tipshover'); ?></a>  
 						    </div>  
-						</div>
+						</div>-->
+						<a href="<?php the_sub_field('url_button_tipshover'); ?>" class="tips-link" target="<?php the_sub_field('target_button_tipshover')?>">
+						   <div class="contenedor3-img ejemplo-1">
+						    <div class="tips-title-container">
+						        <span class="tips-title"><?php the_sub_field('title_tipshover'); ?></span>
+						    </div>
+						    <img style="width: 100%;" src="<?php echo $imgURL; ?>" alt="<?php echo $imgAlt; ?>" />  
+						    <div class="mascara">  
+						        <h2><?php the_sub_field('title_tipshover'); ?></h2> 
+						        <p><?php the_sub_field('resumen_tipshover'); ?></p>
+						       	<span class="text-link"><?php the_sub_field('button_tipshover'); ?></span>
+						      </div>  
+							</div>
+						</a>
 					</div>
 				</div>
 				<?php
