@@ -41,7 +41,7 @@ while (have_posts()) {
 					$imgAlt = $image['alt'];
 				endif;
 			?>
-			<div class="col-md-6" style="padding-bottom: 30px;">
+			<div class="col-md-6" style="">
 					<div class="col ">
   						<!--<div class="contenedor3-img ejemplo-1">
   							<div class="tips-title-container">

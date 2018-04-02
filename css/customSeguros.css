@@ -1234,6 +1234,46 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 
 /*content*/
 /*responsive*/
+/*//// Movil ///*/
+@media (min-width: 320px) and (max-width: 425px){
+  .contenedor3-img {
+    margin-bottom: 10px;
+  }
+  
+  .tips-title {
+    font-size: 1.4rem !important;
+  }
+
+  .contenedor3-img p {
+    font-size: 14px !important;
+  }
+
+  .text-link {
+    font-size: 1.2rem !important;
+  }
+}
+
+/*//// Tablet ///*/
+@media (min-width: 700px) and (max-width: 1019px){
+  .contenedor3-img {
+    width: 48% !important;
+    margin-right: 10px;
+    margin-bottom: 10px !important;
+  }
+  
+  .tips-title {
+    font-size: 1.4rem !important;
+  }
+
+  .contenedor3-img p {
+    font-size: 14px !important;
+  }
+
+  .text-link {
+    font-size: 1.2rem !important;
+  }
+}
+
 @media (min-width: 550px) {
   .area-register-mobile{
     text-align: center;
@@ -1440,6 +1480,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   text-align: left;
   /*cursor: default;*/
   background: #fff;
+  margin-bottom: 30px;
 }
 .contenedor3-img .mascara,.contenedor3-img .contenido {
   width: 100%;
