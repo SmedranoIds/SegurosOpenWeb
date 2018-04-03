@@ -134,6 +134,7 @@ get_header();
 		<?php 
 			if(have_rows('featured') ): ?>
 			<?php while( have_rows('featured') ): the_row(); ?>
+		<a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>">
 		<div class="col-sm-4" style="padding-bottom: 30px;">
 			<div class="homepage-container ejemplo-1">
 			<div class="tips-title-container">
@@ -143,11 +144,12 @@ get_header();
 			<div class="mascara">  
 				<div class="titulo"><?php the_sub_field('titulo'); ?></div>  
 				<p><?php the_sub_field('descripcion'); ?></p>
-				<a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('label'); ?></a>  
+				<!-- <a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('label'); ?></a>   -->
 			</div>  
 			
 			</div>
 		</div>
+		</a>
 	  	<?php
 		endwhile;
 		endif;
