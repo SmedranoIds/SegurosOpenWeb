@@ -1238,10 +1238,11 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 @media (min-width: 320px) and (max-width: 425px){
   .contenedor3-img {
     margin-bottom: 10px;
+    height: 310px !important;
   }
   
   .tips-title {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
   }
 
   .contenedor3-img p {
@@ -1250,6 +1251,19 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 
   .text-link {
     font-size: 1.2rem !important;
+  }
+
+  .tips-title-container {
+    background: #1973b8 !important;
+    height: 40% !important;
+    padding: 4%;
+  }
+
+  .tips-resumen {
+    color: white;
+    font-size: 13px;
+    margin-top: 25px;
+    padding-left: 4px;
   }
 }
 
@@ -1257,12 +1271,13 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 @media (min-width: 700px) and (max-width: 1019px){
   .contenedor3-img {
     width: 48% !important;
+    height: 326px !important;
     margin-right: 10px;
     margin-bottom: 10px !important;
   }
   
   .tips-title {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
   }
 
   .contenedor3-img p {
@@ -1271,6 +1286,19 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 
   .text-link {
     font-size: 1.2rem !important;
+  }
+
+  .tips-title-container {
+    background: #1973b8 !important;
+    height: 40% !important;
+    padding: 4%;
+  }
+
+  .tips-resumen {
+    color: white;
+    font-size: 13px;
+    margin-top: 25px;
+    padding-left: 4px;
   }
 }
 
