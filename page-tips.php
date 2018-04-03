@@ -21,7 +21,7 @@ while (have_posts()) {
 <?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
 
-<!-- tips -->
+<!-- page tips -->
 <section class="container-fluid" style="background: #e9e9e9;">
 	<div class="container">
 		<div class="row">
