@@ -1235,7 +1235,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 /*content*/
 /*responsive*/
 /*//// Movil ///*/
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 320px) and (max-width: 699px){
   .contenedor3-img {
     margin-bottom: 10px;
     height: 310px !important;
