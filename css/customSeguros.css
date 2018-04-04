@@ -1268,7 +1268,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
 }
 
 /*//// Tablet ///*/
-@media (min-width: 700px) and (max-width: 1019px){
+@media (min-width: 700px) and (max-width: 990px){
   .contenedor3-img {
     width: 48% !important;
     height: 326px !important;
