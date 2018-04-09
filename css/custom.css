@@ -323,6 +323,22 @@
 }
 /*Termina estilos de index-Banner*/
 
+/* estilo de titulo principal sin banner */
+.mainTitle{
+  font-family: 'BentonSansBBVALight';
+  font-size: 32px;
+  text-align: left;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+.titulo-sin-banner{
+  padding: 60px 0 40px 0;
+}
+
+
+
+
 /*Estilos de ventana interes*/
 .titulo h1{
   text-align: center;
