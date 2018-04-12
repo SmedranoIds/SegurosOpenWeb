@@ -1437,9 +1437,9 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     width: 100%;
     vertical-align: middle;
   }
-  .card img{
+  /*.card img{
     max-height: 220px;
-  }
+  }*/
   .container {
       width: 100% !important; 
       /* max-width: 750px; */
