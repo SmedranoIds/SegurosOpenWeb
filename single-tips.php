@@ -80,7 +80,10 @@ while (have_posts()) {
                             ?>
                                 <div class="col-sm-6 col-md-4">
                                     <div class="card">
-                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>"><img class="card-block" src="<?php echo $imgURL; ?>" alt="<?php echo $imgAlt; ?>"></a>
+                                    <a href="<?php the_sub_field('urlcardbutton') ?>" target="<?php the_sub_field('targetcardbutton')?>">
+									<div style="margin-top:3rem; width: 100%; height:220px; background:url('<?php echo $imgURL; ?>'); background-size: cover;"></div>
+									<!-- <img class="card-block" src="<?php echo $imgURL; ?>" alt="<?php echo $imgAlt; ?>"> -->
+									</a>
                                         <div class="card-body-tips">
                                             <h5 class="card-title"><?php the_sub_field('titulocard') ?></h5>
                                             <p class="card-text"><?php the_sub_field('resumencard') ?></p>

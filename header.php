@@ -45,9 +45,7 @@ $theme = \OpenWeb\Theme::getInstance();
 
 </head>
 
-<body <?php body_class(); ?> >
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP7KFLX"
+<body <?php body_class(); ?> ><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP7KFLX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
