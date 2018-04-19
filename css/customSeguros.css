@@ -192,6 +192,7 @@ h1.titulo {
   font-family: BentonSansLight;
   color: #1973b8;
   text-rendering: optimizelegibility;
+  text-align: left;
 }
 p.descripcion {
   font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
