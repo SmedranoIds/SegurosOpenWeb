@@ -137,7 +137,7 @@
 /* Menu */
 .area-register-mobile{
   text-align: center;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 
@@ -721,9 +721,14 @@ footer a{
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-right: 1px solid #fff;
 }
 .nav-tabs > li > a {
   border: 1px solid #ddd;
+  /* border-right: 1px solid #fff !important; */
+}
+.primary-nav{
+  
 }
 .panelHgt {
   height: 160px;
