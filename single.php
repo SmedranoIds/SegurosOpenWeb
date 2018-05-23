@@ -27,6 +27,11 @@ while (have_posts()) {
 <?php get_template_part('template-parts/components/hero-slider');?>
 <!-- end main slider -->
 
+<?php if(get_field('titulosinbanner')):?>
+	<div class="container titulo-sin-banner">
+		<h1 class="mainTitle"><?php the_field('titulosinbanner'); ?></h1>
+	</div>
+<?php endif; ?>
 
 
 <!-- cuadro auto alerta 

@@ -137,7 +137,7 @@
 /* Menu */
 .area-register-mobile{
   text-align: center;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 
@@ -192,6 +192,7 @@ h1.titulo {
   font-family: BentonSansLight;
   color: #1973b8;
   text-rendering: optimizelegibility;
+  text-align: left;
 }
 p.descripcion {
   font-family: BentonSansBBVALight, Arial, Helvetica, sans-serif;
@@ -720,9 +721,14 @@ footer a{
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
+  border-right: 1px solid #fff;
 }
 .nav-tabs > li > a {
   border: 1px solid #ddd;
+  /* border-right: 1px solid #fff !important; */
+}
+.primary-nav{
+  
 }
 .panelHgt {
   height: 160px;
@@ -955,7 +961,7 @@ color: #333;
 
 .ids-access-btns{
   float: right;
-  margin-top: -38px !important;
+  margin-top: -90px !important;
 }
 
 .ids-btn-area-priv{
@@ -1437,9 +1443,9 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     width: 100%;
     vertical-align: middle;
   }
-  .card img{
-    max-height: 217px;
-  }
+  /*.card img{
+    max-height: 220px;
+  }*/
   .container {
       width: 100% !important; 
       /* max-width: 750px; */
