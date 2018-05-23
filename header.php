@@ -74,16 +74,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    Acceso a usuarios
                 </a> -->
                 <a class="sign-in" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-mobile" target="_blank">
-                   Acceso a usuarios
+                   <!-- Acceso a usuarios -->Mis Seguros
                 </a>
                 <!-- <a class="register" href="#" id="openweb-register-mobile" role="button"
                    aria-expanded="false" aria-controls="login-in-mobile">
                     Registro
                 </a> -->
                 <!-- <a class="register" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-register-mobile" target="_blank"> -->
+                <!-- 
                 <a class="register" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-mobile" target="_blank">
                     Registro
                 </a>
+                -->
             </div>
             <?php endif; ?>
         </div>
@@ -124,7 +126,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             
                             <a href="#" id="openweb-access-lg" role="button" aria-expanded="false"
                                aria-controls="login-in-mobile">Acceso a usuarios</a>-->
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-lg" role="button" target="_blank">Acceso a usuarios</a>
+                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-lg" role="button" target="_blank">
+                            <!-- Acceso a usuarios -->Mis Seguros
+                            </a>
                         </li>
                         
                         <li class="apply" id="register">
@@ -132,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="#register-mobile" id="openweb-register-lg" role="button" data-toggle="collapse" aria-expanded="false"
                             aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>-->
                             <!-- <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a> -->
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-lg" target="_blank">Registro</a>
+                            <!-- <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-lg" target="_blank">Registro</a> -->
                         </li>
                         
                     <?php endif; ?>

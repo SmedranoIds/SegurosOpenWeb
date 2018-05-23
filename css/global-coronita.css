@@ -2764,10 +2764,11 @@ body > header.container-fluid {
       -ms-flex-pack: end;
       justify-content: flex-end;
       position: absolute;
-      right: 30%;
+      /* right: 25%; */
       /* top: -5.75em; */
       z-index: 1000;
-      width: 70%; 
+      /* width: 70%;  */
+      width: 85%; 
     }
       body > header.container-fluid .top-nav ul li {
         padding-left: 1em; }
@@ -2796,7 +2797,7 @@ body > header.container-fluid {
         body > header.container-fluid .main-nav ul li.active a:hover, body > header.container-fluid .main-nav ul li.active a:active, body > header.container-fluid .main-nav ul li.active a:focus {
           color: #fff; }
       body > header.container-fluid .main-nav ul li a {
-        color: #bdbdbd; }
+        color: #bdbdbd; font-weight: bold;}
         body > header.container-fluid .main-nav ul li a:hover, body > header.container-fluid .main-nav ul li a:active, body > header.container-fluid .main-nav ul li a:focus {
           color: #5bbeff; }
   body > header.container-fluid .main-nav ul:last-child {
