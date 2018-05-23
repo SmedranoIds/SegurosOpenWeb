@@ -81,10 +81,133 @@ get_header();
 	<?php } ?>
   </ol>
 <?php } } ?>
-
-
 </div>
 
+ <!-- section-iconos desktop -->
+<div >
+	<div class="container-fluid">
+		<div class="row">
+			<?php
+				if( have_rows('seccion_iconos') ):				
+					while ( have_rows('seccion_iconos') ) : the_row();
+			?>	
+			<div class="col-md-2 col-xs-4">
+				<div style="text-align: center;">
+					<img style="width: 150px;" src="<?php the_sub_field('icono_sec'); ?>" target="<?php the_sub_field('target_icono'); ?>'">
+					<label class="label-sectIcon" style="font-size: 1.3rem; margin-top: 10px; width: 100%;"><?php the_sub_field('label_icono'); ?></label>
+				</div>
+			</div>
+			<?php 
+				endwhile;
+				endif;
+			?>
+		</div>
+	</div>
+</div>	
+<!-- end section-iconos desktop -->
+
+<!-- banner-medio desktop -->
+<section class="container-fluid bg-blue-core">
+  	<div class="row">
+  		<div class="col-md-12 text-center">
+  			<?php
+				if( have_rows('banner_app') ):				
+					while ( have_rows('banner_app') ) : the_row();
+			?>	
+  			<label class="titulo-bannerApp"><h2><?php the_sub_field('titulo_bapp'); ?></h2></label>
+	  		<br>
+	  		<label style="color: #2dcdcd;"><?php the_sub_field('subtitulo_bapp'); ?></label>
+  		</div>
+  	</div>
+    <div class="row" style="padding-left: 7%; padding-right: 7%; padding-top: 3%;">
+	    <div class="col-md-6 box-infoApp">
+	     	<div class="green-square"></div>
+		      <div class="boxIn-infoApp bg-navy">
+		        <div class="boxContent-infoApp">
+		          <h1 class="boxTitle">
+		            <span class="box-icon">
+		              <img class="iconBox-infoApp" src="<?php the_sub_field('icono_bapp'); ?>">
+		            </span>
+		            <span class="textBox-infoApp">
+		              <b><?php the_sub_field('text_bapp'); ?></b>
+		              <br>
+		            </span>
+		          </h1>
+		          <div class="resumen-infoApp">
+		            <?php the_sub_field('resumen_bapp'); ?>
+		            <br>
+		            <?php the_sub_field('textDown_bapp'); ?>
+		          </div>
+		          <div class="opciones-infoApp">
+		            <div class="linkIcon-infoApp">
+		              <a class="link-interno" href="#">
+		                <span class="icon-infoApp">Apple Store</span>
+		              </a>
+		            </div>
+		            <div class="linkIcon-infoApp">
+		              <a class="link-interno" href="#">
+		                <span class="icon-infoApp">Google Play</span>
+		              </a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 box-infoApp text-center">
+		     	<div style=" ">
+		      		<img style="width: 58%;" src="<?php the_sub_field('imagen_bapp'); ?>">
+		     	</div>
+		    </div>
+	</div>
+ 	<?php 
+				endwhile;
+				endif;
+			?>
+</section>
+<!-- end banner-medio desktop -->
+
+<!-- cards intro -->
+<section class="container-fluid bg-grey200">
+  <div class="container">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <div class="card-content">
+	        <div class="imagen" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2017/12/vida-a-tu-alcance-bancomer-card.jpeg');">
+	          <label class="titulo"><h2>Auto Seguro Dinámico</h2></label>
+	        </div>
+	        <div class="contenido">
+	          <div class="cont-inter">
+	            <img class="imagen-con" src="http://localhost:9999/seguros/wp-content/uploads/2018/05/carrito.jpg">
+	            <p style="padding-top:5%;">Con Seguros BBVA Bancomer obtén un seguro automotriz hecho a la medida, pagando solo por lo que necesitas. </p>
+	          </div>
+	          <div class="links">
+	            <label><a href="#">Conoce más</a></label>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-md-12">
+	      <div class="card-content">
+	        <div class="imagen-d" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2017/12/vida-a-tu-alcance-bancomer-card.jpeg');">
+	          <label class="titulo-d"><h2>Auto Seguro Dinámico</h2></label>
+	        </div>
+	        <div class="contenido-d">
+	          <div class="cont-inter">
+	            <img class="imagen-con" src="http://localhost:9999/seguros/wp-content/uploads/2018/05/carrito.jpg">
+	            <p style="padding-top:5%;">Con Seguros BBVA Bancomer obtén un seguro automotriz hecho a la medida, pagando solo por lo que necesitas. </p>
+	          </div>
+	          <div class="links-d">
+	            <label><a href="#">Conoce más</a></label>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+    </div>
+</section>
+<!-- end cards intro -->
 
 <h1 class="hide"><?php echo get_bloginfo('name'); ?></h1>
 
@@ -123,8 +246,6 @@ get_header();
 	</div>
 </section>
 <!-- end featured mobile -->
-
-
 
 <!-- featured desktop -->
 <section class="container-fluid bg-grey200 visible-lg">
