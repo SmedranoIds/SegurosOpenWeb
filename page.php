@@ -172,36 +172,52 @@ get_header();
 	  <div class="row">
 	    <div class="col-md-12">
 	      <div class="card-content">
-	        <div class="imagen" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2017/12/vida-a-tu-alcance-bancomer-card.jpeg');">
-	          <label class="titulo"><h2>Auto Seguro Dinámico</h2></label>
+	      	<?php
+				if( have_rows('cards_home') ):				
+					while ( have_rows('cards_home') ) : the_row();
+			?>	
+	        <div class="imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
+	          <label class="titulo-cardHome"><h2><?php the_sub_field('titulo_cardHome'); ?></h2></label>
 	        </div>
 	        <div class="contenido">
 	          <div class="cont-inter">
-	            <img class="imagen-con" src="http://localhost:9999/seguros/wp-content/uploads/2018/05/carrito.jpg">
-	            <p style="padding-top:5%;">Con Seguros BBVA Bancomer obtén un seguro automotriz hecho a la medida, pagando solo por lo que necesitas. </p>
+	            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
+	            <p style="padding-top:5%;"><?php the_sub_field('resumen_cardHome'); ?></p>
 	          </div>
 	          <div class="links">
-	            <label><a href="#">Conoce más</a></label>
+	            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>
 	          </div>
 	        </div>
+	        <?php 
+				endwhile;
+				endif;
+			?>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="row">
 	    <div class="col-md-12">
 	      <div class="card-content">
-	        <div class="imagen-d" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2017/12/vida-a-tu-alcance-bancomer-card.jpeg');">
-	          <label class="titulo-d"><h2>Auto Seguro Dinámico</h2></label>
+	      	<?php
+				if( have_rows('cards_home_2') ):				
+					while ( have_rows('cards_home_2') ) : the_row();
+			?>	
+	        <div class="imagen-d" style="background-image: url('<?php the_sub_field('imagen_cardHome_2'); ?>');">
+	          <label class="titulo-cardHome-d"><h2><?php the_sub_field('titulo_cardHome_2'); ?></h2></label>
 	        </div>
 	        <div class="contenido-d">
 	          <div class="cont-inter">
-	            <img class="imagen-con" src="http://localhost:9999/seguros/wp-content/uploads/2018/05/carrito.jpg">
-	            <p style="padding-top:5%;">Con Seguros BBVA Bancomer obtén un seguro automotriz hecho a la medida, pagando solo por lo que necesitas. </p>
+	            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome_2'); ?>">
+	            <p style="padding-top:5%;"><?php the_sub_field('resumen_cardHome_2'); ?></p>
 	          </div>
 	          <div class="links-d">
-	            <label><a href="#">Conoce más</a></label>
+	            <label><a href="<?php the_sub_field('link_cardHome_2'); ?>"><?php the_sub_field('textLink_cardHome_2'); ?></a></label>
 	          </div>
 	        </div>
+	        <?php 
+				endwhile;
+				endif;
+			?>
 	      </div>
 	    </div>
 	  </div>
@@ -248,7 +264,7 @@ get_header();
 <!-- end featured mobile -->
 
 <!-- featured desktop -->
-<section class="container-fluid bg-grey200 visible-lg">
+<!--<section class="container-fluid bg-grey200 visible-lg">
 	<div class="container">
 		<div class="row">
 		<p>&nbsp;</p>
@@ -266,7 +282,7 @@ get_header();
 				<div class="titulo"><?php the_sub_field('titulo'); ?></div>  
 				<p><?php the_sub_field('descripcion'); ?></p>
 				<!-- <a href="<?php the_sub_field('url'); ?>" class="tips-link" target="<?php the_sub_field('target')?>"><?php the_sub_field('label'); ?></a>   -->
-			</div>  
+			<!--</div>  
 			
 			</div>
 		</div>
@@ -278,7 +294,7 @@ get_header();
 		<p>&nbsp;</p>
 		</div>	
 	</div>
-</section>
+</section>-->
 <!-- end featured desktop -->
 
 

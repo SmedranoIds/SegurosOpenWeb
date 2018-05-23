@@ -14,10 +14,10 @@
   height: auto;
   min-height: 344px;
 }
-.boxContent-infoApp{
+.boxIn-infoApp .boxContent-infoApp{
   box-sizing: border-box;
 }
-.boxTitle{
+.boxIn-infoApp .boxContent-infoApp .boxTitle{
   text-align:left;
   /*margin-bottom:32px;*/
 }
@@ -84,9 +84,6 @@
   margin-bottom:16px;
   padding-top:90px;
 }
-.opcinoes-infoApp{
- 
-}
 .linkIcon-infoApp{
   float: left;
   width: auto;
@@ -111,7 +108,6 @@
   font-size: 20px;
   font-weight: bold;
 }
-
 /* CARD MIDDLE*/
 .card-content{
   margin-bottom: 20px;
@@ -133,19 +129,19 @@
 .imagen-inter{
   height:360px;
 }
-.titulo{
+.titulo-cardHome{
   width: 395px;
   font-size: 3.4rem;
-  font-weight: bold !important;
+  font-weight: bold;
   position:absolute;
   color:white;
   bottom:40px;
   left:30px;
 }
-.titulo-d{
+.titulo-cardHome-d{
   width: 395px;
   font-size: 3.4rem;
-  font-weight: bold !important;
+  font-weight: bold;
   position:absolute;
   color:white;
   bottom:40px;
