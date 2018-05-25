@@ -134,13 +134,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </a>
                         </li>
                         
-                        <li class="apply" id="register">
+                        <!-- <li class="apply" id="register"> -->
                             <!--
                             <a href="#register-mobile" id="openweb-register-lg" role="button" data-toggle="collapse" aria-expanded="false"
                             aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>-->
                             <!-- <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a> -->
                             <!-- <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-lg" target="_blank">Registro</a> -->
-                        </li>
+                        <!-- </li> -->
                         
                     <?php endif; ?>
                 </ul>

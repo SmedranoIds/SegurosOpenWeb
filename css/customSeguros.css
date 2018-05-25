@@ -961,7 +961,8 @@ color: #333;
 
 .ids-access-btns{
   float: right;
-  margin-top: -90px !important;
+  /* margin-top: -90px !important; */
+  margin-top: -10.5% !important;
 }
 
 .ids-btn-area-priv{
@@ -980,7 +981,21 @@ margin-top: 2rem ;
   padding-bottom: 0 !important;
 }
 */
-
+body > header.container-fluid .main-nav ul{
+  font-size: 12px !important;
+}
+body > header.container-fluid .main-nav ul li{
+  text-transform: initial !important;
+}
+body > header.container-fluid ul{
+  font-family: "BentonSansBBVA Book", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+body > header.container-fluid ul li:first-child{
+  padding-left: 0 !important;
+}
+body > header.container-fluid ul li{
+  padding-left: 2.9em !important;
+}
 body > header.container-fluid .main-nav ul:last-child li.sign-in {
   padding-right: 0rem !important;
 }

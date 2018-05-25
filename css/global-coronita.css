@@ -2764,11 +2764,11 @@ body > header.container-fluid {
       -ms-flex-pack: end;
       justify-content: flex-end;
       position: absolute;
-      /* right: 25%; */
+      right: 15%;
       /* top: -5.75em; */
       z-index: 1000;
       /* width: 70%;  */
-      width: 85%; 
+      width: 35%; 
     }
       body > header.container-fluid .top-nav ul li {
         padding-left: 1em; }

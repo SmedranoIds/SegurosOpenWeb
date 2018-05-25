@@ -107,7 +107,7 @@ get_header();
 <!-- end section-iconos desktop -->
 
 <!-- banner-medio desktop -->
-<section class="container-fluid bg-blue-core" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2018/05/spotlight-dark-blue.svg'); background-size: coevr;">
+<section class="container-fluid bg-blue-core" style="background-image: url('/wp-content/uploads/2018/05/spotlight-dark-blue.svg'); background-size: cover;">
   	<div class="row">
   		<div class="col-md-12 text-center">
   			<?php
