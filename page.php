@@ -92,8 +92,8 @@ get_header();
 					while ( have_rows('seccion_iconos') ) : the_row();
 			?>	
 			<div class="col-md-2 col-xs-4">
-				<div style="text-align: center;">
-					<img style="width: 150px;" src="<?php the_sub_field('icono_sec'); ?>" target="<?php the_sub_field('target_icono'); ?>'">
+				<div style="text-align: center; padding-bottom: 15px;">
+					<img style="width: 120px;" src="<?php the_sub_field('icono_sec'); ?>" target="<?php the_sub_field('target_icono'); ?>'">
 					<label class="label-sectIcon" style="font-size: 1.3rem; margin-top: 10px; width: 100%;"><?php the_sub_field('label_icono'); ?></label>
 				</div>
 			</div>
@@ -107,7 +107,7 @@ get_header();
 <!-- end section-iconos desktop -->
 
 <!-- banner-medio desktop -->
-<section class="container-fluid bg-blue-core">
+<section class="container-fluid bg-blue-core" style="background-image: url('http://localhost:9999/seguros/wp-content/uploads/2018/05/spotlight-dark-blue.svg'); background-size: coevr;">
   	<div class="row">
   		<div class="col-md-12 text-center">
   			<?php
@@ -120,7 +120,7 @@ get_header();
   		</div>
   	</div>
     <div class="row" style="padding-left: 7%; padding-right: 7%; padding-top: 3%;">
-	    <div class="col-md-6 box-infoApp">
+	    <div class="col-md-6 col-sm-6 box-infoApp">
 	     	<div class="green-square"></div>
 		      <div class="boxIn-infoApp bg-navy">
 		        <div class="boxContent-infoApp">
@@ -153,9 +153,9 @@ get_header();
 		        </div>
 		      </div>
 		    </div>
-		    <div class="col-md-6 box-infoApp text-center">
+		    <div class="col-md-6 col-sm-6 box-infoApp text-center">
 		     	<div style=" ">
-		      		<img style="width: 58%;" src="<?php the_sub_field('imagen_bapp'); ?>">
+		      		<img class="image-bapp" src="<?php the_sub_field('imagen_bapp'); ?>">
 		     	</div>
 		    </div>
 	</div>
@@ -176,13 +176,13 @@ get_header();
 				if( have_rows('cards_home') ):				
 					while ( have_rows('cards_home') ) : the_row();
 			?>	
-	        <div class="imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
-	          <label class="titulo-cardHome"><h2><?php the_sub_field('titulo_cardHome'); ?></h2></label>
-	        </div>
+	        <a href="#" target="_self"><div class="imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
+	          <label class="titulo-cardHome"><?php the_sub_field('titulo_cardHome'); ?></label>
+	        </div></a>
 	        <div class="contenido">
 	          <div class="cont-inter">
 	            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
-	            <p style="padding-top:5%;"><?php the_sub_field('resumen_cardHome'); ?></p>
+	            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
 	          </div>
 	          <div class="links">
 	            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>
@@ -194,8 +194,6 @@ get_header();
 			?>
 	      </div>
 	    </div>
-	  </div>
-	  <div class="row">
 	    <div class="col-md-12">
 	      <div class="card-content">
 	      	<?php
@@ -203,12 +201,12 @@ get_header();
 					while ( have_rows('cards_home_2') ) : the_row();
 			?>	
 	        <div class="imagen-d" style="background-image: url('<?php the_sub_field('imagen_cardHome_2'); ?>');">
-	          <label class="titulo-cardHome-d"><h2><?php the_sub_field('titulo_cardHome_2'); ?></h2></label>
+	          <label class="titulo-cardHome-d"><?php the_sub_field('titulo_cardHome_2'); ?></label>
 	        </div>
 	        <div class="contenido-d">
 	          <div class="cont-inter">
 	            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome_2'); ?>">
-	            <p style="padding-top:5%;"><?php the_sub_field('resumen_cardHome_2'); ?></p>
+	            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome_2'); ?></p>
 	          </div>
 	          <div class="links-d">
 	            <label><a href="<?php the_sub_field('link_cardHome_2'); ?>"><?php the_sub_field('textLink_cardHome_2'); ?></a></label>
@@ -229,7 +227,7 @@ get_header();
 
 
 <!-- featured mobile -->
-<section class="container-fluid bg-grey200 hidden-lg">
+<section class="container-fluid bg-grey200 hidden-lg hide">
 	<div class="container">
 		<div class="row justify-content-start">
 		<p>&nbsp;</p>

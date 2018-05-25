@@ -115,13 +115,13 @@
   height:360px;
 }
 .imagen{
-  width:430px;
+  width:50%;
   height:360px;
   float:left;
   background-size: cover;
 }
 .imagen-d{
-  width:430px;
+  width:50%;
   height:360px;
   float:right;
   background-size: cover;
@@ -130,8 +130,9 @@
   height:360px;
 }
 .titulo-cardHome{
-  width: 395px;
-  font-size: 3.4rem;
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  width: 45%;
+  font-size: 3.6rem;
   font-weight: bold;
   position:absolute;
   color:white;
@@ -139,8 +140,9 @@
   left:30px;
 }
 .titulo-cardHome-d{
-  width: 395px;
-  font-size: 3.4rem;
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  width: 45%;
+  font-size: 3.6rem;
   font-weight: bold;
   position:absolute;
   color:white;
@@ -149,7 +151,7 @@
 }
 .contenido{
   padding:10px;
-  width: 530px;
+  width: 50%;
   height: 360px;
   float: left;
     /* position: absolute; */
@@ -158,7 +160,7 @@
 }
 .contenido-d{
   padding:10px;
-  width: 530px;
+  width: 50%;
   height: 360px;
   float: left;
     /* position: absolute; */
@@ -186,8 +188,165 @@
   font-size:18px;
   text-align:left;
   font-weight:bold !important;
-  padding-top:70px;
   padding-right:26px;
   margin-left: 16px;
+  position: absolute;
+  bottom: 57px;
+}
+.image-bapp{
+  width: 70%;
+}
+.icono-textoBapp{
+  padding-top: 5%;
 }
 /* END CARD MIDDLE*/
+
+/* -- Content Tablet -- */
+@media (min-width: 700px) and (max-width: 900px){
+  .green-square{
+    width: 25px;
+    height: 25px;  
+  }
+  .boxIn-infoApp{
+    padding: 25px;
+    min-height: 320px;
+  }
+  .iconBox-infoApp{
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px 0 0;
+  }
+  .textBox-infoApp{
+    font-size: 1.9rem;
+    padding-top: 5px;
+  }
+  .resumen-infoApp{
+    padding-top: 50px;
+  }
+  .image-bapp{
+    width: 100%;
+    padding-top: 15px;
+  }
+  .card-content{
+    height: 310px;
+  }
+  .imagen{
+    height: 310px;
+  }
+  .imagen-d{
+    height: 310px;
+  }
+  .titulo-cardHome{
+    font-size: 2.8rem;
+    bottom: 20px;
+    width: 325px;
+  }
+  .titulo-cardHome-d{
+    font-size: 2.8rem;
+    bottom: 20px;
+    width: 325px;
+  }
+  .contenido{
+    height: 310px;
+  }
+  .cont-inter{
+    /*font-size: 18px; */ 
+   padding-top: 1%;
+  }
+  .imagen-con{
+    width: 110px;
+    float: none;
+  }
+  .icono-textoBapp{
+    padding-top: 1%;
+    padding-left: 6%;
+    padding-right: 6%: 
+  }
+  .links{
+    font-size: 18px;
+    bottom: 25px;
+    right: 40px;
+  }
+  .links-d{
+    font-size: 18px;
+    bottom: 25px;
+    /*right: 40px;*/
+  }
+}
+/* -- End Tablet -- */
+/* -- Content Móvil -- */
+@media (min-width: 320px) and (max-width: 699px){
+  .green-square{
+    width: 30px;
+    height: 30px;
+    top:7px;
+  }
+  .card-content{
+    height: 420px;
+  }
+  .boxIn-infoApp{
+    padding: 15px 30px;
+    min-height: 355px;
+  }
+  .iconBox-infoApp{
+    margin: 3px 24px 0 0;
+    width: 60px;
+    height: 60px;
+  }
+  .textBox-infoApp{
+    font-size: 2rem;
+  }
+  .resumen-infoApp{
+    padding-top: 58px;
+  }
+  .link-interno{
+    margin: 0 19px 0 0;
+  }
+  .imagen{
+    width: 100%;
+    height: 225px;
+  }
+  .imagen-d{
+    width: 100%;
+    height: 225px;
+  }
+  .titulo-cardHome{
+    width: 295px;
+    font-size: 18px;
+    color: black;
+    bottom: 145px;
+  }
+  .titulo-cardHome-d{
+    width: 295px;
+    font-size: 18px;
+    color: black;
+    bottom: 145px;
+  }
+  .imagen-con{
+    display: none;
+  }
+  .icono-textoBapp{
+    padding-top: 1px;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .contenido{
+    width: 100%;
+    height: 1px;
+  }
+  .contenido-d{
+    width: 100%;
+    height: 1px;
+  }
+  .links{
+    font-size: 15px;
+    bottom: 10px;
+    right: 30px;
+  }
+  .links-d{
+    font-size: 15px;
+    bottom: 10px;
+    right: 30px;
+  }
+}
+/* -- End Móvil -- */
