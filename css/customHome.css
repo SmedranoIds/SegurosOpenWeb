@@ -114,13 +114,13 @@
   background:white;
   height:360px;
 }
-.imagen{
+.card-izquierda.imagen{
   width:50%;
   height:360px;
   float:left;
   background-size: cover;
 }
-.imagen-d{
+.card-derecha.imagen-d{
   width:50%;
   height:360px;
   float:right;
@@ -129,7 +129,7 @@
 .imagen-inter{
   height:360px;
 }
-.titulo-cardHome{
+.card-izquierda.titulo-cardHome{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 45%;
   font-size: 3.6rem;
@@ -139,7 +139,7 @@
   bottom:40px;
   left:30px;
 }
-.titulo-cardHome-d{
+.card-derecha.titulo-cardHome-d{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 45%;
   font-size: 3.6rem;
@@ -149,7 +149,7 @@
   bottom:40px;
   margin-left:16px;
 }
-.contenido{
+.card-izquierda.contenido{
   padding:10px;
   width: 50%;
   height: 360px;
@@ -158,7 +158,7 @@
   right: 32px;
   bottom: 0;
 }
-.contenido-d{
+.card-derecha.contenido-d{
   padding:10px;
   width: 50%;
   height: 360px;
@@ -176,7 +176,7 @@
   width:160px;
   float:left;
 }
-.links{
+.card-izquierda.links{
   font-size:18px;
   text-align:right;
   font-weight:bold !important;
@@ -184,7 +184,7 @@
   right: 50px;
   position: absolute;
 }
-.links-d{
+.card-derecha.links-d{
   font-size:18px;
   text-align:left;
   font-weight:bold !important;
