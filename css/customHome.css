@@ -230,23 +230,26 @@
   .card-content{
     height: 310px;
   }
-  .imagen{
+  .card-izquierda.imagen{
     height: 310px;
   }
-  .imagen-d{
+  .card-derecha.imagen-d{
     height: 310px;
   }
-  .titulo-cardHome{
+  .card-izquierda.titulo-cardHome{
     font-size: 2.8rem;
     bottom: 20px;
     width: 325px;
   }
-  .titulo-cardHome-d{
+  .card-derecha.titulo-cardHome-d{
     font-size: 2.8rem;
     bottom: 20px;
     width: 325px;
   }
-  .contenido{
+  .card-izquierda.contenido{
+    height: 310px;
+  }
+  .card-derecha.contenido{
     height: 310px;
   }
   .cont-inter{
@@ -262,12 +265,12 @@
     padding-left: 6%;
     padding-right: 6%: 
   }
-  .links{
+  .card-izquierda.links{
     font-size: 18px;
     bottom: 25px;
     right: 40px;
   }
-  .links-d{
+  .card-derecha.links-d{
     font-size: 18px;
     bottom: 25px;
     /*right: 40px;*/
@@ -302,21 +305,21 @@
   .link-interno{
     margin: 0 19px 0 0;
   }
-  .imagen{
+  .card-izquierda.imagen{
     width: 100%;
     height: 225px;
   }
-  .imagen-d{
+  .card-derecha.imagen-d{
     width: 100%;
     height: 225px;
   }
-  .titulo-cardHome{
+  .card-izquierda.titulo-cardHome{
     width: 295px;
     font-size: 18px;
     color: black;
     bottom: 145px;
   }
-  .titulo-cardHome-d{
+  .card-derecha.titulo-cardHome-d{
     width: 295px;
     font-size: 18px;
     color: black;
@@ -330,20 +333,20 @@
     padding-left: 5px;
     font-size: 15px;
   }
-  .contenido{
+  .card-izquierda.contenido{
     width: 100%;
     height: 1px;
   }
-  .contenido-d{
+  .card-derecha.contenido-d{
     width: 100%;
     height: 1px;
   }
-  .links{
+  .card-izquierda.links{
     font-size: 15px;
     bottom: 10px;
     right: 30px;
   }
-  .links-d{
+  .card-derecha.links-d{
     font-size: 15px;
     bottom: 10px;
     right: 30px;
