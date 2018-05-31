@@ -232,6 +232,8 @@
   }
   .card-izquierda.imagen{
     height: 310px;
+    position: absolute;
+    width: 48%;
   }
   .card-derecha.imagen-d{
     height: 310px;
@@ -247,6 +249,7 @@
     width: 325px;
   }
   .card-izquierda.contenido{
+    float: right;
     height: 310px;
   }
   .card-derecha.contenido{
