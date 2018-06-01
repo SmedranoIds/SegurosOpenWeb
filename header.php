@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<header id="top" class="container-fluid ids-header">
+<header id="top" class="container-fluid ids-header sube-h">
     <nav class="navbar navbar-static-top">
         <div class="navbar-header container hidden-lg">
             <a href="#sidr-main" id="responsive-menu-button" class="navbar-toggle bbva-coronita_menu collapsed">
@@ -291,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<div class="breadcrumbs">
+<div class="breadcrumbs sube-b">
     <div class="container">
         <?php if(function_exists('get_breadcrumb'))
         {

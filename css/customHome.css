@@ -200,6 +200,16 @@
   padding-top: 5%;
 }
 /* END CARD MIDDLE*/
+.sube-h{
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
+.sube-b{
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
 
 /* -- Content Tablet -- */
 @media (min-width: 700px) and (max-width: 900px){
@@ -356,3 +366,4 @@
   }
 }
 /* -- End Móvil -- */
+
