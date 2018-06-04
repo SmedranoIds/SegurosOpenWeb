@@ -994,7 +994,7 @@ body > header.container-fluid ul li:first-child{
   padding-left: 0 !important;
 }
 body > header.container-fluid ul li{
-  padding-left: 20pxs !important;
+  padding-left: 21px !important;
 }
 body > header.container-fluid .main-nav ul:last-child li.sign-in {
   padding-right: 0rem !important;
