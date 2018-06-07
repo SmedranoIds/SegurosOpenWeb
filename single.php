@@ -71,6 +71,31 @@ while (have_posts()) {
 	</div>
 </div>
  end auto alerta -->
+ <!-- Sección de Promociones-->
+    <div class="container-fluid">
+        <div class="row">
+        	<?php
+				if( have_rows('seccion_promo') ):				
+					while ( have_rows('seccion_promo') ) : the_row();
+			?>	
+            <div class="col-md-4">
+              <div class="text-center">
+                <img class="imagen-promo" src="<?php the_sub_field('imagen_promo'); ?>">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="text-promo">
+              	<?php the_sub_field('texto_promo'); ?>
+              </div>
+              <a href="<?php the_sub_field('url_promo'); ?>" target="<?php the_sub_field('target_promo'); ?>"><span class="boton-promo">Cotizar</span></a>
+            </div>
+            <?php 
+				endwhile;
+				endif;
+			?>
+        </div>
+    </div> 
+<!-- Termina Sección de Promociones-->
 
 	
 <!-- area de info -->

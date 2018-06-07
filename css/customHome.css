@@ -210,6 +210,30 @@
   width: 100%;
   position: relative;
 }
+.imagen-promo{
+  width:240px;
+  padding-top:5%;
+}
+.titulo-promos{
+  font-size:36px;
+  font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.subt-promos{
+  font-size:22px;
+  font-family: "BentonSansBBVALight";
+  line-height: 32px;
+}
+.text-promo{
+  margin-bottom:50px;
+  padding-right: 4%;
+}
+.boton-promo{
+  padding: 16px 40px;
+  min-width: 94px;
+  background:#1d73b2;
+  color:white;
+}
 
 /* -- Content Tablet -- */
 @media (min-width: 700px) and (max-width: 900px){
