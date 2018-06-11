@@ -96,7 +96,59 @@ while (have_posts()) {
         </div>
     </div> 
 <!-- Termina Sección de Promociones-->
-
+<hr>
+<!-- Sección Beneficios-->
+<section class="container-fluid">
+  <div class="">
+    <div class="col-md-6">
+      <div class="contiene-todo">
+        <div class="text-box">
+          <h3 class="titulo-beneficios"><?php the_title(); ?></h3>
+          <div class="contiene-resumen">
+            <p>&nbsp;</p>
+            <?php
+				if( have_rows('seccion_beneficios_left') ):				
+					while ( have_rows('seccion_beneficios_left') ) : the_row();
+			?>	
+            <span class="resumen-beneficios"><?php the_sub_field('resumen_beneficios'); ?></span>
+          </div>
+          <div class="contiene-boton">
+             <a href="<?php the_sub_field('urlbtn_beneficios'); ?>" target="<?php the_sub_field('targetbtn_beneficios'); ?>"><span class="boton-beneficios">Cotizar</span></a>
+          </div>
+          <?php 
+				endwhile;
+				endif;
+			?>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="contiene-beneficios-cols">
+        <p class="titulo-seccion"><i class="bbva-icon bbva-coronita_minus-stag" style="margin-right:5px;"></i>BENEFICIOS</p>
+        <h3 class="subtitulo-beneficios">Conoce la protección que ofrece <?php the_title(); ?></h3>
+	     <div class="row">
+	     	<?php
+				if( have_rows('seccion_beneficios_right') ):				
+					while ( have_rows('seccion_beneficios_right') ) : the_row();
+			?>
+	      	<div class="col-md-6">
+	      		<div class="icondescripcion">
+	              <div class="icondescripcion_base">
+	                <i class="icondescripcion_icon <?php the_sub_field('icono_beneficio'); ?>"></i>
+	                <p class="icondescripcion_titulo"><?php the_sub_field('texto_beneficio'); ?></p>
+	              </div>
+	            </div>
+	      	</div>
+	      	<?php 
+				endwhile;
+				endif;
+			?>
+      	</div>
+    </div>
+  </div>
+</section>
+<!-- Termina Sección Beneficios-->
+<hr>
 	
 <!-- area de info -->
 <div class="container separador">

@@ -234,6 +234,113 @@
   background:#1d73b2;
   color:white;
 }
+/* -- SECCIÓN BENEFICIOS-- */
+.text-box{
+  padding:40px;
+  min-height: 100%;
+  color:white;
+}
+.resumen-beneficios{
+  font-size: 22px;
+  line-height: 32px;
+  color: white !important;
+}
+.boton-beneficios{
+  padding: 16px 40px;
+  min-width: 94px;
+  background: #1d73b2;
+  color:white;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+
+}
+.titulo-beneficios{
+  font-size: 42px;
+  text-align:left;
+  margin-bottom:32px;
+  color: white;
+}
+.contiene-todo{
+  background: url(https://www.bancomer.com/content/dam/public-web/global/system/styles/images/background-product-benefits.svg) #004481;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  min-height: 528px;
+  padding: 0;
+  display: block;
+}
+.contiene-resumen{
+  width:100%;
+}
+.titulo-seccion{
+  font-family: "BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  color: #121212;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.contiene-beneficios-cols{
+  margin-left:16px;
+  margin-right:16px;
+}
+.bbva-icon{
+  color: #5bbeff;
+  margin-left: 0;
+}
+.subtitulo-beneficios{
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -.4px;
+  margin-bottom: 32px;
+}
+.prodctosBeneficios-contenido{
+  list-style: none;
+  text-align: left;
+  display: flex;
+  padding-left: 0px !important;
+}
+.prodctosBeneficios-descripcion{
+  width: 262px;
+  float: left;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin: 0;
+  list-style: none;
+}
+.icondescripcion{
+  float: left;
+  /*overflow: hidden;*/
+}
+li.prodctosBeneficios-descripcion:before {
+  list-style: none !important;
+  background: red;
+}
+.icondescripcion_base{
+  padding: 16px 0 10px 0px;
+  display: table-cell;
+  float: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.icondescripcion_icon{
+  line-height: 20px;
+  color: #bdbdbd;
+  font-size: 24px;
+  font-family: 'bbvaiconfont' !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: middle;
+}
+.icondescripcion_titulo{
+  font-size: 20px;
+  line-height: 28px;
+  min-height: 112px;
+}
+/* -- END SECCIÓN BENEFICIOS-- */
 
 /* -- Content Tablet -- */
 @media (min-width: 700px) and (max-width: 900px){
