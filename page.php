@@ -36,32 +36,20 @@ get_header();
 	<div class="item <?php if($i == 0) {echo 'active';} ?>" 
 	style="background-image: url('<?php the_sub_field('imagen'); ?>');height: 480px;width: 100%;background-size: cover;">
 		<div class="container">
-			<div class="col-md-8 col-lg-6" style="padding-top: 70px;">
-				<?php if(!empty(get_sub_field('titulo'))): ?>		
-				<div class="banner-msn">
-					<div class="row">
-						<div class="col-md-10 col-sm-10 titulo">
-							<?php the_sub_field('titulo'); ?>
-						</div>
-					</div>
-					<!-- <div class="spacebanner"></div> -->
-					<div class="row">
-						<div class="col-md-12 col-sm-12 tt2">
-							<p><?php the_sub_field('introduccion'); ?></p>
-						</div>
-					</div>
-					<!-- <div class="spacebanner"></div> -->
-					<div class="row tt3">
-						<?php if (get_sub_field('boton')) {?>
-						<div class="col-md-7 col-sm-7 col-xs-7 text-left">
-							<a href="<?php the_sub_field('boton'); ?>" target="<?php the_sub_field('target')?>"><button type="button" class="btn"><?php the_sub_field('texto-boton') ?></button></a>
-						</div>
-						<?php } ?>
-					</div>
-				</div>
-				<?php endif; ?>
-			</div>
-		</div>
+		    <div class="row">
+		      <div class="col-md-12">
+		      	<?php if(!empty(get_sub_field('titulo'))): ?>
+		        <div class="box-tituloHome">
+		          <h1 class="tituloHome"><?php the_sub_field('titulo'); ?></h1>
+		          <p class="subtituloHome"><?php the_sub_field('introduccion'); ?></p>
+		          <?php if (get_sub_field('boton')) {?>
+		          <a href="<?php the_sub_field('boton'); ?>" target="_self"><span class="btn-bannerHome"><?php the_sub_field('texto-boton') ?></span></a>
+		          <?php } ?>
+		        </div>
+		        <?php endif; ?>
+		      </div>
+		    </div>
+		  </div>
 	</div>
 
 	<?php 

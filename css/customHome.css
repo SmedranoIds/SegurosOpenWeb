@@ -1,5 +1,28 @@
+.box-tituloHome{
+  margin-top: 5%;
+  text-align: right;
+  width: 63%;
+  float: right;
+  color: white;  
+}
+.subtituloHome{
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-size: 30px;
+  width: 68%;
+  float: right;
+  color: white;
+}
+.btn-bannerHome{
+  float: right;
+  background: #1d73b2;
+  color: white;
+  padding: 16px 32px;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
 .label-sectIcon{
-  color: #1973B8;
+  color: #000000;
 }
 .box-bannerApp{
   background:#1464A5;
