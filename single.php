@@ -72,6 +72,7 @@ while (have_posts()) {
 </div>
  end auto alerta -->
  <!-- Sección de Promociones-->
+    <?php if( get_field('seccion_promo') ):?>
     <div class="container-fluid">
         <div class="row">
         	<?php
@@ -95,9 +96,11 @@ while (have_posts()) {
 			?>
         </div>
     </div> 
+    <hr>
+    <?php endif;?>
 <!-- Termina Sección de Promociones-->
-<hr>
 <!-- Sección Beneficios-->
+<?php if( get_field('seccion_beneficios_left') ):?>
 <section class="container-fluid">
   <div class="">
     <div class="col-md-6">
@@ -147,8 +150,10 @@ while (have_posts()) {
     </div>
   </div>
 </section>
-<!-- Termina Sección Beneficios-->
 <hr>
+<?php endif;?>
+<!-- Termina Sección Beneficios-->
+
 	
 <!-- area de info -->
 <div class="container separador">
