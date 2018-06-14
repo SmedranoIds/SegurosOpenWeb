@@ -428,13 +428,20 @@ li.icon-pdf:before{
 .panel-body h3:first-child{
   padding-top: 0; 
 }
+.preFooter-style{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #1d73b2;
+  text-decoration: none !important;
+}
 /*Estilos Footer*/
 .space {
   height: 20px;
 }
 
 .pre-footer .titulo{
-  font-size: 1.6rem;
+  font-size: 15px;
   padding-bottom: 0.5em;
   font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
   letter-spacing: -0.2px;
@@ -475,7 +482,7 @@ li.icon-pdf:before{
 }
 
 .pre-footer a{
-  font-size: 1.4rem;
+  font-size: 15px;
   padding: 0;
   margin: 0;
 }
@@ -698,6 +705,7 @@ footer a{
     /* content: url(http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2017/12/open.png); */
     content: "\e910";
  }
+
 /*estilo listas*/
 .sinEst{
   list-style: none;

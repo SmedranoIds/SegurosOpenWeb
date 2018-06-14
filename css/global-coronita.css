@@ -30,7 +30,7 @@ body, blockquote, ul, ol, .kicker, .header, .normal {
   -webkit-hyphens: auto;
   hyphens: auto; }
   a:hover, a:active, a:focus {
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid transparent !important;
     color: #104975;
     text-decoration: none; }
   a.img-link, a.img-link:hover, a.img-link:active, a.img-link:focus, a.img-link:hover img, a.img-link:active img, a.img-link:focus img, a.icon-link, a.icon-link:hover, a.icon-link:active, a.icon-link:focus, a a img, a a img:hover, a a img:active, a a img:focus {
