@@ -411,6 +411,38 @@ li.icon-pdf:before{
     background-repeat: no-repeat;
     left: -5px;
 }
+ul li.bbva-coronita_doc-pdf{
+  list-style: none;
+  padding-left: 0 !important;
+}
+li.bbva-coronita_doc-pdf{
+  font-family: 'BentonSansBBVA-Medium Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;' !important;
+  list-style-image: none;
+  list-style-type: none;
+}
+li.bbva-coronita_doc-pdf:before{
+  /*content: ''; */
+  display: flex;
+  font-size: 25px;
+  line-height: 20px;
+  /* position: relative; */
+  left: 10px;
+}
+.content-generales{
+  /*height: 260px;
+  margin-bottom: 25px;*/
+}
+.pdfs-generales{
+  margin-top: 30px;
+}
+.pdf-individual{}
+.contiene-pdfs{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 /*.whitSpace {
       margin: 10px 0 10px;
 }*/

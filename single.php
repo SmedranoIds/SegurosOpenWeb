@@ -190,74 +190,6 @@ while (have_posts()) {
 					endwhile;
 					endif;
 					?>
-				<?php if( have_rows('archivos') ): ?>
-					<div class="panel panel-default">
-					    <div class="panel-heading" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" role="tab" id="headingFive">
-					      <h4 class="panel-title">
-					        <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-					          Condiciones Generales
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
-					      <div class="panel-body">
-					        <ul>
-					        	<?php 
-								if( have_rows('archivos') ):
-								  while ( have_rows('archivos') ) : the_row();
-								?>
-								<p class="whitSpace"><strong><?php the_sub_field('tituloapartados') ?></strong></p>
-					        	<p class="whitSpace"><?php the_sub_field('apartados') ?></p>
-					        		<?php 
-									if( have_rows('pdf') ):
-									  while ( have_rows('pdf') ) : the_row();
-									?>
-					        			<li class="icon-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><?php the_sub_field('titulo') ?></a></li>
-					        			<!-- <li class="bbva-coronita_doc-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><?php the_sub_field('titulo') ?></a></li> -->
-					        		<?php
-									endwhile;
-									endif;
-									?>
-									<!-- <br> -->
-					        	<?php
-								endwhile;
-								endif;
-								?>
-					        </ul>
-					      </div>
-					    </div>
-					</div>
-					<?php 
-						if( have_rows('masinfo') ):
-						$a = 30;
-						if( have_rows('masinfo') ):
-						while ( have_rows('masinfo') ) : the_row(); 
-					?>
-					  <div class="panel panel-default">
-					    <!-- <div class="panel-heading" role="tab" id="heading<?php echo $a ?> <?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>"> -->
-					    <div class="panel-heading" role="tab" id="heading<?php echo $a ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
-					      <h4 class="panel-title">
-					        <!-- <a class="<?php if($a != 0){?> collapsed <?php } ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>"> -->
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
-					          <?php the_sub_field('titulo') ?>
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapse<?php echo $a ?>" class="panel-collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
-					      <div class="panel-body">
-					        <?php the_sub_field('contenido') ?>
-					      </div>
-					    </div>
-					  </div>
-				  <?php
-					  	$a++;
-						endwhile;
-						endif;
-					endif;
-					?>
-
-				<?php endif;	?>
-
 			</div>
 			<!-- end left column -->
 
@@ -332,14 +264,104 @@ while (have_posts()) {
 
 			end right column -->
 		</div>
+</div>
+				<?php if( have_rows('archivos') ): ?>
+					<div class="container-fluid bg-grey100">
+					  <div class="contiene-pdfs">
+					    <div class="row">
+					      <div class="col-md-12 text-center titulo-generales" style="margin: 0 auto 32px;">
+					        <h2>Condiciones Generales</h2>
+					      </div>
+					    </div>
+					    <div class="row">
+					    	<?php 
+								if( have_rows('archivos') ):
+								  while ( have_rows('archivos') ) : the_row();
+								?>
+					      <div class="col-md-4 content-generales">
+					        <div class="pdfs-generales">
+					        	<p class="whitSpace"><strong><?php the_sub_field('tituloapartados') ?></strong></p>
+					        	<p><?php the_sub_field('apartados') ?></p>
+					        	<ul style="padding-left: 30px;">
+					        	<?php 
+									if( have_rows('pdf') ):
+									  while ( have_rows('pdf') ) : the_row();
+									?>
+									<li class="bbva-coronita_doc-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><strong><?php the_sub_field('titulo') ?></strong></a></li>
+					        	<?php
+									endwhile;
+									endif;
+									?>
+								</ul>
+								<br>	
+					        </div>
+					      </div>
+					     	<?php
+								endwhile;
+								endif;
+							?>
+					    </div>
+					  </div>
+					</div>
+					<?php 
+						if( have_rows('masinfo') ):
+						$a = 30;
+						if( have_rows('masinfo') ):
+						while ( have_rows('masinfo') ) : the_row(); 
+					?>
+					  <div class="panel panel-default">
+					    <div class="panel-heading" role="tab" id="heading<?php echo $a ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+					      <h4 class="panel-title">
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+					          <?php the_sub_field('titulo') ?>
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapse<?php echo $a ?>" class="panel-collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+					      <div class="panel-body">
+					        <?php the_sub_field('contenido') ?>
+					      </div>
+					    </div>
+					  </div>
+				  <?php
+					  	$a++;
+						endwhile;
+						endif;
+					endif;
+					?>
+
+				<?php endif;	?>	
+<!-- ATENCIÓN AL CLIENTE -->
+<?php 
+		if( have_rows('atencion') ):
+		while ( have_rows('atencion') ) : the_row(); 
+	?>
+	<div class="container-fluid contiene-aClientes">
+	  <div class="contiene-pdfs">
+	    <div class="row">
+	      <div class="col-md-6">
+	      	<?php the_sub_field('atencion_clientes') ?>
+	      </div>
+	      <div class="col-md-6">
+	        <div class="box-aClientes bg-grey100">
+	        <?php the_sub_field('atencion_siniestros') ?>
+	        </div>
+	      </div>
+	    </div>    
+	  </div>   
 	</div>
+<?php
+		endwhile;
+		endif;
+?>	
+<!-- END ATENCIÓN AL CLIENTE-->
+			
 
 <?php if (the_field('iframe')): ?>
 	<div class="col-xs-12">
 			<?php (the_field('iframe'))?>
 	</div>
 <?php endif; ?>
-
 
 	<?php 
 		if( have_rows('preguntas') ): 

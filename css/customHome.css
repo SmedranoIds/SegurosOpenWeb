@@ -21,6 +21,9 @@
   font-size: 18px;
   margin-bottom: 5%;
 }
+.btn-bannerHome:hover{
+  background: #1464a5;
+}
 .label-sectIcon{
   color: #000000;
 }
@@ -520,4 +523,22 @@ li.prodctosBeneficios-descripcion:before {
   }
 }
 /* -- End Móvil -- */
-
+/* -- ATENCIÓN A CLIENTES*/
+.contiene-aClientes{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.box-aClientes{
+  background:white;
+  padding:48px;
+  margin:10px;
+  text-align:center;
+}
+.text-aClientes{
+  font-size: 22px;
+  line-height: 32px;
+}
+ul li a.lista-aClientes{
+  font-family: 'BentonSansBBVA-Medium Bold", "Helvetica Neue", Arial, Helvetica, sans-serif';
+}
+/* -- TERMINA ATENCIÓN A CLIENTES*/
