@@ -1024,7 +1024,7 @@ margin-top: 2rem ;
 }
 */
 body > header.container-fluid .main-nav ul{
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 body > header.container-fluid .main-nav ul li{
   text-transform: initial !important;
@@ -1036,7 +1036,7 @@ body > header.container-fluid ul li:first-child{
   padding-left: 0 !important;
 }
 body > header.container-fluid ul li{
-  padding-left: 21px !important;
+  padding-left: 23px !important;
 }
 body > header.container-fluid .main-nav ul:last-child li.sign-in {
   padding-right: 0rem !important;
