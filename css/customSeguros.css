@@ -434,6 +434,8 @@ li.bbva-coronita_doc-pdf:before{
 }
 .pdfs-generales{
   margin-top: 30px;
+  margin-bottom: 30px;
+  height: 110px;
 }
 .pdf-individual{}
 .contiene-pdfs{

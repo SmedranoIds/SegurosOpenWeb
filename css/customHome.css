@@ -534,6 +534,11 @@ li.prodctosBeneficios-descripcion:before {
   margin:10px;
   text-align:center;
 }
+.box-aClientes-left{
+  background:white;
+  padding:48px;
+  margin:10px;
+}
 .text-aClientes{
   font-size: 22px;
   line-height: 32px;
