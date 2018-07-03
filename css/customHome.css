@@ -1,7 +1,8 @@
 .box-tituloHome{
-  margin-top: 5%;
+  margin-top: 8%;
   text-align: right;
-  width: 63%;
+  width: 100%;
+  max-width: 650px;
   float: right;
   color: white;  
 }
