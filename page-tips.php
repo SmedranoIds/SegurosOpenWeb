@@ -96,7 +96,14 @@ while (have_posts()) {
                         </div>
                     </div>
                 </div>
-        	<?php endif;?>					
+        	<?php endif;?>
+        	<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<?php the_field('footer_text_tips'); ?>	
+					</div>
+				</div>
+			</div>				
 		</div>	
 	</div>
 </section>

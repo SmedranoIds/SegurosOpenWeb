@@ -706,7 +706,7 @@ footer a{
   font-weight: bold;
 }
 .panel-heading a{
-  border-bottom: 0 !important;
+  /*border-bottom: 0 !important;*/
   color: #2a86ca !important;
   width: 100%;
   display: block;
