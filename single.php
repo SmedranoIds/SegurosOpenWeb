@@ -278,7 +278,7 @@ while (have_posts()) {
 								if( have_rows('archivos') ):
 								  while ( have_rows('archivos') ) : the_row();
 								?>
-					      <div class="col-md-4 content-generales">
+					      <div class="col-md-4 col-sm-12 col-xs-12 content-generales">
 					        <div class="pdfs-generales">
 					        	<p class="whitSpace"><strong><?php the_sub_field('tituloapartados') ?></strong></p>
 					        	<p><?php the_sub_field('apartados') ?></p>
@@ -339,10 +339,10 @@ while (have_posts()) {
 	<div class="container-fluid contiene-aClientes">
 	  <div class="contiene-pdfs">
 	    <div class="row">
-	      <div class="col-md-6">
+	      <div class="col-md-6 col-sm-12 col-xs-12">
 	      	<?php the_sub_field('atencion_clientes') ?>
 	      </div>
-	      <div class="col-md-6">
+	      <div class="col-md-6 col-sm-12 col-xs-12">
 	        <div class="box-aClientes bg-grey100">
 	        <?php the_sub_field('atencion_siniestros') ?>
 	        </div>

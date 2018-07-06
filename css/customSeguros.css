@@ -433,7 +433,7 @@ li.bbva-coronita_doc-pdf:before{
   margin-bottom: 25px;*/
 }
 .pdfs-generales{
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   margin-bottom: 50px;
   height: 110px;
 }
@@ -442,7 +442,7 @@ li.bbva-coronita_doc-pdf:before{
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   padding-bottom: 50px;
 }
 /*.whitSpace {
@@ -710,6 +710,7 @@ footer a{
   color: #2a86ca !important;
   width: 100%;
   display: block;
+
 }
 
 .panel-heading a:before, .panel-heading a:after{
@@ -1327,6 +1328,11 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     font-size: 13px;
     margin-top: 25px;
     padding-left: 4px;
+  }
+  .pdfs-generales{
+    margin-top: 0px !important;
+    /*margin-bottom: 0px !important;*/
+    /*height: 110px;*/
   }
 }
 

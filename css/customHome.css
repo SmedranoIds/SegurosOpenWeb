@@ -548,3 +548,14 @@ ul li a.lista-aClientes{
   font-family: 'BentonSansBBVA-Medium Bold", "Helvetica Neue", Arial, Helvetica, sans-serif';
 }
 /* -- TERMINA ATENCIÓN A CLIENTES*/
+
+/*//// Movil ///*/
+@media (min-width: 320px) and (max-width: 699px){
+  .box-aClientes{
+    padding: 10px !important;
+    margin: 0px !important;
+  }
+  .box-aClientes-left{
+    padding: 10px !important;
+  }
+}
