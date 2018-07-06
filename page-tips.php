@@ -100,7 +100,7 @@ while (have_posts()) {
         	<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<?php the_field('footer_text_tips'); ?>	
+						<p style="font-size:13px;"><?php the_field('footer_text_tips'); ?></p>
 					</div>
 				</div>
 			</div>				
