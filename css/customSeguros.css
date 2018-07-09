@@ -1184,6 +1184,40 @@ body > header.container-fluid a.sign-in, .sign-in a {
   margin: 5px;
 }
 
+/* ------- BOX FIXED CONTACT ------- */
+.contiene-boxContact{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 5;
+  width: 80px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+}
+div.box-contactHelp{
+  width: 80px;
+  height: 80px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #004481;
+  line-height: 24px;
+  background: white;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+}
+div.box-contactHelp:hover{
+  background: #1464A5;
+  color: white;
+}
+div.box-contactHelp:active{
+  background: #004481;
+  color: white;
+}
+i.icon-contactHelp{
+  color: #004481;
+}
+/* ------- END BOX FIXED CONTACT ------- */
+
 /*******************************/
 /* Estilos para componente FAQs*/
 .faqs_content{
