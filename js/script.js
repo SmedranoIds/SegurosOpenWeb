@@ -3,7 +3,7 @@
 /* Funciones */
 function openChat(){
 	// window.open('http://200.94.70.123/ChatSegBancomer/?nSrvID=2', 'mywin','left=20, top=20, width=500, height=500, toolbar=1, resizable=0');
-	window.open('https://atentobbvamx.s1gateway.com/api/channel/webchat.php?action=js&cpg_id=10002', 'mywin','left=20, top=20, width=500, height=500, toolbar=1, resizable=0');
+	window.open('https://atentobbvamx.s1gateway.com/webchat/chat_embed.php?cpgid=10002&nw=1', 'mywin','left=20, top=20, width=500, height=500, toolbar=1, resizable=0');
 	return false;
 }
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
 		jQuery('#register-mobile').collapse('show');
 	});
 	*/
-	
+
 
 	// desplegable de acceso a usuarios 
 	/*

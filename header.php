@@ -19,6 +19,7 @@ $theme = \OpenWeb\Theme::getInstance();
 <html <?php language_attributes(); ?>>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16721854-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -26,7 +27,8 @@ $theme = \OpenWeb\Theme::getInstance();
       gtag('js', new Date());
 
       gtag('config', 'UA-16721854-1');
-    </script>
+    </script>-->
+    
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
@@ -51,8 +53,6 @@ $theme = \OpenWeb\Theme::getInstance();
 </head>
 
 <body <?php body_class(); ?> >
-
-
 
 <header id="top" class="container-fluid ids-header sube-h">
     <nav class="navbar navbar-static-top">
