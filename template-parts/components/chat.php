@@ -5,11 +5,11 @@
 				<a class="bbva-coronita_chat " href=""><span class="chat-fontFamily">Chat</span></a>
 			</div>-->
 			<div class="contiene-boxContact">
-				<a href="#" target="_blank" role="button"><div class="box-contactHelp">
+				<a href="/contacto/atencion-telefonica/" target="_self" role="button"><div class="box-contactHelp">
 			        <i class="bbva-coronita_call"></i><br>
 			        <span>Llamar</span>
 			    </div></a>
-			    <a href="" target="_blank" role="button"><div class="box-contactHelp">
+			    <a href="mailto:servicioaclientes@segurosbancomer.com.mx" target="_self" role="button"><div class="box-contactHelp">
 			        <i class="bbva-coronita_mail"></i><br>
 			        <span>Correo</span>
 			    </div></a>
