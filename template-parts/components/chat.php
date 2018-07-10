@@ -6,15 +6,15 @@
 			</div>-->
 			<div class="contiene-boxContact">
 				<a href="/contacto/atencion-telefonica/" target="_self" role="button"><div class="box-contactHelp">
-			        <i class="bbva-coronita_call"></i><br>
+			        <i class="bbva-coronita_call espacio-icono"></i><br class="espacio-help">
 			        <span>Llamar</span>
 			    </div></a>
 			    <a href="mailto:servicioaclientes@segurosbancomer.com.mx" target="_self" role="button"><div class="box-contactHelp">
-			        <i class="bbva-coronita_mail"></i><br>
+			        <i class="bbva-coronita_mail espacio-icono"></i><br class="espacio-help">
 			        <span>Correo</span>
 			    </div></a>
 				<a href="#" target="_blank" role="button" onclick="return openChat();"><div class="box-contactHelp">
-			        <i class="bbva-coronita_chat"></i><br>
+			        <i class="bbva-coronita_chat espacio-icono"></i><br class="espacio-help">
 			        <span>Chat</span>
 			    </div></a>
   			</div>

@@ -1368,6 +1368,35 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     /*margin-bottom: 0px !important;*/
     /*height: 110px;*/
   }
+  .contiene-boxContact{
+    background: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 2px;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  }
+  div.box-contactHelp{
+    width: 33%;
+    height: 55px;
+    float: left;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #004481;
+    line-height: 24px;
+    background: white;
+    text-align: center;
+    border: 1px solid #f4f4f4;
+  }
+  .espacio-help{
+    display: none !important;
+  }
+  .espacio-icono{
+    margin-right: 5px;
+  }
 }
 
 /*//// Tablet ///*/
@@ -1402,6 +1431,35 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     font-size: 13px;
     margin-top: 25px;
     padding-left: 4px;
+  }
+  .contiene-boxContact{
+    background: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  }
+  div.box-contactHelp{
+    width: 33%;
+    height: 55px;
+    float: left;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #004481;
+    line-height: 24px;
+    background: white;
+    text-align: center;
+    border: 1px solid #f4f4f4;
+  }
+  .espacio-help{
+    display: none !important;
+  }
+  .espacio-icono{
+    margin-right: 5px;
   }
 }
 
