@@ -21,7 +21,24 @@
             endif;
         
         ?>
-        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>');">
+        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>'); <?php 
+            if(is_page("salud") || is_page("seguro-automotriz")):
+                echo "background-position: center -150px";
+            endif;
+            if(is_page("seguro-ahorro")):
+                echo "background-position: center -240px;";
+            endif;
+            if(is_page("seguro-hogar")):
+                echo "background-position: center -40px;";
+            endif;
+            if(is_page("seguro-hogar/bancomer/")):
+                echo "background-position: center -70px;";
+            endif;
+            if(is_page("seguro-hogar/contenidos/")):
+                echo "background-position: center -20px;";
+            endif;
+            
+            ?>;">
             <div class="container">
                 <div class="col-md-6 col-sm-7" style="padding-top: 70px;">
                         <div class="banner-msn">
