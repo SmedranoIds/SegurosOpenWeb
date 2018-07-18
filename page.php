@@ -136,12 +136,12 @@ get_header();
 		          </div>
 		          <div class="opciones-infoApp">
 		            <div class="linkIcon-infoApp">
-		              <a class="link-interno" href="#">
+		              <a class="link-interno" href="https://itunes.apple.com/mx/app/bancomer-seguros-sos/id1320083642?mt=8">
 		                <span class="icon-infoApp">Apple Store</span>
 		              </a>
 		            </div>
 		            <div class="linkIcon-infoApp">
-		              <a class="link-interno" href="#">
+		              <a class="link-interno" href="https://play.google.com/store/apps/details?id=mx.com.segurosbancomer.autoalerta&hl=en">
 		                <span class="icon-infoApp">Google Play</span>
 		              </a>
 		            </div>
