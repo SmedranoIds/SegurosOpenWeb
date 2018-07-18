@@ -282,6 +282,37 @@
   bottom: 40px;
 
 }
+.boton-coberturas{
+  padding: 16px 40px;
+  min-width: 94px;
+  background: #1d73b2;
+  color:white;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+}
+.boton-coberturas:hover{
+  padding: 16px 40px;
+  min-width: 94px;
+  background: #1464A5;
+  color:white;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+}
+.row.cobertura-row{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contiene-boton-d{
+  height: 100px;
+  align-items: center;
+  width: 52%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 .titulo-beneficios{
   font-size: 42px;
   text-align:left;
@@ -322,7 +353,10 @@
   font-size: 26px;
   line-height: 32px;
   letter-spacing: -.4px;
-  margin-bottom: 32px;
+  /*margin-bottom: 32px;*/
+}
+.under-sub-beneficios{
+  font-size: 20px;
 }
 .prodctosBeneficios-contenido{
   list-style: none;
@@ -347,7 +381,8 @@ li.prodctosBeneficios-descripcion:before {
   background: red;
 }
 .icondescripcion_base{
-  padding: 16px 0 10px 0px;
+  /*padding: 16px 0 10px 0px;*/
+  padding: 5px 0 10px 0px;
   display: table-cell;
   float: none;
   margin-top: 0;
@@ -365,7 +400,7 @@ li.prodctosBeneficios-descripcion:before {
 .icondescripcion_titulo{
   font-size: 20px;
   line-height: 28px;
-  min-height: 112px;
+  /*min-height: 112px;*/
 }
 /* -- END SECCIÓN BENEFICIOS-- */
 
