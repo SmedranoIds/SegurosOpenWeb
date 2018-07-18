@@ -143,7 +143,7 @@ while (have_posts()) {
 	      		<div class="icondescripcion">
 	              <div class="icondescripcion_base">
 	                <i class="icondescripcion_icon <?php the_sub_field('icono_beneficio'); ?>"></i>
-	                <p class="icondescripcion_titulo"><?php the_sub_field('texto_beneficio'); ?></p>
+	                <span class="icondescripcion_titulo"><?php the_sub_field('texto_beneficio'); ?></span>
 	              </div>
 	            </div>
 	      	</div>
