@@ -22,7 +22,12 @@
         
         ?>
         <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>'); <?php 
-            if(is_page("salud") || is_page("seguro-automotriz")):
+            if(is_page("salud")):
+                echo "background-position: center -150px";
+            endif;
+            
+            /*
+            if(is_page("seguro-automotriz")):
                 echo "background-position: center -150px";
             endif;
             if(is_page("seguro-ahorro")):
@@ -37,6 +42,7 @@
             if(is_page("seguro-hogar/contenidos/")):
                 echo "background-position: center -20px;";
             endif;
+            */
             
             ?>;">
             <div class="container">
