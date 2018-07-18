@@ -133,7 +133,7 @@ while (have_posts()) {
 					while ( have_rows('seccion_beneficios_right') ) : the_row();
 			?>
         <h3 class="subtitulo-beneficios"><?php the_sub_field('subtitulo_beneficio'); ?></h3>
-        <p class="under-sub-beneficios">Para proteger la inversión de tu vida contra daños como: </p>
+        <p class="under-sub-beneficios"><?php the_sub_field('textoAfter_beneficio'); ?></p>
 	     <div class="row">
 	     	<?php
 				if( have_rows('contiene_beneficios') ):				
