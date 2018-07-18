@@ -116,7 +116,7 @@ while (have_posts()) {
             <span class="resumen-beneficios"><?php the_sub_field('resumen_beneficios'); ?></span>
           </div>
           <div class="contiene-boton">
-             <a href="<?php the_sub_field('urlbtn_beneficios'); ?>" target="<?php the_sub_field('targetbtn_beneficios'); ?>"><span class="boton-beneficios">Cotizar</span></a>
+             <a href="<?php the_sub_field('urlbtn_beneficios'); ?>" target="<?php the_sub_field('targetbtn_beneficios'); ?>"><span class="boton-beneficios"><?php the_sub_field('textBtn_beneficios'); ?></span></a>
           </div>
           <?php 
 				endwhile;
@@ -127,12 +127,17 @@ while (have_posts()) {
     </div>
     <div class="col-md-6">
       <div class="contiene-beneficios-cols">
-        <p class="titulo-seccion"><i class="bbva-icon bbva-coronita_minus-stag" style="margin-right:5px;"></i>BENEFICIOS</p>
-        <h3 class="subtitulo-beneficios">Conoce la protección que ofrece <?php the_title(); ?></h3>
-	     <div class="row">
-	     	<?php
+        <!--<p class="titulo-seccion"><i class="bbva-icon bbva-coronita_minus-stag" style="margin-right:5px;"></i>BENEFICIOS</p>-->
+        <?php
 				if( have_rows('seccion_beneficios_right') ):				
 					while ( have_rows('seccion_beneficios_right') ) : the_row();
+			?>
+        <h3 class="subtitulo-beneficios"><?php the_sub_field('subtitulo_beneficio'); ?></h3>
+        <p class="under-sub-beneficios"><?php the_sub_field('textoAfter_beneficio'); ?></p>
+	     <div class="row">
+	     	<?php
+				if( have_rows('contiene_beneficios') ):				
+					while ( have_rows('contiene_beneficios') ) : the_row();
 			?>
 	      	<div class="col-md-6">
 	      		<div class="icondescripcion">
@@ -147,6 +152,26 @@ while (have_posts()) {
 				endif;
 			?>
       	</div>
+      	<?php if( get_field('coberturas_rows') ):?>
+      	<div class="row cobertura-row">
+      		<div class="contiene-boton-d">
+      			<?php
+				if( have_rows('coberturas_rows') ):				
+					while ( have_rows('coberturas_rows') ) : the_row();
+			?>
+	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('text_coberturas'); ?></span>
+	            </a>
+	            <?php 
+					endwhile;
+					endif;
+				?>
+	         </div>
+      	</div>
+      	<?php endif;?>
+      	<?php 
+				endwhile;
+				endif;
+			?>
     </div>
   </div>
 </section>
@@ -368,7 +393,7 @@ while (have_posts()) {
 	?>
 		<!-- faqs vers mobile --> 
 		<div class="bg-grey100 faqs_content hidden-md hidden-lg">
-		<h3 style="padding-left: 2rem;">Preguntas frequentes</h3>
+		<h3 style="padding-left: 2rem;">Preguntas frecuentes</h3>
 
 		<?php
 			$q = 30;
@@ -401,7 +426,7 @@ while (have_posts()) {
 		<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
 		<div class="container">
 			<div class="col-xs-12">
-				<h3>Preguntas frequentes</h3>
+				<h3>Preguntas frecuentes</h3>
 			</div>
 			
 			<div class="">
