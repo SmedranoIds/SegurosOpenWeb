@@ -593,4 +593,17 @@ ul li a.lista-aClientes{
   .box-aClientes-left{
     padding: 10px !important;
   }
+  .titulo-beneficios{
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .resumen-beneficios{
+    font-size: 18px;
+  }
+  .boton-beneficios{
+    padding: 12px 35px;
+  }
+  .contiene-beneficios-cols{
+    margin-top: 30px;
+  }
 }
