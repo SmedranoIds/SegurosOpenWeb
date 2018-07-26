@@ -9,7 +9,8 @@
 			        <i class="bbva-coronita_call espacio-icono"></i><br class="espacio-help">
 			        <span>Llamar</span>
 			    </div></a>
-			    <a href="mailto:servicioaclientes@segurosbancomer.com.mx" target="_self" role="button"><div class="box-contactHelp">
+			    <!-- <a href="mailto:servicioaclientes@segurosbancomer.com.mx" target="_self" role="button"><div class="box-contactHelp"> -->
+			    <a href="mailto:sac.seguros.mx@bbva.com" target="_self" role="button"><div class="box-contactHelp">
 			        <i class="bbva-coronita_mail espacio-icono"></i><br class="espacio-help">
 			        <span>Correo</span>
 			    </div></a>

@@ -77,7 +77,7 @@ $theme = \OpenWeb\Theme::getInstance();
                    aria-expanded="false" aria-controls="login-in-mobile">
                    Acceso a usuarios
                 </a> -->
-                <a class="sign-in" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-mobile" target="_blank">
+                <a class="sign-in" href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-mobile" target="_blank">
                    <!-- Acceso a usuarios -->Mis Seguros
                 </a>
                 <!-- <a class="register" href="#" id="openweb-register-mobile" role="button"
@@ -130,7 +130,7 @@ $theme = \OpenWeb\Theme::getInstance();
                             
                             <a href="#" id="openweb-access-lg" role="button" aria-expanded="false"
                                aria-controls="login-in-mobile">Acceso a usuarios</a>-->
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-lg" role="button" target="_blank">
+                            <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-access-lg" role="button" target="_blank">
                             <!-- Acceso a usuarios -->Mis Seguros
                             </a>
                         </li>
