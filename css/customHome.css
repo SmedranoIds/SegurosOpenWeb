@@ -689,7 +689,7 @@ ul li a.lista-aClientes{
 }
 .descripcion-producto__text{
   display: block;
-  padding-left: 16px;
+  /*padding-left: 16px;*/
   word-break: break-word;
 }
 .sectionTitle--bullet{
