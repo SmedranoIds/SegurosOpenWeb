@@ -152,22 +152,19 @@ while (have_posts()) {
 				endif;
 			?>
       	</div>
-      	<?php if( get_field('coberturas_rows') ):?>
+      	<?php if( have_rows('boton_coberturas') ):
+      			while ( have_rows('boton_coberturas') ) : the_row();
+      	?>
       	<div class="row cobertura-row">
       		<div class="contiene-boton-d">
-      			<?php
-				if( have_rows('coberturas_rows') ):				
-					while ( have_rows('coberturas_rows') ) : the_row();
-			?>
-	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('text_coberturas'); ?></span>
+	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('texto_boton_coberturas'); ?></span>
 	            </a>
-	            <?php 
-					endwhile;
-					endif;
-				?>
 	         </div>
       	</div>
-      	<?php endif;?>
+      	<?php 
+				endwhile;
+				endif;
+			?>
       	<?php 
 				endwhile;
 				endif;
@@ -179,6 +176,11 @@ while (have_posts()) {
 <?php endif;?>
 <!-- Termina Sección Beneficios-->
 
+<!-- Bloques de Contenido-->
+<section>
+	
+</section>
+<!-- Termina bloques de contenido-->
 	
 <!-- area de info -->
 <div class="container separador">
