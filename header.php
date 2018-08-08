@@ -84,9 +84,9 @@ $theme = \OpenWeb\Theme::getInstance();
                    aria-expanded="false" aria-controls="login-in-mobile">
                     Registro
                 </a> -->
-                <!-- <a class="register" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-register-mobile" target="_blank"> -->
+                <!-- <a class="register" href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="openweb-register-mobile" target="_blank"> -->
                 <!-- 
-                <a class="register" href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-mobile" target="_blank">
+                <a class="register" href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-mobile" target="_blank">
                     Registro
                 </a>
                 -->
@@ -140,7 +140,7 @@ $theme = \OpenWeb\Theme::getInstance();
                             <a href="#register-mobile" id="openweb-register-lg" role="button" data-toggle="collapse" aria-expanded="false"
                             aria-controls="register-mobile"><?php echo __('Registro', 'openweb'); ?></a>-->
                             <!-- <a href="#" id="openweb-register-lg" role="button" aria-expanded="false">Registro</a> -->
-                            <!-- <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-lg" target="_blank">Registro</a> -->
+                            <!-- <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario#/" id="openweb-register-lg" target="_blank">Registro</a> -->
                         <!-- </li> -->
                         
                     <?php endif; ?>
@@ -236,9 +236,9 @@ $theme = \OpenWeb\Theme::getInstance();
                             </div>
                         </form> -->
                         <div class="form-group ids-btn-area-priv">
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Personas</a>
+                            <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Personas</a>
 
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
+                            <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/loginpage.jsp" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
                         </div>
                     </div>
                     <a class="sign-in-close visible-xs visible-sm visible-md hidden-lg" href="#" data-toggle="collapse" data-target="#login-in-mobile">
@@ -269,10 +269,10 @@ $theme = \OpenWeb\Theme::getInstance();
                     </div>
                     <div class="col-xs-12 col-md-7 text-center">
                         <div class="form-group ids-btn-area-priv">
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Personas</a>
+                            <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Personas</a>
                             
 
-                            <a href="https://www.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
+                            <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/alta-usuario/#/" id="login" class="btn btn-aqua" target="_blank">Empresas</a>
                         </div>
                     </div>
                     <a class="sign-in-close visible-xs visible-sm visible-md hidden-lg" href="#" data-toggle="collapse" data-target="#register-mobile">

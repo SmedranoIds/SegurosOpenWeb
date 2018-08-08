@@ -71,7 +71,9 @@ endif; ?>
 	</section>
 </footer>
 
+<!-- inicia footer -->
 <?php wp_footer(); ?>
+<!-- termina footer -->
 
 </body>
 

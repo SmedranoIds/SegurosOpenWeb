@@ -22,7 +22,7 @@ class Author extends Admin
 
         wp_enqueue_style('thickbox');
         wp_enqueue_script('thickbox');
-        wp_enqueue_script('media-upload');
+        //wp_enqueue_script('media-upload');
         wp_enqueue_script('openweb-related', get_template_directory_uri().'/src/Admin/js/author.js', 'media-upload');
     }
 
