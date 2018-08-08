@@ -152,22 +152,19 @@ while (have_posts()) {
 				endif;
 			?>
       	</div>
-      	<?php if( get_field('coberturas_rows') ):?>
+      	<?php if( have_rows('boton_coberturas') ):
+      			while ( have_rows('boton_coberturas') ) : the_row();
+      	?>
       	<div class="row cobertura-row">
       		<div class="contiene-boton-d">
-      			<?php
-				if( have_rows('coberturas_rows') ):				
-					while ( have_rows('coberturas_rows') ) : the_row();
-			?>
-	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('text_coberturas'); ?></span>
+	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('texto_boton_coberturas'); ?></span>
 	            </a>
-	            <?php 
-					endwhile;
-					endif;
-				?>
 	         </div>
       	</div>
-      	<?php endif;?>
+      	<?php 
+				endwhile;
+				endif;
+			?>
       	<?php 
 				endwhile;
 				endif;
@@ -178,7 +175,39 @@ while (have_posts()) {
 <hr>
 <?php endif;?>
 <!-- Termina Sección Beneficios-->
-
+<!-- Bloques de Contenido-->
+<?php if( get_field('bloque_conetnido') ):?>
+<section class="container-fluid bg-grey100">
+  <div class="contiene-descripcion-producto">
+    <div class="descripcion-producto">
+    	<?php if( have_rows('bloque_conetnido') ):
+      			while ( have_rows('bloque_conetnido') ) : the_row();
+      	?>
+      <div class="descripcion-producto__mod">
+      	<div class="descripcion-producto__mod__title">
+          <link>
+          <div class="icondescription__base">
+            <i class="icondescription__icon bbva-icon-descripcion <?php the_sub_field('icono_contenido'); ?>"></i>
+            <h3 class="icondescription__title"><?php the_sub_field('titulo_contenido'); ?></h3>
+            <div class="icondescription__text">
+            	<?php the_sub_field('subtitulo_contenido'); ?>  
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="descripcion-producto__mod__content">
+        	<?php the_sub_field('resumen_contenido'); ?>	
+        </div>
+      </div>
+      <?php 
+				endwhile;
+				endif;
+			?>
+    </div>
+  </div>
+</section>
+<?php endif;?>
+<!-- Termina bloques de contenido-->
 	
 <!-- area de info -->
 <div class="container separador">

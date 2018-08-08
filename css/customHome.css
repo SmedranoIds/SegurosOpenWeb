@@ -607,3 +607,129 @@ ul li a.lista-aClientes{
     margin-top: 30px;
   }
 }
+/*-- BLOQUES DE CONTENIDO --*/
+.descripcion-producto{
+  width: 1176px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  zoom: 1;
+  width: 100%;
+  display: block;
+  margin: 30px auto;
+}
+.descripcion-producto__mod{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.descripcion-producto__mod__title{
+  width: 262px;
+  float: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.icondescription__base{
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.icondescription__title{
+  padding-top: 0;
+  padding-bottom: 16px;
+  /*font-size: 36px;*/
+  line-height: 48px;
+  font-family: "BentonSansBBVA-Light",Helvetica,Arial,sans-serif;
+    /*font-size: 24px;*/
+  color: #121212;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.icondescription__text{
+  font-size: 15px;
+  line-height: 24px;
+}
+.descripcion-producto__mod__content{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 882px;
+  float: left;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 0;
+  background-color: white;
+}
+.descripcion-producto__mod__ulist{
+  display: block;
+  float: left;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top:30px;
+  padding-bottom:30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.descripcion-producto__mod__list{
+  margin-left: 16px;
+}
+.descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list{
+  margin-left:16px;
+  width: calc(33.333% - 32px);
+  float: left;
+  margin-right: 16px;
+}
+.descripcion-productotext{
+  
+}
+.descripcion-producto__text{
+  display: block;
+  /*padding-left: 16px;*/
+  word-break: break-word;
+}
+.sectionTitle--bullet{
+  margin-bottom:32px;
+  font-size:13px;
+  font-weight: bold;
+  font-family: "BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  color: #121212;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.bbva-icon-descripcion{ 
+  color: #1d73b2;
+  margin-left: 0;
+  font-size: 24px;
+  /*display: inline-block;
+  -webkit-transform: scaleY(2.5) rotate(180deg);
+  transform: scaleY(2.5) rotate(180deg);*/
+}
+.descripcion-producto__mod__bodycopy{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: "BentonSansBBVA-Book",Helvetica,Arial,sans-serif;
+  text-align: left;
+  letter-spacing: 0;
+  color:#626262;
+  font-size:15px;
+}
+.contiene-descripcion-producto{
+  width: 1176px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.producto-texto{
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 50px;
+}
+/*-- TERMINA BLOQUES DE CONTENIDO --*/
