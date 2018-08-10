@@ -157,7 +157,7 @@ while (have_posts()) {
       	?>
       	<div class="row cobertura-row">
       		<div class="contiene-boton-d">
-	            <a href="<?php the_sub_field('urlbtn_coberturas'); ?>" target="<?php the_sub_field('targetbtn_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('texto_boton_coberturas'); ?></span>
+	            <a href="<?php the_sub_field('url_boton_coberturas'); ?>" target="<?php the_sub_field('target_boton_coberturas'); ?>"><span class="boton-coberturas"><?php the_sub_field('texto_boton_coberturas'); ?></span>
 	            </a>
 	         </div>
       	</div>
