@@ -122,23 +122,23 @@ final class Theme
         wp_enqueue_script('sidr', get_template_directory_uri().'/assets/sidr/js/jquery.sidr.min.js', ['jquery'], '2.2.1', true);
         wp_enqueue_script('ofi', get_template_directory_uri().'/assets/object-fit-images/ofi.min.js', ['jquery'], '2.2.1', true);
         wp_enqueue_script('prettySocial', get_template_directory_uri().'/assets/prettySocial/jquery.prettySocial.min.js', ['jquery'], '3.3.6', true);
-        wp_enqueue_script('base', get_template_directory_uri().'/js/base.js', ['prettySocial', 'ofi'], '1.0.0', true);
-        wp_enqueue_script('app', get_template_directory_uri().'/js/app.js', ['base'], '1.0.0', true);
+        wp_enqueue_script('base', get_template_directory_uri().'/js/base.min.js', ['prettySocial', 'ofi'], '1.0.0', true);
+        wp_enqueue_script('app', get_template_directory_uri().'/js/app.min.js', ['base'], '1.0.0', true);
 
         if (get_theme_mod('openweb_platform_cloudsearch_results') && is_page_template('results.php')) {
             wp_enqueue_script('openweb-search', get_template_directory_uri().'/js/search.js', ['jquery'], '1.0.0', true);
         }
 
         if (get_theme_mod('openweb_platform_security')) {
-            wp_enqueue_script('openweb-auth', get_template_directory_uri().'/js/auth.js', ['jquery'], '1.0.0', true);
+            wp_enqueue_script('openweb-auth', get_template_directory_uri().'/js/auth.min.js', ['jquery'], '1.0.0', true);
         }
 
         wp_enqueue_style('bootstrap', get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css');
         wp_enqueue_style('bootstrap-theme', get_template_directory_uri().'/assets/bootstrap/css/bootstrap-theme.min.css', ['bootstrap']);
-        wp_enqueue_style('global-coronita', get_template_directory_uri().'/css/global-coronita.css', ['bootstrap-theme']);
-        wp_enqueue_style('media-coronita', get_template_directory_uri().'/css/media-coronita.css', ['global-coronita']);
-        wp_enqueue_style('icons-coronita', get_template_directory_uri().'/css/icons-coronita.css', ['media-coronita']);
-        wp_enqueue_style('openweb', get_template_directory_uri().'/css/openweb.css', ['icons-coronita']);
+        wp_enqueue_style('global-coronita', get_template_directory_uri().'/css/global-coronita.min.css', ['bootstrap-theme']);
+        wp_enqueue_style('media-coronita', get_template_directory_uri().'/css/media-coronita.min.css', ['global-coronita']);
+        wp_enqueue_style('icons-coronita', get_template_directory_uri().'/css/icons-coronita.min.css', ['media-coronita']);
+        wp_enqueue_style('openweb', get_template_directory_uri().'/css/openweb.min.css', ['icons-coronita']);
         wp_enqueue_style('openweb-theme-style', get_stylesheet_uri(), ['openweb']);
     }
 

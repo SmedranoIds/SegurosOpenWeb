@@ -18,17 +18,6 @@ $theme = \OpenWeb\Theme::getInstance();
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16721854-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-16721854-1');
-    </script>-->
-    
 
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
@@ -42,7 +31,7 @@ $theme = \OpenWeb\Theme::getInstance();
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <?php wp_head(); ?>
-    <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/script.min.js" type="text/javascript"></script>
     <!-- HTML5 Shim and Respond.js  IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

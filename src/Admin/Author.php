@@ -20,10 +20,10 @@ class Author extends Admin
         add_action('personal_options_update', [$this, 'saveExtraFields']);
         add_action('edit_user_profile_update', [$this, 'saveExtraFields']);
 
-        wp_enqueue_style('thickbox');
-        wp_enqueue_script('thickbox');
+        // wp_enqueue_style('thickbox.min');
+        // wp_enqueue_script('thickbox');
         //wp_enqueue_script('media-upload');
-        wp_enqueue_script('openweb-related', get_template_directory_uri().'/src/Admin/js/author.js', 'media-upload');
+        wp_enqueue_script('openweb-related', get_template_directory_uri().'/src/Admin/js/author.min.js', 'media-upload');
     }
 
     public function showExtraFields($user)
