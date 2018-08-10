@@ -101,7 +101,6 @@
   font-size: 4rem;
   /*padding-right:50px;*/
   max-width: calc(100% - 120px);
-  margin-bottom: 25px;
   /*color:white;*/
 }
 .resumen-infoApp{
@@ -160,7 +159,7 @@
 .card-izquierda.titulo-cardHome{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 45%;
-  /*font-size: 26px;*/
+  font-size: 26px;
   font-weight: bold;
   position:absolute;
   color:white;
@@ -170,7 +169,7 @@
 .card-derecha.titulo-cardHome-d{
   font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 45%;
-  /*font-size: 26px;*/
+  font-size: 26px;
   font-weight: bold;
   position:absolute;
   color:white;
@@ -226,7 +225,6 @@
 }
 .icono-textoBapp{
   padding-top: 5%;
-  font-family: "BentonSansBBVA Book" !important;
 }
 /* END CARD MIDDLE*/
 .sube-h{

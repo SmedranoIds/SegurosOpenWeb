@@ -90,7 +90,7 @@ get_header();
                         <a href="<?php the_sub_field('url_icono'); ?>" target="<?php the_sub_field('target_icono'); ?>"><span style="font-size: 30px;" class="<?php the_sub_field('clase_icono'); ?>"></span></a>
                     <?php endif ;?>
 
-					<h3 class="label-sectIcon" style="font-size: 1.3rem; margin-top: 10px; width: 100%;"><?php the_sub_field('label_icono'); ?></h3>
+					<label class="label-sectIcon" style="font-size: 1.3rem; margin-top: 10px; width: 100%;"><?php the_sub_field('label_icono'); ?></label>
 				</div>
 			</div>
 			<?php 
@@ -125,8 +125,8 @@ get_header();
 		              <img class="iconBox-infoApp" src="<?php the_sub_field('icono_bapp'); ?>">
 		            </span>
 		            <span class="textBox-infoApp">
-		              <h1><?php the_sub_field('text_bapp'); ?></h1>
-		              <!--<br>-->
+		              <b><?php the_sub_field('text_bapp'); ?></b>
+		              <br>
 		            </span>
 		          </h1>
 		          <div class="resumen-infoApp">
@@ -176,12 +176,12 @@ get_header();
                 <div class="col-md-12">
 			      <div class="card-content">
 			        <a href="<?php the_sub_field('link_cardHome'); ?>" target="_self"><div class="card-derecha imagen-d" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
-			          <h2 class="card-derecha titulo-cardHome-d"><?php the_sub_field('titulo_cardHome'); ?></h2>
+			          <label class="card-derecha titulo-cardHome-d"><?php the_sub_field('titulo_cardHome'); ?></label>
 			        </div></a>
 			        <div class="card-derecha contenido-d">
 			          <div class="cont-inter">
 			            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
-			            <h5 class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></h5>
+			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
 			          </div>
 			          <div class="card-derecha links-d">
 			            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>
@@ -194,12 +194,12 @@ get_header();
                 <div class="col-md-12">
 			      <div class="card-content">
 			        <a href="<?php the_sub_field('link_cardHome'); ?>" target="_self"><div class="card-izquierda imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
-			          <h2 class="card-izquierda titulo-cardHome"><?php the_sub_field('titulo_cardHome'); ?></h2>
+			          <label class="card-izquierda titulo-cardHome"><?php the_sub_field('titulo_cardHome'); ?></label>
 			        </div></a>
 			        <div class="card-izquierda contenido">
 			          <div class="cont-inter">
 			            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
-			            <h5 class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></h5>
+			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
 			          </div>
 			          <div class="card-izquierda links">
 			            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>

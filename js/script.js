@@ -35,7 +35,7 @@ $(document).ready(function(){
 		jQuery('#register-mobile').collapse('show');
 	});
 	*/
-
+	
 
 	// desplegable de acceso a usuarios 
 	/*
