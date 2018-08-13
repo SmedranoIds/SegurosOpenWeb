@@ -122,7 +122,13 @@ get_header();
 		        <div class="boxContent-infoApp">
 		          <h1 class="boxTitle">
 		            <span class="box-icon">
-		              <img class="iconBox-infoApp" src="<?php the_sub_field('icono_bapp'); ?>">
+									<?php 
+										$appIcon = get_sub_field('icono_bapp');
+										if( !empty($appIcon) ):
+									?>
+									<img class="iconBox-infoApp" src="<?php echo $appIcon['url']; ?>" alt="<?php echo $appIcon['alt']; ?>">
+									<?php endif; ?>
+		              <!-- <img class="iconBox-infoApp" src="<?php the_sub_field('icono_bapp'); ?>"> -->
 		            </span>
 		            <span class="textBox-infoApp">
 		              <b><?php the_sub_field('text_bapp'); ?></b>
@@ -151,7 +157,13 @@ get_header();
 		    </div>
 		    <div class="col-md-6 col-sm-6 box-infoApp text-center">
 		     	<div style=" ">
-		      		<img class="image-bapp" src="<?php the_sub_field('imagen_bapp'); ?>">
+						<?php 
+							$app = get_sub_field('imagen_bapp');
+							if( !empty($app) ):
+						?>
+						<img class="image-bapp" src="<?php echo $app['url']; ?>" alt="<?php echo $app['alt']; ?>">
+						<?php endif; ?>
+						<!-- <img class="image-bapp" src="<?php the_sub_field('imagen_bapp'); ?>"> -->
 		     	</div>
 		    </div>
 	</div>
@@ -180,7 +192,12 @@ get_header();
 			        </div></a>
 			        <div class="card-derecha contenido-d">
 			          <div class="cont-inter">
-			            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
+									<?php 
+										$icono = get_sub_field('icono_cardHome');
+										if( !empty($icono) ):
+									?>
+									<img class="imagen-con" src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>">
+									<?php endif; ?>
 			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
 			          </div>
 			          <div class="card-derecha links-d">
@@ -189,16 +206,21 @@ get_header();
 			        </div>
 			      </div>
 			    </div>
-            <?php else :?>
-            <!-- Si no lo es, que muestre un card normal -->
-                <div class="col-md-12">
+			<?php else :?>
+			<!-- Si no lo es, que muestre un card normal -->
+					<div class="col-md-12">
 			      <div class="card-content">
 			        <a href="<?php the_sub_field('link_cardHome'); ?>" target="_self"><div class="card-izquierda imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
 			          <label class="card-izquierda titulo-cardHome"><?php the_sub_field('titulo_cardHome'); ?></label>
 			        </div></a>
 			        <div class="card-izquierda contenido">
 			          <div class="cont-inter">
-			            <img class="imagen-con" src="<?php the_sub_field('icono_cardHome'); ?>">
+									<?php 
+										$icono = get_sub_field('icono_cardHome');
+										if( !empty($icono) ):
+									?>
+									<img class="imagen-con" src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>">
+									<?php endif; ?>
 			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
 			          </div>
 			          <div class="card-izquierda links">
@@ -207,7 +229,7 @@ get_header();
 			        </div>
 			      </div>
 			    </div>
-            <?php endif ;?>
+			<?php endif ;?>
 	    <?php 
 				endwhile;
 				endif;
