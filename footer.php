@@ -55,7 +55,7 @@ endif; ?>
                     'menu_class'      => '',
                     //'container_class' => 'row',
                     'container_class' => '',
-                    'depth'           => 1,
+                    'depth'           => 2,
                 ]);
             }
             ?>
