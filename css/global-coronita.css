@@ -2252,7 +2252,7 @@ footer {
       footer nav > ul li:first-child {
         border-left: none;
         padding-left: 0; 
-        min-width: 60px; }
+        /*min-width: 60px;*/ }
   footer .disclosure {
     color: #bdbdbd;
     font-family: "Benton Sans Regular", "Helvetica Neue", Arial, Helvetica, sans-serif;
