@@ -98,5 +98,42 @@ get_header();
 		-->
     </div>
 </section>
+<!-- Bloques de Contenido-->
+<?php if( get_field('bloque_conetnido') ):?>
+
+<section class="container-fluid bg-grey100">
+
+	<?php if( have_rows('bloque_conetnido') ):
+      			while ( have_rows('bloque_conetnido') ) : the_row();
+      	?>
+  <div class="contiene-descripcion-producto">
+    <div class="descripcion-producto">
+    	
+      <div class="descripcion-producto__mod">
+      	<div class="descripcion-producto__mod__title">
+          <link>
+          <div class="icondescription__base">
+            <i class="icondescription__icon bbva-icon-descripcion <?php the_sub_field('icono_contenido'); ?>"></i>
+            <h3 class="icondescription__title"><?php the_sub_field('titulo_contenido'); ?></h3>
+            <div class="icondescription__text">
+            	<?php the_sub_field('subtitulo_contenido'); ?>  
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="descripcion-producto__mod__content">
+        	<?php the_sub_field('resumen_contenido'); ?>	
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <?php 
+				endwhile;
+				endif;
+			?>
+</section>
+<?php endif;?>
+<!-- Termina bloques de contenido-->
 
 <?php get_footer();

@@ -480,9 +480,36 @@ li.prodctosBeneficios-descripcion:before {
     bottom: 25px;
     /*right: 40px;*/
   }
+  .contiene-descripcion-producto{
+    width:100% !important;
+  }
+  .descripcion-producto__mod__content{
+    width:62% !important;
+    margin-bottom:50px;
+  }
+  .descripcion-producto__mod__title{
+    margin-left:1px !important;
+    margin-right:1px !important;
+  }
+  .icondescription__title{
+    font-size:21px !important;
+  }
+  .contiene-beneficios-cols{
+    margin-top:40px;
+  }
+  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list{
+    width:100% !important;
+  }
 }
 
 /* -- End Tablet -- */
+/*----- Desktop 1-------*/
+@media (min-width: 1024px) and (max-width: 1080px){
+  .descripcion-producto__mod__content{
+    width:60% !important;
+  }
+}
+/*----- End Desktop 1-------*/
 /* -- Content Móvil -- */
 @media (min-width: 320px) and (max-width: 699px){
   .green-square{
@@ -557,6 +584,24 @@ li.prodctosBeneficios-descripcion:before {
     bottom: 10px;
     right: 30px;
   }
+  .contiene-descripcion-producto{
+    width:100% !important;
+  }
+  .descripcion-producto__mod__title{
+    width:100% !important;
+  }
+  .descripcion-producto__mod__content{
+    width:100% !important;
+  }
+  .contiene-boton-d{
+    width:100%;
+  }
+  .boton-coberturas{
+    padding: 16px 38px;
+  }
+  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list{
+    width:100% !important;
+  }
 }
 /* -- End Móvil -- */
 /* -- ATENCIÓN A CLIENTES*/
@@ -605,6 +650,16 @@ ul li a.lista-aClientes{
   }
   .contiene-beneficios-cols{
     margin-top: 30px;
+  }
+  .contiene-descripcion-producto{
+    width:100% !important;
+  }
+  .descripcion-producto__mod__content{
+    margin-bottom:65px;
+  }
+  .descripcion-producto__mod__title{
+    margin-left:1px !important;
+    margin-right:1px !important;
   }
 }
 /*-- BLOQUES DE CONTENIDO --*/
@@ -671,7 +726,7 @@ ul li a.lista-aClientes{
   padding-left: 16px;
   padding-right: 16px;
   padding-top:30px;
-  padding-bottom:30px;
+  padding-bottom:60px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -726,6 +781,7 @@ ul li a.lista-aClientes{
   width: 1176px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom:250px;
 }
 .producto-texto{
   padding-left: 32px;
