@@ -1935,6 +1935,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   transform: translateX(200px);/*Desplazamos a la derecha*/
   opacity: 0;
   transition: all 0.4s linear;
+  padding-right:12px;
 }
 .ejemplo-1 a.link{
   opacity: 0;
