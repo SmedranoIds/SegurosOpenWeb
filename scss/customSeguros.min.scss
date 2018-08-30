@@ -1580,6 +1580,11 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     max-width: 750px !important;
     width: 100%;
   }
+  li.icon-pdf{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
   li.icon-pdf:before{
     display: block;
     float: left;
