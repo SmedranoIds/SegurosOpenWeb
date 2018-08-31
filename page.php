@@ -18,19 +18,19 @@ get_header();
 
 
 <!-- page & index -->
-<?php get_template_part('template-parts/components/home-slider'); ?>
-<?php //get_template_part('template-parts/components/bcom-slider'); ?>
+<?php //get_template_part('template-parts/components/home-slider'); ?>
+<?php get_template_part('template-parts/components/bcom-slider'); ?>
 
  <!-- section-iconos desktop -->
 <div >
-	<div class="container-fluid">
+	<div class="container-fluid" style="padding-bottom: 0;">
 		<div class="row">
 			<?php
 				if( have_rows('seccion_iconos') ):				
 					while ( have_rows('seccion_iconos') ) : the_row();
 			?>	
 			<div class="col-md-2 col-xs-4">
-				<div style="text-align: center; padding-bottom: 15px;">
+				<div class="icons-area">
 
 					<?php if ( get_sub_field('url_icono_ext')): ?>
                      <!-- Si la url es externa, que enlace acepte y use el link externo -->

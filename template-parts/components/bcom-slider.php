@@ -6,7 +6,7 @@
 	<img src="http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/08/HogarSeguro-Homepage-V2.jpg" itemprop="image" class="marquee__background__img " alt="imagen">
 
 
-	<div class="container promomarquee__mask__container">
+	<div class="promomarquee__mask__container">
 		<div class="promomarquee__mask"></div>
 
 		<div class="promomarquee__promobox">
