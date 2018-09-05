@@ -189,8 +189,10 @@ while (have_posts()) {
       	<div class="descripcion-producto__mod__title">
           <link>
           <div class="icondescription__base">
-            <i class="icondescription__icon bbva-icon-descripcion <?php the_sub_field('icono_contenido'); ?>"></i>
-            <h3 class="icondescription__title"><?php the_sub_field('titulo_contenido'); ?></h3>
+            <h3 class="icondescription__title">
+							<i class="icondescription__icon bbva-icon-descripcion <?php the_sub_field('icono_contenido'); ?>"></i>
+							<?php the_sub_field('titulo_contenido'); ?>
+						</h3>
             <div class="icondescription__text">
             	<?php the_sub_field('subtitulo_contenido'); ?>  
               <br>

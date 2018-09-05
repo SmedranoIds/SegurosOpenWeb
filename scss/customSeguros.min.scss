@@ -1580,6 +1580,11 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     max-width: 750px !important;
     width: 100%;
   }
+  li.icon-pdf{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
   li.icon-pdf:before{
     display: block;
     float: left;
@@ -1662,6 +1667,10 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
     overflow-x: auto;
     white-space: nowrap;
     cursor: pointer;
+  }
+  
+  .breadcrumbs {
+    display: none;
   }
 }
 /* Inicia overlay:hover de Tips*/

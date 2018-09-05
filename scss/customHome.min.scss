@@ -664,7 +664,8 @@ ul li a.lista-aClientes{
 }
 /*-- BLOQUES DE CONTENIDO --*/
 .descripcion-producto{
-  width: 1176px;
+  // width: 1176px;
+  width: 72%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -678,7 +679,8 @@ ul li a.lista-aClientes{
   -webkit-box-sizing: border-box;
 }
 .descripcion-producto__mod__title{
-  width: 262px;
+  // width: 262px;
+  width: 25%;
   float: left;
   margin-left: 16px;
   margin-right: 16px;
@@ -712,7 +714,8 @@ ul li a.lista-aClientes{
 .descripcion-producto__mod__content{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 882px;
+  // width: 882px;
+  width: 72%;
   float: left;
   padding-left: 16px;
   padding-right: 16px;
@@ -771,14 +774,15 @@ ul li a.lista-aClientes{
 .descripcion-producto__mod__bodycopy{
   margin-top: 24px;
   margin-bottom: 24px;
-  font-family: "BentonSansBBVA-Book",Helvetica,Arial,sans-serif;
+  font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
   text-align: left;
   letter-spacing: 0;
   color:#626262;
   font-size:15px;
 }
 .contiene-descripcion-producto{
-  width: 1176px;
+  // width: 1176px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom:250px;
@@ -790,3 +794,343 @@ ul li a.lista-aClientes{
 }
 /*-- TERMINA BLOQUES DE CONTENIDO --*/
 /***************/
+
+
+
+
+/**********************/
+/* banner estilo bcom */
+
+.promomarquee__mask__container {
+  position: relative;
+  zoom: 1;
+  width: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.promomarquee__base {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.promomarquee__mask__container::before, .promomarquee__mask__container::after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.promomarquee__mask {
+  border-right: 100vw solid #fff;
+  border-top: 20px solid transparent;
+  margin-top: 180px;
+  position: absolute;
+}
+
+.promomarquee__promobox {
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  height: 0;
+}
+
+.promobox__indicator {
+    width: 48px;
+    background-color: #2dcccd;
+    position: absolute;
+    height: 48px;
+}
+
+.promobox__base {
+  background-color: #fff;
+  padding: 40px;
+  // min-height: 344px;
+  min-height: 200px;
+}
+
+.promomarquee__base .marquee__background__img {
+  background: #ccc;
+}
+
+.marquee__background__img {
+  height: 100%;
+  position: absolute;
+  min-height: 100%;
+  display: block;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.promobox__title {
+  font-family: "BentonSansBBVA Light",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  color: #121212;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.promobox__body.rte {
+  font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #121212;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: #626262;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.rte {
+    font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #121212;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.promobox__link {
+  font-family: "BentonSansBBVA Medium",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  color: #1d73b2;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.promobox__link .bbva-icon {
+  margin-left: 0;
+}
+
+
+.bbva-icon, [class^='bbva-icon'] {
+  display: inline-block;
+}
+
+.bbva-icon {
+  font-size: 24px;
+  line-height: 24px;
+}
+.bbva-icon {
+  line-height: inherit;
+  margin: 0 8px;
+}
+
+.bbva-icon__1_002_dollar:before {
+  content: "\ea02";
+}
+
+.bbva-icon:before {
+  font-family: 'bbvaiconfont' !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: middle;
+}
+
+.promobox__button {
+  font-family: "BentonSansBBVA Medium",Helvetica,Arial,sans-serif;
+}
+
+.btn__medium-blue, .btn__background--aqua, .btn__background--light-blue, .btn__spotlight-dark-blue, .btn__spotlight-aqua {
+  background-color: #1d73b2;
+  will-change: background-position;
+  background-size: 210% 100%;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  background-color: #1d73b2;
+  background-image: linear-gradient(100deg, #1464a5 50%, #1d73b2 50%);
+}
+
+.btn__basic {
+  font-family: "BentonSansBBVA Bold",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #fff !important;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 16px;
+  max-width: 100%;
+  line-height: 16px;
+  padding: 16px 12px;
+  border-radius: 1px;
+  min-width: 94px;
+  display: inline-block;
+  border: none;
+  background-color: #1d73b2;
+  will-change: background-position;
+  background-size: 210% 100%;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  background-color: #1d73b2;
+  background-image: linear-gradient(100deg, #1464a5 50%, #1d73b2 50%);
+}
+
+.icons-area {
+  text-align: center;
+  padding-bottom: 15px;
+  height: 100px;
+}
+
+@media (min-width: 600px){
+
+  .promomarquee__promobox {
+    -webkit-animation: 0.4s linear 1.2s forwards animePromoBox;
+    animation: 0.4s linear 1.2s forwards animePromoBox;
+  }
+
+  .promomarquee__promobox {
+    margin-left: 16px;
+    margin-top: 120px;
+    width: 560px;
+  }
+
+  .promomarquee__mask {
+      display: none;
+  }
+
+  .promomarquee__base {
+    min-height: 608px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .promobox__indicator {
+    top: -48px;
+  }
+
+  .promobox__link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .promobox__body.rte {
+    text-align: left;
+  }
+
+  .promobox__title {
+    text-align: left;
+  }
+
+  .promobox__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .promobox__button {
+    float: right;
+    margin-bottom: 32px;
+  }
+
+  .btn__basic {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: 992px){
+  .bbva-icon {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promobox__body.rte {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .rte {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .btn__basic {
+    padding: 16px 32px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px){
+  .wrapper .container {
+    width: 1176px !important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 0){
+  .promomarquee__promobox {
+    position: relative;
+    zoom: 1;
+    width: 100%;
+    display: block;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 0;
+    background: #fff;
+    text-align: center;
+    height: auto;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  .wrapper .container {
+    // max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100vw;
+    padding-left: 0; 
+    padding-right: 0;
+  }
+
+  .promobox__indicator {
+    top: -200px;
+  }
+
+  .promobox__base {
+    padding: 40px 16px 24px;
+    min-height: 0;
+  }
+  .marquee__background__img {
+    top: -150px !important;
+    left: auto;
+    right: 0px;
+    max-width: initial !important;
+  }
+
+  .icons-area {
+    // text-align: center;
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width: 991px) and (min-width: 0){
+  .marquee__background__img {
+    top: auto;
+    bottom: auto;
+    max-width: 100vw;
+  }
+}
