@@ -15,7 +15,9 @@ get_header();
 <?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
 
-
+<?php if (is_page("Inicio")) {?>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag.js" type="text/javascript"></script>
+<?php } ?>
 
 <!-- page & index -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

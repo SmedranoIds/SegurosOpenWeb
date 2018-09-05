@@ -74,7 +74,7 @@ endif; ?>
 <!-- inicia footer -->
 <?php wp_footer(); ?>
 <!-- termina footer -->
-
+<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 
 </html>

@@ -19,6 +19,11 @@ while (have_posts()) {
 ?>
 <!-- page full -->
 
+<?php if (is_page("Vida")) {?>
+    <script src="/js/dataTag_vida.js"></script>
+<?php } elseif (is_page("Hogar")){?>
+    <script src="/js/dataTag_hogar.js"></script>
+<?php }?>
 
 <!-- chat -->
 <?php get_template_part('template-parts/components/chat'); ?>

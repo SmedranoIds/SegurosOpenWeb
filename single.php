@@ -16,8 +16,10 @@ while (have_posts()) {
 ?>
 <!-- single  -->
 
-
-
+<?php if (is_page("HogarSeguro Bancomer")) {?>
+    <script src="/js/dataTag_hogarSeguro.js"></script>
+<?php }?>
+   
 <!-- chat -->
 <?php get_template_part('template-parts/components/chat'); ?>
 <!-- end chat -->
