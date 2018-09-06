@@ -30,8 +30,7 @@ $theme = \OpenWeb\Theme::getInstance();
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
 
-    <!--<script src="//assets.adobedtm.com/95bb966a4c61b200a089c37679aaf96e22114787satelliteLib4c9414fd68ea377c9ffda2c5a3a4b60442bd7ed3-staging.js"></script>-->
-    <script src="//assets.adobedtm.com/95bb966a4c61b200a089c37679aaf96e22114787/satelliteLib-4c9414fd68ea377c9ffda2c5a3a4 b60442bd7ed3- staging.js"></script>
+    <script src="//assets.adobedtm.com/95bb966a4c61b200a089c37679aaf96e22114787satelliteLib4c9414fd68ea377c9ffda2c5a3a4b60442bd7ed3-staging.js"></script>
     <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <?php wp_head(); ?>

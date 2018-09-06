@@ -17,7 +17,7 @@ while (have_posts()) {
 <!-- single  -->
 
 <?php if (is_page("HogarSeguro Bancomer")) {?>
-    <script src="/js/dataTag_hogarSeguro.js"></script>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_hogarSeguro.js"></script>
 <?php }?>
    
 <!-- chat -->

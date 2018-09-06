@@ -20,9 +20,9 @@ while (have_posts()) {
 <!-- page full -->
 
 <?php if (is_page("Vida")) {?>
-    <script src="/js/dataTag_vida.js"></script>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_vida.js"></script>
 <?php } elseif (is_page("Hogar")){?>
-    <script src="/js/dataTag_hogar.js"></script>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_hogar.js"></script>
 <?php }?>
 
 <!-- chat -->

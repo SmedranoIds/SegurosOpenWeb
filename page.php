@@ -16,7 +16,7 @@ get_header();
 <!-- end chat -->
 
 <?php if (is_page("Inicio")) {?>
-    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag.js" type="text/javascript"></script>
+    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_home.js" type="text/javascript"></script>
 <?php } ?>
 
 <!-- page & index -->

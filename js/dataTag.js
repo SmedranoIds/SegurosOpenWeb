@@ -71,15 +71,15 @@ digitalData = {
 	product: {
 			primaryCategory: "seguros",
 			productSubtype: "",
-			productName: "seguro hogar"
+			productName: ""
 	},
 	application: {
 			application: {
-			            type: "contratacion",
-			            name: "seguro hogar",
+			            type: "",
+			            name: "",
 			},
 			fulfillmentModel: "online",
-		  	step: "1 registro",
+		  	step: "",
 		  	state: "inicio",
 		  	transactionID: "",
 			amount: "",
