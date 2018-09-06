@@ -9,7 +9,7 @@ if(navigator.userAgent.match(/Mobile/i)){
 }
 digitalData = {
       versionDL: "1.10",
-      pageInstanceID: "pro",
+      pageInstanceID: "de",
       page: {
 			pageInfo: {
 					pageName: "",
