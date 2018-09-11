@@ -4,7 +4,7 @@
 
 		<!-- <img src="https://www.bancomer.com/content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.2400.1535569935529.jpg" srcset="https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.320.1535569935529.jpg 320w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.768.1535569935529.jpg 768w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.960.1535569935529.jpg 960w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.1176.1535569935529.jpg 1176w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.1600.1535569935529.jpg 1600w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.2400.1535569935529.jpg 2400w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.2880.1535569935529.jpg 2880w,https://www.bancomer.com//content/dam/public-web/bancomer/photos/home-personas-hackaton-marquee.jpg.img.3200.1535569935529.jpg 3200w"
 		sizes="100vw" itemprop="image" class="marquee__background__img " alt="imagen"> -->
-		<img src="http://ec2-54-77-102-116.eu-west-1.compute.amazonaws.com/wp-content/uploads/2018/08/HogarSeguro-Homepage-V2.jpg" itemprop="image" class="marquee__background__img " alt="imagen">
+		<img src="wp-content/uploads/2018/08/HogarSeguro-Homepage-V2.jpg" itemprop="image" class="marquee__background__img " alt="imagen">
 
 
 		<div class="container promomarquee__mask__container">

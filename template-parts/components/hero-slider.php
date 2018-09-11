@@ -26,6 +26,10 @@
                 echo "background-position: center -150px";
             endif;
             
+            if(is_page("seguro-hogar")):
+                echo "background-position: center -40px;";
+            endif;
+            
             /*
             if(is_page("seguro-automotriz")):
                 echo "background-position: center -150px";
@@ -33,9 +37,7 @@
             if(is_page("seguro-ahorro")):
                 echo "background-position: center -240px;";
             endif;
-            if(is_page("seguro-hogar")):
-                echo "background-position: center -40px;";
-            endif;
+
             if(is_page("seguro-hogar/bancomer/")):
                 echo "background-position: center -70px;";
             endif;

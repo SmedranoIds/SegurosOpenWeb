@@ -20,39 +20,17 @@ get_header();
 <?php } ?>
 
 <!-- page & index -->
-<?php //get_template_part('template-parts/components/home-slider'); ?>
-<?php get_template_part('template-parts/components/bcom-slider'); ?>
+<?php get_template_part('template-parts/components/home-slider'); ?>
+<?php //get_template_part('template-parts/components/bcom-slider'); ?>
 
- <!-- section-iconos desktop -->
-<div >
-	<div class="container-fluid" style="padding-bottom: 0;">
-		<div class="row">
-			<?php
-				if( have_rows('seccion_iconos') ):				
-					while ( have_rows('seccion_iconos') ) : the_row();
-			?>	
-			<div class="col-md-2 col-xs-4">
-				<div class="icons-area">
 
-					<?php if ( get_sub_field('url_icono_ext')): ?>
-                     <!-- Si la url es externa, que enlace acepte y use el link externo -->
-                        <a href="<?php the_sub_field('url_icono_ext'); ?>" target="<?php the_sub_field('target_icono'); ?>"><span style="font-size: 30px;" class="<?php the_sub_field('clase_icono'); ?>"></span></a>
-                    <?php else :?>
-                    <!-- Si no lo es, que muestre un enlace normal interno -->
-                        <a href="<?php the_sub_field('url_icono'); ?>" target="<?php the_sub_field('target_icono'); ?>"><span style="font-size: 30px;" class="<?php the_sub_field('clase_icono'); ?>"></span></a>
-                    <?php endif ;?>
 
-					<label class="label-sectIcon" style="font-size: 1.3rem; margin-top: 10px; width: 100%;"><?php the_sub_field('label_icono'); ?></label>
-				</div>
-			</div>
-			<?php 
-				endwhile;
-				endif;
-			?>
-		</div>
-	</div>
-</div>	
+<!-- section-iconos desktop -->
+<?php get_template_part('template-parts/components/icons-home'); ?>
 <!-- end section-iconos desktop -->
+
+
+
 
 <!-- banner-medio desktop -->
 <section class="container-fluid bg-blue-core" style="background-image: url('/wp-content/uploads/2018/05/spotlight-dark-blue.svg'); background-size: cover;">
@@ -127,74 +105,14 @@ get_header();
 <!-- end banner-medio desktop -->
 
 <!-- cards intro -->
-<section class="container-fluid bg-grey200">
-  <div class="container">
-	  <div class="row">
-	  	<?php
-			if( have_rows('cards_home') ):				
-				while ( have_rows('cards_home') ) : the_row();
-			?>
-			
-			<?php if ( get_sub_field('activo')): ?>
-            <!-- Si la card tiene la imagen a la derecha, que muestre: -->
-                <div class="col-md-12">
-			      <div class="card-content">
-			        <a href="<?php the_sub_field('link_cardHome'); ?>" target="_self"><div class="card-derecha imagen-d" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
-			          <label class="card-derecha titulo-cardHome-d"><?php the_sub_field('titulo_cardHome'); ?></label>
-			        </div></a>
-			        <div class="card-derecha contenido-d">
-			          <div class="cont-inter">
-									<?php 
-										$icono = get_sub_field('icono_cardHome');
-										if( !empty($icono) ):
-									?>
-									<img class="imagen-con" src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>">
-									<?php endif; ?>
-			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
-			          </div>
-			          <div class="card-derecha links-d">
-			            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			<?php else :?>
-			<!-- Si no lo es, que muestre un card normal -->
-					<div class="col-md-12">
-			      <div class="card-content">
-			        <a href="<?php the_sub_field('link_cardHome'); ?>" target="_self"><div class="card-izquierda imagen" style="background-image: url('<?php the_sub_field('imagen_cardHome'); ?>');">
-			          <label class="card-izquierda titulo-cardHome"><?php the_sub_field('titulo_cardHome'); ?></label>
-			        </div></a>
-			        <div class="card-izquierda contenido">
-			          <div class="cont-inter">
-									<?php 
-										$icono = get_sub_field('icono_cardHome');
-										if( !empty($icono) ):
-									?>
-									<img class="imagen-con" src="<?php echo $icono['url']; ?>" alt="<?php echo $icono['alt']; ?>">
-									<?php endif; ?>
-			            <p class="icono-textoBapp"><?php the_sub_field('resumen_cardHome'); ?></p>
-			          </div>
-			          <div class="card-izquierda links">
-			            <label><a href="<?php the_sub_field('link_cardHome'); ?>" target="self"><?php the_sub_field('textLink_cardHome'); ?></a></label>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			<?php endif ;?>
-	    <?php 
-				endwhile;
-				endif;
-			?>
-	  </div>
-    </div>
-</section>
+<?php get_template_part('template-parts/components/home-cards'); ?>
 <!-- end cards intro -->
 
 <h1 class="hide"><?php echo get_bloginfo('name'); ?></h1>
 
 
 <!-- featured mobile -->
+<!-- 
 <section class="container-fluid bg-grey200 hidden-lg hide">
 	<div class="container">
 		<div class="row justify-content-start">
@@ -227,6 +145,7 @@ get_header();
 		</div>
 	</div>
 </section>
+-->
 <!-- end featured mobile -->
 
 <!-- featured desktop -->
