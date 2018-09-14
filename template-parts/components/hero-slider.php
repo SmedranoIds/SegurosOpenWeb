@@ -24,10 +24,14 @@
         <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>'); <?php 
             if(is_page("salud")):
                 echo "background-position: center -150px";
-            endif;
-            
-            if(is_page("seguro-hogar")):
-                echo "background-position: center -40px;";
+            elseif(is_page("Vida")):
+                echo "background-position: center -70px";
+            elseif(is_page("Accidentes y Enfermedades")):
+                echo "background-position: center -200px";
+            elseif(is_page("Ahorro")):
+                echo "background-position: center -180px";
+            else:
+                echo "background-position: center center";
             endif;
             
             /*

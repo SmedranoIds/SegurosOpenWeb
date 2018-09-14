@@ -23,9 +23,13 @@
 						<a href="https://hackathonbbva.fastenticket.com/" target="_self" class="promobox__link ">
 							<i class="bbva-icon bbva-coronita_dollar"></i>
 							<span>Obtén un 25% de descuento con el código HACK2018</span>
-						</a> -->
-						<h1 itemprop="name" class="promobox__title">Protege tu casa de niños traviesos con un Seguro de Hogar BBVA Bancomer<br>
-						</h1>
+						</a> 
+						<h1 itemprop="name" class="promobox__title"><span>Protege tu casa de niños traviesos</span> con un Seguro de Hogar BBVA Bancomer<br>
+						</h1>-->
+
+						<h1 itemprop="name" class="promobox__title" style="margin-bottom:25px;">Protege tu casa de niños traviesos</h1>
+						<span style="font-size: 15px;color:  #626262;">Obtén 14% de descuento en todo septiembre al usar el cupón HOGAR19</span>
+
 					</div>
 				</div>
 				<a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/hogarSeguroBancomer#/paso1-datos-de-cotizacion" target="_blank" class="promobox__button btn__basic btn__medium-blue">
