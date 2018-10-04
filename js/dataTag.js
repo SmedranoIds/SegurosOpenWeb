@@ -69,7 +69,7 @@ digitalData = {
         age: "" 
 	},
 	product: {
-			primaryCategory: "seguros",
+			primaryCategory: "",
 			productSubtype: "",
 			productName: ""
 	},
@@ -78,7 +78,7 @@ digitalData = {
 			            type: "",
 			            name: "",
 			},
-			fulfillmentModel: "online",
+			fulfillmentModel: "",
 		  	step: "",
 		  	state: "inicio",
 		  	transactionID: "",

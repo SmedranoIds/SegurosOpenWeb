@@ -16,9 +16,21 @@ while (have_posts()) {
 ?>
 <!-- single  -->
 
-<?php if (is_page("HogarSeguro Bancomer")) {?>
-    <script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_hogarSeguro.js"></script>
+<?php 
+	//if (is_page("HogarSeguro Bancomer")) {
+	if (is_single("HogarSeguro Bancomer")){
+?>
+	<script src="<?php echo bloginfo('template_url'); ?>/js/dataTag_hogarSeguro.js"></script>
 <?php }?>
+<?php
+	if (is_single("HogarSeguro Bancomer")){
+?>
+		<script>
+			//console.log("pag HogarSeguro")
+		</script>
+<?php
+	}
+?>
    
 <!-- chat -->
 <?php get_template_part('template-parts/components/chat'); ?>

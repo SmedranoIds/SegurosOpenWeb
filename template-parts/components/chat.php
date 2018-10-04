@@ -5,7 +5,7 @@
 				<a class="bbva-coronita_chat " href=""><span class="chat-fontFamily">Chat</span></a>
 			</div>-->
 			<div class="contiene-boxContact">
-				<a href="contacto/atencion-telefonica/" target="_self" role="button"><div class="box-contactHelp">
+				<a href="/contacto/atencion-telefonica/" target="_self" role="button"><div class="box-contactHelp">
 			        <i class="bbva-coronita_call espacio-icono"></i><br class="espacio-help">
 			        <span>Llamar</span>
 			    </div></a>
