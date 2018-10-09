@@ -20,8 +20,9 @@ get_header();
 <?php } ?>
 
 <!-- page & index -->
-<?php get_template_part('template-parts/components/home-slider'); ?>
+<?php //get_template_part('template-parts/components/home-slider'); ?>
 <?php //get_template_part('template-parts/components/bcom-slider'); ?>
+<?php get_template_part('template-parts/components/oct-slider'); ?>
 
 
 

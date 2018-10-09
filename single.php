@@ -95,14 +95,15 @@ while (have_posts()) {
 			?>	
             <div class="col-md-4">
               <div class="text-center">
-                <img class="imagen-promo" src="<?php the_sub_field('imagen_promo'); ?>">
+                <img class="imagen-promo" src="<?php the_sub_field('imagen_promo'); ?>" width="175" style="border-radius: 1000px; padding:0; width: 200px;">
               </div>
             </div>
             <div class="col-md-8">
               <div class="text-promo">
               	<?php the_sub_field('texto_promo'); ?>
               </div>
-              <a href="<?php the_sub_field('url_promo'); ?>" target="<?php the_sub_field('target_promo'); ?>"><span class="boton-promo">Cotizar</span></a>
+							<div class="text-center"><a href="<?php the_sub_field('url_promo'); ?>" target="<?php the_sub_field('target_promo'); ?>"><span class="boton-promo">Cotizar</span></a>
+							</div>
             </div>
             <?php 
 				endwhile;
@@ -122,7 +123,7 @@ while (have_posts()) {
         <div class="text-box">
           <h3 class="titulo-beneficios"><?php the_title(); ?></h3>
           <div class="contiene-resumen">
-            <p>&nbsp;</p>
+            <!-- <p>&nbsp;</p> -->
             <?php
 				if( have_rows('seccion_beneficios_left') ):				
 					while ( have_rows('seccion_beneficios_left') ) : the_row();
