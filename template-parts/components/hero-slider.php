@@ -29,7 +29,8 @@
             elseif (is_page("seguro-vida")):
                 echo "background-position: center -70px";
             elseif (is_single('vida-segura-bancomer') || is_single("gastos-funerarios")):
-                echo "background-position: center -50px";
+                // echo "background-position: center -80px";
+                echo "background-position: center center";
             // elseif(is_page("Accidentes y Enfermedades")):  
             elseif (is_single("seguro-accidentes-enfermedades")):
                 echo "background-position: center -200px";

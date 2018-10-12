@@ -47,44 +47,6 @@ while (have_posts()) {
 	</div>
 <?php endif; ?>
 
-
-<!-- cuadro auto alerta 
-<div class="bg-grey200">
-	<br>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4">
-
-
-				<?php 
-					if( have_rows('autoalerta')): 
-					while ( have_rows('autoalerta') ) : the_row();
-				?>
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<h4><a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank">AutoAlerta Bancomer</a></h4>
-						<p>
-							<?php if(get_sub_field('imgautoalerta')):?>
-							<img src="<?php the_sub_field('imgautoalerta'); ?>" style="padding: 0 0 15px 15px; float: right;">
-							<?php endif;?>
-							<?php the_sub_field('desc_autoalerta') ?>
-							<br>
-							<a href="http://tmkt.segurosbancomer.com/autoalerta/" target="_blank"><b>Detalle del producto</b></a>	
-							<br>
-
-						</p>
-					</div>
-				</div>
-				<?php 
-						endwhile;
-					endif;
-				?>
-
-			</div>
-		</div>
-	</div>
-</div>
- end auto alerta -->
  <!-- Sección de Promociones-->
     <?php if( get_field('seccion_promo') ):?>
     <div class="container-fluid">
@@ -112,7 +74,7 @@ while (have_posts()) {
         </div>
     </div> 
     <hr>
-    <?php endif;?>
+<?php endif;?>
 <!-- Termina Sección de Promociones-->
 <!-- Sección Beneficios-->
 <?php if( get_field('seccion_beneficios_left') ):?>
@@ -263,77 +225,6 @@ while (have_posts()) {
 					?>
 			</div>
 			<!-- end left column -->
-
-
-			<!-- right column 
-			<div class="col-md-4 col-xs-12 info-col-der">
-			
-				<?php //if(!get_post_type_object('empresas')): ?>
-				<div class="panel panel-default text-center">
-					<div class="panel-body bordeCuadros">
-						<a class="chat posIcon", href="", onclick="openChat();">
-							<i class="iconChat"></i>
-							Chat
-						</a>
-					</div>
-				</div>
-				<?php //endif; ?>
-
-				 
-				<?php
-				if( have_rows('cuadrochat2') ):
-					if( have_rows('cuadrochat2') ):
-						while ( have_rows('cuadrochat2') ) : the_row(); 
-					?>
-						<div class="panel panel-default text-center">
-							<div class="panel-body bordeCuadros">
-								<a class="chat posIcon", href="<?php the_sub_field('url') ?>" target="_blank">
-									<i class="iconSprite <?php the_sub_field('imgclase') ?>"></i>
-									<?php the_sub_field('titulo') ?>
-								</a>
-								
-							</div>
-						</div>
-					<?php
-						endwhile;
-					endif;
-				endif;
-					?>
-				
-				
-				<?php
-				if( have_rows('cuadroblanco') ):
-					while ( have_rows('cuadroblanco') ) : the_row(); 
-				?>
-				<div class="panel panel-default <?php the_sub_field('clase') ?>">
-					<div class="panel-body bordeCuadros">
-						<h2><?php the_sub_field('titulocuadro') ?></h2>
-						<div class="row">
-							<div class="col-md-7 col-sm-7">
-								<p class="descripcion"><?php the_sub_field('descripcioncuadro') ?></p>
-								
-							</div>
-							<div class="col-md-5 col-sm-5 text-center">
-								<img class="imgCuadros", src="<?php the_sub_field('img') ?>" alt="">
-							</div>
-						</div>
-						<?php if( get_sub_field('ligaproducto') ): ?>
-							<a class="cuadro", href="<?php the_sub_field('ligaproducto') ?>">
-								<?php the_sub_field('leyendaurl') ?>
-								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								
-						</a>
-					<?php endif; ?>
-					</div>
-				</div>
-				<?php
-					endwhile;
-					endif;
-				?>
-				
-			</div>
-
-			end right column -->
 		</div>
 </div>
 				<?php if( have_rows('archivos') ): ?>
@@ -364,7 +255,7 @@ while (have_posts()) {
 									endif;
 									?>
 								</ul>
-								<br>	
+								<!-- <br>	 -->
 					        </div>
 					      </div>
 					     	<?php

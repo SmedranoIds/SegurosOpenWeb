@@ -24,14 +24,18 @@
 						</h1>-->
 
                     
-						<h1 itemprop="name" class="promobox__title" style="margin-bottom:25px;">Cúrate de espanto ante cualquier imprevisto</h1>
-                        <span style="font-size: 15px;color:  #626262;">Además, ¡obtén 12 meses sin interes!</span>
+						<!-- <h1 itemprop="name" class="promobox__title" style="margin-bottom:25px;">Cúrate de <b>espanto</b> ante cualquier <b>imprevisto</b></h1> -->
+						<h1 itemprop="name" class="promobox__title" style="margin-bottom:25px;">Cúrate de espanto ante cualquier imprevisto, ¡Asegúrate!</h1>
+                        <span style="font-size: 16px;color:  #626262;">Además, ¡obtén 12 meses sin interes!</span>
                     
 					</div>
 				</div>
+				<!-- 
 				<a href="#" class="promobox__button btn__basic btn__medium-blue">
 					<span class="promobox__button__text">¡Asegúrate!</span>
 				</a>
+				-->
+
 			</div>
 
 		</div>
