@@ -37,6 +37,8 @@
             // elseif(is_page("Ahorro")):
             elseif (is_single("Ahorro")):
                 echo "background-position: center -180px";
+            elseif (is_single("meta-educacion")):
+                echo "background-position: center -30px";
             else:
                 echo "background-position: center center";
             endif;
