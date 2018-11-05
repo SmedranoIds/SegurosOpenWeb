@@ -115,20 +115,29 @@ while (have_posts()) {
 	     	<?php
 				if( have_rows('contiene_beneficios') ):				
 					while ( have_rows('contiene_beneficios') ) : the_row();
-			?>
+				?>
 	      	<div class="col-md-6">
 	      		<div class="icondescripcion">
-	              <div class="icondescripcion_base">
-	                <i class="icondescripcion_icon <?php the_sub_field('icono_beneficio'); ?>"></i>
-	                <span class="icondescripcion_titulo"><?php the_sub_field('texto_beneficio'); ?></span>
-	              </div>
-	            </div>
+							<div class="icondescripcion_base">
+								<i class="icondescripcion_icon <?php the_sub_field('icono_beneficio'); ?>"></i>
+								<span class="icondescripcion_titulo"><?php the_sub_field('texto_beneficio'); ?></span>
+							</div>
+						</div>
 	      	</div>
 	      	<?php 
 				endwhile;
 				endif;
 			?>
-      	</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<?php
+							if(get_sub_field('beneficios_sidenote')):
+								the_sub_field('beneficios_sidenote');
+							endif;
+						?>
+        	</div>
+    		</div>
       	<?php if( have_rows('boton_coberturas') ):
       			while ( have_rows('boton_coberturas') ) : the_row();
       	?>
@@ -152,6 +161,7 @@ while (have_posts()) {
 <hr>
 <?php endif;?>
 <!-- Termina Sección Beneficios-->
+
 <!-- Bloques de Contenido-->
 <?php if( get_field('bloque_conetnido') ):?>
 <section class="container-fluid bg-grey100">
@@ -356,53 +366,63 @@ while (have_posts()) {
 				endwhile;
 			endif;
 		?>
+
+			<?php if(get_field('faqs_sidenote')):?>
+			<?php the_field('faqs_sidenote'); ?>
+			<?php endif;?>
+			
 		</div>
 
 
 		<!-- faqs vers tablet & desktop -->
 		<div class="bg-grey100 faqs_content hidden-xs hidden-sm">
-		<div class="container">
-			<div class="col-xs-12">
-				<h3>Preguntas frecuentes</h3>
-			</div>
-			
-			<div class="">
-				<!-- listado de preguntas -->
-				<div class="col-xs-5 faqs-tab-menu">
-					<div class="faqs-sidetab">
-						<?php 
-							if( have_rows('preguntas') ):
-							while ( have_rows('preguntas') ) : the_row();
-						?>
-							<a href="#"><?php the_sub_field('pregunta') ?></a>
-						<?php
-							endwhile;
-							endif;
-						?>
-					</div>
-				</div>
-
-				<!-- area de respuestas -->
-				<!-- <div class="col-xs-7 bhoechie-tab faqs-tab"> -->
-				<div class="col-xs-7 faqs-tab">
-						<?php 
-						if( have_rows('preguntas') ):
-							while ( have_rows('preguntas') ) : the_row();
-						?>
-						<!-- <div class="bhoechie-tab-content faqs-tab-content"> -->
-						<div class="faqs-tab-content">
-							<p class="title-faq"><?php the_sub_field('pregunta') ?><p>
-							<p><?php the_sub_field('respuesta') ?></p>
-						</div>
-						<?php
-							endwhile;
-							endif;
-						?>
+			<div class="container">
+				<div class="col-xs-12">
+					<h3>Preguntas frecuentes</h3>
 				</div>
 				
+				<div class="">
+					<!-- listado de preguntas -->
+					<div class="col-xs-5 faqs-tab-menu">
+						<div class="faqs-sidetab">
+							<?php 
+								if( have_rows('preguntas') ):
+								while ( have_rows('preguntas') ) : the_row();
+							?>
+								<a href="#"><?php the_sub_field('pregunta') ?></a>
+							<?php
+								endwhile;
+								endif;
+							?>
+						</div>
+					</div>
+
+					<!-- area de respuestas -->
+					<!-- <div class="col-xs-7 bhoechie-tab faqs-tab"> -->
+					<div class="col-xs-7 faqs-tab">
+							<?php 
+							if( have_rows('preguntas') ):
+								while ( have_rows('preguntas') ) : the_row();
+							?>
+							<!-- <div class="bhoechie-tab-content faqs-tab-content"> -->
+							<div class="faqs-tab-content">
+								<p class="title-faq"><?php the_sub_field('pregunta') ?><p>
+								<p><?php the_sub_field('respuesta') ?></p>
+							</div>
+							<?php
+								endwhile;
+								endif;
+							?>
+					</div>
+					
+				</div>
+
+				<?php if(get_field('faqs_sidenote')):?>
+				<?php the_field('faqs_sidenote'); ?>
+				<?php endif;?>
 			</div>
 		</div>
-		</div>
+
 		<?php 
 			endif;
 		?>

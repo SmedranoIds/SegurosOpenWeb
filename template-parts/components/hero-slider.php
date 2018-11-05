@@ -28,16 +28,18 @@
             // elseif(is_page("Vida")):
             elseif (is_page("seguro-vida")):
                 echo "background-position: center -70px";
-            elseif (is_single('vida-segura-bancomer') || is_single("gastos-funerarios")):
+            elseif ( is_single("gastos-funerarios")):
                 // echo "background-position: center -80px";
                 echo "background-position: center center";
+            elseif ( is_single('vida-segura-bancomer') ):
+                echo "background-position: top center";
             // elseif(is_page("Accidentes y Enfermedades")):  
             elseif (is_single("seguro-accidentes-enfermedades")):
                 echo "background-position: center -200px";
             // elseif(is_page("Ahorro")):
             elseif (is_single("Ahorro")):
                 echo "background-position: center -180px";
-            elseif (is_single("meta-educacion")):
+            elseif (is_single("meta-educacion") || is_single("meta-educacion-rev")):
                 echo "background-position: center -30px";
             else:
                 echo "background-position: center center";

@@ -497,7 +497,8 @@ li.prodctosBeneficios-descripcion:before {
   .contiene-beneficios-cols{
     margin-top:40px;
   }
-  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list{
+  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list,
+  .descripcion-producto__mod__ulist--2 .descripcion-producto__mod__list{
     width:100% !important;
   }
 }
@@ -599,7 +600,8 @@ li.prodctosBeneficios-descripcion:before {
   .boton-coberturas{
     padding: 16px 38px;
   }
-  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list{
+  .descripcion-producto__mod__ulist--3 .descripcion-producto__mod__list,
+  .descripcion-producto__mod__ulist--2 .descripcion-producto__mod__list{
     width:100% !important;
   }
 }
@@ -609,16 +611,21 @@ li.prodctosBeneficios-descripcion:before {
   padding-top:50px;
   padding-bottom:50px;
 }
-.box-aClientes{
+.box-aClientes, .box-aClientes-left{
   background:white;
-  padding:48px;
+  padding: 48px 20px;
   margin:10px;
+}
+.box-aClientes{
   text-align:center;
 }
-.box-aClientes-left{
-  background:white;
-  padding:48px;
-  margin:10px;
+
+.box-aClientes h2, .box-aClientes-left h2 {
+  text-align: center;
+  font-size: 3.25rem !important;
+}
+.box-aClientes a, .box-aClientes-left a{
+  font-size: 18px !important;
 }
 .text-aClientes{
   font-size: 22px;
@@ -742,6 +749,14 @@ ul li a.lista-aClientes{
   float: left;
   margin-right: 16px;
 }
+
+.descripcion-producto__mod__ulist--2 .descripcion-producto__mod__list{
+  margin-left: 16px;
+  width: calc(50% - 32px);
+  float: left;
+  margin-right: 16px;
+}
+
 .descripcion-productotext{
   
 }
@@ -1059,7 +1074,7 @@ ul li a.lista-aClientes{
   }
 
   .rte {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
   }
 
