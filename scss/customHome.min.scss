@@ -240,6 +240,11 @@
   width:240px;
   padding-top:5%;
 }
+.promo-rounded-img {
+  border-radius: 1000px !important;
+  padding:0;
+  width: 200px;
+}
 .titulo-promos{
   font-size:36px;
   font-family: "BentonSansBBVA Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -897,6 +902,11 @@ ul li a.lista-aClientes{
   line-height: 32px;
   margin-bottom: 32px;
   text-align: center;
+
+  b, strong{
+    font-family: "BentonSansBBVA Book",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+  }
 }
 
 .promobox__body.rte {
@@ -1023,7 +1033,8 @@ ul li a.lista-aClientes{
   }
 
   .promomarquee__base {
-    min-height: 608px;
+    // min-height: 608px;
+    min-height: 670px;
     position: relative;
     overflow: hidden;
   }
@@ -1046,8 +1057,10 @@ ul li a.lista-aClientes{
   }
 
   .promobox__title {
-    font-size: 40px;
+    // font-size: 40px;
+    font-size: 35px;
     line-height: 48px;
+    margin-bottom:25px;
   }
 
   .promobox__button {
@@ -1129,7 +1142,8 @@ ul li a.lista-aClientes{
     min-height: 0;
   }
   .marquee__background__img {
-    top: -150px !important;
+    // top: -150px !important;
+    top: -80px !important;
     left: auto;
     right: 0px;
     max-width: initial !important;

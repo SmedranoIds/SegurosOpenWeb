@@ -21,46 +21,29 @@
             endif;
         
         ?>
-        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php /*the_sub_field('imagen');*/ echo $urlBanner; ?>'); <?php 
-            // if(is_page("salud")):
-            if (is_single("salud")):
-                echo "background-position: center -150px";
-            // elseif(is_page("Vida")):
-            elseif (is_page("seguro-vida")):
-                echo "background-position: center -70px";
-            elseif ( is_single("gastos-funerarios")):
-                // echo "background-position: center -80px";
-                echo "background-position: center center";
-            elseif ( is_single('vida-segura-bancomer') ):
-                echo "background-position: top center";
-            // elseif(is_page("Accidentes y Enfermedades")):  
-            elseif (is_single("seguro-accidentes-enfermedades")):
-                echo "background-position: center -200px";
-            // elseif(is_page("Ahorro")):
-            elseif (is_single("Ahorro")):
-                echo "background-position: center -180px";
-            elseif (is_single("meta-educacion") || is_single("meta-educacion-rev")):
-                echo "background-position: center -30px";
-            else:
-                echo "background-position: center center";
-            endif;
-            
-            /*
-            if(is_page("seguro-automotriz")):
-                echo "background-position: center -150px";
-            endif;
-            if(is_page("seguro-ahorro")):
-                echo "background-position: center -240px;";
-            endif;
+        <div class="hidden-xs item hero-slider <?php if($i == 0) {echo 'active';} ?>" style="background-image: url('<?php echo $urlBanner; ?>'); background-position: <?php 
 
-            if(is_page("seguro-hogar/bancomer/")):
-                echo "background-position: center -70px;";
-            endif;
-            if(is_page("seguro-hogar/contenidos/")):
-                echo "background-position: center -20px;";
-            endif;
+            if (is_single("salud")):
+                echo "center -150px";
+            elseif (is_page("seguro-vida")):
+                echo "center -70px";
+            elseif (is_single("gastos-funerarios")):
+                echo "center center";
+            elseif (is_single("bancomer")):
+                echo "center 15%";
+            elseif (is_single("seguro-accidentes-enfermedades")):
+                echo "center -200px";
+            elseif (is_single("Ahorro")):
+                echo "center -180px";
+            /*
+            elseif (is_single("autoseguro-dinamico-bancomer")):
+                echo "center 70%";
             */
-            
+            elseif (is_single("meta-educacion") || is_single("meta-educacion-rev")):
+                echo "center -30px";
+            else:
+                echo "center center";
+            endif;
             ?>;">
             <div class="container">
                 <div class="col-md-6 col-sm-7" style="padding-top: 70px;">

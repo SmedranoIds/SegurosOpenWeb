@@ -57,7 +57,11 @@ while (have_posts()) {
 			?>	
             <div class="col-md-4">
               <div class="text-center">
-                <img class="imagen-promo" src="<?php the_sub_field('imagen_promo'); ?>" width="175" style="border-radius: 1000px; padding:0; width: 200px;">
+                <img class="imagen-promo <?php
+								if(get_sub_field('rounded_img')):
+									echo "promo-rounded-img";
+								endif;
+								?>" src="<?php the_sub_field('imagen_promo'); ?>" width="175">
               </div>
             </div>
             <div class="col-md-8">
