@@ -29,8 +29,10 @@
                 echo "center -70px";
             elseif (is_single("gastos-funerarios")):
                 echo "center center";
-            elseif (is_single("bancomer")):
-                echo "center 15%";
+            // elseif (is_single("bancomer")):
+                // echo "center 15%";
+            elseif (is_single('vida-segura-bancomer')):
+                echo "center 25%";
             elseif (is_single("seguro-accidentes-enfermedades")):
                 echo "center -200px";
             elseif (is_single("Ahorro")):

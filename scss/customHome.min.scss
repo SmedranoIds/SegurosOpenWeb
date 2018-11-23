@@ -276,16 +276,32 @@
   line-height: 32px;
   color: white !important;
 }
-.boton-beneficios{
-  padding: 16px 40px;
+.boton-beneficios,
+.boton-coberturas {
+  font-family: "BentonSansBBVA Bold", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 16px 56px;
+  font-size: 14px;
   min-width: 94px;
-  background: #1d73b2;
+  background-color: #1d73b2;
+  will-change: background-position;
+  background-size: 210% 100%;
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  transition: background-position .66667s cubic-bezier(0.24, 0.22, 0.31, 1.07);
+  background-color: #1d73b2;
+  background-image: linear-gradient(100deg, #1464a5 50%, #1d73b2 50%);
   color:white;
-  display: block;
+  display: inline-block;
   position: absolute;
   bottom: 40px;
-
 }
+
+.boton-beneficios:hover, 
+.boton-coberturas:hover {
+  background-position: 0 center;
+}
+/*
 .boton-coberturas{
   padding: 16px 40px;
   min-width: 94px;
@@ -295,6 +311,7 @@
   position: absolute;
   bottom: 40px;
 }
+
 .boton-coberturas:hover{
   padding: 16px 40px;
   min-width: 94px;
@@ -304,6 +321,7 @@
   position: absolute;
   bottom: 40px;
 }
+*/
 .row.cobertura-row{
   margin-top: 50px;
   margin-left: auto;
@@ -329,11 +347,14 @@
   position: relative;
   height: auto;
   min-height: 528px;
+  // max-width: 700px;
   padding: 0;
   display: block;
+  margin: 0 auto 60px auto;
 }
 .contiene-resumen{
   width:100%;
+  margin-bottom: 30px;
 }
 .titulo-seccion{
   font-family: "BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;
@@ -489,8 +510,9 @@ li.prodctosBeneficios-descripcion:before {
     width:100% !important;
   }
   .descripcion-producto__mod__content{
-    width:62% !important;
-    margin-bottom:50px;
+    // width:62% !important;
+    width: 70%;
+    margin-bottom: 50px;
   }
   .descripcion-producto__mod__title{
     margin-left:1px !important;
@@ -510,11 +532,12 @@ li.prodctosBeneficios-descripcion:before {
 
 /* -- End Tablet -- */
 /*----- Desktop 1-------*/
+/*
 @media (min-width: 1024px) and (max-width: 1080px){
   .descripcion-producto__mod__content{
     width:60% !important;
   }
-}
+}*/
 /*----- End Desktop 1-------*/
 /* -- Content Móvil -- */
 @media (min-width: 320px) and (max-width: 699px){
@@ -657,9 +680,6 @@ ul li a.lista-aClientes{
   .resumen-beneficios{
     font-size: 18px;
   }
-  .boton-beneficios{
-    padding: 12px 35px;
-  }
   .contiene-beneficios-cols{
     margin-top: 30px;
   }
@@ -727,7 +747,7 @@ ul li a.lista-aClientes{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   // width: 882px;
-  width: 72%;
+   width: 70%;
   float: left;
   padding-left: 16px;
   padding-right: 16px;
@@ -1095,6 +1115,11 @@ ul li a.lista-aClientes{
     padding: 16px 32px;
     line-height: 24px;
   }
+
+  .contiene-resumen{
+    margin-bottom: 0;
+  }
+
 }
 
 @media (min-width: 1200px){
@@ -1103,6 +1128,10 @@ ul li a.lista-aClientes{
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+  }
+  .contiene-todo{
+    max-width: 100%;
+    margin: 0;
   }
 }
 
@@ -1150,8 +1179,11 @@ ul li a.lista-aClientes{
   }
 
   .icons-area {
-    // text-align: center;
     padding-bottom: 0;
+  }
+
+  .boton-beneficios{
+    position: initial;
   }
 
 }
@@ -1162,4 +1194,5 @@ ul li a.lista-aClientes{
     bottom: auto;
     max-width: 100vw;
   }
+
 }
