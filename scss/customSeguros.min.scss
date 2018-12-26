@@ -401,6 +401,7 @@ li.icon-pdf {
     list-style-image: none;
     list-style-type: none;
     padding-left: 30px;
+    padding-bottom: 10px;
 }
 li.icon-pdf:before{
     content: '';
@@ -1098,11 +1099,18 @@ body > header.container-fluid a.sign-in, .sign-in a {
   color: #2a86ca;
   text-decoration: none;
   position: absolute;
-  
-  bottom: 15px;
-  
+  bottom: 15px; 
 }
 
+.card img.wp-post-image{
+  height: auto;
+}
+
+.card .card-post-image{
+  background-size: cover;
+  width: 100%;
+  min-height: 230px;
+}
 /* Link Tips */
 .tips-link:hover{
   color: #FFF !important;
@@ -1337,6 +1345,8 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   font-family: 'BentonSansBBVA Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin-bottom: 5rem;
 }
+
+
 
 /*content*/
 /*responsive*/
@@ -1585,7 +1595,7 @@ div.faqs-tab div.faqs-tab-content:not(.active) {
   li.icon-pdf{
     width: 100%;
     float: left;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
   li.icon-pdf:before{
     display: block;

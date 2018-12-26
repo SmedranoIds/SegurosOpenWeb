@@ -28,21 +28,21 @@
             elseif (is_page("seguro-vida")):
                 echo "center -70px";
             elseif (is_single("gastos-funerarios")):
-                echo "center center";
-            // elseif (is_single("bancomer")):
-                // echo "center 15%";
+                echo "center top";
+            elseif (is_single("seguro-de-gastos-funerarios-cajero-automatico") || is_single("ayuda-hospitalaria-bancomer")):
+                echo "center 15%";
             elseif (is_single('vida-segura-bancomer')):
                 echo "center 25%";
             elseif (is_single("seguro-accidentes-enfermedades")):
                 echo "center -200px";
             elseif (is_single("Ahorro")):
                 echo "center -180px";
-            /*
-            elseif (is_single("autoseguro-dinamico-bancomer")):
-                echo "center 70%";
-            */
-            elseif (is_single("meta-educacion") || is_single("meta-educacion-rev")):
+            elseif (is_single("vida-segura-personal")):
+                echo "center top";
+            elseif (is_single("meta-educacion") || is_single("meta-segura") || is_single("transaccion-segura-bancomer")):
                 echo "center -30px";
+            elseif (is_single('bancomer') || is_single("motos")):
+                echo "center 30%";
             else:
                 echo "center center";
             endif;

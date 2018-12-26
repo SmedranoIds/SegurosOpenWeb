@@ -1,7 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts
- *
+ * Template Name: Openweb - Page Single
+ * Template Post Type: page
+ * Template Description: Plantilla para páginas.
  *
  * @package OpenWeb
  * @subpackage Theme
@@ -14,7 +15,7 @@ get_header();
 while (have_posts()) {
     the_post();
 ?>
-<!-- single  -->
+<!-- page single  -->
 
 <?php 
 	//if (is_page("HogarSeguro Bancomer")) {
@@ -72,6 +73,7 @@ while (have_posts()) {
     <hr>
 <?php endif;?>
 <!-- Termina Sección de Promociones-->
+
 <!-- Sección Beneficios-->
 <?php if( get_field('seccion_beneficios_left') ):?>
 <section class="container-fluid">
@@ -331,7 +333,9 @@ while (have_posts()) {
 	</div>
 <?php endif; ?>
 
-	<?php 
+
+<!-- Preguntas -->
+<?php 
 		if( have_rows('preguntas') ): 
 	?>
 		<!-- faqs vers mobile --> 
@@ -419,9 +423,10 @@ while (have_posts()) {
 			</div>
 		</div>
 
-		<?php 
-			endif;
-		?>
+	<?php 
+		endif;
+	?>
+<!-- End Preguntas -->
 
 <?php
 	}

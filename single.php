@@ -33,74 +33,92 @@ while (have_posts()) {
 <?php get_template_part('template-parts/components/hero-slider');?>
 <!-- end main slider -->
 
+
+<!-- Titulo sin imagen de banner -->
 <?php if(get_field('titulosinbanner')):?>
 	<div class="container titulo-sin-banner">
 		<h1 class="mainTitle"><?php the_field('titulosinbanner'); ?></h1>
 	</div>
 <?php endif; ?>
 
+
+
  <!-- Sección de Promociones-->
-    <?php if( get_field('seccion_promo') ):?>
-    <div class="container-fluid">
-        <div class="row">
-        	<?php
-				if( have_rows('seccion_promo') ):				
-					while ( have_rows('seccion_promo') ) : the_row();
-			?>	
-            <div class="col-md-4">
-              <div class="text-center">
-                <img class="imagen-promo <?php
-								if(get_sub_field('rounded_img')):
-									echo "promo-rounded-img";
-								endif;
-								?>" src="<?php the_sub_field('imagen_promo'); ?>" width="175">
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="text-promo">
-              	<?php the_sub_field('texto_promo'); ?>
-              </div>
-							<div class="text-center"><a href="<?php the_sub_field('url_promo'); ?>" target="<?php the_sub_field('target_promo'); ?>"><span class="boton-promo">Cotizar</span></a>
-							</div>
-            </div>
-            <?php 
-				endwhile;
-				endif;
-			?>
-        </div>
-    </div> 
-    <hr>
+<?php if( get_field('seccion_promo') ):?>
+	<div class="container-fluid">
+			<div class="row">
+				<?php
+					if( have_rows('seccion_promo') ):				
+						while ( have_rows('seccion_promo') ) : the_row();
+				?>	
+					<div class="col-md-4">
+						<div class="text-center">
+							<img class="imagen-promo <?php
+							if(get_sub_field('rounded_img')):
+								echo "promo-rounded-img";
+							endif;
+							?>" src="<?php the_sub_field('imagen_promo'); ?>" width="175">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="text-promo">
+							<?php the_sub_field('texto_promo'); ?>
+						</div>
+
+						<div class="text-center">
+						<?php if(get_sub_field('url_promo')):?>
+							<a href="<?php the_sub_field('url_promo'); ?>" target="<?php the_sub_field('target_promo'); ?>">
+								<span class="boton-promo">Cotizar</span>
+							</a>
+						<?php endif;?>
+						</div>
+					</div>
+					<?php 
+			endwhile;
+			endif;
+		?>
+			</div>
+	</div> 
+	<hr>
 <?php endif;?>
 <!-- Termina Sección de Promociones-->
+
+
 <!-- Sección Beneficios-->
 <?php if( get_field('seccion_beneficios_left') ):?>
 <section class="container-fluid">
-  <div class="">
     <div class="col-md-6">
       <div class="contiene-todo">
         <div class="text-box">
-          <h3 class="titulo-beneficios"><?php the_title(); ?></h3>
-          <div class="contiene-resumen">
-            <!-- <p>&nbsp;</p> -->
+          <h3 class="titulo-beneficios">
+						<?php the_title(); ?>
+					</h3>
+          
+					<div class="contiene-resumen">
+            
             <?php
-				if( have_rows('seccion_beneficios_left') ):				
-					while ( have_rows('seccion_beneficios_left') ) : the_row();
-			?>	
-            <span class="resumen-beneficios"><?php the_sub_field('resumen_beneficios'); ?></span>
+							if( have_rows('seccion_beneficios_left') ):				
+								while ( have_rows('seccion_beneficios_left') ) : the_row();
+						?>	
+								<span class="resumen-beneficios"><?php the_sub_field('resumen_beneficios'); ?></span>
+							</div>
+							<div class="contiene-boton">
+							<?php if(get_sub_field('urlbtn_beneficios')):?>
+								<a href="<?php the_sub_field('urlbtn_beneficios'); ?>" target="<?php the_sub_field('targetbtn_beneficios'); ?>">
+									<span class="boton-beneficios"><?php the_sub_field('textBtn_beneficios'); ?></span>
+								</a>
+							<?php 
+									endif;
+								endwhile;
+							endif;
+						?>
           </div>
-          <div class="contiene-boton">
-             <a href="<?php the_sub_field('urlbtn_beneficios'); ?>" target="<?php the_sub_field('targetbtn_beneficios'); ?>"><span class="boton-beneficios"><?php the_sub_field('textBtn_beneficios'); ?></span></a>
-          </div>
-          <?php 
-				endwhile;
-				endif;
-			?>
+
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="contiene-beneficios-cols">
-        <!--<p class="titulo-seccion"><i class="bbva-icon bbva-coronita_minus-stag" style="margin-right:5px;"></i>BENEFICIOS</p>-->
         <?php
 				if( have_rows('seccion_beneficios_right') ):				
 					while ( have_rows('seccion_beneficios_right') ) : the_row();
@@ -152,11 +170,12 @@ while (have_posts()) {
 				endif;
 			?>
     </div>
-  </div>
+  
 </section>
 <hr>
 <?php endif;?>
 <!-- Termina Sección Beneficios-->
+
 
 <!-- Bloques de Contenido-->
 <?php if( get_field('bloque_conetnido') ):?>
@@ -194,6 +213,7 @@ while (have_posts()) {
 <?php endif;?>
 <!-- Termina bloques de contenido-->
 	
+
 <!-- area de info -->
 <div class="container separador">
 		<div class="row">
@@ -233,72 +253,74 @@ while (have_posts()) {
 			<!-- end left column -->
 		</div>
 </div>
-				<?php if( have_rows('archivos') ): ?>
-					<div class="container-fluid bg-grey100">
-					  <div class="contiene-pdfs">
-					    <div class="row">
-					      <div class="col-md-12 text-center titulo-generales" style="margin: 0 auto 32px;">
-					        <h2>Condiciones Generales</h2>
-					      </div>
-					    </div>
-					    <div class="row">
-					    	<?php 
-								if( have_rows('archivos') ):
-								  while ( have_rows('archivos') ) : the_row();
-								?>
-					      <div class="col-md-4 col-sm-12 col-xs-12 content-generales">
-					        <div class="pdfs-generales">
-					        	<p class="whitSpace"><strong><?php the_sub_field('tituloapartados') ?></strong></p>
-					        	<p><?php the_sub_field('apartados') ?></p>
-					        	<ul style="padding-left: 30px;">
-					        	<?php 
-									if( have_rows('pdf') ):
-									  while ( have_rows('pdf') ) : the_row();
-									?>
-									<li class="bbva-coronita_doc-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><strong><?php the_sub_field('titulo') ?></strong></a></li>
-					        	<?php
-									endwhile;
-									endif;
-									?>
-								</ul>
-								<!-- <br>	 -->
-					        </div>
-					      </div>
-					     	<?php
-								endwhile;
-								endif;
-							?>
-					    </div>
-					  </div>
-					</div>
-					<?php 
-						if( have_rows('masinfo') ):
-						$a = 30;
-						if( have_rows('masinfo') ):
-						while ( have_rows('masinfo') ) : the_row(); 
+<!-- Condiciones Generales -->
+<?php if( have_rows('archivos') ): ?>
+	<div class="container-fluid bg-grey100">
+		<div class="contiene-pdfs">
+			<div class="row">
+				<div class="col-md-12 text-center titulo-generales" style="margin: 0 auto 32px;">
+					<h2>Condiciones Generales</h2>
+				</div>
+			</div>
+			<div class="row">
+				<?php 
+				if( have_rows('archivos') ):
+					while ( have_rows('archivos') ) : the_row();
+				?>
+				<div class="col-md-4 col-sm-12 col-xs-12 content-generales">
+					<div class="pdfs-generales">
+						<p class="whitSpace"><strong><?php the_sub_field('tituloapartados') ?></strong></p>
+						<p><?php the_sub_field('apartados') ?></p>
+						<ul style="padding-left: 30px;">
+						<?php 
+					if( have_rows('pdf') ):
+						while ( have_rows('pdf') ) : the_row();
 					?>
-					  <div class="panel panel-default">
-					    <div class="panel-heading" role="tab" id="heading<?php echo $a ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
-					      <h4 class="panel-title">
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
-					          <?php the_sub_field('titulo') ?>
-					        </a>
-					      </h4>
-					    </div>
-					    <div id="collapse<?php echo $a ?>" class="panel-collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
-					      <div class="panel-body">
-					        <?php the_sub_field('contenido') ?>
-					      </div>
-					    </div>
-					  </div>
-				  <?php
-					  	$a++;
-						endwhile;
-						endif;
+					<li class="bbva-coronita_doc-pdf"><a href="<?php the_sub_field('urlarchivo') ?>" target="_blank"><strong><?php the_sub_field('titulo') ?></strong></a></li>
+						<?php
+					endwhile;
 					endif;
 					?>
+				</ul>
+				
+					</div>
+				</div>
+				<?php
+				endwhile;
+				endif;
+			?>
+			</div>
+		</div>
+	</div>
+	<?php 
+		if( have_rows('masinfo') ):
+		$a = 30;
+		if( have_rows('masinfo') ):
+		while ( have_rows('masinfo') ) : the_row(); 
+	?>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="heading<?php echo $a ?>" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $a ?>" aria-expanded="true" aria-controls="collapse<?php echo $a ?>">
+						<?php the_sub_field('titulo') ?>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse<?php echo $a ?>" class="panel-collapse <?php if($a === 0){?> in <?php } ?>" role="tabpanel" aria-labelledby="heading<?php echo $a ?>">
+				<div class="panel-body">
+					<?php the_sub_field('contenido') ?>
+				</div>
+			</div>
+		</div>
+	<?php
+			$a++;
+		endwhile;
+		endif;
+	endif;
+	?>
+<?php endif;	?>	
+<!-- End Condiciones Generales -->
 
-				<?php endif;	?>	
 <!-- ATENCIÓN AL CLIENTE -->
 <?php 
 		if( have_rows('atencion') ):
@@ -324,13 +346,17 @@ while (have_posts()) {
 ?>	
 <!-- END ATENCIÓN AL CLIENTE-->
 			
-
+<!-- iframe -->
 <?php if (the_field('iframe')): ?>
 	<div class="col-xs-12">
 			<?php (the_field('iframe'))?>
 	</div>
 <?php endif; ?>
+<!-- end iframe -->
 
+
+
+<!-- Preguntas -->
 	<?php 
 		if( have_rows('preguntas') ): 
 	?>
@@ -413,15 +439,18 @@ while (have_posts()) {
 					
 				</div>
 
-				<?php if(get_field('faqs_sidenote')):?>
+			</div>
+			<div style="font-size: 12px; text-align: right; padding: 0 20px;">
+			<?php if(get_field('faqs_sidenote')):?>
 				<?php the_field('faqs_sidenote'); ?>
-				<?php endif;?>
+			<?php endif;?>
 			</div>
 		</div>
 
-		<?php 
-			endif;
-		?>
+	<?php 
+		endif;
+	?>
+<!-- End Preguntas -->
 
 <?php
 	}

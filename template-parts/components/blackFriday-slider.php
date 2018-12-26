@@ -2,8 +2,7 @@
 <div class="wrapper">
 	<div class="promomarquee__base fadein--fast">
 
-		<img src="wp-content/uploads/2018/11/buenfin.png" itemprop="image" class="marquee__background__img " alt="imagen">
-
+		<img src="https://www.segurosbancomer.com.mx/wp-content/uploads/2018/11/buenfin.png" itemprop="image" class="marquee__background__img " alt="imagen">
 
 		<div class="container promomarquee__mask__container">
 			<div class="promomarquee__mask"></div>
@@ -17,9 +16,7 @@
 
 					</div>
 				</div>
-				<!-- <a href="https://cotizadores.segurosbancomer.com.mx/psns_mult_web_psnspublicwebapp_02/hogarSeguroBancomer#/paso1-datos-de-cotizacion" target="_blank" class="promobox__button btn__basic btn__medium-blue">
-					<span class="promobox__button__text">Contratar</span>
-				</a>-->
+
 			</div>
 
 		</div>

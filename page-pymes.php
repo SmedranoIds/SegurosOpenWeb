@@ -99,6 +99,8 @@ while (have_posts()) {
     <hr>
     <?php endif;?>
 <!-- Termina Sección de Promociones-->
+
+
 <!-- Sección Beneficios-->
 <?php if( get_field('seccion_beneficios_left') ):?>
 <section class="container-fluid">
